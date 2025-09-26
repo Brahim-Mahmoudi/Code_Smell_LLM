@@ -21,7 +21,7 @@ SKIP_EXISTING   = True   # True => saute si déjà extrait/analyse présent
 PAUSE_EVERY     = 100    # pause toutes les 100 requêtes
 PAUSE_SECONDS   = 60
 
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = ""
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(ZIP_DIR, exist_ok=True)
