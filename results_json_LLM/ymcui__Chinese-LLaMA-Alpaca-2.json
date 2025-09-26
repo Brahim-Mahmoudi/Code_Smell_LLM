@@ -1,0 +1,54 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/training/run_clm_pt_with_peft.py": {
+    "R26": [
+      "LLM call without model version pinning at line 446"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/training/run_clm_sft_with_peft.py": {
+    "R26": [
+      "LLM call without model version pinning at line 331"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/training/peft/tuners/prompt_tuning.py": {
+    "R26": [
+      "LLM call without model version pinning at line 101"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/cmmlu/llama2_evaluator.py": {
+    "R26": [
+      "LLM call without model version pinning at line 21"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/ceval/llama_evaluator.py": {
+    "R26": [
+      "LLM call without model version pinning at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/openai_server_demo/openai_api_server.py": {
+    "R26": [
+      "LLM call without model version pinning at line 81"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/longbench/pred_llama2.py": {
+    "R26": [
+      "LLM call without model version pinning at line 183"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/inference/speculative_sample.py": {
+    "R26": [
+      "LLM call without model version pinning at line 431",
+      "LLM call without model version pinning at line 434",
+      "LLM call without model version pinning at line 443"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/inference/gradio_demo.py": {
+    "R26": [
+      "LLM call without model version pinning at line 221"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/ymcui__Chinese-LLaMA-Alpaca-2/scripts/inference/inference_hf.py": {
+    "R26": [
+      "LLM call without model version pinning at line 144"
+    ]
+  }
+}

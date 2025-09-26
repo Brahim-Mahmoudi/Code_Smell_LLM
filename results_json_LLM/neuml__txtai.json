@@ -1,0 +1,49 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/neuml__txtai/test/python/testpipeline/testtrain/testquantization.py": {
+    "R26": [
+      "LLM call without model version pinning at line 25"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/neuml__txtai/test/python/testpipeline/testtrain/testtrainer.py": {
+    "R26": [
+      "LLM call without model version pinning at line 61"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/neuml__txtai/test/python/testpipeline/testllm/testllm.py": {
+    "R26": [
+      "LLM call without model version pinning at line 73",
+      "LLM call without model version pinning at line 74"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/neuml__txtai/src/python/txtai/pipeline/train/hfonnx.py": {
+    "R26": [
+      "LLM call without model version pinning at line 54"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/neuml__txtai/src/python/txtai/pipeline/train/hftrainer.py": {
+    "R26": [
+      "LLM call without model version pinning at line 186",
+      "LLM call without model version pinning at line 261",
+      "LLM call without model version pinning at line 263",
+      "LLM call without model version pinning at line 267",
+      "LLM call without model version pinning at line 270"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/neuml__txtai/src/python/txtai/pipeline/text/translation.py": {
+    "R26": [
+      "LLM call without model version pinning at line 274",
+      "LLM call without model version pinning at line 275"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/neuml__txtai/src/python/txtai/embeddings/search/query.py": {
+    "R26": [
+      "LLM call without model version pinning at line 23",
+      "LLM call without model version pinning at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/neuml__txtai/src/python/txtai/models/models.py": {
+    "R26": [
+      "LLM call without model version pinning at line 232"
+    ]
+  }
+}

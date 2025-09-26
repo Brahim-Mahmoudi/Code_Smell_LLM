@@ -1,0 +1,8 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/BlinkDL__RWKV-LM/RWKV-v7/rwkv_mmlu_eval.py": {
+    "R26": [
+      "LLM call without model version pinning at line 46",
+      "LLM call without model version pinning at line 45"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/regolo_model_provider/model/tti.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46",
+      "LLM call without explicit temperature parameter at line 52"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/vllm_model_provider/model/whisper_sst.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 51"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/aliyun_bai_lian_model_provider/model/omni_stt.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 50",
+      "LLM call without explicit temperature parameter at line 58"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 58"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 58"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 58"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/openai_model_provider/model/embedding.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/openai_model_provider/model/tts.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 47",
+      "LLM call without explicit temperature parameter at line 55"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/openai_model_provider/model/tti.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 49",
+      "LLM call without explicit temperature parameter at line 55"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/openai_model_provider/model/stt.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46",
+      "LLM call without explicit temperature parameter at line 54"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/xinference_model_provider/model/tts.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 51"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/xinference_model_provider/model/tti.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 54"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/xinference_model_provider/model/stt.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 45",
+      "LLM call without explicit temperature parameter at line 53"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/siliconCloud_model_provider/model/tts.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 43",
+      "LLM call without explicit temperature parameter at line 51"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/siliconCloud_model_provider/model/tti.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46",
+      "LLM call without explicit temperature parameter at line 52"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/siliconCloud_model_provider/model/stt.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46",
+      "LLM call without explicit temperature parameter at line 54"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/wenxin_model_provider/model/embedding.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 33"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 33"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/1Panel-dev__MaxKB/apps/models_provider/impl/local_model_provider/model/reranker.py": {
+    "R26": [
+      "LLM call without model version pinning at line 81"
+    ]
+  }
+}

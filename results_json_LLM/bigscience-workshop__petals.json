@@ -1,0 +1,7 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/bigscience-workshop__petals/benchmarks/benchmark_inference.py": {
+    "R26": [
+      "LLM call without model version pinning at line 46"
+    ]
+  }
+}

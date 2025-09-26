@@ -1,0 +1,323 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/cursor_ai_experiments/multi_agent_researcher.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 124"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 124"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/cursor_ai_experiments/llm_router_app/llm_router.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 40"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 40"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 40"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 40"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 40"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/cursor_ai_experiments/local_chatgpt_clone/chatgpt_clone_llama3.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 28"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 28"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 28"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/llm_apps_with_memory_tutorials/ai_arxiv_agent_memory/ai_arxiv_agent_memory.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 24"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 49"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 49"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 49"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 49"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/llm_apps_with_memory_tutorials/llm_app_personalized_memory/llm_app_memory.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 14",
+      "LLM call without explicit temperature parameter at line 47"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 47"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 47"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 47"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/llm_apps_with_memory_tutorials/ai_travel_agent_memory/travel_agent_memory.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 14",
+      "LLM call without explicit temperature parameter at line 81"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 81"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 81"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 81"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/llm_apps_with_memory_tutorials/llama3_stateful_chat/local_llama3_chat.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 29"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 29"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 29"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/llm_apps_with_memory_tutorials/multi_llm_memory/multi_llm_memory.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 33",
+      "LLM call without explicit temperature parameter at line 61"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 61"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 61"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 61"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_llm_apps/gpt_oss_critique_improvement_loop/streamlit_app.py": {
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 38"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 38"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/starter_ai_agents/mixture_of_agents/mixture-of-agents.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 53"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 34"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 53"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 53",
+      "LLM pipeline call without structured output at line 34"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/starter_ai_agents/ai_meme_generator_agent_browseruse/ai_meme_generator_agent.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 12"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 12",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 17",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/starter_ai_agents/ai_data_visualisation_agent/ai_data_visualisation_agent.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 64"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 64"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 64"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/voice_ai_agents/ai_audio_tour_agent/ai_audio_tour_agent.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 11"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/rag_tutorials/rag-as-a-service/rag_app.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 85"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 85"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/rag_tutorials/hybrid_search_rag/main.py": {
+    "R29": [
+      "LLM pipeline call without structured output at line 109"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/rag_tutorials/agentic_rag_math_agent/rag/query_router.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 81",
+      "LLM call without explicit temperature parameter at line 121"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/rag_tutorials/vision_rag/vision_rag.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 365"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 365"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/rag_tutorials/rag_database_routing/rag_database_routing.py": {
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 78"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/autonomous_game_playing_agent_apps/ai_3dpygame_r1/ai_3dpygame_r1.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 64",
+      "LLM call without explicit temperature parameter at line 76",
+      "LLM call without explicit temperature parameter at line 129"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 76"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 129"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 76"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/single_agent_apps/ai_customer_support_agent/customer_support_agent.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 36",
+      "LLM call without explicit temperature parameter at line 53",
+      "LLM call without explicit temperature parameter at line 96"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 53",
+      "LLM call without model version pinning at line 96"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 53",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 96"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 53",
+      "LLM pipeline call without structured output at line 96"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/single_agent_apps/ai_system_architect_r1/ai_system_architect_r1.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 72",
+      "LLM call without explicit temperature parameter at line 186"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 186"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 186"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/tools/embedding_search.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/tools/web_search.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 65"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 65"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/tests/embedding_search_test.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 63"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/tests/tool_browseruse_test.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 8"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/agents/audio_generate_agent.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 171"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/utils/get_articles.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 11"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 11",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 21"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 21"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/utils/text_to_audio_openai.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 135"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/utils/translate_podcast.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 31"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 39"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 39"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/processors/embedding_processor.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 134"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/Shubhamsaboo__awesome-llm-apps/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/processors/ai_analysis_processor.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 95"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 40"
+    ]
+  }
+}

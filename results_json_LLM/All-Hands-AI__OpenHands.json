@@ -1,0 +1,75 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/All-Hands-AI__OpenHands/openhands/runtime/plugins/agent_skills/utils/config.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 29"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/All-Hands-AI__OpenHands/openhands/runtime/plugins/agent_skills/file_reader/file_readers.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 155",
+      "LLM call without explicit temperature parameter at line 200"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 155",
+      "LLM pipeline call without structured output at line 200"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/All-Hands-AI__OpenHands/evaluation/benchmarks/EDA/game.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 117",
+      "LLM call without explicit temperature parameter at line 177"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 133",
+      "LLM pipeline call without structured output at line 193"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/All-Hands-AI__OpenHands/evaluation/benchmarks/discoverybench/eval_utils/eval_w_subhypo_gen.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 230",
+      "LLM call without explicit temperature parameter at line 315"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/All-Hands-AI__OpenHands/evaluation/benchmarks/discoverybench/eval_utils/openai_helpers.py": {
+    "R29": [
+      "LLM pipeline call without structured output at line 93"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/All-Hands-AI__OpenHands/evaluation/benchmarks/discoverybench/eval_utils/lm_utils.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 44"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 47",
+      "LLM pipeline call without structured output at line 54"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/All-Hands-AI__OpenHands/evaluation/benchmarks/versicode/inference_utils/api_code_migration.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 13"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 32"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 32"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/All-Hands-AI__OpenHands/evaluation/benchmarks/versicode/inference_utils/api_test_block_completion.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 13"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 32"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 32"
+    ]
+  }
+}

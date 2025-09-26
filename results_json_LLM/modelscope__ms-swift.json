@@ -1,0 +1,189 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/tests/llm/test_run.py": {
+    "R26": [
+      "LLM call without model version pinning at line 395"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/tests/tuners/test_neft.py": {
+    "R26": [
+      "LLM call without model version pinning at line 28",
+      "LLM call without model version pinning at line 44",
+      "LLM call without model version pinning at line 59",
+      "LLM call without model version pinning at line 71",
+      "LLM call without model version pinning at line 90"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/sampling/distill_sampler.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 24"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 33"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/model/register.py": {
+    "R26": [
+      "LLM call without model version pinning at line 240",
+      "LLM call without model version pinning at line 373"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/model/model/glm.py": {
+    "R26": [
+      "LLM call without model version pinning at line 290"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/model/model/mistral.py": {
+    "R26": [
+      "LLM call without model version pinning at line 152"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/model/model/baai.py": {
+    "R26": [
+      "LLM call without model version pinning at line 67",
+      "LLM call without model version pinning at line 27"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/model/model/codefuse.py": {
+    "R26": [
+      "LLM call without model version pinning at line 47"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/model/model/llm.py": {
+    "R26": [
+      "LLM call without model version pinning at line 19",
+      "LLM call without model version pinning at line 45",
+      "LLM call without model version pinning at line 71"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/model/model/qwen.py": {
+    "R26": [
+      "LLM call without model version pinning at line 45"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/llm/model/model/yi.py": {
+    "R26": [
+      "LLM call without model version pinning at line 19"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/plugin/prm.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 52",
+      "LLM call without explicit temperature parameter at line 76"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 76"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 76"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 76"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/swift/plugin/env.py": {
+    "R26": [
+      "LLM call without model version pinning at line 70"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/examples/deploy/embedding/client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 12",
+      "LLM call without explicit temperature parameter at line 24"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 12"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 12"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/examples/deploy/agent/client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 82"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 35",
+      "LLM pipeline call without structured output at line 44",
+      "LLM pipeline call without structured output at line 53",
+      "LLM pipeline call without structured output at line 69"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/examples/deploy/client/llm/chat/openai_client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 30"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 10",
+      "LLM pipeline call without structured output at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/examples/deploy/client/llm/base/openai_client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 23"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 16"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/examples/deploy/client/mllm/openai_client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 81"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 21"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 11",
+      "LLM pipeline call without structured output at line 21"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/examples/train/grpo/plugin/deepeyes/deepeyes_plugin.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 194"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 323"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 244",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 323"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 244",
+      "LLM pipeline call without structured output at line 323"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/examples/infer/demo_hf.py": {
+    "R26": [
+      "LLM call without model version pinning at line 7",
+      "LLM call without model version pinning at line 11"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/modelscope__ms-swift/examples/custom/model_hf.py": {
+    "R26": [
+      "LLM call without model version pinning at line 30",
+      "LLM call without model version pinning at line 34"
+    ]
+  }
+}

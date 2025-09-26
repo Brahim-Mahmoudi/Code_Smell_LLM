@@ -1,0 +1,26 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/UKPLab__sentence-transformers/sentence_transformers/losses/DenoisingAutoEncoderLoss.py": {
+    "R26": [
+      "LLM call without model version pinning at line 96",
+      "LLM call without model version pinning at line 104",
+      "LLM call without model version pinning at line 116"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/UKPLab__sentence-transformers/sentence_transformers/models/Transformer.py": {
+    "R26": [
+      "LLM call without model version pinning at line 102",
+      "LLM call without model version pinning at line 196"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/UKPLab__sentence-transformers/sentence_transformers/models/tokenizer/WordTokenizer.py": {
+    "R26": [
+      "LLM call without model version pinning at line 441"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/UKPLab__sentence-transformers/sentence_transformers/sparse_encoder/models/MLMTransformer.py": {
+    "R26": [
+      "LLM call without model version pinning at line 97",
+      "LLM call without model version pinning at line 178"
+    ]
+  }
+}

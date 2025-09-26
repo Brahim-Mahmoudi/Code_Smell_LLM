@@ -1,0 +1,106 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/configure.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 256"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 256"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/routers/api.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 148"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 148"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/processor/image/generate.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 181",
+      "LLM call without explicit temperature parameter at line 185"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 181",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 185"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/processor/operator/operator_agent_openai.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 218"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 218"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 218"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/processor/operator/grounding_agent.py": {
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 52"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 52"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/processor/operator/grounding_agent_uitars.py": {
+    "R26": [
+      "LLM call without model version pinning at line 148"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 148"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/processor/operator/operator_agent_anthropic.py": {
+    "R29": [
+      "LLM pipeline call without structured output at line 431"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/processor/conversation/utils.py": {
+    "R26": [
+      "LLM call without model version pinning at line 737"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/processor/conversation/google/utils.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 230"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 230"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/processor/conversation/openai/utils.py": {
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 481",
+      "LLM pipeline call without structured output at line 356"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/utils/initialization.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 52",
+      "LLM call without explicit temperature parameter at line 223"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 52",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 223"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/khoj-ai__khoj/src/khoj/utils/helpers.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 1083"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 1083"
+    ]
+  }
+}

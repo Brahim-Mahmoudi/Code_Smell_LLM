@@ -1,0 +1,2897 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/test_auto_client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 59",
+      "LLM call without explicit temperature parameter at line 80",
+      "LLM call without explicit temperature parameter at line 122"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 59",
+      "LLM chat call without a system message at line 80",
+      "LLM chat call without a system message at line 122"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 59",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 80",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 122"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 59",
+      "LLM pipeline call without structured output at line 80",
+      "LLM pipeline call without structured output at line 122"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/test_patch.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 10"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_new_client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 30",
+      "LLM call without explicit temperature parameter at line 42",
+      "LLM call without explicit temperature parameter at line 54",
+      "LLM call without explicit temperature parameter at line 70",
+      "LLM call without explicit temperature parameter at line 82",
+      "LLM call without explicit temperature parameter at line 93"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 44",
+      "LLM chat call without a system message at line 72",
+      "LLM chat call without a system message at line 188",
+      "LLM chat call without a system message at line 212",
+      "LLM chat call without a system message at line 273",
+      "LLM chat call without a system message at line 305",
+      "LLM chat call without a system message at line 383",
+      "LLM chat call without a system message at line 111",
+      "LLM chat call without a system message at line 230",
+      "LLM chat call without a system message at line 255",
+      "LLM chat call without a system message at line 342"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 44",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 72",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 188",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 212",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 273",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 305",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 383",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 30",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 42",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 54",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 70",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 82",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 93",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 111",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 230",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 255",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 342"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 44",
+      "LLM pipeline call without structured output at line 72",
+      "LLM pipeline call without structured output at line 188",
+      "LLM pipeline call without structured output at line 212",
+      "LLM pipeline call without structured output at line 273",
+      "LLM pipeline call without structured output at line 305",
+      "LLM pipeline call without structured output at line 383",
+      "LLM pipeline call without structured output at line 111",
+      "LLM pipeline call without structured output at line 230",
+      "LLM pipeline call without structured output at line 255",
+      "LLM pipeline call without structured output at line 342"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_vertexai/test_simple_types.py": {
+    "R26": [
+      "LLM call without model version pinning at line 13",
+      "LLM call without model version pinning at line 34",
+      "LLM call without model version pinning at line 50"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_vertexai/test_retries.py": {
+    "R26": [
+      "LLM call without model version pinning at line 26",
+      "LLM call without model version pinning at line 39"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_vertexai/test_format.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 28"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 17"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 28"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 28"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 28"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_vertexai/test_modes.py": {
+    "R26": [
+      "LLM call without model version pinning at line 22",
+      "LLM call without model version pinning at line 64",
+      "LLM call without model version pinning at line 99"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_vertexai/test_stream.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20",
+      "LLM call without explicit temperature parameter at line 55",
+      "LLM call without explicit temperature parameter at line 74"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 19",
+      "LLM call without model version pinning at line 38",
+      "LLM call without model version pinning at line 54",
+      "LLM call without model version pinning at line 73"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 20",
+      "LLM chat call without a system message at line 55",
+      "LLM chat call without a system message at line 74"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 55",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 74"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20",
+      "LLM pipeline call without structured output at line 55",
+      "LLM pipeline call without structured output at line 74"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_cerebras/modes.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 21",
+      "LLM call without explicit temperature parameter at line 52",
+      "LLM call without explicit temperature parameter at line 132",
+      "LLM call without explicit temperature parameter at line 77",
+      "LLM call without explicit temperature parameter at line 109",
+      "LLM call without explicit temperature parameter at line 161",
+      "LLM call without explicit temperature parameter at line 186"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 21",
+      "LLM call without model version pinning at line 52",
+      "LLM call without model version pinning at line 132",
+      "LLM call without model version pinning at line 77",
+      "LLM call without model version pinning at line 109",
+      "LLM call without model version pinning at line 161",
+      "LLM call without model version pinning at line 186"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 21",
+      "LLM chat call without a system message at line 52",
+      "LLM chat call without a system message at line 132",
+      "LLM chat call without a system message at line 77",
+      "LLM chat call without a system message at line 109",
+      "LLM chat call without a system message at line 161",
+      "LLM chat call without a system message at line 186"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 21",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 52",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 132",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 77",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 109",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 161",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 186"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 21",
+      "LLM pipeline call without structured output at line 52",
+      "LLM pipeline call without structured output at line 132",
+      "LLM pipeline call without structured output at line 77",
+      "LLM pipeline call without structured output at line 109",
+      "LLM pipeline call without structured output at line 161",
+      "LLM pipeline call without structured output at line 186"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_anthropic/test_reasoning.py": {
+    "R27": [
+      "LLM chat call without a system message at line 14"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 14"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_anthropic/test_multimodal.py": {
+    "R29": [
+      "LLM pipeline call without structured output at line 31",
+      "LLM pipeline call without structured output at line 60",
+      "LLM pipeline call without structured output at line 92",
+      "LLM pipeline call without structured output at line 127",
+      "LLM pipeline call without structured output at line 183"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_anthropic/test_parallel.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 24",
+      "LLM call without explicit temperature parameter at line 53"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 24",
+      "LLM pipeline call without structured output at line 53"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_anthropic/test_system.py": {
+    "R29": [
+      "LLM pipeline call without structured output at line 17",
+      "LLM pipeline call without structured output at line 123"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_anthropic/test_stream.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 124",
+      "LLM call without explicit temperature parameter at line 36",
+      "LLM call without explicit temperature parameter at line 169"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 124",
+      "LLM chat call without a system message at line 36"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 124",
+      "LLM pipeline call without structured output at line 36",
+      "LLM pipeline call without structured output at line 169"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_cohere/test_retries.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 19",
+      "LLM call without explicit temperature parameter at line 33"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 19",
+      "LLM call without model version pinning at line 33"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 19",
+      "LLM chat call without a system message at line 33"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 19",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 33"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 19",
+      "LLM pipeline call without structured output at line 33"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_cohere/test_none_response.py": {
+    "R27": [
+      "LLM chat call without a system message at line 20",
+      "LLM chat call without a system message at line 39"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 39"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20",
+      "LLM pipeline call without structured output at line 39"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_cohere/test_json_schema.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 19",
+      "LLM call without explicit temperature parameter at line 37",
+      "LLM call without explicit temperature parameter at line 70",
+      "LLM call without explicit temperature parameter at line 89",
+      "LLM call without explicit temperature parameter at line 110"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 89",
+      "LLM call without model version pinning at line 110"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 19",
+      "LLM chat call without a system message at line 37",
+      "LLM chat call without a system message at line 70",
+      "LLM chat call without a system message at line 89",
+      "LLM chat call without a system message at line 110"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 19",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 37",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 70",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 89",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 110"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 19",
+      "LLM pipeline call without structured output at line 37",
+      "LLM pipeline call without structured output at line 70",
+      "LLM pipeline call without structured output at line 89",
+      "LLM pipeline call without structured output at line 110"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_gemini/test_simple_types.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 11",
+      "LLM call without explicit temperature parameter at line 27"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 11",
+      "LLM chat call without a system message at line 27"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 11",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 27"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 11",
+      "LLM pipeline call without structured output at line 27"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_gemini/test_retries.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 26",
+      "LLM call without explicit temperature parameter at line 46"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 26",
+      "LLM chat call without a system message at line 46"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 26",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 46"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 26",
+      "LLM pipeline call without structured output at line 46"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_gemini/test_list_content.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 46"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 46"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 46"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_gemini/test_multimodal_content.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 24",
+      "LLM call without explicit temperature parameter at line 44"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 24",
+      "LLM chat call without a system message at line 44"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 24",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 44"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 24",
+      "LLM pipeline call without structured output at line 44"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_gemini/test_patch.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18",
+      "LLM call without explicit temperature parameter at line 56"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 18",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 56"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 18",
+      "LLM pipeline call without structured output at line 56"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_gemini/test_stream.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 19",
+      "LLM call without explicit temperature parameter at line 40"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 19",
+      "LLM chat call without a system message at line 40"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 19",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 40"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 19",
+      "LLM pipeline call without structured output at line 40"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_gemini/evals/test_extract_users.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 28"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 28"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 28"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 28"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_xai/test_basics.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 50",
+      "LLM call without explicit temperature parameter at line 22"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 50",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 22"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 50",
+      "LLM pipeline call without structured output at line 22"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_xai/test_raw_response.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 38",
+      "LLM call without explicit temperature parameter at line 103",
+      "LLM call without explicit temperature parameter at line 71",
+      "LLM call without explicit temperature parameter at line 137"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 38",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 103",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 71",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 137"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 38",
+      "LLM pipeline call without structured output at line 103",
+      "LLM pipeline call without structured output at line 71",
+      "LLM pipeline call without structured output at line 137"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_perplexity/conftest.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 19"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_perplexity/test_modes.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 33",
+      "LLM call without explicit temperature parameter at line 77"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 33",
+      "LLM chat call without a system message at line 77"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 33",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 77"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 33",
+      "LLM pipeline call without structured output at line 77"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_simple_types.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 47",
+      "LLM call without explicit temperature parameter at line 63",
+      "LLM call without explicit temperature parameter at line 84",
+      "LLM call without explicit temperature parameter at line 100",
+      "LLM call without explicit temperature parameter at line 31",
+      "LLM call without explicit temperature parameter at line 14"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 47",
+      "LLM call without model version pinning at line 63",
+      "LLM call without model version pinning at line 84",
+      "LLM call without model version pinning at line 100",
+      "LLM call without model version pinning at line 31",
+      "LLM call without model version pinning at line 14"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 47",
+      "LLM chat call without a system message at line 63",
+      "LLM chat call without a system message at line 84",
+      "LLM chat call without a system message at line 100",
+      "LLM chat call without a system message at line 31",
+      "LLM chat call without a system message at line 14"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 47",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 63",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 84",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 100",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 31",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 14"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 47",
+      "LLM pipeline call without structured output at line 63",
+      "LLM pipeline call without structured output at line 84",
+      "LLM pipeline call without structured output at line 100",
+      "LLM pipeline call without structured output at line 31",
+      "LLM pipeline call without structured output at line 14"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/conftest.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 19"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_retries.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 68",
+      "LLM call without explicit temperature parameter at line 89",
+      "LLM call without explicit temperature parameter at line 104",
+      "LLM call without explicit temperature parameter at line 32",
+      "LLM call without explicit temperature parameter at line 54",
+      "LLM call without explicit temperature parameter at line 117"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 68",
+      "LLM chat call without a system message at line 89",
+      "LLM chat call without a system message at line 32",
+      "LLM chat call without a system message at line 54",
+      "LLM chat call without a system message at line 117"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 68",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 89",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 32",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 54",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 117"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 68",
+      "LLM pipeline call without structured output at line 89",
+      "LLM pipeline call without structured output at line 32",
+      "LLM pipeline call without structured output at line 54",
+      "LLM pipeline call without structured output at line 117"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_multitask.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 23",
+      "LLM call without explicit temperature parameter at line 58",
+      "LLM call without explicit temperature parameter at line 111",
+      "LLM call without explicit temperature parameter at line 79",
+      "LLM call without explicit temperature parameter at line 146"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 79",
+      "LLM chat call without a system message at line 146"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 58"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 23",
+      "LLM pipeline call without structured output at line 58",
+      "LLM pipeline call without structured output at line 111",
+      "LLM pipeline call without structured output at line 79",
+      "LLM pipeline call without structured output at line 146"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_multimodal.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 63",
+      "LLM call without explicit temperature parameter at line 89",
+      "LLM call without explicit temperature parameter at line 119"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 63"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 63"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 63",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 89",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 119",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 186"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 63",
+      "LLM pipeline call without structured output at line 89",
+      "LLM pipeline call without structured output at line 119",
+      "LLM pipeline call without structured output at line 150",
+      "LLM pipeline call without structured output at line 186"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_patch.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 31",
+      "LLM call without explicit temperature parameter at line 56",
+      "LLM call without explicit temperature parameter at line 124",
+      "LLM call without explicit temperature parameter at line 84",
+      "LLM call without explicit temperature parameter at line 150"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 31",
+      "LLM chat call without a system message at line 56",
+      "LLM chat call without a system message at line 124",
+      "LLM chat call without a system message at line 84",
+      "LLM chat call without a system message at line 150"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 31",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 56",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 124",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 84",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 150"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 31",
+      "LLM pipeline call without structured output at line 56",
+      "LLM pipeline call without structured output at line 124",
+      "LLM pipeline call without structured output at line 84",
+      "LLM pipeline call without structured output at line 150"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_hooks.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_parallel.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 38",
+      "LLM call without explicit temperature parameter at line 71",
+      "LLM call without explicit temperature parameter at line 23",
+      "LLM call without explicit temperature parameter at line 55",
+      "LLM call without explicit temperature parameter at line 89"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 38",
+      "LLM call without model version pinning at line 71",
+      "LLM call without model version pinning at line 23",
+      "LLM call without model version pinning at line 55",
+      "LLM call without model version pinning at line 89"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 38",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 71",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 23",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 55",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 89"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 38",
+      "LLM pipeline call without structured output at line 71",
+      "LLM pipeline call without structured output at line 23",
+      "LLM pipeline call without structured output at line 55",
+      "LLM pipeline call without structured output at line 89"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_validation_context.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 73",
+      "LLM call without explicit temperature parameter at line 110",
+      "LLM call without explicit temperature parameter at line 34",
+      "LLM call without explicit temperature parameter at line 54"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 73",
+      "LLM chat call without a system message at line 110",
+      "LLM chat call without a system message at line 34",
+      "LLM chat call without a system message at line 54"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 73",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 110",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 34",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 54"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 73",
+      "LLM pipeline call without structured output at line 110",
+      "LLM pipeline call without structured output at line 34",
+      "LLM pipeline call without structured output at line 54"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_attr.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 7"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_modes.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 33",
+      "LLM call without explicit temperature parameter at line 76"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 33",
+      "LLM chat call without a system message at line 76"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 33",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 76"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 33",
+      "LLM pipeline call without structured output at line 76"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/test_stream.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20",
+      "LLM call without explicit temperature parameter at line 58",
+      "LLM call without explicit temperature parameter at line 101",
+      "LLM call without explicit temperature parameter at line 129",
+      "LLM call without explicit temperature parameter at line 249",
+      "LLM call without explicit temperature parameter at line 40",
+      "LLM call without explicit temperature parameter at line 78",
+      "LLM call without explicit temperature parameter at line 162",
+      "LLM call without explicit temperature parameter at line 190",
+      "LLM call without explicit temperature parameter at line 228"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 20",
+      "LLM chat call without a system message at line 58",
+      "LLM chat call without a system message at line 101",
+      "LLM chat call without a system message at line 129",
+      "LLM chat call without a system message at line 40",
+      "LLM chat call without a system message at line 78",
+      "LLM chat call without a system message at line 162",
+      "LLM chat call without a system message at line 190"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 58",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 101",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 129",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 249",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 40",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 78",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 162",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 190",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 228"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20",
+      "LLM pipeline call without structured output at line 58",
+      "LLM pipeline call without structured output at line 101",
+      "LLM pipeline call without structured output at line 129",
+      "LLM pipeline call without structured output at line 249",
+      "LLM pipeline call without structured output at line 40",
+      "LLM pipeline call without structured output at line 78",
+      "LLM pipeline call without structured output at line 162",
+      "LLM pipeline call without structured output at line 190",
+      "LLM pipeline call without structured output at line 228"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_openai/slow/test_response.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 28",
+      "LLM call without explicit temperature parameter at line 43",
+      "LLM call without explicit temperature parameter at line 125",
+      "LLM call without explicit temperature parameter at line 143"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 28",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 43",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 125",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 143"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 28",
+      "LLM pipeline call without structured output at line 43",
+      "LLM pipeline call without structured output at line 125",
+      "LLM pipeline call without structured output at line 143"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_mistral/test_retries.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 26",
+      "LLM call without explicit temperature parameter at line 45"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 26",
+      "LLM chat call without a system message at line 45"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 26",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 45"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 26",
+      "LLM pipeline call without structured output at line 45"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_mistral/test_multimodal.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18",
+      "LLM call without explicit temperature parameter at line 40"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 18",
+      "LLM chat call without a system message at line 40"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 18",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 40"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 18",
+      "LLM pipeline call without structured output at line 40"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_mistral/test_modes.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18",
+      "LLM call without explicit temperature parameter at line 67",
+      "LLM call without explicit temperature parameter at line 43",
+      "LLM call without explicit temperature parameter at line 87"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 18",
+      "LLM chat call without a system message at line 67",
+      "LLM chat call without a system message at line 43",
+      "LLM chat call without a system message at line 87"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 18",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 67",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 43",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 87"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 18",
+      "LLM pipeline call without structured output at line 67",
+      "LLM pipeline call without structured output at line 43",
+      "LLM pipeline call without structured output at line 87"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_mistral/test_stream.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 92",
+      "LLM call without explicit temperature parameter at line 129",
+      "LLM call without explicit temperature parameter at line 149"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 129",
+      "LLM chat call without a system message at line 149"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 92",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 129",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 149"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 92",
+      "LLM pipeline call without structured output at line 129",
+      "LLM pipeline call without structured output at line 149"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/test_retries.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 26",
+      "LLM call without explicit temperature parameter at line 47",
+      "LLM call without explicit temperature parameter at line 63",
+      "LLM call without explicit temperature parameter at line 85"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 26",
+      "LLM chat call without a system message at line 47",
+      "LLM chat call without a system message at line 63",
+      "LLM chat call without a system message at line 85"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 26",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 47",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 63",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 85"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 26",
+      "LLM pipeline call without structured output at line 47",
+      "LLM pipeline call without structured output at line 63",
+      "LLM pipeline call without structured output at line 85"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/test_format_difficult_models.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 37",
+      "LLM call without explicit temperature parameter at line 83"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 37",
+      "LLM chat call without a system message at line 83"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 37",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 83"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 37",
+      "LLM pipeline call without structured output at line 83"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/test_streaming.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 23",
+      "LLM call without explicit temperature parameter at line 43",
+      "LLM call without explicit temperature parameter at line 69",
+      "LLM call without explicit temperature parameter at line 90"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 23",
+      "LLM chat call without a system message at line 43",
+      "LLM chat call without a system message at line 69",
+      "LLM chat call without a system message at line 90"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 23",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 43",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 69",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 90"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 23",
+      "LLM pipeline call without structured output at line 43",
+      "LLM pipeline call without structured output at line 69",
+      "LLM pipeline call without structured output at line 90"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/test_format_common_models.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 32",
+      "LLM call without explicit temperature parameter at line 57",
+      "LLM call without explicit temperature parameter at line 77",
+      "LLM call without explicit temperature parameter at line 97",
+      "LLM call without explicit temperature parameter at line 170",
+      "LLM call without explicit temperature parameter at line 122"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 32",
+      "LLM chat call without a system message at line 57",
+      "LLM chat call without a system message at line 77",
+      "LLM chat call without a system message at line 97",
+      "LLM chat call without a system message at line 170",
+      "LLM chat call without a system message at line 122"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 32",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 57",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 77",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 97",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 170",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 122"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 32",
+      "LLM pipeline call without structured output at line 57",
+      "LLM pipeline call without structured output at line 77",
+      "LLM pipeline call without structured output at line 97",
+      "LLM pipeline call without structured output at line 170",
+      "LLM pipeline call without structured output at line 122"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/evals/test_classification_enums.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46",
+      "LLM call without explicit temperature parameter at line 101"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 46",
+      "LLM chat call without a system message at line 101"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 46",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 101"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 46",
+      "LLM pipeline call without structured output at line 101"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/evals/test_sentiment_analysis.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 45"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 45"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 45"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/evals/test_entities.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 46"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 46"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/evals/test_classification_literals.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 37",
+      "LLM call without explicit temperature parameter at line 81"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 37",
+      "LLM chat call without a system message at line 81"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 37",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 81"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 37",
+      "LLM pipeline call without structured output at line 81"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_writer/evals/test_extract_users.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 29"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 29"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 29"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 29"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_fireworks/test_simple.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 16",
+      "LLM call without explicit temperature parameter at line 47",
+      "LLM call without explicit temperature parameter at line 72",
+      "LLM call without explicit temperature parameter at line 104"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 16",
+      "LLM chat call without a system message at line 47",
+      "LLM chat call without a system message at line 72",
+      "LLM chat call without a system message at line 104"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 16",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 47",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 72",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 104"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 16",
+      "LLM pipeline call without structured output at line 47",
+      "LLM pipeline call without structured output at line 72",
+      "LLM pipeline call without structured output at line 104"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_fireworks/test_format.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 16",
+      "LLM call without explicit temperature parameter at line 44"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 16",
+      "LLM chat call without a system message at line 44"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 16",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 44"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 16",
+      "LLM pipeline call without structured output at line 44"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_genai/test_basics.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 56",
+      "LLM call without explicit temperature parameter at line 26"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 56",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 26"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 56",
+      "LLM pipeline call without structured output at line 26"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_genai/test_decimal.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 38",
+      "LLM call without explicit temperature parameter at line 116",
+      "LLM call without explicit temperature parameter at line 78"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 38",
+      "LLM chat call without a system message at line 116",
+      "LLM chat call without a system message at line 78"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 38",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 116",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 78"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 38",
+      "LLM pipeline call without structured output at line 116",
+      "LLM pipeline call without structured output at line 78"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_genai/test_invalid_schema.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 24",
+      "LLM call without explicit temperature parameter at line 104",
+      "LLM call without explicit temperature parameter at line 135",
+      "LLM call without explicit temperature parameter at line 52",
+      "LLM call without explicit temperature parameter at line 174",
+      "LLM call without explicit temperature parameter at line 208"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 24",
+      "LLM chat call without a system message at line 104",
+      "LLM chat call without a system message at line 135",
+      "LLM chat call without a system message at line 52",
+      "LLM chat call without a system message at line 174",
+      "LLM chat call without a system message at line 208"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 24",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 104",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 135",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 52",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 174",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 208"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 24",
+      "LLM pipeline call without structured output at line 104",
+      "LLM pipeline call without structured output at line 135",
+      "LLM pipeline call without structured output at line 52",
+      "LLM pipeline call without structured output at line 174",
+      "LLM pipeline call without structured output at line 208"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_genai/test_simple.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20",
+      "LLM call without explicit temperature parameter at line 41"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 20",
+      "LLM chat call without a system message at line 41"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 41"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20",
+      "LLM pipeline call without structured output at line 41"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_genai/test_response_model_none.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 17",
+      "LLM call without explicit temperature parameter at line 38"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 17",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 38"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 17",
+      "LLM pipeline call without structured output at line 38"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_genai/test_multimodal.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 52",
+      "LLM call without explicit temperature parameter at line 76",
+      "LLM call without explicit temperature parameter at line 101",
+      "LLM call without explicit temperature parameter at line 121",
+      "LLM call without explicit temperature parameter at line 144",
+      "LLM call without explicit temperature parameter at line 170",
+      "LLM call without explicit temperature parameter at line 194",
+      "LLM call without explicit temperature parameter at line 249",
+      "LLM call without explicit temperature parameter at line 271",
+      "LLM call without explicit temperature parameter at line 296",
+      "LLM call without explicit temperature parameter at line 321",
+      "LLM call without explicit temperature parameter at line 220"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 52",
+      "LLM chat call without a system message at line 76",
+      "LLM chat call without a system message at line 101",
+      "LLM chat call without a system message at line 121",
+      "LLM chat call without a system message at line 144",
+      "LLM chat call without a system message at line 170",
+      "LLM chat call without a system message at line 249",
+      "LLM chat call without a system message at line 271",
+      "LLM chat call without a system message at line 296",
+      "LLM chat call without a system message at line 321"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 52",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 76",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 101",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 121",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 144",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 170",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 194",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 249",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 271",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 296",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 321",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 220"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 52",
+      "LLM pipeline call without structured output at line 76",
+      "LLM pipeline call without structured output at line 101",
+      "LLM pipeline call without structured output at line 121",
+      "LLM pipeline call without structured output at line 144",
+      "LLM pipeline call without structured output at line 170",
+      "LLM pipeline call without structured output at line 194",
+      "LLM pipeline call without structured output at line 249",
+      "LLM pipeline call without structured output at line 271",
+      "LLM pipeline call without structured output at line 296",
+      "LLM pipeline call without structured output at line 321",
+      "LLM pipeline call without structured output at line 220"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/llm/test_genai/test_format.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 23",
+      "LLM call without explicit temperature parameter at line 38",
+      "LLM call without explicit temperature parameter at line 62",
+      "LLM call without explicit temperature parameter at line 83",
+      "LLM call without explicit temperature parameter at line 108",
+      "LLM call without explicit temperature parameter at line 135",
+      "LLM call without explicit temperature parameter at line 163"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 23",
+      "LLM chat call without a system message at line 62",
+      "LLM chat call without a system message at line 83",
+      "LLM chat call without a system message at line 135",
+      "LLM chat call without a system message at line 163"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 23",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 38",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 62",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 83",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 108",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 135",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 163"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 23",
+      "LLM pipeline call without structured output at line 38",
+      "LLM pipeline call without structured output at line 62",
+      "LLM pipeline call without structured output at line 83",
+      "LLM pipeline call without structured output at line 108",
+      "LLM pipeline call without structured output at line 135",
+      "LLM pipeline call without structured output at line 163"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/tests/dsl/test_partial.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 144"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/distilations/three_digit_mul_dispatch.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/reranker/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6",
+      "LLM call without explicit temperature parameter at line 42"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 42"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 42"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 42"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/logfire/classify.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 23",
+      "LLM call without explicit temperature parameter at line 32"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 32"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 32"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 32"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 32"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/logfire/validate.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/logfire/image.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 15",
+      "LLM call without explicit temperature parameter at line 56"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 56"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 56"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 56"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/classification/simple_prediction.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 24"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 24"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 24"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 24"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/classification/classifiy_with_validation.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 52"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 52"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 7",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 52"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 52"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/classification/multi_prediction.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 24"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 24"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 24"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 24"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/extracting-pii/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 51",
+      "LLM call without explicit temperature parameter at line 6"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 51"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 51"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 51"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/extract-table/run_vision_org_table.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 59",
+      "LLM call without explicit temperature parameter at line 17"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 59"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 59"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 59"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/extract-table/run_vision_receipt.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 35",
+      "LLM call without explicit temperature parameter at line 7"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 35"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 35"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 35"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/extract-table/test.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/extract-table/run_vision_langsmith.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 17",
+      "LLM call without explicit temperature parameter at line 81"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 81"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 81"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 81"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/extract-table/run_vision_org.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/extract-table/run_vision.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 79",
+      "LLM call without explicit temperature parameter at line 17"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 79"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 79"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 79"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/open_source_examples/openrouter.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18",
+      "LLM call without explicit temperature parameter at line 44"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 44"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 44"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 44"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/open_source_examples/perplexity.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18",
+      "LLM call without explicit temperature parameter at line 56"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 56"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 56"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 56"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/open_source_examples/runpod.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18",
+      "LLM call without explicit temperature parameter at line 45"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 45"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 45"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 45"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/query_planner_execution/query_planner_execution.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 147",
+      "LLM pipeline call without structured output at line 134"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/cohere/cohere.py": {
+    "R27": [
+      "LLM chat call without a system message at line 30"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 30"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 30"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/safer_sql_example/safe_sql.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 60"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 60"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/simple-extraction/maybe_user.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 20"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 20"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 20"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/simple-extraction/user.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 17"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 17"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 17"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 17"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 17"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/multiple_search_queries/segment_search_queries.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 66"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 66"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/youtube-clips/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 71"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 71"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 7",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 71"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 71"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/match_language/run_v2.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 61"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 61"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 61"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 61"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/match_language/run_v1.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 58"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 58"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 58"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 58"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/parallel/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20",
+      "LLM call without explicit temperature parameter at line 24"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 24"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 24"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/stream_action_items/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 10"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 53"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 53"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 53"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/avail/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9",
+      "LLM call without explicit temperature parameter at line 64"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 64"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 64"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 64"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/avail/run_mixtral.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 10"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/validated-multiclass/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 46"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 46"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 46"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/retry/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6",
+      "LLM call without explicit temperature parameter at line 20"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 20"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 20"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/citation_with_extraction/citation_fuzzy_match.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 84"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 84"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 84"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/citation_with_extraction/main.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 16"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 84"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 84"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/proscons/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 22",
+      "LLM call without explicit temperature parameter at line 15"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 22"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 22"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 22"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 22"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/learn-async/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 32"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 32"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 32"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 32"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 32"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/tenacity-benchmarks/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 42",
+      "LLM call without explicit temperature parameter at line 125",
+      "LLM call without explicit temperature parameter at line 144",
+      "LLM call without explicit temperature parameter at line 247"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 125",
+      "LLM call without model version pinning at line 144"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 125",
+      "LLM chat call without a system message at line 144"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 125",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 144"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 125",
+      "LLM pipeline call without structured output at line 144"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/batch-classification/run-cache.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 57"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 57"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 57"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 57"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 57"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/batch-classification/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 58"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 58"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 58"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 58"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 58"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/batch-classification/run_langsmith.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 62"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 62"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 62"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 62"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 62"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/knowledge-graph/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8",
+      "LLM call without explicit temperature parameter at line 30"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 30"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 30"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 30"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 30"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/knowledge-graph/run_stream.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9",
+      "LLM call without explicit temperature parameter at line 61"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 61"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 61"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 61"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/gpt-engineer/refactor.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 66"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 66"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/gpt-engineer/generate.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 34"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 34"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/iterables/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 10"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/crm/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6",
+      "LLM call without explicit temperature parameter at line 42"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 42"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 42"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 42"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/groq/groq_example2.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 18"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 18"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 18"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 18"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/groq/groq_example.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 18"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 18"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 18"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 18"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/synethic-data/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6",
+      "LLM call without explicit temperature parameter at line 35"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 35"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 6",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 35"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 35"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/vision/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 45",
+      "LLM call without explicit temperature parameter at line 6"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 45"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 45"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 45"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/vision/run_table.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 15"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/vision/run_raw.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 4"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 20"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/vision/image_to_ad_copy.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 103",
+      "LLM call without explicit temperature parameter at line 106"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 118",
+      "LLM call without model version pinning at line 148"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 118"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 148"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 118",
+      "LLM pipeline call without structured output at line 148"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/vision/slides.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 54"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 65"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 65"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 65"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/youtube/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/asyncio-benchmarks/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 30",
+      "LLM call without explicit temperature parameter at line 60",
+      "LLM call without explicit temperature parameter at line 369"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 60",
+      "LLM call without model version pinning at line 369"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 60",
+      "LLM chat call without a system message at line 369"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 60",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 369"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 60",
+      "LLM pipeline call without structured output at line 369"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/youtube-flashcards/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 58"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 58"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/decimals/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 23"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 23"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 23"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 23"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/watsonx/watsonx.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 25"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 25"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 25"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 25"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/task_planner/task_planner_topological_sort.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 22"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 159"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 159"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/resolving-complex-entities/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 47"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 47"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 47"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 47"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/hooks/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 51",
+      "LLM call without explicit temperature parameter at line 102",
+      "LLM call without explicit temperature parameter at line 114",
+      "LLM call without explicit temperature parameter at line 139"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 102",
+      "LLM call without model version pinning at line 114",
+      "LLM call without model version pinning at line 139"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 102",
+      "LLM chat call without a system message at line 114",
+      "LLM chat call without a system message at line 139"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 51",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 102",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 114",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 139"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 102",
+      "LLM pipeline call without structured output at line 114",
+      "LLM pipeline call without structured output at line 139"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/citations/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 14",
+      "LLM call without explicit temperature parameter at line 95",
+      "LLM call without explicit temperature parameter at line 178"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 95",
+      "LLM call without model version pinning at line 178"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 95",
+      "LLM chat call without a system message at line 178"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 95",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 178"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 95",
+      "LLM pipeline call without structured output at line 178"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/logfire-fastapi/server.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 34",
+      "LLM call without explicit temperature parameter at line 67",
+      "LLM call without explicit temperature parameter at line 48"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 34",
+      "LLM call without model version pinning at line 67",
+      "LLM call without model version pinning at line 48"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 34",
+      "LLM chat call without a system message at line 67",
+      "LLM chat call without a system message at line 48"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 34",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 67",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 48"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 34",
+      "LLM pipeline call without structured output at line 67",
+      "LLM pipeline call without structured output at line 48"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/situate_context/run.py": {
+    "R27": [
+      "LLM chat call without a system message at line 31"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 31"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/llm-judge-relevance/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 5"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 5"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/union/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 49",
+      "LLM call without explicit temperature parameter at line 48"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 49"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 49"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 49"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 49"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/recursive_filepaths/parse_recursive_paths.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8",
+      "LLM call without explicit temperature parameter at line 92"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 92"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 92"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/anthropic/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 20"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/validators/citations.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6",
+      "LLM call without explicit temperature parameter at line 33"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 33"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 33"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 33"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 33"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/validators/chain_of_thought_validator.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8",
+      "LLM call without explicit temperature parameter at line 24"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 24"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 24"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/validators/moderation.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/validators/allm_validator.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 27"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 27"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 27"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 27"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/validators/llm_validator.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20",
+      "LLM call without explicit temperature parameter at line 94",
+      "LLM call without explicit temperature parameter at line 9",
+      "LLM call without explicit temperature parameter at line 71"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 20",
+      "LLM call without model version pinning at line 94",
+      "LLM call without model version pinning at line 71"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 94",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 71"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20",
+      "LLM pipeline call without structured output at line 94",
+      "LLM pipeline call without structured output at line 71"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/validators/competitors.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 27"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 27"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 27"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 27"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 27"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/multi-actions/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 89",
+      "LLM call without explicit temperature parameter at line 8"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 89"
+    ],
+    "R27": [
+      "Execution error:\nTraceback (most recent call last):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/specDetect4ai.py\", line 46, in analyze_file\n    rule_func(tree)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 2324, in rule_R27\n    if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1807, in hasNoSystemMessage\n    has = _messages_has_system_from_value(msgs_kw)\n  File \"/Users/bramss/Documents/ETS/PhD/Code_Smells_ML/Code_Smell_Detection/DSL/SpecDetect4AI/test_rules/R27/generated_rules_R27.py\", line 1800, in _messages_has_system_from_value\n    lst = _find_last_list_assignment(root, val.id, call_line)\nNameError: name '_find_last_list_assignment' is not defined\n"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 89"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 89"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/sqlmodel/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 35",
+      "LLM call without explicit temperature parameter at line 131",
+      "LLM call without explicit temperature parameter at line 194",
+      "LLM call without explicit temperature parameter at line 148",
+      "LLM call without explicit temperature parameter at line 165"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 131",
+      "LLM call without model version pinning at line 194",
+      "LLM call without model version pinning at line 148",
+      "LLM call without model version pinning at line 165"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 131",
+      "LLM chat call without a system message at line 194",
+      "LLM chat call without a system message at line 148",
+      "LLM chat call without a system message at line 165"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 131",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 194",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 148",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 165"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 131",
+      "LLM pipeline call without structured output at line 194",
+      "LLM pipeline call without structured output at line 148",
+      "LLM pipeline call without structured output at line 165"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/partial_streaming/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/partial_streaming/benchmark.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 10"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/chain-of-density/chain_of_density.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 7",
+      "LLM call without explicit temperature parameter at line 100",
+      "LLM call without explicit temperature parameter at line 118"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 100",
+      "LLM call without model version pinning at line 118"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 100"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 100",
+      "LLM pipeline call without structured output at line 118"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/chain-of-density/finetune.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 10"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/caching_prototype/run_real.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20",
+      "LLM call without explicit temperature parameter at line 61",
+      "LLM call without explicit temperature parameter at line 106",
+      "LLM call without explicit temperature parameter at line 121",
+      "LLM call without explicit temperature parameter at line 175",
+      "LLM call without explicit temperature parameter at line 226"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/openai-audio/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18",
+      "LLM call without explicit temperature parameter at line 7"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 18"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 18"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 18"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 18"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/caching/example_redis.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9",
+      "LLM call without explicit temperature parameter at line 46"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 46"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 46"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 46"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 46"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/caching/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 34",
+      "LLM call without explicit temperature parameter at line 132",
+      "LLM call without explicit temperature parameter at line 178",
+      "LLM call without explicit temperature parameter at line 244",
+      "LLM call without explicit temperature parameter at line 321",
+      "LLM call without explicit temperature parameter at line 334",
+      "LLM call without explicit temperature parameter at line 356",
+      "LLM call without explicit temperature parameter at line 465"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 132",
+      "LLM call without model version pinning at line 178",
+      "LLM call without model version pinning at line 244",
+      "LLM call without model version pinning at line 321",
+      "LLM call without model version pinning at line 334",
+      "LLM call without model version pinning at line 356",
+      "LLM call without model version pinning at line 465"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 132",
+      "LLM chat call without a system message at line 178",
+      "LLM chat call without a system message at line 244",
+      "LLM chat call without a system message at line 321",
+      "LLM chat call without a system message at line 334",
+      "LLM chat call without a system message at line 356",
+      "LLM chat call without a system message at line 465"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 132",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 178",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 244",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 321",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 334",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 356",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 465"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 132",
+      "LLM pipeline call without structured output at line 178",
+      "LLM pipeline call without structured output at line 244",
+      "LLM pipeline call without structured output at line 321",
+      "LLM pipeline call without structured output at line 334",
+      "LLM pipeline call without structured output at line 356",
+      "LLM pipeline call without structured output at line 465"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/caching/example_diskcache.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 9",
+      "LLM call without explicit temperature parameter at line 66",
+      "LLM call without explicit temperature parameter at line 77"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 66",
+      "LLM call without model version pinning at line 77"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 66",
+      "LLM chat call without a system message at line 77"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 66",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 77"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 66",
+      "LLM pipeline call without structured output at line 77"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/caching/lru.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6",
+      "LLM call without explicit temperature parameter at line 16"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 16"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 16"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 16"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 16"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/auto-ticketer/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8",
+      "LLM call without explicit temperature parameter at line 53"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 53"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 53"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 53"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/logging/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 19",
+      "LLM call without explicit temperature parameter at line 11"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 19"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 19"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 19",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 11"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 19"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/codegen-from-schema/run.py": {
+    "R27": [
+      "LLM chat call without a system message at line 38"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 38"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 38"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/automodel/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 48",
+      "LLM call without explicit temperature parameter at line 28"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 48",
+      "LLM chat call without a system message at line 28"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 48",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 28"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 48",
+      "LLM pipeline call without structured output at line 28"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/mistral/mistral.py": {
+    "R27": [
+      "LLM chat call without a system message at line 22"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 22"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 22"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/fizzbuzz/run.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6",
+      "LLM call without explicit temperature parameter at line 10"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 10"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 10"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 10"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 10"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/patching/anyscale.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 25",
+      "LLM call without explicit temperature parameter at line 10"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 25"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 25"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 25"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 25"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/patching/oai.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 21",
+      "LLM call without explicit temperature parameter at line 9"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 21"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 21"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 21"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 21"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/patching/together.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 6",
+      "LLM call without explicit temperature parameter at line 23"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 23"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 23"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 6",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 23"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 23"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/examples/patching/pcalls.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 11",
+      "LLM call without explicit temperature parameter at line 31",
+      "LLM call without explicit temperature parameter at line 48",
+      "LLM call without explicit temperature parameter at line 69"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 31",
+      "LLM call without model version pinning at line 48",
+      "LLM call without model version pinning at line 69"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 48",
+      "LLM chat call without a system message at line 69"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 11",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 31",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 48",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 69"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 31",
+      "LLM pipeline call without structured output at line 48",
+      "LLM pipeline call without structured output at line 69"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/scripts/make_sitemap.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 125"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 125"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 125"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/scripts/make_desc.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 56"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 56"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 56"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/auto_client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 165",
+      "LLM call without explicit temperature parameter at line 455",
+      "LLM call without explicit temperature parameter at line 802",
+      "LLM call without explicit temperature parameter at line 880",
+      "LLM call without explicit temperature parameter at line 973"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 165",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 455",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 802",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 880",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 973"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/distil.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 126",
+      "LLM call without explicit temperature parameter at line 184"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 184"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 184"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/core/client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 772",
+      "LLM call without explicit temperature parameter at line 782"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 772",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 782"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 772",
+      "LLM pipeline call without structured output at line 782"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/providers/genai/client.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 74",
+      "LLM call without explicit temperature parameter at line 60"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 74",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 60"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/cli/files.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 13"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/cli/batch.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 414",
+      "LLM call without explicit temperature parameter at line 449"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/cli/jobs.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 13"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/batch/providers/openai.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 29",
+      "LLM call without explicit temperature parameter at line 72",
+      "LLM call without explicit temperature parameter at line 93",
+      "LLM call without explicit temperature parameter at line 149",
+      "LLM call without explicit temperature parameter at line 205",
+      "LLM call without explicit temperature parameter at line 216",
+      "LLM call without explicit temperature parameter at line 232"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/567-labs__instructor/instructor/validation/llm_validators.py": {
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 51"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 51"
+    ]
+  }
+}

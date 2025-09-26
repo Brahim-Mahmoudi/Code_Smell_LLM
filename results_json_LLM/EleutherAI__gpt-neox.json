@@ -1,0 +1,29 @@
+{
+  "/Users/bramss/Desktop/Extracted_Repo/EleutherAI__gpt-neox/tools/ckpts/convert_neox_to_hf.py": {
+    "R26": [
+      "LLM call without model version pinning at line 886"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/EleutherAI__gpt-neox/tools/ckpts/convert_hf_llama_to_neox.py": {
+    "R26": [
+      "LLM call without model version pinning at line 178",
+      "LLM call without model version pinning at line 175"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/EleutherAI__gpt-neox/tools/datasets/preprocess_data_with_chat_template.py": {
+    "R26": [
+      "LLM call without model version pinning at line 291",
+      "LLM call without model version pinning at line 143"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/EleutherAI__gpt-neox/post-training/dpo_data.py": {
+    "R26": [
+      "LLM call without model version pinning at line 44"
+    ]
+  },
+  "/Users/bramss/Desktop/Extracted_Repo/EleutherAI__gpt-neox/post-training/online_data_example_llama3.py": {
+    "R26": [
+      "LLM call without model version pinning at line 155"
+    ]
+  }
+}
