@@ -14,7 +14,7 @@
 
 
 
-## 1) `Catalog_Construction/`
+## 1) `Catalog_Construction`
 
 This folder contains the **formal specification** of each LLM code smell, including:
 
@@ -35,14 +35,14 @@ and, for each code smell:
 
 ---
 
-## 2) `Detection/`
+## 2) `Detection`
 
 This folder provides:
 - **SpecDetect4LLM**, the extended version of SpecDetect4AI with the **new detection rules** for LLM integration
 
 ---
 
-## 3) `Prevalence/`
+## 3) `Prevalence`
 
 This folder provides:
 - The **dataset** used in our study
