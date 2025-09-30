@@ -1,16 +1,28 @@
-![Overview](static/LLM_Smells.png)
+![Overview](static/MethodoLLMP.png)
 
-# LLM Code Smells — Replication Package
+# LLM integration Code Smells — Replication Package
 
-Companion materials for our study on specifying and detecting **LLM integration code smells**.
+> Companion materials for **specifying**, **detecting**, and **measuring the prevalence** of *LLM integration code smells*.
+
+![Overview](static/MethodoLLMP.png)
+
+---
+
+## Repository Layout (aligned with the 3-step methodology)
+
+
 
 ## Repository Structure
 
 
 
-## 1) `specification/`
+## 1) `Catalog_Construction/`
 
 This folder contains the **formal specification** of each LLM code smell, including:
+
+-**Smell_Extraction**, all the procedures and values extracted to create the code smell catalog.
+
+and, for each code smell:
 - **Name & Intent**
 - **Context**
 - **Problem**
@@ -19,14 +31,24 @@ This folder contains the **formal specification** of each LLM code smell, includ
 - **Minimal Example (bad → good)**
 - **Sources/References**
 
-> Use these files to understand the semantics, rationale, and expected fixes for each smell.
+
+
+> Use these files to understand the semantics, rationale, and expected fixes for each code smell.
 
 ---
 
-## 2) `detection/`
+## 2) `Detection/`
 
 This folder provides:
-- **SpecDetect4AI** with the **new detection rules** for LLM integration
+- **SpecDetect4LLM**, the extended version of SpecDetect4AI with the **new detection rules** for LLM integration
+
+---
+
+## 3) `Prevalence/`
+
+This folder provides:
 - The **dataset** used in our study
+-**Results** (JSON)
 - **Extracted metrics** (CSV/Parquet)
 - Generated **charts/figures** (PNG)
+
