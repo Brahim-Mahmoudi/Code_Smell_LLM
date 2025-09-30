@@ -182,3 +182,59 @@ The DSL uses semantic predicates over AST nodes. Below is a list of predicates u
 - `usesPythonLoopOnTensorFlow(node)`  
   Returns True if a native Python loop is used on a TensorFlow tensor.
 
+
+
+## LLM Predicates
+
+- `isLLMCall(node)`  
+  Returns True if the node is an LLM API call (OpenAI, Anthropic, LangChain, HuggingFace pipeline, etc.)
+
+- `hasNoTemperatureParameter(node)`  
+  Returns True if the LLM call has no temperature parameter set
+
+- `isModelVersionedLLMCall(node)`  
+  Returns True if the call is a versioned model API (OpenAI/Anthropic model=..., Gemini, HF from_pretrained, etc.)
+
+- `hasNoModelVersionPinning(node)`  
+  Returns True if the model version is not pinned (uses 'latest', no revision specified)
+
+- `isRoleBasedLLMChat(node)`  
+  Returns True if the call is a role-based chat API expecting system messages
+
+- `hasNoSystemMessage(node)`  
+  Returns True if no system message/instruction is provided in the chat call
+
+- `hasNoBoundedMetrics(node)`  
+  Returns True if the call has no output bounds (max_tokens, timeout) set
+
+- `isNotSDKClient(node)`  
+  Returns True if the call does not use the official OpenAI SDK client
+
+- `isPipelineCall(node)`  
+  Returns True if the node is an LLM pipeline call (StructuredOutputParser, LLMChain, etc.)
+
+- `hasNoStructuredOutput(node)`  
+  Returns True if no structured output format (JSON, parser) is specified
+
+- `isUnstructuredLLMCallInPipeline(node)`  
+  Returns True if an LLM call in a pipeline lacks structured output handling
+
+- `isTextGeneratingCall(node)`  
+  Returns True if the call generates text (create, generate_content, run, etc.)
+
+## LLM Helper Functions
+
+- `_kw_value(node, name)`  
+  Returns the value of a named argument in a call, or None if not found
+
+- `_dict_has_key_str(d, wanted)`  
+  Returns True if the AST dictionary has the specified constant key
+
+- `_list_has_system_message(lst)`  
+  Returns True if the list contains a system role message
+
+- `_find_last_assignment(root, varname, before_line)`  
+  Returns the last AST assignment to the variable before the given line
+
+- `_get_root(node)`  
+  Returns the root AST node by climbing up from the given node
