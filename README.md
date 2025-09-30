@@ -1,10 +1,8 @@
-![Overview](static/MethodoLLMP.png)
+![Overview](static/MethoLLMP.png)
 
 # LLM integration Code Smells — Replication Package
 
 > Companion materials for **specifying**, **detecting**, and **measuring the prevalence** of *LLM integration code smells*.
-
-![Overview](static/MethodoLLMP.png)
 
 ---
 
