@@ -67,7 +67,7 @@ The diagram records the running tallies (e.g., 69 papers retrieved initially; 53
 
 ## 4) Data Extraction & Coding
 
-For each included item, we extracted to a structured sheet:
+For each included item, we extracted:
 
 - Bibliographic info (venue, year, link)
 - Context (API/SDK/runtime, deployment setting)
