@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 
-for X in {1..29} "11bis"
-#for X in "11bis"
+for X in {25..29} 
+
 do
   echo "=== Analyze of R$X ==="
 
