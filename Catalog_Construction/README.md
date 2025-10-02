@@ -99,11 +99,11 @@ For each code smell we have:
 - **Minimal Example (bad → good)**
 - **Sources/References**
 
-[No_Structured_Output](Code_Smells_Description/No_Structured_Output.md)
-[No_System_Message](Code_Smells_Description/No_System_Message.md)
-[No_Version_Model_Pinning](Code_Smells_Description/No_Version_Model_Pinning.md)
-[Temperature_Not_Explicitly_Set](Code_Smells_Description/Temperature_Not_Explicitly_Set.md)
-[Unbounded_Max_Metrics](Code_Smells_Description/Unbounded_Max_Metrics.md)
+- [No_Structured_Output](Code_Smells_Description/No_Structured_Output.md)
+- [No_System_Message](Code_Smells_Description/No_System_Message.md)
+- [No_Version_Model_Pinning](Code_Smells_Description/No_Version_Model_Pinning.md)
+- [Temperature_Not_Explicitly_Set](Code_Smells_Description/Temperature_Not_Explicitly_Set.md)
+- [Unbounded_Max_Metrics](Code_Smells_Description/Unbounded_Max_Metrics.md)
 
 ### Pipeline Stages
 
