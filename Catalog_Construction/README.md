@@ -14,7 +14,8 @@ We target code-level issues that arise when integrating Large Language Models (L
 
 We combined topic, platform/vendor, and software-quality facets using Boolean operators (Figure 1).
 
-![Search facets and Boolean composition](Query.png)
+![Search Query and Boolean composition](static/Query.png)
+
 *Figure 1 — Query schema used across data sources.*
 
 ### 2.1 Data Sources
@@ -41,7 +42,7 @@ We also ran focused variants per platform, smell family, and synonym sets (e.g.,
 
 We followed a PRISMA-like funnel (Figure 2).
 
-![Selection pipeline with counts](Paper_Selection_Process.png)
+![Selection pipeline with counts](static/Paper_Selection_Process.png)
 *Figure 2 — Selection pipeline with running counts from our search.*
 
 ### Steps
@@ -84,8 +85,25 @@ Two reviewers independently coded items and reconciled disagreements. We compute
 
 We synthesized the evidence into a catalog construction pipeline (Figure 3).
 
-![Catalog construction pipeline](Extraction_Methodology.png)
+![Catalog construction pipeline](static/Extraction_Methodology.png)
 *Figure 3 — Catalog construction and validation pipeline.*
+
+
+Following this methodology, we extracted 5 new LLM integration code smells:
+For each code smell we have:
+- **Name & Intent**
+- **Context**
+- **Problem**
+- **Solution**
+- **Effect on Software Quality**
+- **Minimal Example (bad → good)**
+- **Sources/References**
+
+[No_Structured_Output](Code_Smells_Description/No_Structured_Output.md)
+[No_System_Message](Code_Smells_Description/No_System_Message.md)
+[No_Version_Model_Pinning](Code_Smells_Description/No_Version_Model_Pinning.md)
+[Temperature_Not_Explicitly_Set](Code_Smells_Description/Temperature_Not_Explicitly_Set.md)
+[Unbounded_Max_Metrics](Code_Smells_Description/Unbounded_Max_Metrics.md)
 
 ### Pipeline Stages
 
