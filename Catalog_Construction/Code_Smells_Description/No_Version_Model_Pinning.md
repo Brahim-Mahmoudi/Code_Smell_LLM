@@ -84,9 +84,13 @@ resp = client.chat.completions.create(
 
 - Wilson, G., Aruliah, D. A., Brown, C. T., et al. (2014). Best Practices for Scientific Computing. PLoS Biology. https://pmc.ncbi.nlm.nih.gov/articles/PMC3886731/
 
+- Morishige, M., & Koshihara, R. (2025). Ensuring Reproducibility in Generative AI Systems for General Use Cases: A Framework for Regression Testing and Open Datasets. doi:10.48550/arXiv.2505.02854
+
 - Albertoni, R., Colantonio, S., Skrzypczyński, P., & Stefanowski, J. (2023). Reproducibility of Machine Learning: Terminology, Recommendations and Open Issues. arXiv. https://arxiv.org/abs/2302.12691
 
 - Reyes, F., Gamage, Y., Skoglund, G., Baudry, B., & Monperrus, M. (2024). BUMP: A Benchmark of Reproducible Breaking Dependency Updates. arXiv / SANER 2024. https://arxiv.org/abs/2401.09906
+
+- Venturini, D., Cogo, FR., Polato, I., Gerosa, MA., and Wiese, IS. (2023). I Depended on You and You Broke Me: An Empirical Study of Manifesting Breaking Changes in Client Packages. arXiv:2301.04563 doi:10.48550/arXiv.2301.04563 TOSEM, 2023.
 
 ***Official Documentation***
 
