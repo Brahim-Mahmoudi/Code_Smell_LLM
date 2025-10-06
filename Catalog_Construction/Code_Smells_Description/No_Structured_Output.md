@@ -4,11 +4,11 @@
 
 **No Structured Output (NSO)**. 
 
-***Intent***: prevent consuming free-form LLM text where typed fields (e.g., JSON) are expected by enforcing an output schema and validating strictly at the boundary before any parsing, indexing, execution, or storage. In our empirical study, NSO affects 40.50% (81/200) of systems with 80.00% precision in the audited sample.
+***Intent***: prevent consuming free-form LLM text where typed fields (e.g., JSON) are expected by enforcing and validating an output schema strictly at the boundary before any parsing, indexing, execution, or storage. In our empirical study, NSO affects 40.50% (81/200) of systems with 80.00% precision in the audited sample.
 
 ***Context***
 
-NSO arises when LLM-integrating systems expect structured/typed outputs but instead rely on free-form inference text and subsequently parse/index/execute it as if it were structured. This is common across assistants/agents, data pipelines, and any integration that later treats the model response as structured data.
+NSO arises when LLM-integrating systems expect structured/typed outputs but instead rely on free-form inference text in their prompt and subsequently parse/index/execute it as structured content. This is common across assistants/agents, data pipelines, automation inferences and any integration that later treats the model response as structured data.
 
 ***Problem***
 
@@ -20,15 +20,15 @@ Without an enforced output schema, the system can receive free-form text where s
 - Breaking parsers and downstream steps
 - Reliability degradation as runs become inconsistent
 - Stores accumulating corrupted/hallucinated values
-- Execution/storage/display paths facing injection risks
+- Execution/storage/display paths facing higher injection risks
 
 ***Solution***
 
-Enforce structured output at the API boundary and validate before use.
+Enforce structured output at the API boundary and validate the response's format before use.
 
 ***OpenAI Implementation***
 - Declare JSON Schema via `response_format` (chat completions) or `text.format` (responses)
-- Use Python SDK to bind formats to classes
+- Alternatively Use Python SDK to bind formats to classes
 - Always validate results to handle refusals/errors
 
 
