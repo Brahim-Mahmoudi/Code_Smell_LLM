@@ -12,7 +12,7 @@ Modern chat LLM interfaces (OpenAI, Azure OpenAI, Anthropic, etc.) model dialogu
 
 ## Problem
 
-Without a system message, the assistant receives no up-front, global constraints, creating multiple failure modes:
+Without a system message, the assistant receives no up-front, global constraints, creating issues:
 
 - Ungrounded behavior & drift across turns
 - Lower specificity & relevance 
@@ -117,10 +117,9 @@ data = json.loads(resp.choices[0].message.content)
 
 ***Papers***
 
+- Minbyul Jeong, Jungho Cho, Minsoo Khang, Dawoon Jung, and Teakgyu Hong. 2025. System Message Generation for User Preferences using Open-Source Models. arXiv. https://arxiv.org/abs/2502.11330
 
-- Qin, Y., Zhang, T., Shen, Y., Luo, W., Sun, H., Zhang, Y., Qiao, Y., Chen, W., Zhou, Z., Zhang, W., & Cui, B. (2024). SysBench: Can Large Language Models Follow System Messages? arXiv. https://doi.org/10.48550/arXiv.2408.10943
-
-- Ronanki, K., Cabrero-Daniel, B., & Berger, C. (2024). Prompt Smells: An Omen for Undesirable Generative AI Outputs. arXiv. https://doi.org/10.48550/arXiv.2401.12611
+- Anna Neumann, Elisabeth Kirsten, Muhammad Bilal Zafar, and Jatinder Singh. 2025. Position is Power: System Prompts as a Mechanism of Bias in Large Language Models (LLMs). In Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT ’25). ACM, 573–598. doi:10.1145/3715275.3732038
 
 ***Official Documentation***
 
@@ -133,4 +132,5 @@ data = json.loads(resp.choices[0].message.content)
 ***Engineering Blogs***
 - [PromptHub — System Messages: Best Practices, Real-world Experiments & Prompt Injection Protectors (2025)]( https://www.prompthub.us/blog/everything-system-messages-how-to-use-them-real-world-experiments-prompt-injection-protectors)
 
-- [PromptHub — The Difference Between System Messages and User Messages (2024–2025)]( https://www.prompthub.us/blog/the-difference-between-system-messages-and-user-messages-in-prompt-engineering)
+- [Stack Overflow — What is the use case of System role](https://stackoverflow.com/questions/76272624/what-is-the-use-case-of-system-role)
+
