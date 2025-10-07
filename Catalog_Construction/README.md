@@ -14,9 +14,9 @@ We target code-level issues that arise when integrating Large Language Models (L
 
 We combined topic, platform/vendor, and software-quality facets using Boolean operators (Figure 1).
 
-![Search Query and Boolean composition](static/Query.png)
 
-*Figure 1 — Query schema used across data sources.*
+
+
 
 ### 2.1 Data Sources
 
@@ -27,23 +27,61 @@ We combined topic, platform/vendor, and software-quality facets using Boolean op
 
 We instantiated the diagram into reproducible strings (adapt prefixes/suffixes per portal):
 
+- **Academic :** : 
 ```sql
-( "large language model" OR LLM OR "artificial intelligence" OR AI OR RAG )
+( large language model OR LLM  OR retrieval-Augmented Generation OR  RAG OR intelligent systems OR foundation models OR transformers )
 AND
-( "agent defects" OR "code smells" OR "code defects" OR "prompt smells"
-  OR "code quality" OR "best practices" OR refactoring OR "technical debt" )
-AND
-( OpenAI OR Anthropic OR Gemini OR Ollama OR Transformer OR Transformers )
+( agent defects OR code smells OR code defects OR prompt smells OR code quality OR best practices OR refactoring OR technical debt OR common coding mistakes OR coding anti-pattern OR setting OR inference OR inference practice OR inference quality OR failures OR Reliability OR Robustness OR Performance OR Maintanbility )
 ```
 
-We also ran focused variants per platform, smell family, and synonym sets (e.g., anti-pattern, pitfall, bad practice, failure mode).
+- **ACM :**
+```sql 
+Title:(("large language model" OR LLM OR "foundation models" OR transformers) AND ("code smells" OR "code defects" OR "prompt smells" OR "code quality" OR "best practices" OR "technical debt" OR "common coding mistakes" OR "anti-pattern" OR "inference quality")) OR Keyword:(("large language model" OR LLM OR "foundation models" OR transformers) AND ("code smells" OR "code defects" OR "prompt smells" OR "code quality" OR "best practices" OR "technical debt" OR "common coding mistakes" OR "anti-pattern")) "filter": {ACM Content: DL}
+
+```
+
+- **IEE Explore :**
+```sql 
+(("Document Title":"large language model" OR "Document Title":LLM OR "Document Title":"foundation models" OR "Document Title":transformers 
+OR "Author Keywords":"large language model" OR "Author Keywords":LLM OR "Author Keywords":"foundation models" OR "Author Keywords":transformers)
+AND
+("Document Title":"code smells" OR "Document Title":"code defects" OR "Document Title":"prompt smells" OR "Document Title":"code quality" OR "Document Title":"best practices" OR "Document Title":"technical debt" OR "Document Title":"common coding mistakes" OR "Document Title":"anti-pattern" OR "Document Title":"inference quality" OR "Document Title":failures 
+OR "Author Keywords":"code smells" OR "Author Keywords":"code defects" OR "Author Keywords":"prompt smells" OR "Author Keywords":"code quality" OR "Author Keywords":"best practices" OR "Author Keywords":"technical debt" OR "Author Keywords":"common coding mistakes" OR "Author Keywords":"anti-pattern" OR "Author Keywords":"inference quality" OR "Author Keywords":failures))
+
+```
+- **Scopus :**
+```sql 
+TITLE ( ( "large language model" OR LLM OR "foundation models" OR transformers ) AND ( "code smells" OR "code defects" OR "prompt smells" OR "code quality" OR "best practices" OR "technical debt" OR "common coding mistakes" OR "anti-pattern" OR inference OR "inference quality" OR failures ) ) AND PUBYEAR > 2016 AND PUBYEAR < 2026 AND ( LIMIT-TO ( SUBJAREA , "COMP" ) )
+```
+
+--**ArXiv :** See script 
+```sql
+((ti:"large language model" OR abs:"large language model" OR ti:"LLM" OR abs:"LLM" OR ti:"foundation models" OR abs:"foundation models" OR ti:"transformers" OR abs:"transformers"))
+
+AND
+
+((ti:"code smells" OR abs:"code smells" OR ti:"code defects" OR abs:"code defects" OR ti:"prompt smells" OR abs:"prompt smells" OR ti:"code quality" OR abs:"code quality" OR ti:"best practices" OR abs:"best practices" OR ti:"technical debt" OR abs:"technical debt" OR ti:"common coding mistakes" OR abs:"common coding mistakes" OR ti:"anti-pattern" OR abs:"anti-pattern" OR ti:"inference quality" OR abs:"inference quality" OR ti:"failures" OR abs:"failures"))
+```
+ 
+
+
+
+- **Grey literature :**
+
+```sql
+( large language model OR LLM OR OpenAI OR Anthropic OR Gemini OR Ollama OR Claude OR xAI OR Qwen OR Deepseek OR Cohere OR llama OR HuggingFace llm )
+AND
+( agent defects OR code smells OR code defects OR prompt smells OR code quality OR best practices OR refactoring OR technical debt OR common coding mistakes OR coding anti-pattern OR setting OR inference OR inference practice OR inference quality OR failures OR Reliability OR Robustness OR Performance OR Maintanbility OR paremeters OR API endpoints OR chat completion OR temperature OR model 'version' OR system role OR message OR token 'limit' OR structure output)
+
+```
+
+
 
 ## 3) Study Selection Workflow
 
-We followed a PRISMA-like funnel (Figure 2).
+We followed a PRISMA-like funnel.
 
-![Selection pipeline with counts](static/Paper_Selection_Process.png)
-*Figure 2 — Selection pipeline with running counts from our search.*
+
 
 ### Steps
 
@@ -98,6 +136,8 @@ For each code smell we have:
 - **Effect on Software Quality**
 - **Minimal Example (bad → good)**
 - **Sources/References**
+
+- **Here are the code smells descriptions** :
 
 - [No_Structured_Output](Code_Smells_Description/No_Structured_Output.md)
 - [No_System_Message](Code_Smells_Description/No_System_Message.md)
