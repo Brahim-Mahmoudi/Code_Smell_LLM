@@ -54,7 +54,7 @@ OR "Author Keywords":"code smells" OR "Author Keywords":"code defects" OR "Autho
 TITLE ( ( "large language model" OR LLM OR "foundation models" OR transformers ) AND ( "code smells" OR "code defects" OR "prompt smells" OR "code quality" OR "best practices" OR "technical debt" OR "common coding mistakes" OR "anti-pattern" OR inference OR "inference quality" OR failures ) ) AND PUBYEAR > 2016 AND PUBYEAR < 2026 AND ( LIMIT-TO ( SUBJAREA , "COMP" ) )
 ```
 
---**ArXiv :** See script 
+- **ArXiv :** See script 
 ```sql
 ((ti:"large language model" OR abs:"large language model" OR ti:"LLM" OR abs:"LLM" OR ti:"foundation models" OR abs:"foundation models" OR ti:"transformers" OR abs:"transformers"))
 
