@@ -66,14 +66,7 @@ AND
 
 
 
-- **Grey literature :**
 
-```sql
-( large language model OR LLM OR OpenAI OR Anthropic OR Gemini OR Ollama OR Claude OR xAI OR Qwen OR Deepseek OR Cohere OR llama OR HuggingFace llm )
-AND
-( agent defects OR code smells OR code defects OR prompt smells OR code quality OR best practices OR refactoring OR technical debt OR common coding mistakes OR coding anti-pattern OR setting OR inference OR inference practice OR inference quality OR failures OR Reliability OR Robustness OR Performance OR Maintanbility OR paremeters OR API endpoints OR chat completion OR temperature OR model 'version' OR system role OR message OR token 'limit' OR structure output)
-
-```
 
 
 
@@ -90,7 +83,6 @@ We followed a PRISMA-like funnel.
 3. Snowballing (backward/forward) on the surviving set.
 4. Full-text screening and eligibility decision.
 
-The diagram records the running tallies (e.g., 69 papers retrieved initially; 53 after title/abstract; 37 after snowballing; 11 included after full-text). In parallel, we curated 45 grey-literature items.
 
 ### Inclusion Criteria
 
