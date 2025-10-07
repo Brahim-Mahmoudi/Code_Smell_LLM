@@ -137,7 +137,7 @@ For each code smell we have:
 - **Minimal Example (bad → good)**
 - **Sources/References**
 
-- **Here are the code smells descriptions** :
+### **Here are the code smells descriptions** :
 
 - [No_Structured_Output](Code_Smells_Description/No_Structured_Output.md)
 - [No_System_Message](Code_Smells_Description/No_System_Message.md)
