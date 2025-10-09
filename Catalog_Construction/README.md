@@ -67,7 +67,7 @@ To enrich and validate observations, we also consulted grey literature:
 
 The goal was to triangulate perspectives: academic publications provide structured, systematic views of problems, while grey literature reflects practical developer concerns and field-tested guidance.
 
-This triangulation was essential to validate each candidate code smell. For every poor practice identified in academic sources, we looked for supporting evidence in blogs or documentation (and vice versa). Items mentioned by only a single source were treated cautiously—or discarded if they lacked corroboration.
+This triangulation was essential to validate each candidate code smell. For every poor practice identified in academic sources, we looked for supporting evidence in blogs or documentation (and vice versa). Items mentioned by only a single source were treated cautiously or discarded if they lacked corroboration.
 
 ### Final Extraction and Formalization of Code Smells
 
@@ -87,7 +87,7 @@ This documentation structure follows established code smell catalogs in software
 
 
 
-## 7) Threats to Validity
+## 4) Threats to Validity
 
 - Search bias: mitigated via multiple portals, synonym expansion, and snowballing.
 - Grey-literature credibility: mitigated by favoring provider docs and well-established engineering sources.
