@@ -24,28 +24,33 @@ We target code-level issues that arise when integrating Large Language Models (L
 ## 2) Data Sources
 
 - **Academic**: Google Scholar, ACM Digital Library, IEEE Xplore, arXiv, Scopus.
-- **Grey literature**: provider docs, engineering blogs, cookbooks, issue trackers, Q&A, and technical posts.
+- **Grey literature and Empirical Artifacts**: provider docs, engineering blogs, providers' cookbooks, GitHub repositories, Stack Overflow posts, issue trackers, Q&A, and technical posts.
 
 
 
 
 ## 3) Literature Analysis Methodology
 
-### Manual Literature Search in Academic Sources
+### Literature Search in Academic Sources
 
-The first step was a manual bibliographic search across established academic portals. Simple queries were issued on platforms such as Google Scholar, IEEE Xplore, and the ACM Digital Library, as well as open repositories like arXiv. These searches aimed to gather publications that address—directly or indirectly—code-level LLM integration. Because the notion of "LLM code smell" was not yet formalized, we employed a broad set of keywords around defects, poor practices, and recommendations for using LLMs in software. Examples include "LLM integration issues", "LLM best practices in code", and "pitfalls of using LLM APIs".
+The first step was a bibliographic search across established academic portals. Simple queries were issued on platforms such as Google Scholar, IEEE Xplore, and the ACM Digital Library, as well as open repositories like arXiv. These searches aimed to gather publications that address—directly or indirectly—code-level LLM integration. Because the notion of "LLM code smell" was not yet specified, we employed a broad set of keywords around defects, poor practices, and recommendations for using LLMs in software. Examples include "LLM integration issues", "LLM best practices in code", and "LLM APIs Misuses".
 
 This manual search produced an initial corpus of potentially relevant academic articles. At this stage, the emphasis was on coverage rather than precision: we preferred to cast a wide net to avoid missing important sources. The process was entirely manual and qualitative—no automated crawling scripts were used. The goal was to prioritize deep understanding of content over raw volume.
 
-### Selection and Filtering of Relevant Sources
+### Selection and Filtering of Relevant Sources (Screening)
 
 After assembling the initial list from the queries, we manually screened sources for relevance. Each result was examined by reading its title and abstract to quickly assess whether it addressed concrete coding or software engineering aspects of LLM integration. Selection criteria included:
 
 - The source explicitly discussed LLM integration in code (e.g., LLM API calls, parameter configurations, architectural concerns around LLMs).
-- Ideally, it identified concrete problems, limitations, or pitfalls of LLM integration, or offered actionable coding recommendations.
+- Ideally, it identified concrete problems, limitations, or pitfalls of LLM integration, offered actionable coding recommendations, or assessed the effect of some practices or parameter settings.
 - Work that was purely conceptual or too high-level was excluded.
 
 Applying these criteria, we refined the initial corpus and retained the most relevant articles for in-depth reading. This manual triage narrowed the set to studies and reports likely to reveal recurrent poor coding practices when integrating LLMs in real projects.
+
+### Literature Catalog Expansion (Snowballing)
+
+To identify additional relevant studies that might not have surfaced through the initial searches, we expanded the literature catalog by examining both the references cited within the selected papers (backward snowballing) and the papers citing these works (forward snowballing). Each newly identified source was screened and filtered according to the same previously discussed criteria. 
+We also looked for other academic sources that did not directly focus on LLMs or their integration but that could still be useful to assess the effects of potential poor practices (such as uncontrolled query times or silently changing dependencies).
 
 ### In-Depth Reading and Analysis of Selected Sources
 
@@ -67,7 +72,7 @@ To enrich and validate observations, we also consulted grey literature:
 
 The goal was to triangulate perspectives: academic publications provide structured, systematic views of problems, while grey literature reflects practical developer concerns and field-tested guidance.
 
-This triangulation was essential to validate each candidate code smell. For every poor practice identified in academic sources, we looked for supporting evidence in blogs or documentation (and vice versa). Items mentioned by only a single source were treated cautiously or discarded if they lacked corroboration.
+This triangulation was essential to validate each candidate code smell. For every poor practice identified in academic sources, we looked for supporting evidence in blogs and official documentation. Items mentioned by only a single source were treated cautiously or discarded if they lacked corroboration.
 
 ### Final Extraction and Formalization of Code Smells
 
