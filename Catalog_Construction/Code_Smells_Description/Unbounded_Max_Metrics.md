@@ -125,3 +125,19 @@ def generate(prompt: str) -> str:
 ***Engineering Blogs***
 - [OpenAI Cookbook — How to handle rate limits?](https://cookbook.openai.com/examples/how_to_handle_rate_limits?utm_source=chatgpt.com)
 
+***Grey Literature***
+
+- [DataDog. LangChain expects at least one chunk from a streaming trace after timeout [Issue #14688]. In dd-trace-py (GitHub repository). GitHub.](https://github.com/DataDog/dd-trace-py/issues/14688)
+
+- [langchain-ai. Streaming inactivity timeout incorrectly aborts after total timeout (@langchain/openai v1.0.0-alpha.1) [Issue #9088]. In langchainjs (GitHub repository). GitHub.](https://github.com/langchain-ai/langchainjs/issues/9088)
+
+- [jcartervi. Add production-ready Pipedrive CRM integration with deduplication and async sync [Pull request #36]. In MyYachtValue (GitHub repository). GitHub.](https://github.com/jcartervi/MyYachtValue/pull/36)
+
+- [jtlicardo. Assistant API WAITING timeout when self-hosting on own instance [Issue #33]. In bpmn-assistant (GitHub repository). GitHub.](https://github.com/jtlicardo/bpmn-assistant/issues/33)
+[eslavnov. UMM: Timeout [Issue #19]. In ttmg_server (GitHub repository). GitHub.](https://github.com/eslavnov/ttmg_server/issues/19)
+
+- [RooCodeInc. fix — handle empty stream responses from GLM models [Pull request #8483]. In Roo-Code (GitHub repository). GitHub.](https://github.com/RooCodeInc/Roo-Code/pull/8483)
+
+-[Stack Overflow. RAG — “connection to OpenAI API failed with status: 400 error: -19577 is less than the minimum of 1 — max_tokens” (Accepted answer).](https://stackoverflow.com/questions/77172214/rag-error-connection-to-openai-api-failed-with-status-400-error-19577)
+
+-[Stack Overflow. AI server crashes when I make a request after adding OpenAI code (Accepted answer).](https://stackoverflow.com/questions/77354317/ai-server-crashes-when-i-make-a-request-after-adding-openai-code)

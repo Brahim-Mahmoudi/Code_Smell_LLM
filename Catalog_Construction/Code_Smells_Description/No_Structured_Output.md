@@ -110,3 +110,14 @@ jsonschema.validate(instance=data, schema=user_schema)  # defense-in-depth
 - [Dev.to, Structuring LLM Outputs with Pydantic](https://dev.to/devasservice/a-practical-guide-on-structuring-llm-outputs-with-pydantic-50b4)
 - [Okareo, Validate the Output of LLM-Based Products](https://okareo.com/blog/posts/validate-llm-output)
 - [Modelmetry, Ensure LLM Output Adheres to a JSON Schema](https://modelmetry.com/blog/how-to-ensure-llm-output-adheres-to-a-json-schema)
+
+***Grey Literature***
+
+- [dgy516. test(functional) — streaming JSON missing required; completions logprobs structure [Pull request #60]. In vllm_cibench (GitHub repository). GitHub.]( https://github.com/dgy516/vllm_cibench/pull/60)
+
+- [vllm-project. Structured output is not correctly enforced when using GPT-OSS [Issue #23120]. In vllm (GitHub repository). GitHub. ](https://github.com/vllm-project/vllm/issues/23120)
+
+- [Microsoft. Python — OpenAI Responses client structured output does not work with streaming responses [Issue #238]. In agent-framework (GitHub repository). GitHub.]( https://github.com/microsoft/agent-framework/issues/238)
+
+- [BerriAI. Responses — add structured output for SDK [Pull request #14206]. In litellm (GitHub repository). GitHub.](https://github.com/BerriAI/litellm/pull/14206)
+

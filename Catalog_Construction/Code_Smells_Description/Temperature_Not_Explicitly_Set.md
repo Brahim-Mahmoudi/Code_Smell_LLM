@@ -98,3 +98,9 @@ resp = client.chat.completions.create(
 
 - [IBM Think — LLM temperature definition and task guidance](https://www.ibm.com/think/topics/llm-temperature)
 
+
+***Grey Literature***
+
+- [vllm-project. MCP-USE with VLLM gpt-oss:20b via ChatOpenAI [Issue #26806]. In vllm (GitHub repository). GitHub](https://github.com/vllm-project/vllm/issues/26806)
+
+- [langfuse. Bug — When streaming responses with the OpenAI Responses API, temperature is not captured correctly [Issue #9566] In langfuse (GitHub repository). GitHub.](https://github.com/langfuse/langfuse/issues/9566)
