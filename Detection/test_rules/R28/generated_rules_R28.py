@@ -1,7 +1,9 @@
 import ast
 import sys
 import re
-from typing import Optional
+from typing import Optional, Set
+
+# Noms/fonctions indiquant un prétraitement d'image (utilisé par générateurs R25-R31)
 
 torch_imported = False
 torch_used = False
@@ -2020,15 +2022,13 @@ def hasNoSystemMessage(node: ast.AST) -> bool:
     return False
 
 def hasNoBoundedMetrics(node: ast.AST) -> bool:
-    print("DBG_R28.hasNoBoundedMetrics: enter node:", type(node).__name__)
     if not isinstance(node, ast.Call) or not isLLMCall(node):
         print("DBG_R28.hasNoBoundedMetrics: not a Call or not LLM -> False")
         return False
 
-    # bornes directes (max_tokens / max_output_tokens / timeout)
+    # bornes directes (max_output_tokens / timeout)
     for kw in node.keywords:
-        if kw.arg in {"max_tokens", "max_output_tokens", "timeout"}:
-            print(f"DBG_R28.hasNoBoundedMetrics: direct bound {kw.arg} -> False")
+        if kw.arg in { "max_tokens","max_output_tokens", "timeout"}:
             return False
 
     # Gemini: generate_content / start_chat
@@ -2056,14 +2056,14 @@ def hasNoBoundedMetrics(node: ast.AST) -> bool:
         if kw.arg is None:
             v = kw.value
             if isinstance(v, ast.Dict):
-                if any(_dict_has_key_str(v, k) for k in ["max_tokens", "max_output_tokens", "timeout"]):
+                if any(_dict_has_key_str(v, k) for k in [ "max_output_tokens", "timeout"]):
                     return False
             elif isinstance(v, ast.Name):
                 root = _get_root(node)
                 call_line = getattr(node, "lineno", 10**9)
                 d = _find_last_dict_assignment(root, v.id, call_line)
                 if isinstance(d, ast.Dict):
-                    if any(_dict_has_key_str(d, k) for k in ["max_tokens", "max_output_tokens", "timeout"]):
+                    if any(_dict_has_key_str(d, k) for k in ["max_output_tokens", "timeout"]):
                         return False
 
     # Timeout dans un 'with client.with_options(timeout=...)' englobant
@@ -2310,6 +2310,656 @@ def isTextGeneratingCall(node: ast.AST) -> bool:
                               (isinstance(vf, ast.Attribute) and vf.attr == "pipeline")
                 if is_pipeline and v.args and isinstance(v.args[0], ast.Constant):
                     return str(v.args[0].value) == "text-generation"
+    return False
+
+def isReasoningModelCall(node: ast.AST) -> bool:
+    """
+    Détecte si l'appel utilise un modèle de raisonnement (reasoning-capable model).
+    Couvre:
+      - OpenAI: o1, o1-mini, o1-preview, gpt-5.x
+      - Anthropic: claude-3-7-sonnet (thinking mode)
+      - Google: gemini-2.0-flash-thinking-exp
+    """
+    if not isinstance(node, ast.Call):
+        return False
+
+    # Reconstitue le chemin de l'appel
+    path = []
+    f = node.func
+    while isinstance(f, ast.Attribute):
+        path.insert(0, f.attr)
+        f = f.value
+    if isinstance(f, ast.Name):
+        path.insert(0, f.id)
+    call_tuple = tuple(path)
+
+    # Modèles de raisonnement connus
+    reasoning_model_patterns = [
+        r"^o1(-preview|-mini)?$",           # OpenAI o1, o1-preview, o1-mini
+        r"^gpt-5",                          # OpenAI GPT-5.x
+        r"^claude-3-7-sonnet",              # Claude 3.7 Sonnet (thinking)
+        r"^gemini-2\.0-flash-thinking",     # Gemini 2.0 thinking
+    ]
+
+    # Vérifie le paramètre 'model' pour OpenAI/Anthropic
+    if call_tuple and call_tuple[-1] in {"create", "generate_content"}:
+        model_kw = _kw_value(node, "model")
+        if model_kw and isinstance(model_kw, ast.Constant) and isinstance(model_kw.value, str):
+            model_name = model_kw.value
+            for pattern in reasoning_model_patterns:
+                if re.search(pattern, model_name):
+                    return True
+
+        # Vérifie dans **kwargs
+        for kw in node.keywords:
+            if kw.arg is None:
+                v = kw.value
+                if isinstance(v, ast.Dict):
+                    for k, val in zip(v.keys, v.values):
+                        if isinstance(k, ast.Constant) and k.value == "model":
+                            if isinstance(val, ast.Constant) and isinstance(val.value, str):
+                                for pattern in reasoning_model_patterns:
+                                    if re.search(pattern, val.value):
+                                        return True
+                elif isinstance(v, ast.Name):
+                    root = _get_root(node)
+                    call_line = getattr(node, "lineno", 10**9)
+                    d = _find_last_dict_assignment(root, v.id, call_line)
+                    if isinstance(d, ast.Dict):
+                        for k, val in zip(d.keys, d.values):
+                            if isinstance(k, ast.Constant) and k.value == "model":
+                                if isinstance(val, ast.Constant) and isinstance(val.value, str):
+                                    for pattern in reasoning_model_patterns:
+                                        if re.search(pattern, val.value):
+                                            return True
+
+    # Pour Gemini: GenerativeModel("gemini-2.0-flash-thinking-...")
+    if call_tuple and call_tuple[-1] == "GenerativeModel":
+        if node.args and isinstance(node.args[0], ast.Constant) and isinstance(node.args[0].value, str):
+            model_name = node.args[0].value
+            for pattern in reasoning_model_patterns:
+                if re.search(pattern, model_name):
+                    return True
+
+    return False
+
+def hasNoReasoningEffort(node: ast.AST) -> bool:
+    """
+    Retourne True si l'appel à un modèle de raisonnement n'a pas de paramètre
+    explicite pour contrôler l'effort/profondeur de raisonnement.
+
+    Paramètres recherchés:
+      - reasoning, reasoning_effort, reasoning_depth (OpenAI)
+      - thinking, thinking_config (Anthropic/Google)
+    """
+    if not isinstance(node, ast.Call):
+        return False
+
+    # Paramètres de contrôle du raisonnement
+    reasoning_params = {
+        "reasoning", "reasoning_effort", "reasoning_depth",
+        "thinking", "thinking_config"
+    }
+
+    # Vérifie les paramètres directs
+    for kw in node.keywords:
+        if kw.arg in reasoning_params:
+            return False  # Paramètre présent -> pas de smell
+
+    # Vérifie dans **kwargs (dict littéral)
+    for kw in node.keywords:
+        if kw.arg is None:
+            v = kw.value
+            if isinstance(v, ast.Dict):
+                for k in v.keys:
+                    if isinstance(k, ast.Constant) and k.value in reasoning_params:
+                        return False
+            elif isinstance(v, ast.Name):
+                # **params (variable dict)
+                root = _get_root(node)
+                call_line = getattr(node, "lineno", 10**9)
+                d = _find_last_dict_assignment(root, v.id, call_line)
+                if isinstance(d, ast.Dict):
+                    for k in d.keys:
+                        if isinstance(k, ast.Constant) and k.value in reasoning_params:
+                            return False
+
+    # Pour Gemini: vérifie generation_config
+    gen_cfg = _kw_value(node, "generation_config")
+    if gen_cfg:
+        if isinstance(gen_cfg, ast.Dict):
+            if _dict_has_key_str(gen_cfg, "thinking_config"):
+                return False
+        elif isinstance(gen_cfg, ast.Name):
+            root = _get_root(node)
+            call_line = getattr(node, "lineno", 10**9)
+            d = _find_last_dict_assignment(root, gen_cfg.id, call_line)
+            if isinstance(d, ast.Dict) and _dict_has_key_str(d, "thinking_config"):
+                return False
+
+    # Aucun paramètre de raisonnement trouvé -> smell détecté
+    return True
+
+def isVisionModelCall(node: ast.AST) -> bool:
+    """
+    Détecte si l'appel utilise un modèle/API avec capacités vision.
+    Version améliorée avec plus de patterns et providers.
+    """
+    if not isinstance(node, ast.Call):
+        return False
+
+    parts = []
+    f = node.func
+    while isinstance(f, ast.Attribute):
+        parts.insert(0, f.attr)
+        f = f.value
+    if isinstance(f, ast.Name):
+        parts.insert(0, f.id)
+    tup = tuple(parts)
+
+    # Patterns étendus couvrant plus de providers et méthodes
+    vision_patterns = [
+        ("OpenAI", "responses", "create"),
+        ("client", "responses", "create"),
+        ("openai", "ChatCompletion", "create"),
+        ("openai", "chat", "completions", "create"),
+        ("chat", "completions", "create"),
+        ("completions", "create"),
+        ("anthropic", "messages", "create"),
+        ("Anthropic", "messages", "create"),
+        ("client", "messages", "create"),
+        ("messages", "create"),
+        ("model", "generate_content"),
+        ("GenerativeModel", "generate_content"),
+        ("genai", "GenerativeModel", "generate_content"),
+        ("generate_content",),
+        ("AzureOpenAI", "chat", "completions", "create"),
+        ("azure_client", "chat", "completions", "create"),
+        ("cohere", "chat"),
+        ("co", "chat"),
+        ("bedrock", "invoke_model"),
+        ("bedrock_runtime", "invoke_model"),
+        ("invoke_model",),
+        ("pipeline",),
+        ("transformers", "pipeline"),
+        ("mistral", "chat"),
+        ("MistralClient", "chat"),
+        ("ollama", "chat"),
+        ("ollama", "generate"),
+        ("ChatOpenAI",),
+        ("ChatAnthropic",),
+        ("ChatGoogleGenerativeAI",),
+        ("llm", "complete"),
+        ("llm", "chat"),
+    ]
+
+    for p in vision_patterns:
+        if len(tup) >= len(p) and tuple(tup[-len(p):]) == p:
+            return True
+
+    if parts:
+        last = parts[-1]
+        if last in {"create", "generate_content", "messages", "chat", "complete",
+                    "invoke", "invoke_model", "predict", "generate", "run"}:
+            context_indicators = {"client", "model", "llm", "chat", "ai", "gpt",
+                                  "claude", "gemini", "anthropic", "openai",
+                                  "bedrock", "cohere", "mistral", "ollama"}
+            if any(ind in p.lower() for p in parts for ind in context_indicators):
+                return True
+
+    try:
+        if isinstance(node.func, ast.Attribute) and node.func.attr in {"generate_content", "generate"}:
+            obj = node.func.value
+            if isinstance(obj, ast.Name):
+                root = _get_root(node)
+                call_line = getattr(node, "lineno", 10**9)
+                last_assign = _find_last_assignment(root, obj.id, call_line)
+                if isinstance(last_assign, ast.Assign) and isinstance(last_assign.value, ast.Call):
+                    cf = last_assign.value.func
+                    model_constructors = ["generativ", "chatmodel", "llm", "visionmodel",
+                                         "multimodal", "gpt", "claude", "generativemodel"]
+                    if isinstance(cf, ast.Attribute):
+                        if any(mc in cf.attr.lower() for mc in model_constructors):
+                            return True
+                    if isinstance(cf, ast.Name):
+                        if any(mc in cf.id.lower() for mc in model_constructors):
+                            return True
+    except Exception:
+        pass
+
+    # Ajout explicite pour ollama.* calls (ex: ollama.chat(...))
+    try:
+        if isinstance(node.func, ast.Attribute) and isinstance(node.func.value, ast.Name):
+            base = node.func.value.id.lower()
+            meth = node.func.attr.lower()
+            if base == "ollama" and meth in {"chat", "generate", "run"}:
+                return True
+    except Exception:
+        pass
+
+    return False
+
+def hasImageContent(node: ast.AST) -> bool:
+    """
+    Détecte si l'appel contient du contenu image.
+    Version améliorée avec plus de formats et patterns.
+    """
+    #if isinstance(node.func, ast.Attribute) and isinstance(node.func.value, ast.Name):
+       #if node.func.value.id.lower() == "ollama":
+          #return False
+
+    if not isinstance(node, ast.Call):
+        return False
+
+    def _is_image_bytes_or_url(obj: ast.AST) -> bool:
+        if isinstance(obj, ast.Constant):
+            v = obj.value
+            if isinstance(v, (bytes, bytearray, memoryview)):
+                return True
+            if isinstance(v, str):
+                vl = v.lower()
+                if vl.startswith("data:image/") or vl.startswith("http://") or vl.startswith("https://") or vl.startswith("file://") or vl.startswith("s3://") or vl.startswith("gs://"):
+                    return True
+                image_exts = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".tiff", ".tif", ".svg", ".ico", ".heic", ".heif"}
+                if any(vl.endswith(ext) for ext in image_exts):
+                    return True
+        return False
+
+    def _contains_image_deep(obj: ast.AST, depth: int = 12) -> bool:
+        if depth <= 0 or obj is None:
+            return False
+        if _is_image_bytes_or_url(obj):
+            return True
+        if isinstance(obj, ast.Dict):
+            if _is_image_dict(obj):
+                return True
+            for v in obj.values:
+                if _contains_image_deep(v, depth - 1):
+                    return True
+            return False
+        if isinstance(obj, (ast.List, ast.Tuple)):
+            for elt in obj.elts:
+                if _contains_image_deep(elt, depth - 1):
+                    return True
+            return False
+        if isinstance(obj, ast.Name):
+            name = obj.id.lower()
+            image_indicators = ["image", "img", "screenshot", "photo", "picture", "pic", "bytes", "data", "raw", "binary", "media", "file", "vision", "visual", "frame", "capture", "scan"]
+            if any(tok in name for tok in image_indicators):
+                root = _get_root(node)
+                call_line = getattr(node, "lineno", 10**9)
+                last_assign = _find_last_assignment(root, name, call_line)
+                if isinstance(last_assign, ast.Assign):
+                    return _contains_image_deep(last_assign.value, depth - 1)
+                return True
+            return False
+        if isinstance(obj, ast.Call):
+            fn = obj.func
+            fname = fn.id.lower() if isinstance(fn, ast.Name) else fn.attr.lower() if isinstance(fn, ast.Attribute) else None
+            image_func_indicators = ["read", "open", "load", "imread", "image", "pil", "cv2", "bytes", "getvalue", "encode", "decode", "fetch", "download", "from_file", "from_url", "get_image", "capture", "screenshot", "b64decode", "base64"]
+            if fname and any(ind in fname for ind in image_func_indicators):
+                return True
+            if isinstance(fn, ast.Attribute):
+                parts = []
+                temp = fn
+                while isinstance(temp, ast.Attribute):
+                    parts.insert(0, temp.attr)
+                    temp = temp.value
+                if isinstance(temp, ast.Name):
+                    parts.insert(0, temp.id)
+                path = ".".join(parts).lower()
+                image_module_patterns = ["pil.image", "image.open", "cv2.imread", "imageio.imread", "skimage.io", "matplotlib.image", "torchvision"]
+                if any(pattern in path for pattern in image_module_patterns):
+                    return True
+            for a in obj.args:
+                if _contains_image_deep(a, depth - 1):
+                    return True
+            for kw in obj.keywords:
+                if _contains_image_deep(kw.value, depth - 1):
+                    return True
+        return False
+
+    def _is_image_dict(obj: ast.AST) -> bool:
+        if not isinstance(obj, ast.Dict):
+            return False
+        for k, v in zip(obj.keys, obj.values):
+            if isinstance(k, ast.Constant) and isinstance(k.value, str):
+                key = k.value.lower()
+                image_keys = {"type", "image_url", "source", "url", "image", "images", "image_data", "mime_type", "media_type", "content_type", "format", "inline_data", "data", "image_content", "binary_data", "file_path", "path", "file_url", "s3_uri", "gcs_uri"}
+                if key in image_keys:
+                    if _is_image_bytes_or_url(v):
+                        return True
+                    if isinstance(v, ast.Constant) and isinstance(v.value, str):
+                        if any(tok in v.value.lower() for tok in ["image", "photo", "picture", "screenshot", "png", "jpg", "jpeg"]):
+                            return True
+                        if v.value.lower().startswith(("http", "data:", "file:", "s3:", "gs:")):
+                            return True
+                    if key == "images" and isinstance(v, (ast.List, ast.Tuple)) and _contains_image_deep(v):
+                        return True
+                if key == "mime_type" and isinstance(v, ast.Constant) and isinstance(v.value, str) and v.value.lower().startswith("image/"):
+                    return True
+                if key == "type" and isinstance(v, ast.Constant) and isinstance(v.value, str) and v.value.lower() == "image":
+                    return True
+                if key in {"content", "parts", "data", "source", "images", "media", "attachments", "payload"} and isinstance(v, (ast.Dict, ast.List, ast.Tuple)) and _contains_image_deep(v):
+                    return True
+        return False
+
+    for arg in node.args:
+        if _contains_image_deep(arg):
+            return True
+
+    image_param_names = {"input", "messages", "content", "image", "data", "input_image", "images", "media", "files", "attachments", "parts", "payload", "multimodal_content", "vision_input", "image_url", "image_data"}
+    for kw in node.keywords:
+        if kw.arg in image_param_names:
+            if _contains_image_deep(kw.value):
+                return True
+        if kw.arg is None and _contains_image_deep(kw.value):
+            return True
+
+    return False
+
+
+def hasImagePreprocessing(node: ast.AST, preprocessed_vars: Optional[Set[str]] = None) -> bool:
+    """
+    Détecte si l'image a été prétraitée.
+    Version étendue avec plus de bibliothèques et patterns.
+    """
+    if not isinstance(node, ast.Call):
+        return False
+    if isinstance(node.func, ast.Attribute) and isinstance(node.func.value, ast.Name):
+       if node.func.value.id.lower() == "ollama":
+          return False
+
+
+    def _check_preprocessing_in_value(val: ast.AST, depth: int = 6) -> bool:
+        if depth <= 0 or val is None:
+            return False
+        if isinstance(val, ast.Call) and isinstance(val.func, ast.Name):
+            root = _get_root(node)
+            funcname = val.func.id
+            for f in ast.walk(root):
+                if isinstance(f, ast.FunctionDef) and f.name == funcname:
+                    for stmt in ast.walk(f):
+                       if isinstance(stmt, ast.Call) and _call_indicates_preprocessing(stmt):
+                          return True
+
+        if _value_is_preprocessed(val, node):
+            return True
+        if isinstance(val, ast.Call) and _call_indicates_preprocessing(val):
+            return True
+        if isinstance(val, ast.Name):
+            if preprocessed_vars and val.id in preprocessed_vars:
+                return True
+            if any(ind in val.id.lower() for ind in PREPROCESSING_NAME_HINTS):
+                return True
+            root = _get_root(node)
+            call_line = getattr(node, "lineno", 10**9)
+            last_assign = _find_last_assignment(root, val.id, call_line)
+            if isinstance(last_assign, ast.Assign):
+                return _check_preprocessing_in_value(last_assign.value, depth - 1)
+        if isinstance(val, ast.Dict):
+            for v in val.values:
+                if _check_preprocessing_in_value(v, depth - 1):
+                    return True
+        if isinstance(val, (ast.List, ast.Tuple)):
+            for elt in val.elts:
+                if _check_preprocessing_in_value(elt, depth - 1):
+                    return True
+        return False
+
+    detail_kw = _kw_value(node, "detail")
+    if isinstance(detail_kw, ast.Constant) and detail_kw.value in {"low", "high"}:
+        return True
+
+    quality_params = {"quality", "compression", "image_quality", "resolution", "max_size", "max_dimension"}
+    for kw in node.keywords:
+        if kw.arg in quality_params:
+            return True
+
+    for arg in node.args:
+        if _check_preprocessing_in_value(arg):
+            return True
+
+    relevant_kwargs = {"input", "messages", "content", "image", "data", "images", "media", "files", "image_url", "image_data"}
+    for kw in node.keywords:
+        if kw.arg in relevant_kwargs and _check_preprocessing_in_value(kw.value):
+            return True
+        if kw.arg is None and isinstance(kw.value, ast.Dict):
+            for v in kw.value.values:
+                if _check_preprocessing_in_value(v):
+                    return True
+
+    return False
+
+
+def hasExplicitDetailLevel(node: ast.AST) -> bool:
+    """
+    Vérifie si un appel configure explicitement le niveau de détail de l'image.
+    """
+    if not isinstance(node, ast.Call):
+        return False
+
+    detail_keys = {"detail", "quality", "image_detail", "image_quality", "resolution", "fidelity", "precision", "detail_level", "max_image_tokens", "tokens_per_image"}
+    explicit_values = {"low", "high", "medium", "detailed", "basic", "full"}
+    non_explicit_values = {"auto", "default"}
+    name_indicators = {"detail", "quality", "lowres", "highres"}
+
+    root = _get_root(node)
+    call_line = getattr(node, "lineno", 10**9)
+
+    def _resolve_name(name: ast.Name) -> Optional[ast.AST]:
+        assign = _find_last_assignment(root, name.id, call_line)
+        if isinstance(assign, ast.Assign):
+            return assign.value
+        return None
+
+    def _detail_value_status(val: ast.AST, depth: int) -> Optional[bool]:
+        if depth <= 0 or val is None:
+            return None
+        if isinstance(val, ast.Constant):
+            const_val = val.value
+            if isinstance(const_val, str):
+                lowered = const_val.lower()
+                if lowered in non_explicit_values:
+                    return False
+                if lowered in explicit_values or lowered:
+                    return True
+            if isinstance(const_val, (int, float)):
+                return True
+            return None
+        if isinstance(val, ast.Name):
+            resolved = _resolve_name(val)
+            if resolved is None:
+                if any(tok in val.id.lower() for tok in name_indicators):
+                    return True
+                return None
+            return _detail_value_status(resolved, depth - 1)
+        if isinstance(val, (ast.Dict, ast.List, ast.Tuple, ast.Set)):
+            return _scan_for_detail(val, depth - 1)
+        if isinstance(val, ast.Call):
+            for kw in val.keywords:
+                if kw.arg and kw.arg.lower() in detail_keys:
+                    status = _detail_value_status(kw.value, depth - 1)
+                    if status is not None:
+                        return status
+            for arg in val.args:
+                status = _detail_value_status(arg, depth - 1)
+                if status:
+                    return True
+            return True
+        return True
+
+    def _scan_for_detail(expr: ast.AST, depth: int) -> Optional[bool]:
+        if depth <= 0 or expr is None:
+            return None
+        if isinstance(expr, ast.Dict):
+            for key, value in zip(expr.keys, expr.values):
+                if isinstance(key, ast.Constant) and isinstance(key.value, str):
+                    lowered = key.value.lower()
+                    if lowered in detail_keys:
+                        status = _detail_value_status(value, depth - 1)
+                        if status is not None:
+                            return status
+                status = _scan_for_detail(value, depth - 1)
+                if status is not None:
+                    return status
+            return None
+        if isinstance(expr, (ast.List, ast.Tuple, ast.Set)):
+            for elt in expr.elts:
+                status = _scan_for_detail(elt, depth - 1)
+                if status is not None:
+                    return status
+            return None
+        if isinstance(expr, ast.Name):
+            resolved = _resolve_name(expr)
+            if resolved is None:
+                if any(tok in expr.id.lower() for tok in name_indicators):
+                    return True
+                return None
+            return _scan_for_detail(resolved, depth - 1)
+        if isinstance(expr, ast.Call):
+            for kw in expr.keywords:
+                if kw.arg and kw.arg.lower() in detail_keys:
+                    status = _detail_value_status(kw.value, depth - 1)
+                    if status is not None:
+                        return status
+                status = _scan_for_detail(kw.value, depth - 1)
+                if status is not None:
+                    return status
+            for arg in expr.args:
+                status = _scan_for_detail(arg, depth - 1)
+                if status is not None:
+                    return status
+            return None
+        return None
+
+    for kw in node.keywords:
+        if kw.arg in detail_keys:
+            status = _detail_value_status(kw.value, 6)
+            if status:
+                return True
+
+    structured_kwargs = {"messages", "input", "content", "image_url", "image", "images", "media", "parts", "multimodal_content", "attachments"}
+    for kw in node.keywords:
+        if kw.arg in structured_kwargs:
+            status = _scan_for_detail(kw.value, 6)
+            if status:
+                return True
+        if kw.arg is None:
+            status = _scan_for_detail(kw.value, 6)
+            if status:
+                return True
+
+    for arg in node.args:
+        status = _scan_for_detail(arg, 6)
+        if status:
+            return True
+
+    return False
+
+
+def _value_is_preprocessed(val: ast.AST, call: ast.Call) -> bool:
+    """
+    Détecte si une valeur provient clairement d'un pipeline de preprocessing.
+    Suit buffer.tobytes() / buffer.getvalue() après imencode/save.
+    """
+    root = _get_root(call)
+    call_line = getattr(call, "lineno", 10**9)
+
+    if isinstance(val, ast.Call):
+        func = val.func
+        fname = func.id.lower() if isinstance(func, ast.Name) else func.attr.lower() if isinstance(func, ast.Attribute) else ""
+        if fname and any(p in fname for p in PREPROCESSING_FUNC_NAMES):
+            return True
+        if isinstance(func, ast.Attribute) and func.attr.lower() in {"tobytes", "getvalue", "to_bytes"}:
+            buf = func.value
+            if isinstance(buf, ast.Name):
+                bufname = buf.id
+                for n in ast.walk(root):
+                    if isinstance(n, ast.Assign) and getattr(n, "lineno", 0) < call_line:
+                        for target in n.targets:
+                            matched_var = False
+                            if isinstance(target, ast.Name) and target.id == bufname:
+                                matched_var = True
+                            elif isinstance(target, (ast.Tuple, ast.List)):
+                                for elt in target.elts:
+                                    if isinstance(elt, ast.Name) and elt.id == bufname:
+                                        matched_var = True
+                                        break
+                            if matched_var:
+                                rhs = n.value
+                                if isinstance(rhs, ast.Call) and _call_indicates_preprocessing(rhs):
+                                    return True
+                for n in ast.walk(root):
+                    if isinstance(n, ast.Call) and getattr(n, "lineno", 0) < call_line:
+                        if isinstance(n.func, ast.Attribute) and n.func.attr.lower() == "save":
+                            recv = n.func.value
+                            for arg in n.args:
+                                if isinstance(arg, ast.Name) and arg.id == bufname:
+                                    if _value_is_preprocessed(recv, call):
+                                        return True
+        for a in val.args:
+            if _value_is_preprocessed(a, call):
+                return True
+        for kw in val.keywords:
+            if _value_is_preprocessed(kw.value, call):
+                return True
+        return False
+
+    if isinstance(val, ast.Name):
+        name = val.id
+        if any(ind in name.lower() for ind in PREPROCESSING_NAME_HINTS):
+            return True
+        last = _find_last_assignment(root, name, call_line)
+        if isinstance(last, ast.Assign) and _value_is_preprocessed(last.value, call):
+            return True
+        for n in ast.walk(root):
+            if isinstance(n, ast.Call) and getattr(n, "lineno", 0) < call_line:
+                if isinstance(n.func, ast.Attribute):
+                    recv = n.func.value
+                    if isinstance(recv, ast.Name) and recv.id == name:
+                        if any(p in n.func.attr.lower() for p in PREPROCESSING_FUNC_NAMES):
+                            return True
+        return False
+
+    if isinstance(val, ast.Dict):
+        for v in val.values:
+            if _value_is_preprocessed(v, call):
+                return True
+        return False
+
+    if isinstance(val, (ast.List, ast.Tuple)):
+        for elt in val.elts:
+            if _value_is_preprocessed(elt, call):
+                return True
+        return False
+
+    return False
+
+PREPROCESSING_FUNC_NAMES = {
+    'resize', 'resize_and_crop', 'thumbnail', 'imencode', 'imwrite', 'save',
+    'crop', 'downscale', 'downscale_image', 'compress', 'optimize', 'encode', 'getvalue', 'tobytes',
+}
+PREPROCESSING_NAME_HINTS = {
+    'resized', 'img_resized', 'small_image', 'small', 'cropped', 'processed',
+    'optimized', 'compressed', 'buffer', 'buf', 'thumbnail', 'thumb', 'img_bytes', 'image_bytes',
+}
+
+def _call_indicates_preprocessing(call: ast.AST) -> bool:
+    if not isinstance(call, ast.Call):
+        return False
+    func = call.func
+    fname = ''
+    if isinstance(func, ast.Name):
+        fname = func.id.lower()
+    elif isinstance(func, ast.Attribute):
+        fname = getattr(func, 'attr', '').lower()
+    # détection simple sur le nom de la fonction/méthode
+    if fname and any(pref in fname for pref in PREPROCESSING_FUNC_NAMES):
+        return True
+    # détecter imencode(...) qui retourne buffer (cv2.imencode)
+    if fname and 'imencode' in fname:
+        return True
     return False
 
 def rule_R28(ast_node):

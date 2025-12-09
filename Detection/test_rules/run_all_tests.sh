@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-for X in {25..29} 
+for X in {25..31} 
 
 do
   echo "=== Analyze of R$X ==="
