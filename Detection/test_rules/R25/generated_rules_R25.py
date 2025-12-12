@@ -2962,6 +2962,208 @@ def _call_indicates_preprocessing(call: ast.AST) -> bool:
         return True
     return False
 
+def hasParameterSet(node: ast.AST, name: str) -> bool:
+    """
+    Retourne True si le paramètre `name` est explicitement fourni à l'appel `node`
+    (mot clé direct ou via **kwargs dict littéral ou variable).
+    Sinon False.
+    """
+    if not isinstance(node, ast.Call):
+        return False
+    # 1) Mot clé direct: foo(..., name=...)
+    for kw in node.keywords:
+        if kw.arg == name:
+            return True
+    # 2) Via **kwargs
+    for kw in node.keywords:
+        if kw.arg is None:
+            val = kw.value
+            # **{ "temperature": ..., "top_p": ... }
+            if isinstance(val, ast.Dict):
+                if _dict_has_key_str(val, name):
+                    return True
+            # **params où params est un dict défini plus haut
+            if isinstance(val, ast.Name):
+                root = _get_root(node)
+                call_line = getattr(node, "lineno", float("inf"))
+                d = _find_last_dict_assignment(root, val.id, call_line)
+                if isinstance(d, ast.Dict) and _dict_has_key_str(d, name):
+                    return True
+    # On ne prouve pas la présence de `name`
+    return False
+
+def hasOverspecifiedSampling(node: ast.AST) -> bool:
+    """
+    Smell: sur spécification des paramètres de sampling.
+    True si un appel LLM combine une température explicite
+    avec top_p ou top_k.
+    """
+    if not isinstance(node, ast.Call):
+        return False
+    # 1) Cas direct sur l'appel LLM
+    if isLLMCall(node) and hasParameterSet(node, "temperature"):
+        if hasParameterSet(node, "top_p") or hasParameterSet(node, "top_k"):
+            return True
+    # 2) Cas où la config vient d'un client.with_options(...) englobant
+    parent = getattr(node, "parent", None)
+    while isinstance(parent, ast.AST):
+        if isinstance(parent, ast.With):
+            for item in parent.items:
+                ctx = item.context_expr
+                if isinstance(ctx, ast.Call) and isinstance(ctx.func, ast.Attribute) and ctx.func.attr == "with_options":
+                    if hasParameterSet(ctx, "temperature") and (
+                        hasParameterSet(ctx, "top_p") or hasParameterSet(ctx, "top_k")
+                    ):
+                        return True
+        parent = getattr(parent, "parent", None)
+    return False
+
+def _get_enclosing_scope(node: ast.AST) -> Optional[ast.AST]:
+    """
+    Retourne le bloc englobant (FunctionDef, AsyncFunctionDef ou Module)
+    dans lequel se trouve le noeud.
+    """
+    parent = getattr(node, "parent", None)
+    while parent is not None and not isinstance(parent, (ast.FunctionDef, ast.AsyncFunctionDef, ast.Module)):
+        parent = getattr(parent, "parent", None)
+    return parent
+
+
+def hasMultiUserContext(node: ast.AST) -> bool:
+    """
+    Détecte un contexte multi utilisateur autour de l appel.
+    Approximations statiques
+    - présence de request.user.id
+    - présence de current_user.id
+    - accès à session["user_id"] ou session["uid"]
+    """
+    if not isinstance(node, ast.Call):
+        return False
+
+    scope = _get_enclosing_scope(node)
+    if scope is None:
+        return False
+
+    for n in ast.walk(scope):
+        # request.user.id ou variantes proches
+        if isinstance(n, ast.Attribute) and n.attr == "id":
+            base = n.value
+            # request.user.id
+            if isinstance(base, ast.Attribute) and base.attr == "user":
+                recv = base.value
+                if isinstance(recv, ast.Name) and recv.id in {"request"}:
+                    return True
+            # current_user.id ou user.id
+            if isinstance(base, ast.Name) and base.id in {"current_user", "user"}:
+                return True
+
+        # session["user_id"] ou session["uid"]
+        if isinstance(n, ast.Subscript) and isinstance(n.value, ast.Name) and n.value.id == "session":
+            sl = n.slice
+            key = None
+            if isinstance(sl, ast.Constant) and isinstance(sl.value, str):
+                key = sl.value
+            elif isinstance(sl, ast.Index) and isinstance(sl.value, ast.Constant) and isinstance(sl.value.value, str):
+                key = sl.value.value
+            if key in {"user_id", "uid"}:
+                return True
+
+    return False
+
+
+def _dict_has_user_identifier(d: ast.Dict, root: ast.AST, call_line: int, depth: int = 4) -> bool:
+    """
+    Cherche des indices de propagation utilisateur dans un dict
+    - clés user, user_id, end_user_id
+    - clé metadata contenant récursivement une clé user_id
+    """
+    if depth <= 0:
+        return False
+
+    user_keys = {"user", "user_id", "end_user_id", "endUserId"}
+
+    for k, v in zip(d.keys, d.values):
+        if isinstance(k, ast.Constant) and isinstance(k.value, str):
+            key = k.value
+            if key in user_keys:
+                return True
+            if key == "metadata":
+                if isinstance(v, ast.Dict):
+                    if _dict_has_user_identifier(v, root, call_line, depth - 1):
+                        return True
+                elif isinstance(v, ast.Name):
+                    meta_dict = _find_last_dict_assignment(root, v.id, call_line)
+                    if isinstance(meta_dict, ast.Dict) and _dict_has_user_identifier(meta_dict, root, call_line, depth - 1):
+                        return True
+
+    return False
+
+
+def hasUserAttribution(node: ast.AST) -> bool:
+    """
+    Détecte si l appel LLM attribue explicitement un identifiant utilisateur
+    - paramètre user
+    - paramètre metadata avec user_id ou équivalent
+    - présence de ces clés dans un dict passé via **kwargs
+    """
+    if not isinstance(node, ast.Call):
+        return False
+
+    root = _get_root(node)
+    call_line = getattr(node, "lineno", 10**9)
+
+    # Cas simple paramètre user=...
+    if hasParameterSet(node, "user"):
+        return True
+
+    # Paramètre metadata=...
+    metadata_val = _kw_value(node, "metadata")
+    if isinstance(metadata_val, ast.Dict):
+        if _dict_has_user_identifier(metadata_val, root, call_line):
+            return True
+    elif isinstance(metadata_val, ast.Name):
+        meta_dict = _find_last_dict_assignment(root, metadata_val.id, call_line)
+        if isinstance(meta_dict, ast.Dict) and _dict_has_user_identifier(meta_dict, root, call_line):
+            return True
+
+    # Cas via **kwargs où le dict contient user ou metadata avec user_id
+    for kw in node.keywords:
+        if kw.arg is None:
+            val = kw.value
+            # **{ "user": ..., "user_id": ... }
+            if isinstance(val, ast.Dict):
+                if _dict_has_user_identifier(val, root, call_line):
+                    return True
+            # **params où params est un dict défini plus haut
+            elif isinstance(val, ast.Name):
+                d = _find_last_dict_assignment(root, val.id, call_line)
+                if isinstance(d, ast.Dict) and _dict_has_user_identifier(d, root, call_line):
+                    return True
+
+    return False
+
+def isHuggingFacePipelineConstructor(node: ast.AST) -> bool:
+    if not isinstance(node, ast.Call):
+        return False
+    fn = node.func
+    is_pipeline = (isinstance(fn, ast.Name) and fn.id == "pipeline") or \
+                  (isinstance(fn, ast.Attribute) and fn.attr == "pipeline")
+    if not is_pipeline:
+        return False
+    if node.args and isinstance(node.args[0], ast.Constant) and str(node.args[0].value) == "text-generation":
+        return True
+    return False
+def isLLMCallRequiringTemperature(node: ast.AST) -> bool:
+    """
+    Même logique que isLLMCall, mais on ne considère pas le constructeur HF pipeline
+    comme un call où temperature est attendue.
+    """
+    if not isLLMCall(node):
+        return False
+    if isHuggingFacePipelineConstructor(node):
+        return False
+    return True
+
 def rule_R25(ast_node):
     import ast
     add_parent_info(ast_node)
@@ -2971,7 +3173,7 @@ def rule_R25(ast_node):
     scaled_vars = gather_scaled_vars(ast_node)
     problems = {}
     for sub in ast.walk(ast_node):
-        if ((isLLMCall(sub) and hasNoTemperatureParameter(sub))):
+        if (((isLLMCallRequiringTemperature(sub) and hasNoTemperatureParameter(sub)) and (not ((hasParameterSet(sub, "top_p") or hasParameterSet(sub, "top_k")))))):
             line = getattr(sub, 'lineno', '?')
             if line != '?':
                 problems[line] = sub

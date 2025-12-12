@@ -3164,18 +3164,18 @@ def isLLMCallRequiringTemperature(node: ast.AST) -> bool:
         return False
     return True
 
-def rule_R27(ast_node):
+def rule_R33(ast_node):
     import ast
     add_parent_info(ast_node)
     #set_deterministic_flag(ast_node)
-    # "LLM With No System Message"
+    # "Anonymous Inference Call"
     variable_ops = gather_scale_sensitive_ops(ast_node)
     scaled_vars = gather_scaled_vars(ast_node)
     problems = {}
     for sub in ast.walk(ast_node):
-        if ((isRoleBasedLLMChat(sub) and hasNoSystemMessage(sub))):
+        if (((isTextGeneratingCall(sub) and hasMultiUserContext(sub)) and (not hasUserAttribution(sub)))):
             line = getattr(sub, 'lineno', '?')
             if line != '?':
                 problems[line] = sub
     for line, node in problems.items():
-        report_with_line("LLM chat call without a system message at line {lineno}", node)
+        report_with_line("Anonymous Inference Call at line {lineno}", node)

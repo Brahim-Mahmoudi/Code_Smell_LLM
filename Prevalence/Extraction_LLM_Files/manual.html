@@ -9,6 +9,7 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      overflow: auto;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #f1f5f9;
       color: #0f172a;
@@ -305,6 +306,8 @@
     .tag-purple { background: #ede9fe; color: #6d28d9; }
     .tag-green { background: #dcfce7; color: #538058; }
     .tag-pink { background: #fce7f3; color: #987685; }
+    .tag-black { background: #d1d5db; color: #5f636c; }
+    .tag-cian { background: #cffafe; color: #0e7490; }
     .smell-name {
       margin-top: 3px;
       font-weight: 500;
@@ -360,6 +363,16 @@
       flex-direction: column;
       gap: 8px;
     }
+    .smell-panel { min-height: 0 }
+    .smell-panel { overflow: hidden }
+
+    .smell-list { min-height: 0 }
+    .smell-list { overflow-y: auto }
+    .smell-list { overflow-x: hidden }
+
+    .main { min-height: 0 }
+    .layout { min-height: 0 }
+
   </style>
 </head>
 <body>
@@ -470,7 +483,9 @@
     { id: 'NMVP', name: 'No Model Version Pinning', tagClass: 'tag-blue' },
     { id: 'NSM', name: 'No System Message', tagClass: 'tag-purple' },
     { id: 'RENES', name: 'Reasoning Effort Not Explicitly Set', tagClass: 'tag-pink' },
-    { id: 'RVP', name: 'Raw Vision Payload', tagClass: 'tag-green' }
+    { id: 'RVP', name: 'Raw Vision Payload', tagClass: 'tag-green' },
+    { id: 'OSP', name: 'Overspecified Sampling Parameters', tagClass: 'tag-black' },
+    { id: 'AIC', name: 'Anonymous Inference Cal', tagClass: 'tag-cian' }
   ]
 
   let data = null
