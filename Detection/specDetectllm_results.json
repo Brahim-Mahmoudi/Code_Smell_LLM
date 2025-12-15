@@ -1,36 +1,786 @@
 {
-  "/Users/bramss/Desktop/repos/simonw__llm__main/llm/default_plugins/openai_models.py": {
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/embedding/rwkv.py": {
+    "R26": [
+      "LLM call without model version pinning at line 32"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/embedding/onnx.py": {
+    "R26": [
+      "LLM call without model version pinning at line 34"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/embedding/__init__.py": {
     "R25": [
-      "LLM call without explicit temperature parameter at line 320",
-      "LLM call without explicit temperature parameter at line 677",
-      "LLM call without explicit temperature parameter at line 727",
-      "LLM call without explicit temperature parameter at line 769",
-      "LLM call without explicit temperature parameter at line 907",
-      "LLM call without explicit temperature parameter at line 926",
-      "LLM call without explicit temperature parameter at line 812",
-      "LLM call without explicit temperature parameter at line 856"
-    ],
-    "R27": [
-      "LLM chat call without a system message at line 727",
-      "LLM chat call without a system message at line 769",
-      "LLM chat call without a system message at line 812",
-      "LLM chat call without a system message at line 856"
+      "LLM call without explicit temperature parameter at line 40"
     ],
     "R28": [
-      "LLM call without bounded metrics (tokens/timeout/response size) at line 320",
-      "LLM call without bounded metrics (tokens/timeout/response size) at line 677",
-      "LLM call without bounded metrics (tokens/timeout/response size) at line 727",
-      "LLM call without bounded metrics (tokens/timeout/response size) at line 769",
-      "LLM call without bounded metrics (tokens/timeout/response size) at line 907",
-      "LLM call without bounded metrics (tokens/timeout/response size) at line 926",
-      "LLM call without bounded metrics (tokens/timeout/response size) at line 812",
-      "LLM call without bounded metrics (tokens/timeout/response size) at line 856"
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 40"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/embedding/openai.py": {
+    "R31": [
+      "Unbounded vision payloads at line 57"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/embedding/huggingface.py": {
+    "R26": [
+      "LLM call without model version pinning at line 34",
+      "LLM call without model version pinning at line 37"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/embedding/paddlenlp.py": {
+    "R26": [
+      "LLM call without model version pinning at line 30",
+      "LLM call without model version pinning at line 33"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/adapter/api.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 279"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/similarity_evaluation/onnx.py": {
+    "R26": [
+      "LLM call without model version pinning at line 55"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/unit_tests/test_session.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 66",
+      "LLM call without explicit temperature parameter at line 71",
+      "LLM call without explicit temperature parameter at line 107",
+      "LLM call without explicit temperature parameter at line 112",
+      "LLM call without explicit temperature parameter at line 62",
+      "LLM call without explicit temperature parameter at line 76",
+      "LLM call without explicit temperature parameter at line 103",
+      "LLM call without explicit temperature parameter at line 117",
+      "LLM call without explicit temperature parameter at line 43"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 66",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 71",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 107",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 112",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 62",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 76",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 103",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 117",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 43"
     ],
     "R29": [
-      "LLM pipeline call without structured output at line 727",
-      "LLM pipeline call without structured output at line 769",
-      "LLM pipeline call without structured output at line 812",
-      "LLM pipeline call without structured output at line 856"
+      "LLM pipeline call without structured output at line 66",
+      "LLM pipeline call without structured output at line 71",
+      "LLM pipeline call without structured output at line 107",
+      "LLM pipeline call without structured output at line 112",
+      "LLM pipeline call without structured output at line 62",
+      "LLM pipeline call without structured output at line 76",
+      "LLM pipeline call without structured output at line 103",
+      "LLM pipeline call without structured output at line 117",
+      "LLM pipeline call without structured output at line 43"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/unit_tests/processor/test_context.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 62",
+      "LLM call without explicit temperature parameter at line 52"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 62",
+      "LLM call without model version pinning at line 52"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 62",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 52"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 62",
+      "LLM pipeline call without structured output at line 52"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/unit_tests/embedding/test_embedding_openai.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 31",
+      "LLM call without explicit temperature parameter at line 38",
+      "LLM call without explicit temperature parameter at line 45"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/unit_tests/adapter/test_openai.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 74",
+      "LLM call without explicit temperature parameter at line 194",
+      "LLM call without explicit temperature parameter at line 308",
+      "LLM call without explicit temperature parameter at line 665",
+      "LLM call without explicit temperature parameter at line 64",
+      "LLM call without explicit temperature parameter at line 180",
+      "LLM call without explicit temperature parameter at line 304",
+      "LLM call without explicit temperature parameter at line 636",
+      "LLM call without explicit temperature parameter at line 650",
+      "LLM call without explicit temperature parameter at line 355",
+      "LLM call without explicit temperature parameter at line 614"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 74",
+      "LLM call without model version pinning at line 194",
+      "LLM call without model version pinning at line 665",
+      "LLM call without model version pinning at line 64",
+      "LLM call without model version pinning at line 180",
+      "LLM call without model version pinning at line 636",
+      "LLM call without model version pinning at line 650",
+      "LLM call without model version pinning at line 614"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 74",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 194",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 308",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 665",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 64",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 180",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 304",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 636",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 650",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 355",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 614"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 74",
+      "LLM pipeline call without structured output at line 194",
+      "LLM pipeline call without structured output at line 308",
+      "LLM pipeline call without structured output at line 665",
+      "LLM pipeline call without structured output at line 64",
+      "LLM pipeline call without structured output at line 180",
+      "LLM pipeline call without structured output at line 304",
+      "LLM pipeline call without structured output at line 636",
+      "LLM pipeline call without structured output at line 650",
+      "LLM pipeline call without structured output at line 355",
+      "LLM pipeline call without structured output at line 614",
+      "LLM pipeline call without structured output at line 632"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/unit_tests/adapter/test_langchain_models.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 31",
+      "LLM call without explicit temperature parameter at line 169"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 169"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 78",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 169"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 169"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/unit_tests/adapter/test_api.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 177",
+      "LLM call without explicit temperature parameter at line 167"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 177",
+      "LLM call without model version pinning at line 167"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 177",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 167"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 177",
+      "LLM pipeline call without structured output at line 167"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/integration_tests/test_sqlite_milvus_sbert.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 93",
+      "LLM call without explicit temperature parameter at line 112",
+      "LLM call without explicit temperature parameter at line 126",
+      "LLM call without explicit temperature parameter at line 138"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 93",
+      "LLM call without model version pinning at line 112",
+      "LLM call without model version pinning at line 126",
+      "LLM call without model version pinning at line 138"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 93",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 112",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 126",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 138"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 93",
+      "LLM pipeline call without structured output at line 112",
+      "LLM pipeline call without structured output at line 126",
+      "LLM pipeline call without structured output at line 138"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/integration_tests/test_sqlite_faiss_onnx.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 117",
+      "LLM call without explicit temperature parameter at line 150",
+      "LLM call without explicit temperature parameter at line 71",
+      "LLM call without explicit temperature parameter at line 184",
+      "LLM call without explicit temperature parameter at line 224"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 117",
+      "LLM call without model version pinning at line 150",
+      "LLM call without model version pinning at line 71",
+      "LLM call without model version pinning at line 184",
+      "LLM call without model version pinning at line 224"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 117",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 150",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 71",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 184",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 224"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 117",
+      "LLM pipeline call without structured output at line 150",
+      "LLM pipeline call without structured output at line 71",
+      "LLM pipeline call without structured output at line 184",
+      "LLM pipeline call without structured output at line 224"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/integration_tests/test_redis_onnx.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 66",
+      "LLM call without explicit temperature parameter at line 55"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 66",
+      "LLM call without model version pinning at line 55"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 66",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 55"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 66",
+      "LLM pipeline call without structured output at line 55"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/integration_tests/processor/pre/test_pre_without_prompt.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 25"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 25"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 25"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 25"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/integration_tests/examples/sqlite_faiss_mock/test_example_sqlite_faiss.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 46",
+      "LLM call without explicit temperature parameter at line 63"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 46",
+      "LLM call without model version pinning at line 63"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 46",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 63"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 46",
+      "LLM pipeline call without structured output at line 63"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/integration_tests/examples/sqlite_faiss_onnx/test_example_sqlite_faiss_onnx.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 44",
+      "LLM call without explicit temperature parameter at line 54",
+      "LLM call without explicit temperature parameter at line 70",
+      "LLM call without explicit temperature parameter at line 81"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 44",
+      "LLM call without model version pinning at line 54",
+      "LLM call without model version pinning at line 70",
+      "LLM call without model version pinning at line 81"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 44",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 54",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 70",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 81"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 44",
+      "LLM pipeline call without structured output at line 54",
+      "LLM pipeline call without structured output at line 70",
+      "LLM pipeline call without structured output at line 81"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/tests/integration_tests/examples/map/test_example_map.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 37",
+      "LLM call without explicit temperature parameter at line 51"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 37",
+      "LLM call without model version pinning at line 51"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 37",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 51"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 37",
+      "LLM pipeline call without structured output at line 51"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/benchmark/benchmark_sqlite_faiss_onnx.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 86"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 86"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 86"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 86"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/context_process/summarization_context.py": {
+    "R26": [
+      "LLM call without model version pinning at line 37"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 37"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 37"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/context_process/selective_context.py": {
+    "R26": [
+      "LLM call without model version pinning at line 44"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 44"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 44"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/integrate/langchain/langchain_similaritycache_openai.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 21"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/integrate/langchain/langchain_prompt_openai.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/integrate/langchain/langchain_llms_mock.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 30"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/integrate/openai/basic_usage.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 81",
+      "LLM call without explicit temperature parameter at line 93"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 81",
+      "LLM call without model version pinning at line 93",
+      "LLM call without model version pinning at line 25",
+      "LLM call without model version pinning at line 42"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 81",
+      "LLM chat call without a system message at line 93",
+      "LLM chat call without a system message at line 25",
+      "LLM chat call without a system message at line 42"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 81",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 93",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 25",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 42"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 81",
+      "LLM pipeline call without structured output at line 93",
+      "LLM pipeline call without structured output at line 25",
+      "LLM pipeline call without structured output at line 42"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/integrate/openai/readme.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 18",
+      "LLM call without explicit temperature parameter at line 47",
+      "LLM call without explicit temperature parameter at line 90"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 18",
+      "LLM call without model version pinning at line 47",
+      "LLM call without model version pinning at line 90"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 18",
+      "LLM chat call without a system message at line 47",
+      "LLM chat call without a system message at line 90"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 18",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 47",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 90"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 18",
+      "LLM pipeline call without structured output at line 47",
+      "LLM pipeline call without structured output at line 90"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/integrate/openai/summarize.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8",
+      "LLM call without explicit temperature parameter at line 29",
+      "LLM call without explicit temperature parameter at line 41"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 8",
+      "LLM call without model version pinning at line 29",
+      "LLM call without model version pinning at line 41"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 8",
+      "LLM chat call without a system message at line 29",
+      "LLM chat call without a system message at line 41"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 8",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 29",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 41"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 8",
+      "LLM pipeline call without structured output at line 29",
+      "LLM pipeline call without structured output at line 41"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/integrate/openai/qa.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8",
+      "LLM call without explicit temperature parameter at line 27",
+      "LLM call without explicit temperature parameter at line 40"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 8",
+      "LLM call without model version pinning at line 27",
+      "LLM call without model version pinning at line 40"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 8",
+      "LLM chat call without a system message at line 27",
+      "LLM chat call without a system message at line 40"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 8",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 27",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 40"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 8",
+      "LLM pipeline call without structured output at line 27",
+      "LLM pipeline call without structured output at line 40"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/processor/temperature_example.py": {
+    "R26": [
+      "LLM call without model version pinning at line 33"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 33"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 33"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 33"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/processor/llm_verifier_example.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 39"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 39"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 39"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 39"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 39"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/embedding/onnx.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 22"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 22"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 22"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 22"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 22"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/embedding/random.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 25"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 25"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 25"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 25"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 25"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/embedding/default.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 10"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 10"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 10"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 10"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 10"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/embedding/paddlenlp.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 22"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 22"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 22"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 22"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 22"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/adapter/langchain_llms.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 25"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 46"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/adapter/openai_chatgpt.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 8"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 8"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 8"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 8"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 8"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/data_manager/map_manager.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 15"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 15"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 15"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 15"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 15"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/data_manager/scalar_store.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 39",
+      "LLM call without explicit temperature parameter at line 47"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 39",
+      "LLM call without model version pinning at line 47"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 39",
+      "LLM chat call without a system message at line 47"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 39",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 47"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 39",
+      "LLM pipeline call without structured output at line 47"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/data_manager/vector_store.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 36"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 36"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 36"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 36"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 36"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/similarity_evaluation/exact_match.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 10"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 10"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 10"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 10"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 10"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/similarity_evaluation/search_distance.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 20"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 20"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 20"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 20"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/similarity_evaluation/onnx.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 21"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 21"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 21"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 21"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 21"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/similarity_evaluation/sequence_match.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 24"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 24"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 24"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/examples/session/session.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 12",
+      "LLM call without explicit temperature parameter at line 32"
+    ],
+    "R26": [
+      "LLM call without model version pinning at line 12",
+      "LLM call without model version pinning at line 32"
+    ],
+    "R27": [
+      "LLM chat call without a system message at line 12",
+      "LLM chat call without a system message at line 32"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 12",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 32"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 12",
+      "LLM pipeline call without structured output at line 32"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache_server/server.py": {
+    "R25": [
+      "LLM call without explicit temperature parameter at line 133",
+      "LLM call without explicit temperature parameter at line 120"
+    ],
+    "R28": [
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 133",
+      "LLM call without bounded metrics (tokens/timeout/response size) at line 120"
+    ],
+    "R29": [
+      "LLM pipeline call without structured output at line 133",
+      "LLM pipeline call without structured output at line 120"
     ]
   }
 }
