@@ -452,7 +452,7 @@
 </div>
 
 <script>
-  const SHEETS_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwWJn5GnyZXCSwrjWyyf8JQ0Bhktcd0LuXYypD_0RyYZkECsLyxrWzmiNNIU08KuZ7CRQ/exec'
+  const SHEETS_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwF78viHU-PX5GthOUT8ve2PoVt6kUagO5G2AoUSMRTZ1W7Tvy0u_4IXMj7-VOqOq9oyQ/exec'
   const JSON_FILE = './repo_summary.json'
   const CSV_FILE = './merged_repos.csv'
 
@@ -528,6 +528,7 @@
   })
 
   document.getElementById('validateFile').addEventListener('click', () => {
+    commitPendingAnnotationsForCurrentFile()
     const key = annotationKeyForCurrentFile()
     if (!key) {
       statusMsgEl.textContent = 'Aucun fichier sélectionné'
@@ -799,6 +800,20 @@
     statSmellsEl.textContent = total
   }
 
+  function commitPendingAnnotationsForCurrentFile() {
+    const key = annotationKeyForCurrentFile()
+    if (!key) return
+
+    const inputs = smellListEl.querySelectorAll('input.smell-input[data-smell-id]')
+    inputs.forEach((input) => {
+      const smellId = input.dataset.smellId
+      const value = (input.value || '').trim()
+      if (!value) return
+      if (!annotations[key]) annotations[key] = {}
+      annotations[key][smellId] = value
+    })
+  }
+
   function renderSmellPanel() {
     smellListEl.innerHTML = ''
     const current = getCurrentAnnotations()
@@ -837,15 +852,20 @@
         const input = document.createElement('input')
         input.className = 'smell-input'
         input.placeholder = 'Exemple: 5, 12, 17'
+        input.dataset.smellId = smell.id
+
+        input.addEventListener('blur', () => {
+          const value = input.value.trim()
+          if (value) addAnnotation(smell, value)
+        })
+
         input.addEventListener('keydown', (e) => {
           if (e.key === 'Enter') {
             const value = input.value.trim()
-            if (value) {
-              addAnnotation(smell, value)
-            }
-            input.value = ''
+            if (value) addAnnotation(smell, value)
           }
         })
+
         card.appendChild(input)
       }
       smellListEl.appendChild(card)
