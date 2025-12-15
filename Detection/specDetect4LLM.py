@@ -28,10 +28,10 @@ def analyze_file(filepath: str, selected_rules: list[str]) -> dict[str, list[str
         source = Path(filepath).read_text(encoding="utf-8")
         tree = ast.parse(source, filename=filepath)
     except Exception as e:
-        return
-        # return {"PARSE_ERROR": [f"Parse error: {e}"]}
+        return {"PARSE_ERROR": [f"Parse error: {e}"]}
 
-    results: dict[str, list[str]] = defaultdict(list)
+    results: dict[str, list[str]] = {}
+
     for rid in selected_rules:
         module, rule_func = import_rule(rid)
         messages: list[str] = []
@@ -39,29 +39,45 @@ def analyze_file(filepath: str, selected_rules: list[str]) -> dict[str, list[str
         def report(msg):
             messages.append(msg)
 
-        saved = module.report
+        saved_report = getattr(module, "report", None)
         module.report = report
+
         try:
+            add_parent_info = getattr(module, "add_parent_info", None)
+            if callable(add_parent_info):
+                add_parent_info(tree)
+
             rule_func(tree)
+
         except Exception:
             messages.append(f"Execution error:\n{traceback.format_exc()}")
+
         finally:
-            module.report = saved
+            if saved_report is not None:
+                module.report = saved_report
+
+        if messages:
+            results[rid] = messages
+
     return results
+
 
 def analyze_project(root: Path, rules: list[str]) -> tuple[dict[str, dict[str, list[str]]], int]:
     output: dict[str, dict[str, list[str]]] = {}
     total_py_files = 0
+
     for dirpath, _, files in os.walk(root):
         for fname in files:
-            if fname.endswith('.py'):
+            if fname.endswith(".py"):
                 total_py_files += 1
                 full = Path(dirpath) / fname
                 print(f"Analyzing {full}")
                 res = analyze_file(str(full), rules)
                 if res:
                     output[str(full)] = res
+
     return output, total_py_files
+
 
 if __name__ == '__main__':
     
