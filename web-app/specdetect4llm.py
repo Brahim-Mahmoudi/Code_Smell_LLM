@@ -7,7 +7,7 @@ import argparse
 from pathlib import Path
 from collections import defaultdict
 
-RULES_ROOT = Path(__file__).parent / "test_rules"
+RULES_ROOT = Path(__file__).parent / "../Detection/test_rules"
 
 
 def discover_available_rules(rules_root: Path) -> list[str]:
@@ -81,21 +81,21 @@ def analyze_project(root: Path, rules: list[str]) -> tuple[dict[str, dict[str, l
 
 def run_analysis(input_dir: Path, selected_rules: list[str]) -> tuple[dict, int, dict]:
     """
-    Fonction principale pour l'application web.
-    Retourne les résultats, le nombre total de fichiers, et le résumé.
+    Main function for the web application.
+    Returns the results, the total number of files, and the summary.
     """
     
-    # Assurez-vous que les règles sont valides (facultatif si Flask gère l'UI)
+    # Ensure selected rules are valid (optional if Flask validates the UI)
     available = discover_available_rules(RULES_ROOT)
     selected = [r for r in selected_rules if r in available]
     
     if not selected:
         raise ValueError("No valid rules selected.")
         
-    # Exécuter l'analyse
+    # Run the analysis
     results, total_files = analyze_project(input_dir, selected)
     
-    # Générer le résumé (pour l'affichage)
+    # Generate the summary (for display)
     rule_counts = defaultdict(int)
     for file_res in results.values():
         for rule, messages in file_res.items():

@@ -8,9 +8,10 @@ import os
 from specdetect4llm import discover_available_rules, run_analysis, RULES_ROOT
 
 app = Flask(__name__)
-# Taille maximale du fichier uploadé (ex: 32MB)
-# app.py
+# Maximum uploaded file size (e.g., 32MB)
 app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024
+
+# app.py (Focus on error handling and responses)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -18,71 +19,72 @@ def index():
     error = None
     
     if request.method == 'POST':
-        # 1. Vous définissez zip_file ici
-        zip_file = request.files.get('project_zip') 
-        # ...2. Récupérer les règles sélectionnées
+        # ... (All initial checks and initialization of zip_file and selected_rules) ...
+        zip_file = request.files.get('project_zip')
         selected_rules = request.form.getlist('rules')
+
+        # If basic checks fail, return to the index with an error.
+        if not zip_file or zip_file.filename == '' or not selected_rules:
+            error = "Please select a file and at least one rule."
+            return render_template('index.html', rules=available_rules, error=error)
+
+        temp_dir_obj = None
         
-        # 3. Traiter le fichier dans un répertoire temporaire
-        temp_dir = None
         try:
-            # Crée un répertoire temporaire
-            temp_dir = tempfile.TemporaryDirectory()
-            zip_path = Path(temp_dir.name) / "project.zip"
+            # --- ATTEMPT ANALYSIS ---
+            temp_dir_obj = tempfile.TemporaryDirectory()
+            temp_path = Path(temp_dir_obj.name)
+            zip_path = temp_path / "project.zip"
             zip_file.save(zip_path)
 
-            project_dir = Path(temp_dir.name) / "project_extracted"
+            project_dir = temp_path / "project_extracted"
             shutil.unpack_archive(zip_path, project_dir)
 
-            # 4. Lancer l'analyse
-            print(f"Lancement de l'analyse sur {project_dir}...")
-            
+            # Starting analysis. This is where the 'summary' exception could be raised.
             results, total_files, summary = run_analysis(project_dir, selected_rules)
             
+            # 1. PREPARE ON SUCCESS
             results_json_str = json.dumps(results, indent=2, ensure_ascii=False)
             
-            # 5. SUCCÈS : Retourne immédiatement la page de résultats
-            # IMPORTANT : Le nettoyage du temp_dir doit être fait AVANT de retourner
-            temp_dir.cleanup() 
-            
+            # SUCCESS: Return results page immediately
             return render_template(
                 'results.html',
                 results=results,
                 total_files=total_files,
-                summary=summary,
+                summary=summary, 
+                project_extracted_path=str(project_dir),
                 project_name=zip_file.filename,
                 results_json=results_json_str
             )
-
+            
         except shutil.ReadError:
-            error = "Erreur: Le fichier n'est pas un fichier ZIP ou TAR valide."
-            # Pas de return ici, on laisse le flux continuer jusqu'à la fin du POST.
+            error = "Error: The file is not a valid ZIP/TAR or is corrupted."
+            
         except Exception as e:
-            # Gérer toute autre erreur (erreur d'analyse, d'écriture, etc.)
-            error = f"Erreur d'analyse: {e}"
-            # Pas de return ici, on laisse le flux continuer jusqu'à la fin du POST.
+            # FATAL ERROR (includes run_analysis failure)
+            print(f"FATAL ERROR DURING ANALYSIS: {e}") 
+            error = f"Internal analysis error: {e}"
+            
         finally:
-            # Assurez-vous que le répertoire temporaire est nettoyé si l'analyse a échoué
-            # et qu'il n'a pas été nettoyé dans le bloc try (en cas de succès)
-            if temp_dir and Path(temp_dir.name).exists(): 
-                 # Utilisation de Path(temp_dir.name).exists() pour éviter un crash si cleanup() a déjà été appelé
-                 try: 
-                    temp_dir.cleanup()
-                 except Exception:
-                    pass # Ignore l'erreur de nettoyage s'il est déjà fait ou si le chemin n'existe plus
+            # 2. Cleanup
+            if temp_dir_obj:
+                try:
+                    temp_dir_obj.cleanup() 
+                except Exception:
+                    pass
 
-        # SI nous arrivons ici, C'EST QUE L'ANALYSE A ÉCHOUÉ (error est rempli)
-        # On retourne l'index AVEC le message d'erreur.
+        # 3. FAILURE: If execution reaches here (after an except), return to the index.
+        # This ensures we do not render results.html without the required variables.
         if error:
             return render_template('index.html', rules=available_rules, error=error)
                 
-    # Ce return est pour les requêtes GET initiales (ou si le POST n'a pas eu lieu)
+    # 4. GET requests
     return render_template('index.html', rules=available_rules, error=error)
 
-# Route pour l'export JSON (inchangée)
+# Route for JSON export (unchanged)
 @app.route('/download_json', methods=['POST'])
 def download_json():
-    # ... (le code de download_json reste le même que dans la réponse précédente) ...
+    # ... (download_json code remains the same as previously) ...
     results_json = request.form['results_json']
     
     temp_json_path = Path(tempfile.gettempdir()) / "specdetect_results.json"
