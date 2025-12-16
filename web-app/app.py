@@ -8,8 +8,22 @@ import os
 from specdetect4llm import discover_available_rules, run_analysis, RULES_ROOT
 
 app = Flask(__name__)
-# Maximum uploaded file size (e.g., 32MB)
-app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024
+# Maximum uploaded file size (e.g., 500MB)
+app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024
+
+RULE_METADATA = {
+    "R25": "LLM Temperature Not Explicitly Set",
+    "R26": "LLM Version Pinning Not Explicitly Set Read",
+    "R27": "LLM With No System Message",
+    "R28": "LLM Calls Without Bounded Metrics",
+    "R29": "No Structured Output in Pipeline",
+    "R30": "Reasoning Effort Not Explicitly Set",
+    "R31": "Raw Vision Payload",
+    "R32": "Overspecified Sampling Parameters",
+    "R33": "Anonymous Inference Cal",
+    # Ajoutez ici d'autres règles si nécessaire, ex: "R24": "Nom de la règle 24"
+    "PARSE_ERROR": "Erreur d'Analyse (Fichier Invalide)"
+}
 
 # app.py (Focus on error handling and responses)
 
@@ -54,7 +68,8 @@ def index():
                 summary=summary, 
                 project_extracted_path=str(project_dir),
                 project_name=zip_file.filename,
-                results_json=results_json_str
+                results_json=results_json_str,
+                rule_metadata=RULE_METADATA
             )
             
         except shutil.ReadError:
@@ -76,10 +91,10 @@ def index():
         # 3. FAILURE: If execution reaches here (after an except), return to the index.
         # This ensures we do not render results.html without the required variables.
         if error:
-            return render_template('index.html', rules=available_rules, error=error)
+            return render_template('index.html', rules=available_rules, error=error, rule_metadata=RULE_METADATA)
                 
     # 4. GET requests
-    return render_template('index.html', rules=available_rules, error=error)
+    return render_template('index.html', rules=available_rules, error=error, rule_metadata=RULE_METADATA)
 
 # Route for JSON export (unchanged)
 @app.route('/download_json', methods=['POST'])

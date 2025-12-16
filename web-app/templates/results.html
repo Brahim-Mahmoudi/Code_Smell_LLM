@@ -22,9 +22,10 @@
                                 {{ filepath|replace(project_extracted_path + '/', '') }}
                             </div>
                             
-                            {% for rule, messages in file_results.items() %}
+                            {% for rule_id, messages in file_results.items() %}
+                                {% set rule_name = rule_metadata[rule_id] if rule_id in rule_metadata else 'Name Not Found' %}
                                 <div class="rule-group">
-                                    <div class="rule-title">Rule {{ rule }} ({{ messages|length }} alert(s))</div>
+                                    <div class="rule-title">Rule {{ rule_id }}: {{ rule_name }} ({{ messages|length }} alert(s))</div>
                                     <ul>
                                         {% for msg in messages %}
                                             <li class="alert-item">{{ msg }}</li>
@@ -37,7 +38,7 @@
                 
                 {% else %}
                     <div class="empty-state">
-                        🎉 No code smells detected! Your code looks clean.
+                         No code smells detected! Your code looks clean.
                     </div>
                 {% endif %}
             </div>
@@ -59,14 +60,21 @@
                 <h2 style="margin-top: 30px;">Summary by Rule</h2>
                 <table class="summary-table">
                     <thead>
-                        <tr><th>Rule ID</th><th>Alerts</th></tr>
+                        <tr><th>Rule ID</th><th>Name</th><th>Alerts</th></tr>
                     </thead>
                     <tbody>
-                        {% for rule, count in summary.items() %}
-                        <tr><td>{{ rule }}</td><td>{{ count }}</td></tr>
-                        {% endfor %}
+                        {% for rule_id, count in summary.items() %}
+                        <tr>
+                            <td>{{ rule_id }}</td>
+                            <td>{{ rule_metadata[rule_id] if rule_id in rule_metadata else 'Name Not Found' }}</td>
+                            <td>{{ count }}</td>
+                        </tr> {% endfor %}
                     </tbody>
                 </table>
+                
+                
+                <h2 style="margin-top: 30px;">Summary by Rule (Table)</h2>
+                <table class="summary-table"></table>
                 
                 <div class="row" style="margin-top: 25px;">
                     <form action="{{ url_for('download_json') }}" method="POST" style="width: 100%;">

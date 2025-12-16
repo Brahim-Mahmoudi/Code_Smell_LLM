@@ -162,7 +162,7 @@ input[type="text"]:focus {
 .rules-container label {
     margin: 0;
     color: var(--text);
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
     display: flex;
     align-items: center;

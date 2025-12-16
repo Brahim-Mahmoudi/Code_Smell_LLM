@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SpecDetect4LLM</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
+    </head>
 <body>
     <div class="wrap">
         <div class="title">SpecDetect4LLM</div>
@@ -36,10 +36,12 @@
                     </div>
 
                     <div class="rules-container">
-                        {% for rule in rules %}
+                        {% for rule_id in rules %}
                             <div>
-                                <input type="checkbox" name="rules" value="{{ rule }}" id="{{ rule }}" checked>
-                                <label for="{{ rule }}">{{ rule }}</label>
+                                <input type="checkbox" name="rules" value="{{ rule_id }}" id="{{ rule_id }}" checked>
+                                <label for="{{ rule_id }}">
+                                    {{ rule_metadata[rule_id] if rule_id in rule_metadata else rule_id }}
+                                </label>
                             </div>
                         {% endfor %}
                     </div>
@@ -57,7 +59,7 @@
                     <div style="margin-top: 20px;">
                         <h2>Status</h2>
                         <div class="muted">
-                           Ready for analysis. Ensure the ZIP file is under 32 MB.
+                           Ready for analysis. Ensure the ZIP file is under 500 MB.
                         </div>
                     </div>
                 </div>
@@ -76,5 +78,5 @@
             checkboxes.forEach(cb => cb.checked = false);
         }
     </script>
-</body>
+    </body>
 </html>

@@ -6,13 +6,19 @@ import traceback
 import argparse
 from pathlib import Path
 from collections import defaultdict
+import sys
 
-RULES_ROOT = Path(__file__).parent / "../Detection/test_rules"
+RULES_ROOT = Path(__file__).parent / "../Detection/test_rules/"
 
+DETECTION_ROOT = RULES_ROOT.parent
+
+if str(DETECTION_ROOT) not in sys.path:
+    sys.path.append(str(DETECTION_ROOT))
 
 def discover_available_rules(rules_root: Path) -> list[str]:
     rule_ids: list[str] = []
     for sub in sorted(rules_root.iterdir()):
+        #print(f"Checking {sub}")
         if sub.is_dir() and sub.name.startswith("R"):
             rule_ids.append(sub.name)
     return rule_ids
