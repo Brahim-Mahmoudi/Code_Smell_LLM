@@ -9,6 +9,11 @@ SpecDetect4LLM supports detection of 5 LLM Integration code smells:
 | R27 | LLM With No System Message | 2 (Implicit config) | [Detection Explanation](Rules/R27.md) |
 | R28 | LLM Calls Without Bounded Metrics | 1(Easily detectable statically) | [Detection Explanation](Rules/R28.md) |
 | R29 | No Structured Output in Pipeline | 2 (Implicit config) | [Detection Explanation](Rules/R29.md) |
+| R30 | Reasoning Effort Not Explicitly Set | To Determine | [Detection Explanation](Rules/R31.md) |
+| R31 | Raw Vision Payload | To Determine | [Detection Explanation](Rules/R32.md) |
+| R32 | Overspecified Sampling Parameters | To Determine | [Detection Explanation](Rules/R33.md) |
+| R33 | Anonymous Inference Cal | To Determine | [Detection Explanation](Rules/R33.md) |
+
 
 ---
 

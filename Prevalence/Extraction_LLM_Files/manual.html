@@ -89,7 +89,7 @@
      .layout {
       flex: 1;
       display: flex;
-      min-height: 0; /* Important pour permettre le shrinking du flex */
+      min-height: 0;
       overflow: hidden;
     }
     .sidebar {
@@ -194,42 +194,22 @@
       padding: 3px 8px;
     }
     .code-body {
-    flex: 1;
-    overflow-y: auto; /* Permet le défilement vertical */
-    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
-    background: #020617;
-    min-height: 0; /* Assure que la hauteur minimale est respectée */
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: auto;
+      background: #020617;
+      min-height: 0;
+      position: relative;
     }
 
-    .code-body pre {
-    margin: 0;
-    padding: 8px 10px;
-    font-family: ui-monospace, SFMonoRegular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 11px;
-    color: #e5e7eb;
-    white-space: pre-wrap; /* Permet de couper les longues lignes */
-    word-wrap: break-word; /* Coupe les mots longs */
+    .code-frame {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: none;
+      background: white;
     }
-    .code-line {
-      display: flex;
-      padding: 0 6px;
-      border-radius: 4px;
-    }
-    .code-line:hover {
-      background: rgba(15, 23, 42, 0.7);
-    }
-    .line-num {
-      width: 40px;
-      text-align: right;
-      margin-right: 8px;
-      color: #6b7280;
-      user-select: none;
-    }
-    .line-text {
-      flex: 1;
-      white-space: pre-wrap;
-      word-break: break-word;
-    }
+
     .smell-panel {
       display: flex;
       flex-direction: column;
@@ -307,7 +287,7 @@
     .tag-green { background: #dcfce7; color: #538058; }
     .tag-pink { background: #fce7f3; color: #987685; }
     .tag-black { background: #d1d5db; color: #5f636c; }
-    .tag-cian { background: #cffafe; color: #29758a; }
+    .tag-cian { background: #cffafe; color: #227389; }
     .smell-name {
       margin-top: 3px;
       font-weight: 500;
@@ -362,6 +342,8 @@
       font-size: 13px;
       flex-direction: column;
       gap: 8px;
+      height: 100%;
+      width: 100%;
     }
     .smell-panel { min-height: 0 }
     .smell-panel { overflow: hidden }
@@ -422,18 +404,17 @@
           <span class="name" id="fileNameBadge">Aucun fichier sélectionné</span>
           <span id="lineCount"></span>
         </div>
+
         <div class="code-body" id="codeViewer">
-          <pre>
-    <div class="code-line">
-      <span class="line-num">1</span>
-      <span class="line-text">import os</span>
-    </div>
-    <div class="code-line">
-      <span class="line-num">2</span>
-      <span class="line-text">import sys</span>
-    </div>
-    <!-- Ajoutez plus de lignes ici -->
-  </pre>
+          <div id="codeEmpty" class="empty-state">
+            <div>Sélectionne un fichier pour afficher le code.</div>
+          </div>
+          <iframe
+            id="codeFrame"
+            class="code-frame"
+            title="Code navigator"
+            referrerpolicy="no-referrer"
+          ></iframe>
         </div>
       </div>
 
@@ -458,7 +439,6 @@
         </div>
 
         <div class="smell-list" id="smellList">
-          <!-- les cartes de smells seront ajoutées en JS -->
         </div>
 
         <div class="smell-footer">
@@ -472,9 +452,11 @@
 </div>
 
 <script>
-  const SHEETS_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwWJn5GnyZXCSwrjWyyf8JQ0Bhktcd0LuXYypD_0RyYZkECsLyxrWzmiNNIU08KuZ7CRQ/exec'
+  const SHEETS_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwF78viHU-PX5GthOUT8ve2PoVt6kUagO5G2AoUSMRTZ1W7Tvy0u_4IXMj7-VOqOq9oyQ/exec'
   const JSON_FILE = './repo_summary.json'
   const CSV_FILE = './merged_repos.csv'
+
+  const NAVIGATOR_APP_BASE_URL = 'https://sco-enilno-zzz.github.io/'
 
   const CODE_SMELLS = [
     { id: 'NSO', name: 'No Structured Output', tagClass: 'tag-red' },
@@ -505,6 +487,8 @@
   const fileNameBadgeEl = document.getElementById('fileNameBadge')
   const lineCountEl = document.getElementById('lineCount')
   const codeViewerEl = document.getElementById('codeViewer')
+  const codeFrameEl = document.getElementById('codeFrame')
+  const codeEmptyEl = document.getElementById('codeEmpty')
   const smellListEl = document.getElementById('smellList')
   const statFilesEl = document.getElementById('statFiles')
   const statReposEl = document.getElementById('statRepos')
@@ -544,6 +528,7 @@
   })
 
   document.getElementById('validateFile').addEventListener('click', () => {
+    commitPendingAnnotationsForCurrentFile()
     const key = annotationKeyForCurrentFile()
     if (!key) {
       statusMsgEl.textContent = 'Aucun fichier sélectionné'
@@ -566,22 +551,20 @@
 
   async function loadDataFiles() {
     try {
-      // Charger JSON
       console.log('Chargement de', JSON_FILE)
       const jsonResp = await fetch(JSON_FILE)
       console.log('Réponse JSON:', jsonResp.status, jsonResp.statusText)
-      
+
       if (!jsonResp.ok) {
         throw new Error('HTTP ' + jsonResp.status + ' - ' + jsonResp.statusText)
       }
-      
+
       const jsonText = await jsonResp.text()
       console.log('Texte JSON (premiers 500 chars):', jsonText.substring(0, 500))
-      
+
       data = JSON.parse(jsonText)
       console.log('JSON parsé, repos:', Object.keys(data).length)
 
-      // Charger CSV (optionnel)
       try {
         const csvResp = await fetch(CSV_FILE)
         if (csvResp.ok) {
@@ -623,10 +606,9 @@
         console.warn('CSV optionnel non trouvé:', e.message)
       }
 
-      // Remplir le select des dépôts
       const repoKeys = Object.keys(data)
       console.log('Clés des repos:', repoKeys)
-      
+
       repoSelectEl.innerHTML = '<option value="">Choisir un dépôt</option>'
       repoKeys.forEach((k) => {
         const opt = document.createElement('option')
@@ -653,10 +635,7 @@
   }
 
   function getGitHubToken() {
-    // Chercher le token dans le localStorage ou sessionStorage
     let token = localStorage.getItem('github_token') || sessionStorage.getItem('github_token')
-    
-    // Si pas trouvé, demander à l'utilisateur
     if (!token) {
       token = prompt('Entrez votre GitHub token (optionnel):')
       if (token) {
@@ -704,31 +683,48 @@
     fileInfoEl.textContent = selectedFile.file_path + ' • provider: ' + providerText + src
   }
 
+  function getRepoCommitForNavigator(repoKey) {
+    const repoData = data && data[repoKey]
+    return (repoData && repoData.commit_sha) || (repoData && repoData.ref) || 'main'
+  }
+
+  function cleanRepoFilePath(filePath) {
+    let actualPath = filePath || ''
+    const firstSlashIdx = actualPath.indexOf('/')
+    if (firstSlashIdx !== -1) {
+      actualPath = actualPath.substring(firstSlashIdx + 1)
+    }
+    return actualPath
+  }
+
+  function buildNavigatorUrl(repoKey, file) {
+    const owner = repoKey.split('/')[0]
+    const repo = repoKey.split('/')[1]
+    const commit = getRepoCommitForNavigator(repoKey)
+    const path = cleanRepoFilePath(file.file_path)
+
+    const u = new URL(NAVIGATOR_APP_BASE_URL)
+    u.searchParams.set('repo', owner + '/' + repo)
+    u.searchParams.set('commit', commit)
+    u.searchParams.set('path', path)
+    return u.toString()
+  }
+
   function renderCode() {
     fileNameBadgeEl.textContent = selectedFile ? selectedFile.file_path.split('/').pop() : 'Aucun fichier sélectionné'
-    if (!fileContent) {
-      lineCountEl.textContent = ''
-      codeViewerEl.innerHTML = '<div class="empty-state"><div>Sélectionne un fichier pour afficher le code.</div></div>'
+    lineCountEl.textContent = ''
+
+    if (!selectedRepo || !selectedFile) {
+      codeFrameEl.src = 'about:blank'
+      codeFrameEl.style.display = 'none'
+      codeEmptyEl.style.display = 'flex'
       return
     }
-    const lines = fileContent.split('\n')
-    lineCountEl.textContent = lines.length + ' lignes'
-    const pre = document.createElement('pre')
-    lines.forEach((line, idx) => {
-      const row = document.createElement('div')
-      row.className = 'code-line'
-      const num = document.createElement('span')
-      num.className = 'line-num'
-      num.textContent = String(idx + 1).padStart(4, ' ')
-      const text = document.createElement('span')
-      text.className = 'line-text'
-      text.textContent = line || ' '
-      row.appendChild(num)
-      row.appendChild(text)
-      pre.appendChild(row)
-    })
-    codeViewerEl.innerHTML = ''
-    codeViewerEl.appendChild(pre)
+
+    const url = buildNavigatorUrl(selectedRepo, selectedFile)
+    codeEmptyEl.style.display = 'none'
+    codeFrameEl.style.display = 'block'
+    codeFrameEl.src = url
   }
 
   function renderFilesList() {
@@ -791,54 +787,7 @@
   }
 
   async function loadFileContent(repoKey, file) {
-    const owner = repoKey.split('/')[0]
-    const repo = repoKey.split('/')[1]
-    const repoData = data && data[repoKey]
-    const ref = (repoData && repoData.commit_sha) || (repoData && repoData.ref) || 'main'
-    
-    // Nettoyer le chemin : extraire uniquement la partie "path/to/file.py"
-    // Le format dans le JSON est : "owner-repo-shortsha/path/to/file.py"
-    // Il faut extraire juste la partie après le premier slash
-    let actualPath = file.file_path
-    
-    // Trouver le premier slash et prendre tout ce qui suit
-    const firstSlashIdx = actualPath.indexOf('/')
-    if (firstSlashIdx !== -1) {
-      actualPath = actualPath.substring(firstSlashIdx + 1)
-    }
-    
-    const url = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + encodeURIComponent(actualPath) + '?ref=' + ref
-    const token = getGitHubToken()
-    const headers = { Accept: 'application/vnd.github.v3.raw' }
-    if (token) {
-      headers.Authorization = 'token ' + token
-    }
-    
-    console.log('Chemin original:', file.file_path)
-    console.log('Chemin nettoyé:', actualPath)
-    console.log('URL:', url)
-    
-    try {
-      const resp = await fetch(url, { headers })
-      if (!resp.ok) {
-        const errText = await resp.text()
-        fileContent =
-          '# Erreur de chargement ' + resp.status + '\n' +
-          '# File path original: ' + file.file_path + '\n' +
-          '# File path nettoyé: ' + actualPath + '\n' +
-          '# Repo: ' + owner + '/' + repo + '\n' +
-          '# Ref: ' + ref + '\n' +
-          '# URL: ' + url + '\n\n' +
-          '# Erreur:\n' +
-          errText
-      } else {
-        fileContent = await resp.text()
-      }
-      renderCode()
-    } catch (err) {
-      fileContent = '# Erreur: ' + err.message
-      renderCode()
-    }
+    renderCode()
   }
 
   function renderStats() {
@@ -849,6 +798,20 @@
       total += Object.keys(map).length
     })
     statSmellsEl.textContent = total
+  }
+
+  function commitPendingAnnotationsForCurrentFile() {
+    const key = annotationKeyForCurrentFile()
+    if (!key) return
+
+    const inputs = smellListEl.querySelectorAll('input.smell-input[data-smell-id]')
+    inputs.forEach((input) => {
+      const smellId = input.dataset.smellId
+      const value = (input.value || '').trim()
+      if (!value) return
+      if (!annotations[key]) annotations[key] = {}
+      annotations[key][smellId] = value
+    })
   }
 
   function renderSmellPanel() {
@@ -888,16 +851,21 @@
       } else {
         const input = document.createElement('input')
         input.className = 'smell-input'
-        input.placeholder = 'Exemple: 5; 12; 17'
+        input.placeholder = 'Exemple: 5, 12, 17'
+        input.dataset.smellId = smell.id
+
+        input.addEventListener('blur', () => {
+          const value = input.value.trim()
+          if (value) addAnnotation(smell, value)
+        })
+
         input.addEventListener('keydown', (e) => {
           if (e.key === 'Enter') {
             const value = input.value.trim()
-            if (value) {
-              addAnnotation(smell, value)
-            }
-            input.value = ''
+            if (value) addAnnotation(smell, value)
           }
         })
+
         card.appendChild(input)
       }
       smellListEl.appendChild(card)
@@ -928,81 +896,74 @@
   }
 
   async function sendRepoToGoogleSheets(repoKey) {
-  statusMsgEl.textContent = ''
-  statusMsgEl.className = 'status'
-  
-  if (!SHEETS_WEBHOOK_URL) {
-    statusMsgEl.textContent = 'Aucune URL Apps Script configurée.'
-    statusMsgEl.classList.add('error')
-    return
-  }
-  
-  if (!data) return
+    statusMsgEl.textContent = ''
+    statusMsgEl.className = 'status'
 
-  const repoData = data[repoKey] || {}
-
-  // Fichiers validés pour ce dépôt, sous la forme "repoKey:chemin.py"
-  const validatedForRepo = Array.from(validatedFiles).filter((k) =>
-    k.startsWith(repoKey + ':')
-  )
-
-  // Construction des lignes envoyées vers Google Sheets
-  console.log("ANNOTATIONS DISPONIBLES :", Object.keys(annotations));
-
-  const rows = validatedForRepo.map((entry) => {
-    const filePath = entry.substring(repoKey.length + 1);
-
-    const row = {
-      file_path: filePath
+    if (!SHEETS_WEBHOOK_URL) {
+      statusMsgEl.textContent = 'Aucune URL Apps Script configurée.'
+      statusMsgEl.classList.add('error')
+      return
     }
 
-    // Une colonne par smell, avec les lignes saisies dans ton UI (format "5; 12; 17")
-    CODE_SMELLS.forEach((smell) => {
-      const annKey = `${repoKey}:${filePath}`   // clé réelle
-      row[smell.id] = annotations[annKey]?.[smell.id] || '' 
+    if (!data) return
+
+    const repoData = data[repoKey] || {}
+
+    const validatedForRepo = Array.from(validatedFiles).filter((k) =>
+      k.startsWith(repoKey + ':')
+    )
+
+    console.log("ANNOTATIONS DISPONIBLES :", Object.keys(annotations))
+
+    const rows = validatedForRepo.map((entry) => {
+      const filePath = entry.substring(repoKey.length + 1)
+
+      const row = {
+        file_path: filePath
+      }
+
+      CODE_SMELLS.forEach((smell) => {
+        const annKey = `${repoKey}:${filePath}`
+        row[smell.id] = annotations[annKey]?.[smell.id] || ''
+      })
+
+      return row
     })
 
-    return row
-  })
+    const payload = {
+      repo: repoData.repo,
+      owner: repoData.owner,
+      repo_key: repoKey,
+      commit_sha: repoData.commit_sha || repoData.ref,
+      timestamp: new Date().toISOString(),
+      rows: rows
+    }
 
-  const payload = {
-    repo: repoData.repo,
-    owner: repoData.owner,
-    repo_key: repoKey,
-    commit_sha: repoData.commit_sha || repoData.ref,
-    timestamp: new Date().toISOString(),
-    rows: rows
+    try {
+      statusMsgEl.textContent = 'Envoi vers Google Sheets en cours...'
+      console.log("Payload envoyé :", JSON.stringify(payload, null, 2))
+      console.log("PAYLOAD ENVOYÉ →", JSON.stringify(payload, null, 2))
+
+      const resp = await fetch(SHEETS_WEBHOOK_URL, {
+        method: 'POST',
+        body: JSON.stringify(payload)
+      })
+
+      if (!resp.ok) throw new Error('HTTP ' + resp.status)
+
+      const result = await resp.json()
+      console.log('Réponse Google:', result)
+
+      statusMsgEl.textContent = '✓ Dépôt envoyé à Google Sheets'
+      statusMsgEl.className = 'status success'
+
+    } catch (err) {
+      console.error(err)
+      statusMsgEl.textContent = "✗ Erreur lors de l'envoi: " + err.message
+      statusMsgEl.className = 'status error'
+    }
   }
 
-  try {
-    statusMsgEl.textContent = 'Envoi vers Google Sheets en cours...'
-    console.log("Payload envoyé :", JSON.stringify(payload, null, 2))
-    console.log("PAYLOAD ENVOYÉ →", JSON.stringify(payload, null, 2));
-
-    const resp = await fetch(SHEETS_WEBHOOK_URL, {
-      method: 'POST',
-      body: JSON.stringify(payload)
-      // pas d’en-têtes, évite preflight CORS
-    })
-
-    if (!resp.ok) throw new Error('HTTP ' + resp.status)
-
-    const result = await resp.json()
-    console.log('Réponse Google:', result)
-
-    statusMsgEl.textContent = '✓ Dépôt envoyé à Google Sheets'
-    statusMsgEl.className = 'status success'
-
-  } catch (err) {
-    console.error(err)
-    statusMsgEl.textContent = "✗ Erreur lors de l'envoi: " + err.message
-    statusMsgEl.className = 'status error'
-  }
-}
-
-
-
-  // Charger les données au démarrage
   loadDataFiles()
 </script>
 </body>

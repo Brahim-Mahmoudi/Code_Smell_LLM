@@ -1763,6 +1763,23 @@ def isRoleBasedLLMChat(node: ast.AST) -> bool:
     return False
 
 
+def _find_last_list_assignment(root: ast.AST, varname: str, before_line: int):
+    last_val, last_line = None, -1
+    for n in ast.walk(root):
+        ln = getattr(n, "lineno", 0)
+        if ln >= before_line:
+            continue
+        if isinstance(n, ast.Assign):
+            if any(isinstance(t, ast.Name) and t.id == varname for t in n.targets):
+                if isinstance(n.value, (ast.List, ast.Tuple)) and ln > last_line:
+                    last_val, last_line = n.value, ln
+        if isinstance(n, ast.AnnAssign):
+            if isinstance(n.target, ast.Name) and n.target.id == varname:
+                v = n.value
+                if isinstance(v, (ast.List, ast.Tuple)) and ln > last_line:
+                    last_val, last_line = v, ln
+    return last_val
+
 def hasNoSystemMessage(node: ast.AST) -> bool:
     """
     True si, avec suffisamment d'évidence statique, aucun "system message/instructions" n'est fourni.
@@ -3153,6 +3170,7 @@ def isHuggingFacePipelineConstructor(node: ast.AST) -> bool:
     if node.args and isinstance(node.args[0], ast.Constant) and str(node.args[0].value) == "text-generation":
         return True
     return False
+
 def isLLMCallRequiringTemperature(node: ast.AST) -> bool:
     """
     Même logique que isLLMCall, mais on ne considère pas le constructeur HF pipeline

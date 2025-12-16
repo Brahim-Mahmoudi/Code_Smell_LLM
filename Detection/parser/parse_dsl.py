@@ -10,13 +10,14 @@ based on the rules defined in the DSL.
 import sys
 import ast
 import argparse
+from pathlib import Path
 from lark import Lark, Transformer, Tree, v_args
 import re
 
 # -----------------------------------------------------------------------------
 # Loading the grammar from the external file dsl_grammar.lark
 # -----------------------------------------------------------------------------
-GRAMMAR_FILE = "../grammar/dsl_grammar.lark"
+GRAMMAR_FILE = Path(__file__).resolve().parent.parent / "grammar" / "dsl_grammar.lark"
 try:
     with open(GRAMMAR_FILE, "r", encoding="utf-8") as gf:
         dsl_grammar = gf.read()
@@ -2173,6 +2174,23 @@ def generate_python_code(rules) -> str:
     "    return False",
     "",
     "",
+    "def _find_last_list_assignment(root: ast.AST, varname: str, before_line: int):",
+    "    last_val, last_line = None, -1",
+    "    for n in ast.walk(root):",
+    "        ln = getattr(n, \"lineno\", 0)",
+    "        if ln >= before_line:",
+    "            continue",
+    "        if isinstance(n, ast.Assign):",
+    "            if any(isinstance(t, ast.Name) and t.id == varname for t in n.targets):",
+    "                if isinstance(n.value, (ast.List, ast.Tuple)) and ln > last_line:",
+    "                    last_val, last_line = n.value, ln",
+    "        if isinstance(n, ast.AnnAssign):",
+    "            if isinstance(n.target, ast.Name) and n.target.id == varname:",
+    "                v = n.value",
+    "                if isinstance(v, (ast.List, ast.Tuple)) and ln > last_line:",
+    "                    last_val, last_line = v, ln",
+    "    return last_val",
+    "",
     "def hasNoSystemMessage(node: ast.AST) -> bool:",
     "    \"\"\"",
     "    True si, avec suffisamment d'évidence statique, aucun \"system message/instructions\" n'est fourni.",
@@ -3563,6 +3581,7 @@ def generate_python_code(rules) -> str:
     "    if node.args and isinstance(node.args[0], ast.Constant) and str(node.args[0].value) == \"text-generation\":",
     "        return True",
     "    return False",
+    "",
     "def isLLMCallRequiringTemperature(node: ast.AST) -> bool:",
     "    \"\"\"",
     "    Même logique que isLLMCall, mais on ne considère pas le constructeur HF pipeline",
@@ -3573,7 +3592,7 @@ def generate_python_code(rules) -> str:
     "    if isHuggingFacePipelineConstructor(node):",
     "        return False",
     "    return True",
-    "",
+    ""
 ]
 
 
