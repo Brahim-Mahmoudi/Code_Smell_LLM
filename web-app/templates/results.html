@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultats de l'Analyse SpecDetect4LLM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Styles CSS pour améliorer la lisibilité du tableau des alertes (ajoutez ceci dans style.css ou ici) */
+        .file-results {
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-left: 5px solid #007bff; /* Barre latérale bleue */
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9ff;
+        }
+
+        .file-results h3 {
+            color: #333;
+            margin-top: 0;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+        }
+
+        .alert-message {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107; /* Barre latérale jaune pour l'alerte */
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            list-style: none; /* Cache le point de la liste */
+            font-size: 0.95em;
+        }
+
+        .alert-list {
+            padding-left: 0; /* Alignement */
+        }
+
+        .summary-table th {
+            background-color: #e9ecef;
+            color: #333;
+        }
+
+        .export-section {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f0f0f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Analyse Terminée avec succès !</h1>
+        
+        <div style="background-color: #eaf6ff; padding: 15px; border-radius: 8px; margin-bottom: 30px;">
+            <p><strong>Dossier analysé :</strong> <code>{{ project_path }}</code></p>
+            <p><strong>Fichiers Python trouvés :</strong> **{{ total_files }}**</p>
+            <p style="font-size: 1.1em; color: #007bff;"><strong>Fichiers avec alertes :</strong> **{{ results|length }}**</p>
+        </div>
+        
+        <hr>
+        
+        <h2>📊 Résumé des Alertes par Règle</h2>
+        <table class="summary-table">
+            <thead>
+                <tr><th>Règle ID</th><th>Nombre d'Alertes</th></tr>
+            </thead>
+            <tbody>
+                {% for rule, count in summary.items() %}
+                <tr><td>**{{ rule }}**</td><td>**{{ count }}**</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <hr>
+
+        <h2>📜 Détails des Alertes</h2>
+        {% if results %}
+            {% for filepath, file_results in results.items() %}
+                <div class="file-results">
+                    <h3>Fichier : <code>{{ filepath|replace(project_path + '/', '') }}</code></h3>
+                    
+                    {% for rule, messages in file_results.items() %}
+                        <p><strong>Règle **{{ rule }}**</strong> ({{ messages|length }} alerte(s)) :</p>
+                        <ul class="alert-list">
+                            {% for msg in messages %}
+                                <li class="alert-message">{{ msg }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <p style="text-align: center; padding: 20px; background-color: #e6ffe6; border-radius: 8px; border: 1px solid #b3ffb3;">
+                🎉 Aucun code smell détecté ! Votre code est propre.
+            </p>
+        {% endif %}
+        
+
+        <hr>
+        
+        <div class="export-section">
+            <h2>💾 Export JSON</h2>
+            <p>Téléchargez le rapport complet dans un format structuré pour une analyse ultérieure ou une intégration.</p>
+            <form action="{{ url_for('download_json') }}" method="POST">
+                <input type="hidden" name="results_json" value="{{ results_json }}">
+                <button type="submit" style="font-size: 1.1em; padding: 12px 25px;">
+                    📥 Télécharger les résultats au format JSON
+                </button>
+            </form>
+        </div>
+
+        <p style="margin-top: 30px; text-align: center;"><a href="{{ url_for('index') }}">⬅️ Lancer une Nouvelle Analyse</a></p>
+    </div>
+</body>
+</html>

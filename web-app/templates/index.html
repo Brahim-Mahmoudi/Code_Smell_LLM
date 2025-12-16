@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SpecDetect4LLM Web Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Ajout de styles spécifiques pour l'interface d'accueil */
+        .rule-actions button {
+            margin-right: 10px;
+            background-color: #6c757d;
+        }
+        .rule-actions button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 SpecDetect4LLM : Analyse de Code Python</h1>
+        <p class="description" style="text-align: center; color: #666;">Analysez rapidement votre projet Python à la recherche de code smells spécifiques.</p>
+        
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" enctype="multipart/form-data" id="analysisForm">
+            <h2>1. Téléverser le Projet (Dossier Compressé)</h2>
+            <p>Pour analyser un dossier, veuillez le compresser au format **ZIP** ou **TAR** et le sélectionner ci-dessous.  </p>
+            <input type="file" name="project_zip" accept=".zip,.tar,.gz,.tgz" required style="width: 100%; border: 2px dashed #007bff; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+
+            <h2>2. Choix des Règles d'Analyse</h2>
+            <div class="rule-actions">
+                <button type="button" onclick="selectAllRules()">Sélectionner Tout</button>
+                <button type="button" onclick="deselectAllRules()">Désélectionner Tout</button>
+            </div>
+            
+            <div class="rule-list">
+                {% for rule in rules %}
+                    <div class="rule-item">
+                        <input type="checkbox" name="rules" value="{{ rule }}" id="{{ rule }}" checked>
+                        <label for="{{ rule }}">{{ rule }}</label>
+                    </div>
+                {% endfor %}
+            </div>
+            
+            <p style="margin-top: 30px; text-align: center;">
+                <button type="submit">🚀 Lancer l'Analyse</button>
+            </p>
+        </form>
+    </div>
+
+    <script>
+        function selectAllRules() {
+            const checkboxes = document.querySelectorAll('input[name="rules"]');
+            checkboxes.forEach(cb => cb.checked = true);
+        }
+
+        function deselectAllRules() {
+            const checkboxes = document.querySelectorAll('input[name="rules"]');
+            checkboxes.forEach(cb => cb.checked = false);
+        }
+    </script>
+</body>
+</html>

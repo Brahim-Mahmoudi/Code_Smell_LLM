@@ -1,0 +1,225 @@
+rule R1 "Broadcasting Feature Not Used":
+    condition:
+        exists sub in AST: (
+            isTfTile(sub)
+        )
+    action: report "Call to tf.tile detected; consider using broadcasting instead for improved memory efficiency at line {lineno}"
+    
+rule R2 "Random Seed Not Set":
+  condition: 
+    (
+      exists call in AST: (
+        isRandomCall(call)
+        and not seedSet(call)
+      )
+    )
+    or
+    (
+      exists algo in AST: (
+        isSklearnRandomAlgo(algo)
+        and not hasRandomState(algo)
+      )
+    )
+  action: report "Random Seed Not Set at line {lineno}"
+
+rule R3 "TensorArray Not Used":
+    condition: 
+        exists block in AST: (
+            (isForLoop(block) or isFunctionDef(block))
+            and hasConstantAndConcatIntersection(block)
+        )
+    action: report "TensorArray Not Used at line {lineno}"
+
+rule R4 "Training / Evaluation Mode Improper Toggling":
+    condition:
+        exists sub in AST: (
+            isEvalCall(sub)
+            and not hasLaterTrainCall(sub)
+        )
+    action: report "Training / Evaluation Mode Improper Toggling: .eval() call without subsequent .train() call at line {lineno}"
+
+rule R5 "Hyperparameter not Explicitly Set":
+    condition:
+        exists call in AST: (
+            isMLMethodCall(call)
+            and not hasExplicitHyperparameters(call)
+        )
+    action: report "Hyperparameter not explicitly set at line {lineno}"
+
+rule R6 "Deterministic Algorithm Option Not Used":
+    condition:
+        customCheckTorchDeterminism(ast_node)
+    action: report "Deterministic Algorithm Option Not Used"
+    
+rule R7 "Missing the Mask of Invalid Value":
+    condition:
+        exists call in AST: (
+            isLog(call)
+            and not hasMask(call)
+        )
+    action: report "Missing mask for tf.log at line {lineno}"
+    
+rule R8 "PyTorch Call Method Misused":
+    condition:
+        exists call in AST: (
+            isForwardCall(call)
+        )
+    action: report "Use module() instead of forward() at line {lineno}"
+    
+    
+rule R9 "Gradients Not Cleared before Backward Propagation":
+    condition:
+        exists call in AST: (
+            isLossBackward(call)
+            and not hasPrecedingZeroGrad(call)
+        )
+    action: report "optimizer.zero_grad() not called before loss_fn.backward() at line {lineno}"
+    
+rule R10 "Memory Not Freed":
+    condition:
+        (
+            exists usage in AST: (
+                isPytorchTensorUsage(usage) 
+                or isModelCreation(usage)
+            )
+        )
+        and not (
+            exists freecall in AST: (
+                isMemoryFreeCall(freecall)
+            )
+        )
+    action: report "Memory clearing API not used. Consider calling .detach() for PyTorch or tf.keras.backend.clear_session() for TensorFlow at line"
+    
+rule R11 "Data Leakage (fit_transform before split)":
+    condition:
+        exists call in AST: (
+            isFitTransform(call)
+            and not pipelineUsed(call)
+            and usedBeforeTrainTestSplit(call)
+        )
+    action: report "Potential data leakage: fit_transform called before train/test split at line {lineno}"
+    
+rule R11bis "Data Leakage (no pipeline in presence of model.fit)":
+    condition:
+        (
+            isModelFitPresent(ast_node)
+            and not pipelineUsedGlobally(ast_node)
+            and isFitCall(sub)
+            
+        )
+    action: report "Potential data leakage: model.fit() used without a pipeline at line {lineno}"
+    
+rule R12 "Matrix Multiplication API Misused":
+    condition:
+        exists sub in AST: (
+            isDotCall(sub)
+            and isMatrix2D(sub)
+        )
+    action: report "Use np.matmul() instead of np.dot() for matrices at line {lineno}"
+    
+rule R13 "Empty Column Misinitialization":
+    condition:
+        exists_assign sub in AST: (
+            isDataFrameColumnAssignment(sub)
+            and (
+                isAssignedLiteral(sub, 0)
+                or isAssignedLiteral(sub, "")
+            )
+        )
+    action:
+        report "Detected a new column initialized with a filler (0 or ''). Use np.nan or an empty Series instead at line {lineno}"
+        
+    rule R14 "Dataframe Conversion API Misused":
+    condition:
+        exists sub in AST: (
+            isValuesAccess(sub)
+            and isDataFrameVariable(get_base_name(sub), sub)
+        )
+    action: report "Avoid using .values on DataFrames. Use .to_numpy() instead at line {lineno}"
+    
+rule R15 "Merge API Parameter Not Explicitly Set":
+    condition: exists call in AST: (
+        isDataFrameMerge(call)
+        and singleParam(call)
+    )
+    action: report "Specify 'on' or 'left_on/right_on' when using merge() at line {lineno}"
+    
+rule R16 "API Misuse":
+    condition: exists call in AST: (
+        isApiMethod(call)
+        and not hasInplaceTrue(call)
+        and not isResultUsed(call)
+    )
+    action: report "API call might be missing reassignment or inplace=True at line {lineno}"
+    
+rule R17 "Unnecessary Iteration":
+    condition:
+        exists sub in AST: (
+            isForLoop(sub)
+            and (
+                (usesIterrows(sub.iter) and isDataFrameVariable(get_base_name(sub.iter), sub.iter))
+                or (usesItertuples(sub.iter) and isDataFrameVariable(get_base_name(sub.iter), sub.iter))
+                or usesPythonLoopOnTensorFlow(sub)
+            )
+        )
+    action: report "Unnecessary iteration detected; consider using vectorized operations (e.g., DataFrame.add, tf.reduce_sum) for efficiency at line {lineno}";rule R18 "NaN Comparison":
+    condition:
+        exists cmp in AST: ( isCompare(cmp) and hasNpNanComparator(cmp) )
+    action: report "Do not compare with np.nan. Use df.isna() instead at line {lineno}"
+    
+rule R18 "NaN Comparison":
+    condition:
+        exists cmp in AST: ( isCompare(cmp) and hasNpNanComparator(cmp) )
+    action: report "Do not compare with np.nan. Use df.isna() instead at line {lineno}"
+
+    
+rule R19 "Threshold Validation Metrics Count":
+    condition:
+        (count_dep = count(m in AST: isMetricCall(m) and isThresholdDependent(m)))
+        and (count_indep = count(m in AST: isMetricCall(m) and isThresholdIndependent(m)))
+        and (count_indep <= count_dep)
+    action: report "Too many threshold-dependent metrics"
+    
+rule R20 "Chain Indexing":
+    condition:
+        exists sub in AST: (
+            isSubscript(sub)
+            and isSubscript(sub.value)
+            and isDataFrameVariable(get_base_name(sub.value), sub)
+        )
+    action: report "Avoid chained indexing in DataFrames at line {lineno}; use df.loc[]"
+    
+rule R21 "Columns and DataType Not Explicitly Set":
+    condition:
+        exists sub in AST: (
+            isPandasReadCall(sub)
+            and not hasKeyword(sub, "dtype")
+        )
+    action: report "Call to a pd.read function without the 'dtype' parameter; consider specifying dtype to ensure explicit column type handling at line {lineno}"
+    
+rule R22 "No Scaling Before Scale Sensitive Operations":
+    condition:
+        exists sub in AST: (
+            isScaleSensitiveFit(sub, variable_ops)
+            and not hasPrecedingScaler(sub, scaled_vars)
+            and not isPartOfValidatedPipeline(sub)
+        )
+    action: report "Call to a sensitive function detected without prior scaling; consider applying a scaler (e.g., StandardScaler) before executing scale-sensitive operations at line {lineno}"
+
+rule R23 "EarlyStopping Not Used in Model.fit":
+    condition:
+        exists call in AST: (
+            isFitCall(call)
+            and not hasEarlyStoppingCallback(call)
+        )
+    action:
+        report "Model.fit() called without EarlyStopping callback at line {lineno}"
+
+rule R24 "Index Column Not Explicitly Set in DataFrame Read":
+    condition:
+        exists call in AST: (
+            isPandasReadCall(call)
+            and not hasKeyword(call, "index_col")
+        )
+    action:
+        report "pd.read_… called without ‘index_col’; consider specifying index_col to avoid implicit integer indexing at line {lineno}"
