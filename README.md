@@ -6,7 +6,10 @@
 
 ---
 
-## Repository Layout (aligned with the 3-step methodology)
+## How to use: 
+
+- [Command Line](/Detection/docs/usage.md) 
+- [Web-app](Detection/docs/docker.md) 
 
 
 
