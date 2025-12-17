@@ -2,17 +2,17 @@
 
 SpecDetect4LLM supports detection of 5 LLM Integration code smells:
 
-| Rule ID | Name | Detection Category | Detection Explanation |
-|---------|------|---------------------|----------------------|
-| R25 | LLM Temperature Not Explicitly Set | 1(Easily detectable statically) | [Detection Explanation](Rules/R25.md) |
-| R26 | LLM Version Pinning Not Explicitly Set Read | 2 (Implicit config) | [Detection Explanation](Rules/R26.md) |
-| R27 | LLM With No System Message | 2 (Implicit config) | [Detection Explanation](Rules/R27.md) |
-| R28 | LLM Calls Without Bounded Metrics | 1(Easily detectable statically) | [Detection Explanation](Rules/R28.md) |
-| R29 | No Structured Output in Pipeline | 2 (Implicit config) | [Detection Explanation](Rules/R29.md) |
-| R30 | Reasoning Effort Not Explicitly Set | 1(Easily detectable statically) | [Detection Explanation](Rules/R30.md) |
-| R31 | Raw Vision Payload | 2 (Implicit config)  | [Detection Explanation](Rules/R31.md) |
-| R32 | Overspecified Sampling Parameters | 1(Easily detectable statically) | [Detection Explanation](Rules/R32.md) |
-| R33 | Anonymous Inference Cal | 2 (Implicit config) | [Detection Explanation](Rules/R33.md) |
+| Rule ID | Name | ID | Detection Category | Detection Explanation |
+|---------|------|------|---------------------|----------------------|
+| R25 | LLM Temperature Not Explicitly Set | TNES | 1(Easily detectable statically) | [Detection Explanation](Rules/R25.md) |
+| R26 | LLM Version Pinning Not Explicitly Set Read |NMVP| 2 (Implicit config) | [Detection Explanation](Rules/R26.md) |
+| R27 | LLM With No System Message | NSM | 2 (Implicit config) |  [Detection Explanation](Rules/R27.md) |
+| R28 | LLM Calls Without Bounded Metrics | UMM | 1(Easily detectable statically) | [Detection Explanation](Rules/R28.md) |
+| R29 | No Structured Output in Pipeline | NSO | 2 (Implicit config) | [Detection Explanation](Rules/R29.md) |
+| R30 | Reasoning Effort Not Explicitly Set | RENES | 1(Easily detectable statically) | [Detection Explanation](Rules/R30.md) |
+| R31 | Raw Vision Payload |  RVP |2 (Implicit config)  | [Detection Explanation](Rules/R31.md) |
+| R32 | Overspecified Sampling Parameters | OSP | 1(Easily detectable statically) | [Detection Explanation](Rules/R32.md) |
+| R33 | Anonymous Inference Cal |  AIC |2 (Implicit config) | [Detection Explanation](Rules/R33.md) |
 
 
 ---
