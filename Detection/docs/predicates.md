@@ -222,6 +222,41 @@ The DSL uses semantic predicates over AST nodes. Below is a list of predicates u
 - `isTextGeneratingCall(node)`  
   Returns True if the call generates text (create, generate_content, run, etc.)
 
+
+- `isReasoningModelCall(node)`  
+  Returns True if the node is an LLM call targeting a reasoning oriented model.
+
+- `hasNoReasoningEffort(node)`  
+  Returns True if a call to a reasoning model does not specify any explicit reasoning control.
+
+- `isVisionModelCall(node)`  
+  Returns True if the node corresponds to an LLM call that is likely to handle vision inputs.
+
+- `hasImageContent(node)`  
+  Returns True if the call includes image content, detected via URLs, data URIs, image file extensions, bytes, dict or list structures, or semantic cues from variable names and image loading functions.
+
+-`hasImagePreprocessing(node, preprocessed_vars=None)`  
+  Returns True if the image passed to a vision call appears to be preprocessed.
+
+- `hasExplicitDetailLevel(node)`  
+  Returns True if the call explicitly configures an image detail or quality level.
+
+- `hasOverspecifiedSampling(node)`  
+  Returns True if an LLM call combines an explicit temperature with `top_p` or `top_k`.
+
+- `hasMultiUserContext(node)`  
+  Returns True if the surrounding lexical context suggests a multi user environment.
+
+- `hasUserAttribution(node)`  
+  Returns True if the LLM call explicitly propagates a user identifier>.
+
+- `isHuggingFacePipelineConstructor(node)`  
+  Returns True if the node corresponds to the Hugging Face pipeline constructor. `pipeline("text-generation", ...)`. 
+
+- `isLLMCallRequiringTemperature(node)`  
+  Returns True if the node is an LLM call for which `temperature` is expected
+
+
 ## LLM Helper Functions
 
 - `_kw_value(node, name)`  
