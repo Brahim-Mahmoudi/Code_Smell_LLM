@@ -1,0 +1,3501 @@
+{
+  "1Panel-dev/MaxKB": {
+    "owner": "1Panel-dev",
+    "repo": "MaxKB",
+    "ref": "v2",
+    "num_llm_files": 5,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "langchain",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "1Panel-dev-MaxKB-d33dd45/apps/models_provider/impl/ollama_model_provider/credential/reranker.py",
+        "providers": [
+          "langchain",
+          "llama",
+          "ollama"
+        ]
+      },
+      {
+        "file_path": "1Panel-dev-MaxKB-d33dd45/apps/models_provider/impl/aliyun_bai_lian_model_provider/model/ttv.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "1Panel-dev-MaxKB-d33dd45/apps/models_provider/impl/aws_bedrock_model_provider/aws_bedrock_model_provider.py",
+        "providers": [
+          "anthropic",
+          "cohere",
+          "llama",
+          "mistral"
+        ]
+      },
+      {
+        "file_path": "1Panel-dev-MaxKB-d33dd45/apps/models_provider/impl/openai_model_provider/model/llm.py",
+        "providers": [
+          "langchain",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "1Panel-dev-MaxKB-d33dd45/apps/models_provider/impl/regolo_model_provider/credential/image.py",
+        "providers": [
+          "langchain"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "All-Hands-AI/OpenHands": {
+    "owner": "All-Hands-AI",
+    "repo": "OpenHands",
+    "ref": "main",
+    "num_llm_files": 3,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "OpenHands-OpenHands-bf06b7e/evaluation/benchmarks/multi_swe_bench/run_infer.py",
+        "providers": [
+          "anthropic"
+        ]
+      },
+      {
+        "file_path": "OpenHands-OpenHands-bf06b7e/openhands/core/config/llm_config.py",
+        "providers": [
+          "anthropic",
+          "gemini",
+          "litellm",
+          "llama",
+          "mistral",
+          "ollama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "OpenHands-OpenHands-bf06b7e/tests/unit/controller/test_agent_controller.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "AstrBotDevs/AstrBot": {
+    "owner": "AstrBotDevs",
+    "repo": "AstrBot",
+    "ref": "master",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "gemini",
+      "groq",
+      "llama",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "AstrBotDevs-AstrBot-aa6d07a/astrbot/core/utils/file_extract.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "567-labs/instructor": {
+    "owner": "567-labs",
+    "repo": "instructor",
+    "ref": "main",
+    "num_llm_files": 6,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "567-labs-instructor-130c034/tests/llm/test_openai/conftest.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "567-labs-instructor-130c034/examples/union/run.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "567-labs-instructor-130c034/instructor/distil.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "567-labs-instructor-130c034/instructor/validation/llm_validators.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "567-labs-instructor-130c034/instructor/batch/models.py",
+        "providers": [
+          "anthropic",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "567-labs-instructor-130c034/examples/llm-judge-relevance/run.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "Aider-AI/aider": {
+    "owner": "Aider-AI",
+    "repo": "aider",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "Aider-AI-aider-5683f1c/aider/format_settings.py",
+        "providers": [
+          "anthropic",
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "BillSchumacher/Auto-GPT": {
+    "owner": "BillSchumacher",
+    "repo": "Auto-GPT",
+    "ref": "bdd07b18bea674cf756ebfb3a0a8915042d9126f",
+    "num_llm_files": 1,
+    "providers": [
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "BillSchumacher-Auto-GPT-bdd07b1/tests/test_token_counter.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "Azure-Samples/azure-search-openai-demo": {
+    "owner": "Azure-Samples",
+    "repo": "azure-search-openai-demo",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "langchain",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "Azure-Samples-azure-search-openai-demo-35a7885/app/backend/approaches/promptmanager.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "ATheorell/AutoGPTArenaHack": {
+    "owner": "ATheorell",
+    "repo": "AutoGPTArenaHack",
+    "ref": "1e4f2dc004b92b9f236543674f94fb9f0af9bb2e",
+    "num_llm_files": 1,
+    "providers": [
+      "gemini",
+      "langchain",
+      "litellm",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "ATheorell-AutoGPTArenaHack-1e4f2dc/autogpts/gpt-engineer/gpt_engineer/API/api.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "ExpressGit/langchain-ChatGLM": {
+    "owner": "ExpressGit",
+    "repo": "langchain-ChatGLM",
+    "ref": "21035d7706b24956f845c65e1492690abbb07d8b",
+    "num_llm_files": 1,
+    "providers": [
+      "langchain",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "ExpressGit-langchain-ChatGLM-21035d7/models/llama_llm.py",
+        "providers": [
+          "langchain",
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "FOLLGAD/Godmode-GPT": {
+    "owner": "FOLLGAD",
+    "repo": "Godmode-GPT",
+    "ref": "4e1dc7055580ab9bb3ce85114f9e17950ac96d7b",
+    "num_llm_files": 1,
+    "providers": [
+      "langchain",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "FOLLGAD-godmode-4e1dc70/tests/test_image_gen.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "GaiZhenbiao/ChuanhuChatGPT": {
+    "owner": "GaiZhenbiao",
+    "repo": "ChuanhuChatGPT",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "gemini",
+      "groq",
+      "langchain",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "GaiZhenbiao-ChuanhuChatGPT-0271b07/modules/models/LLaMA.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "InternLM/lmdeploy": {
+    "owner": "InternLM",
+    "repo": "lmdeploy",
+    "ref": "main",
+    "num_llm_files": 4,
+    "providers": [
+      "cohere",
+      "gemini",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "InternLM-lmdeploy-2697c96/lmdeploy/serve/openai/tool_parser/internlm2_parser.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "InternLM-lmdeploy-2697c96/lmdeploy/turbomind/tokenizer_info.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "InternLM-lmdeploy-2697c96/lmdeploy/pytorch/configurations/mllama.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "InternLM-lmdeploy-2697c96/lmdeploy/serve/openai/reasoning_parser/deepseek_r1_reasoning_parser.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database": {
+    "owner": "Devansh968",
+    "repo": "Chat-with-Pdf-using-Qdrant-vector-database",
+    "ref": "771195f36a735a6f4ac1b63edc04661c11a67f3f",
+    "num_llm_files": 21,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "langchain",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/utils/__init__.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/evaluation/embedding_distance/__init__.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/vectorstores/vectara.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/evaluation/qa/eval_prompt.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/openai/api_resources/abstract/api_resource.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/llms/cohere.py",
+        "providers": [
+          "cohere",
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/llms/human.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/chains/query_constructor/base.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/callbacks/tracers/schemas.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/openai/tests/test_api_requestor.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/experimental/llms/jsonformer_decoder.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/schema/prompt_template.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/tools/sql_database/tool.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/document_loaders/pyspark_dataframe.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/chains/openai_functions/qa_with_structure.py",
+        "providers": [
+          "langchain",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/document_loaders/epub.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/document_loaders/parsers/language/__init__.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/document_loaders/image.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/vectorstores/docarray/hnsw.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/document_loaders/parsers/html/__init__.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Devansh968-Chat-with-Pdf-using-Qdrant-vector-database-771195f/-/Lib/site-packages/langchain/memory/chat_message_histories/firestore.py",
+        "providers": [
+          "langchain"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "Jerk400/h2ogpt-dev-local": {
+    "owner": "Jerk400",
+    "repo": "h2ogpt-dev-local",
+    "ref": "ba56d6471080ec447c7c5347a2d4765ae4dba5b4",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "langchain",
+      "llama",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "TheJ-Erk400-h2ogpt-dev-local-ba56d64/metrics/quip.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "OpenRLHF/OpenRLHF": {
+    "owner": "OpenRLHF",
+    "repo": "OpenRLHF",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "llama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "OpenRLHF-OpenRLHF-1bfcc33/openrlhf/cli/train_rm.py",
+        "providers": [
+          "vllm"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "NVIDIA/Megatron-LM": {
+    "owner": "NVIDIA",
+    "repo": "Megatron-LM",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "cohere",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "NVIDIA-Megatron-LM-03b6d31/megatron/core/tokenizers/megatron_tokenizer.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "QuivrHQ/quivr": {
+    "owner": "QuivrHQ",
+    "repo": "quivr",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "QuivrHQ-quivr-947a785/core/tests/test_quivr_rag.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "RockChinQ/LangBot": {
+    "owner": "RockChinQ",
+    "repo": "LangBot",
+    "ref": "master",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "gemini",
+      "langchain",
+      "llama",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "langbot-app-LangBot-2f51f5f/src/langbot/pkg/provider/modelmgr/requesters/deepseekchatcmpl.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "PaddlePaddle/PaddleNLP": {
+    "owner": "PaddlePaddle",
+    "repo": "PaddleNLP",
+    "ref": "develop",
+    "num_llm_files": 6,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "langchain",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "PaddlePaddle-PaddleNLP-b0276d7/tests/transformers/test_refined_recompute.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "PaddlePaddle-PaddleNLP-b0276d7/tests/transformers/test_conversion_common.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "PaddlePaddle-PaddleNLP-b0276d7/paddlenlp/transformers/mixtral/configuration.py",
+        "providers": [
+          "mistral"
+        ]
+      },
+      {
+        "file_path": "PaddlePaddle-PaddleNLP-b0276d7/tests/llm/test_linchain.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "PaddlePaddle-PaddleNLP-b0276d7/paddlenlp/transformers/qwen3_moe/modeling.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "PaddlePaddle-PaddleNLP-b0276d7/tests/llm/test_lorapro.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "BerriAI/litellm": {
+    "owner": "BerriAI",
+    "repo": "litellm",
+    "ref": "main",
+    "num_llm_files": 54,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/deepseek/chat/transformation.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/proxy/common_utils/test_callback_utils.py",
+        "providers": [
+          "gemini",
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/integrations/datadog/test_datadog_llm_observability.py",
+        "providers": [
+          "anthropic",
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm-proxy-extras/litellm_proxy_extras/_logging.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/azure_ai/embed/cohere_transformation.py",
+        "providers": [
+          "cohere",
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/vertex_ai/vertex_ai_partner_models/gpt_oss/transformation.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/base_llm/batches/transformation.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/proxy_unit_tests/conftest copy.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/integrations/cloudzero/test_cz_stream_api.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/proxy/hooks/batch_rate_limiter.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/proxy/pass_through_endpoints/jsonpath_extractor.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/recraft/image_generation/__init__.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/base_llm/containers/transformation.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/replicate/chat/transformation.py",
+        "providers": [
+          "litellm",
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/integrations/test_langfuse.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/bedrock/chat/converse_transformation.py",
+        "providers": [
+          "anthropic",
+          "cohere",
+          "litellm",
+          "llama",
+          "mistral",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/local_testing/test_http_parsing_utils.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/proxy/hooks/test_parallel_request_limiter_v3.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/llms/gemini/videos/test_gemini_video_transformation.py",
+        "providers": [
+          "gemini",
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/llms/ollama/test_ollama_completion_transformation.py",
+        "providers": [
+          "litellm",
+          "llama",
+          "ollama"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/proxy/client/models.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/integrations/opik/opik_payload_builder/payload_builders.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/llms/fireworks_ai/chat/test_fireworks_ai_chat_transformation.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/proxy/client/test_client.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/litellm_core_utils/prompt_templates/huggingface_template_handler.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/types/management_endpoints/router_settings_endpoints.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/openai/completion/guardrail_translation/__init__.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/llms/amazon_nova/chat/test_amazon_nova_chat_completion.py",
+        "providers": [
+          "gemini",
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/local_testing/test_gcs_cache_unit_tests.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/proxy/guardrails/guardrail_hooks/pangea/__init__.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/enterprise/litellm_enterprise/enterprise_callbacks/llama_guard.py",
+        "providers": [
+          "litellm",
+          "llama"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/realtime_api/main.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/integrations/arize/test_arize_utils.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/local_testing/test_router_get_deployments.py",
+        "providers": [
+          "anthropic",
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/integrations/traceloop.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/llms/github_copilot/responses/test_github_copilot_responses_transformation.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/proxy/management_endpoints/ui_sso.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/fal_ai/image_generation/imagen4_transformation.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/vertex_ai/vertex_ai_partner_models/llama3/transformation.py",
+        "providers": [
+          "litellm",
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/guardrails_tests/test_guardrails_config.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/vercel_ai_gateway/chat/transformation.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/proxy/test_proxy_server.py",
+        "providers": [
+          "anthropic",
+          "litellm",
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/proxy/db/db_transaction_queue/spend_update_queue.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/llms/anthropic/skills/transformation.py",
+        "providers": [
+          "anthropic",
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/test_logging.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/router_strategy/test_base_routing_strategy.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/proxy/guardrails/guardrail_registry.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/test_lowest_latency_zero_tokens.py",
+        "providers": [
+          "gemini",
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm-proxy-extras/litellm_proxy_extras/utils.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/proxy/hooks/test_prompt_injection_detection.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/caching/redis_cache.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/vector_stores/test_vector_store_registry.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/tests/test_litellm/integrations/gcs_pubsub/test_pub_sub.py",
+        "providers": [
+          "litellm"
+        ]
+      },
+      {
+        "file_path": "BerriAI-litellm-05f800f/litellm/proxy/guardrails/guardrail_hooks/onyx/onyx.py",
+        "providers": [
+          "litellm"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "StanGirard/quivr": {
+    "owner": "StanGirard",
+    "repo": "quivr",
+    "ref": "b6f38f7aff5f026eb46a071362c9362e057119df",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "langchain",
+      "litellm",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "QuivrHQ-quivr-b6f38f7/backend/models/brains.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "TransformerOptimus/SuperAGI": {
+    "owner": "TransformerOptimus",
+    "repo": "SuperAGI",
+    "ref": "main",
+    "num_llm_files": 2,
+    "providers": [
+      "gemini",
+      "langchain",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "TransformerOptimus-SuperAGI-c3c1982/superagi/tools/github/review_pull_request.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "TransformerOptimus-SuperAGI-c3c1982/superagi/tools/instagram_tool/instagram.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "Upsonic/Upsonic": {
+    "owner": "Upsonic",
+    "repo": "Upsonic",
+    "ref": "master",
+    "num_llm_files": 3,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "Upsonic-Upsonic-f586dcf/src/upsonic/uel/decorator.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "Upsonic-Upsonic-f586dcf/src/upsonic/models/mistral.py",
+        "providers": [
+          "mistral"
+        ]
+      },
+      {
+        "file_path": "Upsonic-Upsonic-f586dcf/tests/smoke_tests/test_deepagent.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "abetlen/llama-cpp-python": {
+    "owner": "abetlen",
+    "repo": "llama-cpp-python",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "cohere",
+      "langchain",
+      "llama",
+      "mistral",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "abetlen-llama-cpp-python-c37132b/examples/low_level_api/low_level_api_chat_cpp.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "Shubhamsaboo/awesome-llm-apps": {
+    "owner": "Shubhamsaboo",
+    "repo": "awesome-llm-apps",
+    "ref": "main",
+    "num_llm_files": 5,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "Shubhamsaboo-awesome-llm-apps-ff75e62/ai_agent_framework_crash_course/google_adk_crash_course/4_tool_using_agent/4_3_thirdparty_tools/langchain_agent/agent.py",
+        "providers": [
+          "gemini",
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "Shubhamsaboo-awesome-llm-apps-ff75e62/ai_agent_framework_crash_course/google_adk_crash_course/4_tool_using_agent/4_2_function_tools/calculator_agent/agent.py",
+        "providers": [
+          "gemini"
+        ]
+      },
+      {
+        "file_path": "Shubhamsaboo-awesome-llm-apps-ff75e62/advanced_llm_apps/resume_job_matcher/app.py",
+        "providers": [
+          "llama",
+          "ollama"
+        ]
+      },
+      {
+        "file_path": "Shubhamsaboo-awesome-llm-apps-ff75e62/advanced_ai_agents/multi_agent_apps/agent_teams/ai_seo_audit_team/agent.py",
+        "providers": [
+          "gemini"
+        ]
+      },
+      {
+        "file_path": "Shubhamsaboo-awesome-llm-apps-ff75e62/ai_agent_framework_crash_course/openai_sdk_crash_course/8_handoffs_delegation/8_2_advanced_handoffs/__init__.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "arc53/DocsGPT": {
+    "owner": "arc53",
+    "repo": "DocsGPT",
+    "ref": "744d4ebbaf4349444d8d361593c4c04652c6c54b",
+    "num_llm_files": 1,
+    "providers": [
+      "cohere",
+      "langchain",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "arc53-DocsGPT-744d4eb/scripts/code_docs_gen.py",
+        "providers": [
+          "langchain",
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "camel-ai/camel": {
+    "owner": "camel-ai",
+    "repo": "camel",
+    "ref": "71d466d9d67d1d7230ebfa1be6db95f5c53e38d9",
+    "num_llm_files": 1,
+    "providers": [
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "camel-ai-camel-71d466d/camel/models/__init__.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "chidiwilliams/buzz": {
+    "owner": "chidiwilliams",
+    "repo": "buzz",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "groq",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "chidiwilliams-buzz-11e59db/tests/widgets/openai_api_key_line_edit_test.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "chatchat-space/Langchain-Chatchat": {
+    "owner": "chatchat-space",
+    "repo": "Langchain-Chatchat",
+    "ref": "bc7f01925fe49c622cf7d6e2540c03fd5a0679e1",
+    "num_llm_files": 3,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "chatchat-space-Langchain-Chatchat-bc7f019/model-providers/chatchat_model_providers/core/model_runtime/model_providers/bedrock/llm/llm.py",
+        "providers": [
+          "anthropic",
+          "cohere",
+          "gemini",
+          "llama"
+        ]
+      },
+      {
+        "file_path": "chatchat-space-Langchain-Chatchat-bc7f019/model-providers/chatchat_model_providers/core/bootstrap/__init__.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "chatchat-space-Langchain-Chatchat-bc7f019/webui-pages/chatchat_webui_pages/openai_plugins/base.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "cpacker/MemGPT": {
+    "owner": "cpacker",
+    "repo": "MemGPT",
+    "ref": "6e2c92e3abda617b9efc96c88b582195579717c8",
+    "num_llm_files": 1,
+    "providers": [
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "letta-ai-letta-6e2c92e/memgpt/config.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "deepset-ai/haystack": {
+    "owner": "deepset-ai",
+    "repo": "haystack",
+    "ref": "main",
+    "num_llm_files": 3,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "groq",
+      "llama",
+      "mistral",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "deepset-ai-haystack-e4ca3ef/e2e/pipelines/test_rag_pipelines_e2e.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "deepset-ai-haystack-e4ca3ef/haystack/components/evaluators/context_relevance.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "deepset-ai-haystack-e4ca3ef/test/components/validators/test_json_schema.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "eosphoros-ai/DB-GPT": {
+    "owner": "eosphoros-ai",
+    "repo": "DB-GPT",
+    "ref": "1519df7f0179be0957008e75fd27eafb9d6890f1",
+    "num_llm_files": 1,
+    "providers": [
+      "langchain",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "eosphoros-ai-DB-GPT-1519df7/pilot/source_embedding/knowledge_embedding.py",
+        "providers": [
+          "langchain"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "goetzrobin/MemGPT": {
+    "owner": "goetzrobin",
+    "repo": "MemGPT",
+    "ref": "0e8918e79935d24210991d78da09bf0e4c796d2e",
+    "num_llm_files": 2,
+    "providers": [
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "goetzrobin-MemGPT-0e8918e/memgpt/server/ws_api/example_client.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "goetzrobin-MemGPT-0e8918e/tests/test_load_archival.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "h2oai/h2ogpt": {
+    "owner": "h2oai",
+    "repo": "h2ogpt",
+    "ref": "15f3a2d564541020f78cfc83bc90722dcda8a960",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "langchain",
+      "llama",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "h2oai-h2ogpt-15f3a2d/src/h2oai_pipeline.py",
+        "providers": [
+          "langchain"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "haotian-liu/LLaVA": {
+    "owner": "haotian-liu",
+    "repo": "LLaVA",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "cohere",
+      "llama",
+      "mistral",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "haotian-liu-LLaVA-c121f04/llava/train/train.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "fangyinc/DB-GPT": {
+    "owner": "fangyinc",
+    "repo": "DB-GPT",
+    "ref": "f317740d5557b56899d1a3e786ca7cc583fdd700",
+    "num_llm_files": 2,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "langchain",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "fangyinc-DB-GPT-f317740/dbgpt/rag/embedding_engine/csv_embedding.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "fangyinc-DB-GPT-f317740/dbgpt/rag/graph_engine/graph_search.py",
+        "providers": [
+          "langchain"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "hiyouga/LLaMA-Factory": {
+    "owner": "hiyouga",
+    "repo": "LLaMA-Factory",
+    "ref": "main",
+    "num_llm_files": 5,
+    "providers": [
+      "cohere",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "hiyouga-LLaMA-Factory-5744f1e/src/llamafactory/v1/core/model_worker.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "hiyouga-LLaMA-Factory-5744f1e/src/llamafactory/hparams/generating_args.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "hiyouga-LLaMA-Factory-5744f1e/src/llamafactory/model/model_utils/misc.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "hiyouga-LLaMA-Factory-5744f1e/src/llamafactory/v1/plugins/model_plugins/kernels/registry.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "hiyouga-LLaMA-Factory-5744f1e/src/llamafactory/webui/engine.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "huggingface/peft": {
+    "owner": "huggingface",
+    "repo": "peft",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "huggingface-peft-f2c0668/examples/corda_finetuning/datautils.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "huggingface/trl": {
+    "owner": "huggingface",
+    "repo": "trl",
+    "ref": "main",
+    "num_llm_files": 2,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "huggingface-trl-d401a42/trl/experimental/gspo_token/grpo_trainer.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "huggingface-trl-d401a42/trl/experimental/bco/bco_trainer.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "intel/ipex-llm": {
+    "owner": "intel",
+    "repo": "ipex-llm",
+    "ref": "main",
+    "num_llm_files": 7,
+    "providers": [
+      "cohere",
+      "langchain",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "intel-ipex-llm-197f653/python/llm/example/GPU/PyTorch-Models/Model/mamba/model.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "intel-ipex-llm-197f653/python/llm/example/GPU/HuggingFace/LLM/chinese-llama2/generate.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "intel-ipex-llm-197f653/python/llm/src/ipex_llm/transformers/npu_models/minicpm_mp.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "intel-ipex-llm-197f653/python/llm/src/ipex_llm/transformers/gguf/models/yuan2.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "intel-ipex-llm-197f653/python/llm/src/ipex_llm/transformers/low_bit_linear.py",
+        "providers": [
+          "llama",
+          "mistral",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "intel-ipex-llm-197f653/python/llm/example/CPU/Speculative-Decoding/Self-Speculation/llama3/speculative.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "intel-ipex-llm-197f653/python/llm/src/ipex_llm/transformers/gguf/models/model_implement/yuan2/yuan_hf_model.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "huggingface/transformers": {
+    "owner": "huggingface",
+    "repo": "transformers",
+    "ref": "main",
+    "num_llm_files": 17,
+    "providers": [
+      "cohere",
+      "gemini",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/pixtral/processing_pixtral.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/auto/processing_auto.py",
+        "providers": [
+          "cohere",
+          "llama",
+          "mistral"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/tests/models/llava_onevision/test_processing_llava_onevision.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/aya_vision/modular_aya_vision.py",
+        "providers": [
+          "cohere"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/cohere/__init__.py",
+        "providers": [
+          "cohere"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/llava_next_video/configuration_llava_next_video.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/phi3/modeling_phi3.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/llama/configuration_llama.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/metaclip_2/configuration_metaclip_2.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/tests/models/llava_next_video/test_video_processing_llava_next_video.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/utils/modular_model_detector.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/mllama/image_processing_mllama.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/tests/quantization/aqlm_integration/test_aqlm.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/integrations/fbgemm_fp8.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/decision_transformer/modeling_decision_transformer.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/dependency_versions_table.py",
+        "providers": [
+          "mistral",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "huggingface-transformers-2db992d/src/transformers/models/clip/image_processing_clip_fast.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "hzg0601/langchain-ChatGLM-annotation": {
+    "owner": "hzg0601",
+    "repo": "langchain-ChatGLM-annotation",
+    "ref": "da8085ba5fcb89a2e665cd3fde28cdafa38b9c29",
+    "num_llm_files": 1,
+    "providers": [
+      "langchain",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "hzg0601-langchain-ChatGLM-annotation-da8085b/models/moss_llm.py",
+        "providers": [
+          "langchain",
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "comet-ml/opik": {
+    "owner": "comet-ml",
+    "repo": "opik",
+    "ref": "main",
+    "num_llm_files": 9,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "comet-ml-opik-28440d1/sdks/opik_optimizer/tests/e2e/optimizers/test_hierarchical_reflective.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "comet-ml-opik-28440d1/sdks/python/src/opik/integrations/langchain/provider_usage_extractors/langchain_run_helpers/helpers.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "comet-ml-opik-28440d1/sdks/python/tests/unit/llm_usage/test_google_usage.py",
+        "providers": [
+          "gemini"
+        ]
+      },
+      {
+        "file_path": "comet-ml-opik-28440d1/sdks/opik_optimizer/tests/unit/optimizers/gepa_optimizer/test_gepa_optimizer_validation.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "comet-ml-opik-28440d1/sdks/python/src/opik/evaluation/metrics/llm_judges/g_eval_presets/bias_classifier.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "comet-ml-opik-28440d1/sdks/opik_optimizer/scripts/llm_frameworks/mcp/mcp_fewshot_hotpot_example.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "comet-ml-opik-28440d1/apps/opik-frontend/src/components/pages-shared/onboarding/FrameworkIntegrations/integration-scripts/LiteLLM.py",
+        "providers": [
+          "litellm",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "comet-ml-opik-28440d1/sdks/python/tests/library_integration/metrics_with_llm_judge/test_evaluation_metrics.py",
+        "providers": [
+          "langchain",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "comet-ml-opik-28440d1/sdks/python/src/opik/evaluation/models/litellm/litellm_chat_model.py",
+        "providers": [
+          "anthropic",
+          "groq",
+          "litellm",
+          "llama",
+          "ollama",
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "khoj-ai/khoj": {
+    "owner": "khoj-ai",
+    "repo": "khoj",
+    "ref": "master",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "khoj-ai-khoj-f4c519a/tests/evals/eval.py",
+        "providers": [
+          "gemini",
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "lss233/kirara-ai": {
+    "owner": "lss233",
+    "repo": "kirara-ai",
+    "ref": "master",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "gemini",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "lss233-kirara-ai-8295a5d/tests/system_blocks/llm/test_chat.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "ludwig-ai/ludwig": {
+    "owner": "ludwig-ai",
+    "repo": "ludwig",
+    "ref": "master",
+    "num_llm_files": 1,
+    "providers": [
+      "llama",
+      "mistral",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "ludwig-ai-ludwig-00c51e0/ludwig/schema/llms/model_parameters.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "meta-llama/llama-models": {
+    "owner": "meta-llama",
+    "repo": "llama-models",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "meta-llama-llama-models-0e0b8c5/models/llama3/multimodal/model.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "modelscope/ms-swift": {
+    "owner": "modelscope",
+    "repo": "ms-swift",
+    "ref": "main",
+    "num_llm_files": 4,
+    "providers": [
+      "cohere",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "modelscope-ms-swift-57c294e/swift/llm/model/model/microsoft.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "modelscope-ms-swift-57c294e/swift/plugin/prm.py",
+        "providers": [
+          "cohere",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "modelscope-ms-swift-57c294e/tests/deploy/test_dataset.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "modelscope-ms-swift-57c294e/swift/megatron/utils/config.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "meta-llama/llama-stack": {
+    "owner": "meta-llama",
+    "repo": "llama-stack",
+    "ref": "main",
+    "num_llm_files": 13,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/providers/remote/datasetio/huggingface/config.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/providers/remote/inference/tgi/config.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/tests/unit/models/llama/llama3/test_tool_utils.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/providers/remote/safety/nvidia/nvidia.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/core/storage/kvstore/postgres/postgres.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/tests/integration/scoring/test_scoring.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/tests/unit/distribution/test_api_recordings.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/providers/remote/safety/bedrock/config.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/providers/inline/post_training/torchtune/common/utils.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/core/routers/eval_scoring.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/core/routing_tables/datasets.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack_api/safety.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "llamastack-llama-stack-d82a2cd/src/llama_stack/telemetry/constants.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "openai/openai-agents-python": {
+    "owner": "openai",
+    "repo": "openai-agents-python",
+    "ref": "main",
+    "num_llm_files": 4,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "openai-openai-agents-python-df020d1/tests/test_model_payload_iterators.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-agents-python-df020d1/src/agents/realtime/model.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-agents-python-df020d1/src/agents/result.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-agents-python-df020d1/examples/basic/prompt_template.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "openai/openai-python": {
+    "owner": "openai",
+    "repo": "openai-python",
+    "ref": "main",
+    "num_llm_files": 7,
+    "providers": [
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "openai-openai-python-dc76021/src/openai/types/fine_tuning/alpha/grader_run_params.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-python-dc76021/examples/responses/background_streaming.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-python-dc76021/src/openai/types/chat/chat_completion.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-python-dc76021/tests/conftest.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-python-dc76021/src/openai/resources/fine_tuning/jobs/checkpoints.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-python-dc76021/tests/test_streaming.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "openai-openai-python-dc76021/src/openai/types/realtime/realtime_transcription_session_audio_input_param.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "qodo-ai/pr-agent": {
+    "owner": "qodo-ai",
+    "repo": "pr-agent",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "qodo-ai-pr-agent-ede3f82/pr_agent/algo/ai_handlers/langchain_ai_handler.py",
+        "providers": [
+          "gemini",
+          "langchain",
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "oumi-ai/oumi": {
+    "owner": "oumi-ai",
+    "repo": "oumi",
+    "ref": "main",
+    "num_llm_files": 3,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "oumi-ai-oumi-6569f02/tests/unit/core/collators/test_vision_language_collator_with_padding.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "oumi-ai-oumi-6569f02/tests/unit/utils/test_peft_utils.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "oumi-ai-oumi-6569f02/src/oumi/datasets/grpo/gsm8k.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "neuml/txtai": {
+    "owner": "neuml",
+    "repo": "txtai",
+    "ref": "master",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "gemini",
+      "litellm",
+      "llama",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "neuml-txtai-b5b3922/src/python/txtai/vectors/dense/__init__.py",
+        "providers": [
+          "litellm",
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "sgl-project/sglang": {
+    "owner": "sgl-project",
+    "repo": "sglang",
+    "ref": "main",
+    "num_llm_files": 14,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "litellm",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "sgl-project-sglang-9a327bd/python/sglang/srt/layers/quantization/mxfp4.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/python/sglang/srt/layers/quantization/awq_triton.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/python/sglang/srt/layers/quantization/kv_cache.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/benchmark/mmlu/bench_other.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/python/sglang/srt/function_call/minimax_m2.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/python/sglang/srt/models/kimi_linear.py",
+        "providers": [
+          "llama",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/scripts/playground/disaggregation/cli-so.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/python/sglang/srt/models/llava.py",
+        "providers": [
+          "llama",
+          "mistral"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/python/sglang/srt/distributed/device_communicators/pynccl_wrapper.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/benchmark/llm_judge/bench_other.py",
+        "providers": [
+          "cohere"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/test/srt/test_gpt_oss_common.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/benchmark/kernels/quantization/bench_int8_quant.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "sgl-project-sglang-9a327bd/sgl-kernel/benchmark/bench_per_tensor_quant_fp8.py",
+        "providers": [
+          "vllm"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "unslothai/unsloth": {
+    "owner": "unslothai",
+    "repo": "unsloth",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "cohere",
+      "gemini",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "unslothai-unsloth-521e201/unsloth/kernels/moe/grouped_gemm/interface.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "vllm-project/vllm": {
+    "owner": "vllm-project",
+    "repo": "vllm",
+    "ref": "main",
+    "num_llm_files": 48,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "langchain",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/glm4_moe_mtp.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/config/kv_transfer.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/v1/determinism/test_online_batch_invariance.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/v1/tpu/test_perf.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/layers/quantization/kernels/mixed_precision/allspark.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/benchmarks/kernels/benchmark_marlin.py",
+        "providers": [
+          "llama",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/v1/worker/gpu/structured_outputs.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/kernels/attention/conftest.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/evals/gpt_oss/__init__.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/qwen3_moe.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/compile/test_qk_norm_rope_fusion.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/examples/online_serving/openai_responses_client_with_mcp_tools.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/lora/test_lora_huggingface.py",
+        "providers": [
+          "llama",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/utils/tensor_schema.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/samplers/test_logprobs.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/config/kv_events.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/v1/engine/test_fast_incdec_prefix_err.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/examples/online_serving/api_client.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/distributed/test_eplb_execute.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/layers/fla/__init__.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/v1/spec_decode/test_max_len.py",
+        "providers": [
+          "llama",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/pooling_params.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/benchmarks/lib/endpoint_request_func.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/roberta.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/v1/attention/test_batch_reordering.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/v1/spec_decode/medusa.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/reasoning/abs_reasoning_parsers.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/model_executor/test_qwen3_omni.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/attention/ops/merge_attn_states.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/v1/core/test_encoder_cache_manager.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/transformers_utils/test_processor.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/fairseq2_llama.py",
+        "providers": [
+          "llama",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/kimi_linear.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/qwen2_vl.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/benchmarks/kernels/benchmark_2d_silu_mul_fp8_quant.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/_ipex_ops.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/layers/fused_moe/flashinfer_cutlass_moe.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/h2ovl.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/models/multimodal/generation/test_granite_speech.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/v1/kv_offload/arc_manager.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/model_executor/model_loader/test_sharded_state_loader.py",
+        "providers": [
+          "llama",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/layers/mamba/ops/ssd_state_passing.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/v1/executor/ray_utils.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/kernels/mamba/test_mamba_ssm.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/tests/model_executor/model_loader/runai_streamer_loader/test_runai_utils.py",
+        "providers": [
+          "openai",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/gemma2.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/model_executor/models/terratorch.py",
+        "providers": [
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "vllm-project-vllm-67312ca/vllm/v1/sample/tpu/metadata.py",
+        "providers": [
+          "vllm"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "xtekky/gpt4free": {
+    "owner": "xtekky",
+    "repo": "gpt4free",
+    "ref": "main",
+    "num_llm_files": 4,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "xtekky-gpt4free-aa0aade/etc/examples/text_completions_demo_sync.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "xtekky-gpt4free-aa0aade/g4f/client/__init__.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "xtekky-gpt4free-aa0aade/etc/testing/test_all.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "xtekky-gpt4free-aa0aade/g4f/Provider/not_working/Koala.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "uukuguy/DB-GPT-Lite": {
+    "owner": "uukuguy",
+    "repo": "DB-GPT-Lite",
+    "ref": "d857cb71f2c19e8535d0f5e9692e15c4e4dd100d",
+    "num_llm_files": 2,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "langchain",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "uukuguy-DB-GPT-Lite-d857cb7/examples/awel/simple_rag_summary_example.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "uukuguy-DB-GPT-Lite-d857cb7/dbgpt/app/initialization/embedding_component.py",
+        "providers": [
+          "langchain"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "ymcui/Chinese-LLaMA-Alpaca-2": {
+    "owner": "ymcui",
+    "repo": "Chinese-LLaMA-Alpaca-2",
+    "ref": "main",
+    "num_llm_files": 1,
+    "providers": [
+      "langchain",
+      "llama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "ymcui-Chinese-LLaMA-Alpaca-2-a1a5203/scripts/ceval/eval.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "yujiosaka/ChatIQ": {
+    "owner": "yujiosaka",
+    "repo": "ChatIQ",
+    "ref": "def21481b0c132173b51d1d7a314b103db324ca2",
+    "num_llm_files": 1,
+    "providers": [
+      "langchain",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "yujiosaka-ChatIQ-def2148/chatiq/document_loaders/slack_link.py",
+        "providers": [
+          "langchain"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "zhayujie/chatgpt-on-wechat": {
+    "owner": "zhayujie",
+    "repo": "chatgpt-on-wechat",
+    "ref": "master",
+    "num_llm_files": 1,
+    "providers": [
+      "anthropic",
+      "gemini",
+      "llama",
+      "mistral",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "zhayujie-chatgpt-on-wechat-7e12744/bot/baidu/baidu_wenxin_session.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "xorbitsai/inference": {
+    "owner": "xorbitsai",
+    "repo": "inference",
+    "ref": "main",
+    "num_llm_files": 4,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "langchain",
+      "llama",
+      "mistral",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "xorbitsai-inference-8addbfb/xinference/model/llm/transformers/multimodal/core.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "xorbitsai-inference-8addbfb/xinference/model/llm/transformers/utils.py",
+        "providers": [
+          "openai"
+        ]
+      },
+      {
+        "file_path": "xorbitsai-inference-8addbfb/xinference/thirdparty/fish_speech/tools/api_server.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "xorbitsai-inference-8addbfb/xinference/client/tests/test_client.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "zilliztech/GPTCache": {
+    "owner": "zilliztech",
+    "repo": "GPTCache",
+    "ref": "main",
+    "num_llm_files": 2,
+    "providers": [
+      "cohere",
+      "langchain",
+      "llama",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "zilliztech-GPTCache-c59fb3a/tests/unit_tests/embedding/test_langchain.py",
+        "providers": [
+          "langchain"
+        ]
+      },
+      {
+        "file_path": "zilliztech-GPTCache-c59fb3a/docs/bootcamp/streamlit/gptcache-streamlit-image/imagen.py",
+        "providers": [
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "zhjunqin/Langchain-Chatchat-InternLM": {
+    "owner": "zhjunqin",
+    "repo": "Langchain-Chatchat-InternLM",
+    "ref": "761f0bc3a94ccdda9970761b6c769c7e0537e2e8",
+    "num_llm_files": 1,
+    "providers": [
+      "langchain",
+      "openai"
+    ],
+    "files": [
+      {
+        "file_path": "zhjunqin-Langchain-Chatchat-InternLM-761f0bc/server/chat/knowledge_base_chat.py",
+        "providers": [
+          "langchain",
+          "openai"
+        ]
+      }
+    ],
+    "error": null
+  },
+  "run-llama/llama_index": {
+    "owner": "run-llama",
+    "repo": "llama_index",
+    "ref": "main",
+    "num_llm_files": 76,
+    "providers": [
+      "anthropic",
+      "cohere",
+      "gemini",
+      "groq",
+      "langchain",
+      "litellm",
+      "llama",
+      "mistral",
+      "ollama",
+      "openai",
+      "vllm"
+    ],
+    "files": [
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-dashscope/tests/test_embeddings_dashscope.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-premai/llama_index/llms/premai/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/download/dataset.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-packs/llama-index-packs-diff-private-simple-dataset/examples/symptom_2_disease/main.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-genius/tests/test_readers_genius.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-web/tests/test_readers_rss.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-duckdb/tests/test_duckdb.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/query_engine/retriever_query_engine.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/prompts/display_utils.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-rayyan/llama_index/readers/rayyan/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-baiduvectordb/tests/test_vector_stores_baiduvectordb.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-readwise/llama_index/readers/readwise/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/postprocessor/llama-index-postprocessor-alibabacloud-aisearch-rerank/llama_index/postprocessor/alibabacloud_aisearch_rerank/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-alibabacloud-aisearch/llama_index/readers/alibabacloud_aisearch/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-packs/llama-index-packs-code-hierarchy/tests/test_utility_methods.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-mixedbreadai/tests/test_embeddings_mixedbreadai.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/indices/document_summary/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-mariadb/tests/test_vector_stores_mariadb.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-mondaydotcom/tests/test_readers_mondaydotcom.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/tests/indices/query/test_embedding_utils.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-nebius/tests/test_embeddings_nebius.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-assemblyai/llama_index/readers/assemblyai/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-packs/llama-index-packs-raptor/llama_index/packs/raptor/clustering.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-mistral-rs/tests/test_llms_mistral-rs.py",
+        "providers": [
+          "llama",
+          "mistral"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/program/llama-index-program-evaporate/llama_index/program/evaporate/extractor.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-google/tests/test_embeddings_google.py",
+        "providers": [
+          "gemini",
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/postprocessor/llama-index-postprocessor-dashscope-rerank/llama_index/postprocessor/dashscope_rerank/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-packs/llama-index-packs-koda-retriever/llama_index/packs/koda_retriever/constants.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-astra-db/llama_index/vector_stores/astra_db/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-bigquery/llama_index/vector_stores/bigquery/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/instrumentation/span/simple.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/selectors/pydantic_selectors.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-finetuning/llama_index/finetuning/rerankers/cohere_reranker.py",
+        "providers": [
+          "cohere",
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-pebblo/llama_index/readers/pebblo/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/tools/llama-index-tools-playwright/llama_index/tools/playwright/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-nvidia-triton/tests/test_llms_nvidia_triton.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-lindorm/llama_index/vector_stores/lindorm/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/base/response/schema.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/voice_agents/llama-index-voice-agents-elevenlabs/llama_index/voice_agents/elevenlabs/events.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-openai-like/tests/test_openai_like.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-clarifai/llama_index/llms/clarifai/base.py",
+        "providers": [
+          "anthropic",
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-rocksetdb/llama_index/vector_stores/rocksetdb/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-anyscale/tests/test_llms_anyscale.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/extractors/llama-index-extractors-relik/llama_index/extractors/relik/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-paieas/llama_index/llms/paieas/base.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-packs/llama-index-packs-ragatouille-retriever/tests/test_packs_ragatouille_retriever.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/postprocessor/llama-index-postprocessor-alibabacloud-aisearch-rerank/tests/test_postprocessor_alibabacloud_aisearch_rerank.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-web/llama_index/readers/web/rss_news/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/tools/llama-index-tools-aws-bedrock-agentcore/llama_index/tools/aws_bedrock_agentcore/code_interpreter/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-packs/llama-index-packs-multi-tenancy-rag/tests/test_packs_multi_tenancy_rag.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-nvidia/tests/test_embeddings_nvidia.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-file/tests/test_html_reader.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-pebblo/llama_index/readers/pebblo/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-packs/llama-index-packs-fuzzy-citation/llama_index/packs/fuzzy_citation/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/evaluation/retrieval/metrics_base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-nvidia/tests/test_base_url.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/chat_engine/condense_plus_context.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-json/llama_index/readers/json/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/response_synthesizers/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/memory/memory_blocks/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-couchdb/llama_index/readers/couchdb/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/tools/llama-index-tools-slack/llama_index/tools/slack/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-packs/llama-index-packs-deeplake-multimodal-retrieval/llama_index/packs/deeplake_multimodal_retrieval/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/query_engine/pandas/pandas_query_engine.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-service-now/llama_index/readers/service_now/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-postgres/llama_index/vector_stores/postgres/base.py",
+        "providers": [
+          "llama",
+          "openai"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/readers/llama-index-readers-box/llama_index/readers/box/BoxReader/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-elasticsearch/llama_index/vector_stores/elasticsearch/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/llms/llama-index-llms-reka/tests/test_reka.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-huggingface-optimum-intel/llama_index/embeddings/huggingface_optimum_intel/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-firestore/tests/test_vector_store_firestore.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-core/llama_index/core/tools/tool_spec/load_and_search/base.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-litellm/tests/test_embeddings_litellm.py",
+        "providers": [
+          "litellm",
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-vllm/llama_index/embeddings/vllm/base.py",
+        "providers": [
+          "llama",
+          "vllm"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/postprocessor/llama-index-postprocessor-voyageai-rerank/llama_index/postprocessor/voyageai_rerank/__init__.py",
+        "providers": [
+          "llama"
+        ]
+      },
+      {
+        "file_path": "run-llama-llama_index-9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-lancedb/llama_index/vector_stores/lancedb/util.py",
+        "providers": [
+          "llama"
+        ]
+      }
+    ],
+    "error": null
+  }
+}
