@@ -1,0 +1,1453 @@
+{
+  "/Users/bramss/Desktop/repos/matigumma__bb.agi__9af4396c1c97b0de3fc47ceb35ff8e4489be6254/babyagi.py": {
+    "R32": [
+      "Overspecified sampling at line 149"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/ludwig-ai__ludwig__master/ludwig/contribs/mlflow/model.py": {
+    "R31": [
+      "Unbounded vision payloads at line 261"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/ludwig-ai__ludwig__master/tests/integration_tests/test_ray.py": {
+    "R31": [
+      "Unbounded vision payloads at line 108"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/ludwig-ai__ludwig__master/tests/integration_tests/test_mlflow.py": {
+    "R31": [
+      "Unbounded vision payloads at line 30",
+      "Unbounded vision payloads at line 92"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/fighting41love__funNLP__master/data/中文分词词库整理/thirtyw.py": {
+    "PARSE_ERROR": [
+      "Parse error: Missing parentheses in call to 'print'. Did you mean print(...)? (thirtyw.py, line 11)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/tests/templates/fetching_ddp_dynbatch_finetuning/ASR_template_train.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (ASR_template_train.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/tests/templates/fetching_ddp_dynbatch_finetuning/mini_librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (mini_librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Aishell1Mix/separation/prepare_data.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_data.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/AMI/Diarization/ami_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (ami_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WHAMandWHAMR/enhancement/create_whamr_rirs.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (create_whamr_rirs.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WHAMandWHAMR/enhancement/prepare_data.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_data.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WHAMandWHAMR/enhancement/wham_room.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (wham_room.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WHAMandWHAMR/enhancement/preprocess_dynamic_mixing.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (preprocess_dynamic_mixing.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WHAMandWHAMR/separation/create_whamr_rirs.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (create_whamr_rirs.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WHAMandWHAMR/separation/prepare_data.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_data.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WHAMandWHAMR/separation/wham_room.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (wham_room.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/VoxPopuli/Tokenizer/voxpopuli_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voxpopuli_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/VoxPopuli/ASR/transducer/voxpopuli_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voxpopuli_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LJSpeech/quantization/ljspeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (ljspeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LJSpeech/TTS/fastspeech2/ljspeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (ljspeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LJSpeech/TTS/vocoder/hifigan/ljspeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (ljspeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LJSpeech/TTS/vocoder/hifigan_discrete/ljspeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (ljspeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LJSpeech/TTS/vocoder/diffwave/ljspeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (ljspeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LJSpeech/TTS/tacotron2/ljspeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (ljspeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CommonVoice/self-supervised-learning/wav2vec2/common_voice_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (common_voice_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CommonVoice/LM/common_voice_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (common_voice_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CommonVoice/ASR/transformer/common_voice_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (common_voice_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CommonVoice/ASR/seq2seq/common_voice_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (common_voice_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CommonVoice/ASR/transducer/common_voice_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (common_voice_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CommonVoice/ASR/CTC/common_voice_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (common_voice_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/timers-and-such/decoupled/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/timers-and-such/direct/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/timers-and-such/LM/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/timers-and-such/Tokenizer/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/timers-and-such/multistage/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/AudioMNIST/diffusion/audiomnist_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (audiomnist_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/AISHELL-1/Tokenizer/aishell_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (aishell_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/AISHELL-1/ASR/transformer/aishell_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (aishell_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/AISHELL-1/ASR/seq2seq/aishell_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (aishell_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/AISHELL-1/ASR/CTC/aishell_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (aishell_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriMix/separation/prepare_data.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_data.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/RescueSpeech/ASR/noise-robust/rescuespeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (rescuespeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/SLURP/NLU/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/SLURP/direct/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/SLURP/Tokenizer/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WSJ0Mix/separation/prepare_data.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_data.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/WSJ0Mix/separation/preprocess_dynamic_mixing.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (preprocess_dynamic_mixing.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/VoxCeleb/SpeakerRec/voxceleb_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voxceleb_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/ESC50/classification/wham_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (wham_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/ESC50/classification/esc50_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (esc50_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/ESC50/interpret/wham_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (wham_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/ESC50/interpret/esc50_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (esc50_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/fluent-speech-commands/direct/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/fluent-speech-commands/Tokenizer/prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Tedlium2/Tokenizer/tedlium2_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (tedlium2_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/IWSLT22_lowresource/AST/transformer/prepare_iwslt22.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_iwslt22.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/self-supervised-learning/BEST-RQ/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/self-supervised-learning/wav2vec2/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/LM/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/Tokenizer/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/G2P/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/quantization/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/ASR/transformer/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/ASR/seq2seq/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/ASR/transducer/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriSpeech/ASR/CTC/librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/GigaSpeech/ASR/transducer/dataset.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (dataset.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/GigaSpeech/ASR/transducer/gigaspeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (gigaspeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/GigaSpeech/ASR/CTC/dataset.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (dataset.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/GigaSpeech/ASR/CTC/gigaspeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (gigaspeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriTTS/focalcodec/libritts_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (libritts_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriTTS/TTS/mstacotron2/libritts_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (libritts_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriTTS/vocoder/hifigan/libritts_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (libritts_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/LibriTTS/vocoder/hifigan_discrete/libritts_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (libritts_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Libriheavy/ASR/transformer/libriheavy_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (libriheavy_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Fisher-Callhome-Spanish/Tokenizer/fisher_callhome_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (fisher_callhome_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/UrbanSound8k/SoundClassification/urbansound8k_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (urbansound8k_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CoVoST/AST/covost_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (covost_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CVSS/S2ST/cvss_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (cvss_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/CommonLanguage/lang_id/common_language_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (common_language_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Switchboard/LM/switchboard_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (switchboard_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Switchboard/Tokenizer/switchboard_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (switchboard_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Switchboard/ASR/transformer/switchboard_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (switchboard_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Switchboard/ASR/transformer/normalize_util.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (normalize_util.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Switchboard/ASR/seq2seq/switchboard_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (switchboard_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Switchboard/ASR/seq2seq/normalize_util.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (normalize_util.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Switchboard/ASR/CTC/switchboard_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (switchboard_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Switchboard/ASR/CTC/normalize_util.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (normalize_util.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/DVoice/ASR/CTC/dvoice_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (dvoice_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Voicebank/ASR/CTC/voicebank_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voicebank_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Voicebank/enhance/waveform_map/voicebank_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voicebank_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Voicebank/enhance/spectral_mask/voicebank_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voicebank_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Voicebank/enhance/SEGAN/voicebank_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voicebank_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Voicebank/enhance/MetricGAN/voicebank_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voicebank_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Voicebank/enhance/SGMSE/voicebank_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voicebank_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Voicebank/MTL/ASR_enhance/voicebank_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (voicebank_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/PeoplesSpeech/ASR/transformer/peoples_speech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (peoples_speech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/Loquacious/ASR/transformer/loquacious_set_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (loquacious_set_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/TIMIT/ASR/seq2seq/timit_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (timit_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/TIMIT/ASR/transducer/timit_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (timit_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/TIMIT/ASR/CTC/timit_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (timit_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/TIMIT/Alignment/timit_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (timit_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/BinauralWSJ0Mix/separation/prepare_data.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_data.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/create_whamr_rirs.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (create_whamr_rirs.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/dynamic_mixing_librimix.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (dynamic_mixing_librimix.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/dynamic_mixing_wham.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (dynamic_mixing_wham.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/train_wham.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (train_wham.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/prepare_data_librimix.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_data_librimix.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/preprocess_dynamic_mixing_wham.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (preprocess_dynamic_mixing_wham.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/preprocess_dynamic_mixing_librimix.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (preprocess_dynamic_mixing_librimix.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/prepare_data_wham.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (prepare_data_wham.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/REAL-M/sisnr-estimation/wham_room.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (wham_room.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/MEDIA/ASR/CTC/media_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (media_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/recipes/MEDIA/SLU/CTC/media_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (media_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/templates/speech_recognition/Tokenizer/mini_librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (mini_librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/templates/speech_recognition/ASR/mini_librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (mini_librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/templates/hyperparameter_optimization_speaker_id/custom_model.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (custom_model.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/speechbrain__speechbrain__develop/templates/hyperparameter_optimization_speaker_id/mini_librispeech_prepare.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (mini_librispeech_prepare.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Shubhamsaboo__awesome-llm-apps__main/advanced_llm_apps/gpt_oss_critique_improvement_loop/streamlit_app.py": {
+    "R32": [
+      "Overspecified sampling at line 38"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/modelscope__ms-swift__main/tests/test_align/test_lmdeploy_vlm.py": {
+    "R31": [
+      "Unbounded vision payloads at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/modelscope__ms-swift__main/swift/llm/sampling/distill_sampler.py": {
+    "R32": [
+      "Overspecified sampling at line 34"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/dory111111__babyagi-streamlit__088aa7376c39d541543a3518df8bd5db46633f51/babyagi.py": {
+    "R32": [
+      "Overspecified sampling at line 129"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/CloudDevStudios__Agent-LLM__f89aaebd761a4d016b8a61ee511330f5ed403fe9/provider/openai.py": {
+    "R32": [
+      "Overspecified sampling at line 22"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Azure-Samples__azure-search-openai-demo__main/app/backend/prepdocslib/mediadescriber.py": {
+    "R31": [
+      "Unbounded vision payloads at line 139"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/tests/llm/test_anthropic/test_multimodal.py": {
+    "R31": [
+      "Unbounded vision payloads at line 31",
+      "Unbounded vision payloads at line 60",
+      "Unbounded vision payloads at line 92",
+      "Unbounded vision payloads at line 127"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/tests/llm/test_gemini/evals/test_extract_users.py": {
+    "R31": [
+      "Unbounded vision payloads at line 28"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/tests/llm/test_openai/test_multimodal.py": {
+    "R31": [
+      "Unbounded vision payloads at line 89",
+      "Unbounded vision payloads at line 119",
+      "Unbounded vision payloads at line 150"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/tests/llm/test_writer/evals/test_sentiment_analysis.py": {
+    "R31": [
+      "Unbounded vision payloads at line 45"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/tests/llm/test_writer/evals/test_extract_users.py": {
+    "R31": [
+      "Unbounded vision payloads at line 29"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/logfire/image.py": {
+    "R31": [
+      "Unbounded vision payloads at line 56"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/extract-table/run_vision_org_table.py": {
+    "R31": [
+      "Unbounded vision payloads at line 59"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/extract-table/run_vision_receipt.py": {
+    "R31": [
+      "Unbounded vision payloads at line 35"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/extract-table/run_vision_langsmith.py": {
+    "R31": [
+      "Unbounded vision payloads at line 81"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/extract-table/run_vision.py": {
+    "R31": [
+      "Unbounded vision payloads at line 79"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/gpt-engineer/generate.py": {
+    "R31": [
+      "Unbounded vision payloads at line 34"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/vision/run.py": {
+    "R31": [
+      "Unbounded vision payloads at line 45"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/vision/run_raw.py": {
+    "R31": [
+      "Unbounded vision payloads at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/caching/example_redis.py": {
+    "R31": [
+      "Unbounded vision payloads at line 46"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/caching/run.py": {
+    "R31": [
+      "Unbounded vision payloads at line 132",
+      "Unbounded vision payloads at line 178",
+      "Unbounded vision payloads at line 244",
+      "Unbounded vision payloads at line 321",
+      "Unbounded vision payloads at line 334",
+      "Unbounded vision payloads at line 356",
+      "Unbounded vision payloads at line 465"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/caching/example_diskcache.py": {
+    "R31": [
+      "Unbounded vision payloads at line 66",
+      "Unbounded vision payloads at line 77"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/567-labs__instructor__main/examples/caching/lru.py": {
+    "R31": [
+      "Unbounded vision payloads at line 16"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/uukuguy__DB-GPT-Lite__d857cb71f2c19e8535d0f5e9692e15c4e4dd100d/dbgpt/util/code_utils.py": {
+    "R31": [
+      "Unbounded vision payloads at line 316"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/enterprise/litellm_enterprise/proxy/hooks/managed_files.py": {
+    "R31": [
+      "Unbounded vision payloads at line 112"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/tests/old_proxy_tests/tests/test_openai_embedding.py": {
+    "R31": [
+      "Unbounded vision payloads at line 6"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/cookbook/misc/test_responses_api.py": {
+    "R31": [
+      "Unbounded vision payloads at line 22"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/cookbook/litellm_proxy_server/mcp/mcp_with_litellm_proxy.py": {
+    "R30": [
+      "Reasoning model call without explicit reasoning effort parameter at line 14"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/cookbook/litellm_router_load_test/test_loadtest_openai_client.py": {
+    "R31": [
+      "Unbounded vision payloads at line 26"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/proxy/_experimental/mcp_server/db.py": {
+    "R31": [
+      "Unbounded vision payloads at line 319"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/proxy/management_endpoints/model_management_endpoints.py": {
+    "R31": [
+      "Unbounded vision payloads at line 309"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/proxy/management_endpoints/common_utils.py": {
+    "R31": [
+      "Unbounded vision payloads at line 104"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/llms/azure/assistants.py": {
+    "R31": [
+      "Unbounded vision payloads at line 294",
+      "Unbounded vision payloads at line 956",
+      "Unbounded vision payloads at line 206",
+      "Unbounded vision payloads at line 915"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/llms/azure/azure.py": {
+    "R31": [
+      "Unbounded vision payloads at line 141",
+      "Unbounded vision payloads at line 166"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/llms/azure/audio_transcriptions.py": {
+    "R31": [
+      "Unbounded vision payloads at line 81",
+      "Unbounded vision payloads at line 148"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/llms/azure/files/handler.py": {
+    "R31": [
+      "Unbounded vision payloads at line 33"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/llms/azure/batches/handler.py": {
+    "R31": [
+      "Unbounded vision payloads at line 38"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/llms/openai/openai.py": {
+    "R31": [
+      "Unbounded vision payloads at line 2231",
+      "Unbounded vision payloads at line 2391",
+      "Unbounded vision payloads at line 476",
+      "Unbounded vision payloads at line 1552",
+      "Unbounded vision payloads at line 1832",
+      "Unbounded vision payloads at line 2197",
+      "Unbounded vision payloads at line 2313",
+      "Unbounded vision payloads at line 436"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/llms/openai/fine_tuning/handler.py": {
+    "R31": [
+      "Unbounded vision payloads at line 59"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BerriAI__litellm__main/litellm/llms/openai/transcriptions/handler.py": {
+    "R31": [
+      "Unbounded vision payloads at line 42",
+      "Unbounded vision payloads at line 67",
+      "Unbounded vision payloads at line 75"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/ai8hyf__babyagi__6fcd528a92c80846dbb351f2b7babdd50c38709d/babyagi.py": {
+    "R32": [
+      "Overspecified sampling at line 149"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/neuml__txtai__master/src/python/txtai/api/routers/transcription.py": {
+    "R31": [
+      "Unbounded vision payloads at line 27",
+      "Unbounded vision payloads at line 42"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/neuml__txtai__master/src/python/txtai/api/routers/tabular.py": {
+    "R31": [
+      "Unbounded vision payloads at line 27",
+      "Unbounded vision payloads at line 42"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/neuml__txtai__master/src/python/txtai/api/routers/textractor.py": {
+    "R31": [
+      "Unbounded vision payloads at line 27",
+      "Unbounded vision payloads at line 42"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/neuml__txtai__master/src/python/txtai/api/routers/caption.py": {
+    "R31": [
+      "Unbounded vision payloads at line 27",
+      "Unbounded vision payloads at line 42"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/neuml__txtai__master/src/python/txtai/api/routers/objects.py": {
+    "R31": [
+      "Unbounded vision payloads at line 27",
+      "Unbounded vision payloads at line 42"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/comet-ml__opik__main/tests_load/tests/test_image_inference.py": {
+    "R31": [
+      "Unbounded vision payloads at line 567",
+      "Unbounded vision payloads at line 596"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/xorbitsai__inference__main/xinference/model/llm/tests/test_multimodal.py": {
+    "R31": [
+      "Unbounded vision payloads at line 60",
+      "Unbounded vision payloads at line 114",
+      "Unbounded vision payloads at line 172",
+      "Unbounded vision payloads at line 202",
+      "Unbounded vision payloads at line 267",
+      "Unbounded vision payloads at line 303"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/xorbitsai__inference__main/xinference/model/llm/llama_cpp/tests/test_gguf.py": {
+    "R31": [
+      "Unbounded vision payloads at line 72"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/xorbitsai__inference__main/xinference/model/llm/mlx/tests/test_mlx.py": {
+    "R31": [
+      "Unbounded vision payloads at line 77"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sw5park__LUISE__e88343c1e2d1c634a33838500e6cc72aa97fdeaa/src/agents/base_agent.py": {
+    "R32": [
+      "Overspecified sampling at line 12"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/huggingface__transformers__main/tests/trainer/test_trainer_distributed.py": {
+    "R31": [
+      "Unbounded vision payloads at line 175",
+      "Unbounded vision payloads at line 189"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/huggingface__transformers__main/tests/trainer/test_trainer_tpu.py": {
+    "R31": [
+      "Unbounded vision payloads at line 96",
+      "Unbounded vision payloads at line 110"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/huggingface__transformers__main/templates/adding_a_missing_tokenization_test/cookiecutter-template-{{cookiecutter.modelname}}/test_tokenization_{{cookiecutter.lowercase_modelname}}.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (test_tokenization_{{cookiecutter.lowercase_modelname}}.py, line 20)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/huggingface__transformers__main/templates/adding_a_new_example_script/{{cookiecutter.directory_name}}/run_{{cookiecutter.example_shortcut}}.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (run_{{cookiecutter.example_shortcut}}.py, line 21)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/1Panel-dev__MaxKB__v2/apps/knowledge/serializers/knowledge_workflow.py": {
+    "R33": [
+      "Anonymous Inference Call at line 95",
+      "Anonymous Inference Call at line 119"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/1Panel-dev__MaxKB__v2/apps/application/views/application_api_key.py": {
+    "R33": [
+      "Anonymous Inference Call at line 50"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/EmbraceAGI__LocalAGI__f2fd7824ee270b8d45b336366ec885a14b809b8b/local_agi_zh.py": {
+    "R32": [
+      "Overspecified sampling at line 429"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/EmbraceAGI__LocalAGI__f2fd7824ee270b8d45b336366ec885a14b809b8b/local_agi.py": {
+    "R32": [
+      "Overspecified sampling at line 429"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/stas00__ml-engineering__master/training/performance/benchmarks/activation-memory-per-layer.py": {
+    "PARSE_ERROR": [
+      "Parse error: unterminated string literal (detected at line 4) (activation-memory-per-layer.py, line 4)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/vllm-project__vllm__main/tests/v1/sample/test_sampling_params_e2e.py": {
+    "R31": [
+      "Unbounded vision payloads at line 158"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/vllm-project__vllm__main/tests/v1/entrypoints/openai/test_completion_with_image_embeds.py": {
+    "R31": [
+      "Unbounded vision payloads at line 64"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/vllm-project__vllm__main/tests/v1/tpu/test_multimodal.py": {
+    "R31": [
+      "Unbounded vision payloads at line 67"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/vllm-project__vllm__main/tests/entrypoints/openai/test_metrics.py": {
+    "R31": [
+      "Unbounded vision payloads at line 267"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/vllm-project__vllm__main/tests/entrypoints/openai/test_vision.py": {
+    "R31": [
+      "Unbounded vision payloads at line 411",
+      "Unbounded vision payloads at line 450",
+      "Unbounded vision payloads at line 477",
+      "Unbounded vision payloads at line 507",
+      "Unbounded vision payloads at line 542"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/vllm-project__vllm__main/tests/entrypoints/openai/test_messages.py": {
+    "R30": [
+      "Reasoning model call without explicit reasoning effort parameter at line 38",
+      "Reasoning model call without explicit reasoning effort parameter at line 51",
+      "Reasoning model call without explicit reasoning effort parameter at line 65",
+      "Reasoning model call without explicit reasoning effort parameter at line 89",
+      "Reasoning model call without explicit reasoning effort parameter at line 122"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/vllm-project__vllm__main/vllm/entrypoints/openai/api_server.py": {
+    "R31": [
+      "Unbounded vision payloads at line 493"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/vllm-project__vllm__main/examples/online_serving/openai_chat_completion_client_for_multimodal.py": {
+    "R31": [
+      "Unbounded vision payloads at line 70",
+      "Unbounded vision payloads at line 92",
+      "Unbounded vision payloads at line 117"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/intel__ipex-llm__main/python/llm/example/CPU/PyTorch-Models/Model/llava/generate.py": {
+    "R31": [
+      "Unbounded vision payloads at line 328"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/intel__ipex-llm__main/python/llm/src/ipex_llm/vllm/cpu/entrypoints/api_server.py": {
+    "R31": [
+      "Unbounded vision payloads at line 374"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/intel__ipex-llm__main/python/llm/src/ipex_llm/vllm/cpu/entrypoints/openai/api_server.py": {
+    "R31": [
+      "Unbounded vision payloads at line 368"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/intel__ipex-llm__main/python/llm/src/ipex_llm/vllm/xpu/entrypoints/openai/api_server.py": {
+    "R31": [
+      "Unbounded vision payloads at line 501"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/run-llama__llama_index__main/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/base.py": {
+    "R31": [
+      "Unbounded vision payloads at line 418",
+      "Unbounded vision payloads at line 453",
+      "Unbounded vision payloads at line 665",
+      "Unbounded vision payloads at line 700"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/run-llama__llama_index__main/llama-index-core/llama_index/core/evaluation/multi_modal/faithfulness.py": {
+    "R31": [
+      "Unbounded vision payloads at line 164"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/hlohaus__Agent-LLM__d8a46dacea35c6224effd3e733d5c085bea1949a/provider/openai.py": {
+    "R32": [
+      "Overspecified sampling at line 22"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sgl-project__sglang__main/test/srt/test_vision_openai_server_common.py": {
+    "R31": [
+      "Unbounded vision payloads at line 240",
+      "Unbounded vision payloads at line 270",
+      "Unbounded vision payloads at line 321"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sgl-project__sglang__main/test/srt/test_vision_openai_server_a.py": {
+    "R31": [
+      "Unbounded vision payloads at line 194",
+      "Unbounded vision payloads at line 75"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sgl-project__sglang__main/test/srt/test_bnb.py": {
+    "R31": [
+      "Unbounded vision payloads at line 72",
+      "Unbounded vision payloads at line 109",
+      "Unbounded vision payloads at line 156"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sgl-project__sglang__main/test/srt/openai_server/basic/test_openai_server.py": {
+    "R32": [
+      "Overspecified sampling at line 489",
+      "Overspecified sampling at line 575"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sgl-project__sglang__main/test/srt/openai_server/function_call/test_openai_function_calling.py": {
+    "R32": [
+      "Overspecified sampling at line 93",
+      "Overspecified sampling at line 146",
+      "Overspecified sampling at line 176",
+      "Overspecified sampling at line 231",
+      "Overspecified sampling at line 309",
+      "Overspecified sampling at line 394",
+      "Overspecified sampling at line 463",
+      "Overspecified sampling at line 551",
+      "Overspecified sampling at line 691"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sgl-project__sglang__main/python/sglang/srt/models/qwen2_classification.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid non-printable character U+FEFF (qwen2_classification.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sgl-project__sglang__main/examples/runtime/multimodal/llava_onevision_server.py": {
+    "R31": [
+      "Unbounded vision payloads at line 46",
+      "Unbounded vision payloads at line 85",
+      "Unbounded vision payloads at line 154"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/sgl-project__sglang__main/sgl-model-gateway/py_test/e2e_grpc/function_call/test_openai_function_calling.py": {
+    "R32": [
+      "Overspecified sampling at line 118",
+      "Overspecified sampling at line 171",
+      "Overspecified sampling at line 201",
+      "Overspecified sampling at line 256",
+      "Overspecified sampling at line 334",
+      "Overspecified sampling at line 422",
+      "Overspecified sampling at line 491",
+      "Overspecified sampling at line 579",
+      "Overspecified sampling at line 719"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Devansh968__Chat-with-Pdf-using-Qdrant-vector-database__771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/win32com/demos/ietoolbar.py": {
+    "PARSE_ERROR": [
+      "Parse error: 'utf-8' codec can't decode byte 0xf6 in position 123: invalid start byte"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Devansh968__Chat-with-Pdf-using-Qdrant-vector-database__771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/win32com/demos/iebutton.py": {
+    "PARSE_ERROR": [
+      "Parse error: 'utf-8' codec can't decode byte 0xf6 in position 122: invalid start byte"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Devansh968__Chat-with-Pdf-using-Qdrant-vector-database__771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/openai/cli.py": {
+    "R32": [
+      "Overspecified sampling at line 123",
+      "Overspecified sampling at line 166"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/BlinkDL__RWKV-LM__main/RWKV-v4/train.py": {
+    "R31": [
+      "Unbounded vision payloads at line 280"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/All-Hands-AI__OpenHands__main/openhands/runtime/plugins/agent_skills/file_reader/file_readers.py": {
+    "R31": [
+      "Unbounded vision payloads at line 155",
+      "Unbounded vision payloads at line 200"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/All-Hands-AI__OpenHands__main/evaluation/benchmarks/discoverybench/eval_utils/openai_helpers.py": {
+    "R32": [
+      "Overspecified sampling at line 93"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/All-Hands-AI__OpenHands__main/evaluation/benchmarks/discoverybench/eval_utils/lm_utils.py": {
+    "R32": [
+      "Overspecified sampling at line 47",
+      "Overspecified sampling at line 54"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/All-Hands-AI__OpenHands__main/evaluation/benchmarks/versicode/inference_utils/api_code_migration.py": {
+    "R32": [
+      "Overspecified sampling at line 32"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/All-Hands-AI__OpenHands__main/evaluation/benchmarks/versicode/inference_utils/api_test_block_completion.py": {
+    "R32": [
+      "Overspecified sampling at line 32"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/hiyouga__LLaMA-Factory__main/src/llamafactory/chat/chat_model.py": {
+    "R31": [
+      "Unbounded vision payloads at line 118"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/openai__openai-agents-python__main/src/agents/models/openai_responses.py": {
+    "R32": [
+      "Overspecified sampling at line 317"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/openai__openai-agents-python__main/src/agents/models/openai_chatcompletions.py": {
+    "R32": [
+      "Overspecified sampling at line 310"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/llm/run_pretrain.py": {
+    "R31": [
+      "Unbounded vision payloads at line 588"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/llm/benchmark/mmlu_pro/evaluate_from_api.py": {
+    "R32": [
+      "Overspecified sampling at line 70",
+      "Overspecified sampling at line 93",
+      "Overspecified sampling at line 106"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/llm/benchmark/rl/api_serve.py": {
+    "R32": [
+      "Overspecified sampling at line 133",
+      "Overspecified sampling at line 169"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/llm/experimental/ernie-3.5-se/run_pretrain.py": {
+    "R31": [
+      "Unbounded vision payloads at line 454"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/llm/auto_parallel/deepseek-v3/run_pretrain_auto.py": {
+    "R31": [
+      "Unbounded vision payloads at line 667"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/llm/auto_parallel/qwen/run_pretrain_auto.py": {
+    "R31": [
+      "Unbounded vision payloads at line 642"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/llm/auto_parallel/llama/run_pretrain_auto.py": {
+    "R31": [
+      "Unbounded vision payloads at line 688"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/llm/application/distill/distill_data.py": {
+    "R32": [
+      "Overspecified sampling at line 219"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/slm/model_zoo/ernie-1.0/run_pretrain_trainer.py": {
+    "R31": [
+      "Unbounded vision payloads at line 475"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/slm/model_zoo/ernie-1.0/finetune/run_qa.py": {
+    "R31": [
+      "Unbounded vision payloads at line 216"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/slm/model_zoo/t5/dataset_utils.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (dataset_utils.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/slm/model_zoo/t5/t5_run_pretrain_trainer.py": {
+    "R31": [
+      "Unbounded vision payloads at line 426"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/PaddlePaddle__PaddleNLP__develop/slm/model_zoo/ernie-3.0/run_qa.py": {
+    "R31": [
+      "Unbounded vision payloads at line 199"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/saten-private__BabyCommandAGI__993f7075479d4d89948410bfec0c4c18d4a06b0c/classic/BabyCatAGI.py": {
+    "R32": [
+      "Overspecified sampling at line 71",
+      "Overspecified sampling at line 268"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/saten-private__BabyCommandAGI__993f7075479d4d89948410bfec0c4c18d4a06b0c/classic/babyagi.py": {
+    "R32": [
+      "Overspecified sampling at line 48",
+      "Overspecified sampling at line 60",
+      "Overspecified sampling at line 75"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/saten-private__BabyCommandAGI__993f7075479d4d89948410bfec0c4c18d4a06b0c/babycoder/babycoder.py": {
+    "R32": [
+      "Overspecified sampling at line 73"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Josh-XT__AGiXT__de7d913b2853708b9f9d4e7127ea48bca80865b9/provider/openai.py": {
+    "R32": [
+      "Overspecified sampling at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/h2oai__h2ogpt__15f3a2d564541020f78cfc83bc90722dcda8a960/spaces/demo/h2oai_pipeline.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (h2oai_pipeline.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/FOLLGAD__Godmode-GPT__4e1dc7055580ab9bb3ce85114f9e17950ac96d7b/tests/integration/challenges/memory/test_memory_challenge_a.py": {
+    "R31": [
+      "Unbounded vision payloads at line 56"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/FOLLGAD__Godmode-GPT__4e1dc7055580ab9bb3ce85114f9e17950ac96d7b/tests/integration/challenges/memory/test_memory_challenge_b.py": {
+    "R31": [
+      "Unbounded vision payloads at line 58"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/OthersideAI__self-operating-computer__main/operate/models/apis.py": {
+    "R31": [
+      "Unbounded vision payloads at line 288"
+    ],
+    "R30": [
+      "Reasoning model call without explicit reasoning effort parameter at line 571"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/InternLM__lmdeploy__main/autotest/interface/restful/test_restful_chat_func.py": {
+    "R32": [
+      "Overspecified sampling at line 1007",
+      "Overspecified sampling at line 1019",
+      "Overspecified sampling at line 1040",
+      "Overspecified sampling at line 1062",
+      "Overspecified sampling at line 677"
+    ],
+    "R31": [
+      "Unbounded vision payloads at line 1040",
+      "Unbounded vision payloads at line 1062"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/InternLM__lmdeploy__main/autotest/tools/pipeline/mllm_case.py": {
+    "R31": [
+      "Unbounded vision payloads at line 120"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/InternLM__lmdeploy__main/autotest/utils/run_restful_chat.py": {
+    "R32": [
+      "Overspecified sampling at line 301",
+      "Overspecified sampling at line 438",
+      "Overspecified sampling at line 559",
+      "Overspecified sampling at line 593",
+      "Overspecified sampling at line 200"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/yoheinakajima__babyagi__3532f987744e9254afacc254e3325d1910c0651d/babyagi.py": {
+    "R32": [
+      "Overspecified sampling at line 76"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/khoj-ai__khoj__master/src/khoj/processor/operator/grounding_agent_uitars.py": {
+    "R32": [
+      "Overspecified sampling at line 148"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/chatchat-space__Langchain-Chatchat__bc7f01925fe49c622cf7d6e2540c03fd5a0679e1/model-providers/chatchat_model_providers/core/model_runtime/model_providers/xinference/llm/llm.py": {
+    "R32": [
+      "Overspecified sampling at line 413",
+      "Overspecified sampling at line 428"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/openai__openai-python__main/tests/api_resources/test_responses.py": {
+    "R32": [
+      "Overspecified sampling at line 31",
+      "Overspecified sampling at line 111",
+      "Overspecified sampling at line 421",
+      "Overspecified sampling at line 501"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/openai__openai-python__main/tests/api_resources/test_completions.py": {
+    "R32": [
+      "Overspecified sampling at line 30",
+      "Overspecified sampling at line 92",
+      "Overspecified sampling at line 160",
+      "Overspecified sampling at line 222"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/openai__openai-python__main/tests/api_resources/chat/test_completions.py": {
+    "R32": [
+      "Overspecified sampling at line 40",
+      "Overspecified sampling at line 173",
+      "Overspecified sampling at line 483",
+      "Overspecified sampling at line 616"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/openai__openai-python__main/tests/api_resources/uploads/test_parts.py": {
+    "R31": [
+      "Unbounded vision payloads at line 22",
+      "Unbounded vision payloads at line 30",
+      "Unbounded vision payloads at line 42",
+      "Unbounded vision payloads at line 57",
+      "Unbounded vision payloads at line 70",
+      "Unbounded vision payloads at line 78",
+      "Unbounded vision payloads at line 90",
+      "Unbounded vision payloads at line 105"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/GaiZhenbiao__ChuanhuChatGPT__main/modules/models/OpenAIInstruct.py": {
+    "R32": [
+      "Overspecified sampling at line 20"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/GaiZhenbiao__ChuanhuChatGPT__main/modules/models/Groq.py": {
+    "R32": [
+      "Overspecified sampling at line 48"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/TransformerOptimus__SuperAGI__main/superagi/llms/openai.py": {
+    "R32": [
+      "Overspecified sampling at line 86"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Jerk400__h2ogpt-dev-local__ba56d6471080ec447c7c5347a2d4765ae4dba5b4/tests/test_client_calls.py": {
+    "R31": [
+      "Unbounded vision payloads at line 896"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Jerk400__h2ogpt-dev-local__ba56d6471080ec447c7c5347a2d4765ae4dba5b4/spaces/demo/h2oai_pipeline.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (h2oai_pipeline.py, line 1)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/fendouai__babyagi_zh__bc907f1d94cd0a6b57db5f6e2b1d0ffbabf6b864/babyagi.py": {
+    "R32": [
+      "Overspecified sampling at line 152"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Upsonic__Upsonic__master/src/upsonic/models/groq.py": {
+    "R32": [
+      "Overspecified sampling at line 293"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Upsonic__Upsonic__master/src/upsonic/models/openai.py": {
+    "R32": [
+      "Overspecified sampling at line 501",
+      "Overspecified sampling at line 1210"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Upsonic__Upsonic__master/src/upsonic/models/huggingface.py": {
+    "R32": [
+      "Overspecified sampling at line 234"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/Upsonic__Upsonic__master/src/upsonic/models/anthropic.py": {
+    "R32": [
+      "Overspecified sampling at line 337"
+    ],
+    "R31": [
+      "Unbounded vision payloads at line 337"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/robiwan303__babyagi__9c22f053675710094576bfc4e6527f59a50e6ac2/babyagi.py": {
+    "R32": [
+      "Overspecified sampling at line 860"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/robiwan303__babyagi__9c22f053675710094576bfc4e6527f59a50e6ac2/classic/BabyCatAGI.py": {
+    "R32": [
+      "Overspecified sampling at line 71",
+      "Overspecified sampling at line 268"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/robiwan303__babyagi__9c22f053675710094576bfc4e6527f59a50e6ac2/classic/babyagi.py": {
+    "R32": [
+      "Overspecified sampling at line 48",
+      "Overspecified sampling at line 60",
+      "Overspecified sampling at line 75"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/robiwan303__babyagi__9c22f053675710094576bfc4e6527f59a50e6ac2/extensions/smart_search.py": {
+    "R32": [
+      "Overspecified sampling at line 243"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/robiwan303__babyagi__9c22f053675710094576bfc4e6527f59a50e6ac2/babycoder/babycoder.py": {
+    "R32": [
+      "Overspecified sampling at line 73"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/xtekky__gpt4free__main/etc/examples/audio.py": {
+    "R31": [
+      "Unbounded vision payloads at line 19"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/xtekky__gpt4free__main/etc/examples/vision_images.py": {
+    "R31": [
+      "Unbounded vision payloads at line 24"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/xtekky__gpt4free__main/etc/examples/vision_images_reka.py": {
+    "R31": [
+      "Unbounded vision payloads at line 12"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/ATheorell__AutoGPTArenaHack__1e4f2dc004b92b9f236543674f94fb9f0af9bb2e/benchmark/agbenchmark/challenges/deprecated/code/4_tests/artifacts_in/testfile.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (testfile.py, line 14)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/ATheorell__AutoGPTArenaHack__1e4f2dc004b92b9f236543674f94fb9f0af9bb2e/benchmark/agbenchmark/challenges/deprecated/code/d2.3_import/artifacts_in/test.py": {
+    "PARSE_ERROR": [
+      "Parse error: invalid syntax (test.py, line 3)"
+    ]
+  },
+  "/Users/bramss/Desktop/repos/zilliztech__GPTCache__main/gptcache/embedding/openai.py": {
+    "R31": [
+      "Unbounded vision payloads at line 57"
+    ]
+  }
+}

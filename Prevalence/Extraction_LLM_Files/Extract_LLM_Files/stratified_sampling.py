@@ -3,6 +3,7 @@ import random
 import os
 import re
 import requests
+from typing import Optional
 
 INPUT_FILE = "repo_summary.json"
 OUTPUT_FILE = "stratified_sample.json"
@@ -18,7 +19,7 @@ _SHA1_RE = re.compile(r"^[0-9a-fA-F]{40}$")
 def is_full_sha(value: str) -> bool:
     return isinstance(value, str) and _SHA1_RE.match(value.strip()) is not None
 
-def resolve_ref_to_sha(owner: str, repo: str, ref: str) -> str | None:
+def resolve_ref_to_sha(owner: str, repo: str, ref: str) -> Optional[str]:
     if not isinstance(ref, str) or not ref.strip():
         return None
     ref = ref.strip()
@@ -89,28 +90,32 @@ def generate_stratified_sample():
 
         owner = repo_data.get("owner")
         repo = repo_data.get("repo")
-        ref = repo_data.get("ref")
+        original_ref = repo_data.get("ref")
 
         resolved_sha = None
-        if isinstance(owner, str) and isinstance(repo, str) and isinstance(ref, str):
-            cache_key = f"{owner}/{repo}@{ref}"
+        if isinstance(owner, str) and isinstance(repo, str) and isinstance(original_ref, str):
+            cache_key = f"{owner}/{repo}@{original_ref}"
             if cache_key in sha_cache:
                 resolved_sha = sha_cache[cache_key]
             else:
-                resolved_sha = resolve_ref_to_sha(owner, repo, ref)
+                resolved_sha = resolve_ref_to_sha(owner, repo, original_ref)
                 sha_cache[cache_key] = resolved_sha
 
+        final_ref = resolved_sha if resolved_sha else original_ref
+
         sampled_repo = repo_data.copy()
-        sampled_repo["ref"] = ref
+        sampled_repo["original_ref"] = original_ref
+        sampled_repo["ref"] = final_ref
         sampled_repo["resolved_commit_sha"] = resolved_sha
         sampled_repo["files"] = selected_files
         sampled_repo["num_llm_files"] = len(selected_files)
 
         for fobj in selected_files:
             if isinstance(fobj, dict):
-                fobj["ref"] = ref
+                fobj["original_ref"] = original_ref
+                fobj["ref"] = final_ref
                 fobj["resolved_commit_sha"] = resolved_sha
-                fobj["commit_sha"] = resolved_sha if resolved_sha else ref
+                fobj["commit_sha"] = resolved_sha if resolved_sha else original_ref
 
         sampled_data[repo_name] = sampled_repo
         total_selected += len(selected_files)
