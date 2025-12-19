@@ -44,5 +44,5 @@ def count_total_files(json_file_path):
 # Exécution du script
 if __name__ == "__main__":
     # Ensure the filename matches yours
-    target_file = 'repo_summary.json'
+    target_file = '/Users/bramss/Desktop/repo_summary.json'
     count_total_files(target_file)

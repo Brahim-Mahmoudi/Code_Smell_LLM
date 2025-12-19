@@ -15,8 +15,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 GITHUB_API = "https://api.github.com"
 
 # Chemins codés en dur
-INPUT_CSV = "/Users/bramss/Documents/ETS/PhD/Code_Smell_LLM/Code_Smell_LLM/Prevalence/Dataset/merged_repos.csv"
-OUTPUT_DIR = "/Users/bramss/Documents/ETS/PhD/Code_Smell_LLM/Code_Smell_LLM/Prevalence/Extraction_LLM_Files/Extract_LLM_Files"
+INPUT_CSV = "/Users/bramss/Documents/GitHub/Code_Smell_LLM/Prevalence/Extraction_LLM_Files/github_llm_repos_500.csv"
+OUTPUT_DIR = "/Users/bramss/Desktop"
 MAX_WORKERS = 4
 
 # Dossier pour déposer les repos complets
