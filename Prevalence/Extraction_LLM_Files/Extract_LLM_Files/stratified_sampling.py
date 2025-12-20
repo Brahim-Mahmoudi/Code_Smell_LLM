@@ -309,7 +309,7 @@ def generate_sample(
 
 if __name__ == "__main__":
     generate_sample(
-        seed=30,
+        seed=58,
         target_repos=692,
         repo_sampling="pps",
         N=N,

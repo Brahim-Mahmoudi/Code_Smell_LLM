@@ -1,13 +1,13 @@
 {
   "meta": {
-    "seed": 30,
+    "seed": 58,
     "repo_sampling": "pps",
     "target_repos": 692,
     "population_N": 38981,
-    "target_n": 380,
+    "target_n": 381,
     "eligible_repos": 604,
     "selected_repos": 186,
-    "total_selected_files": 380,
+    "total_selected_files": 381,
     "skipped_missing_owner_repo": 0,
     "skipped_empty_files": 0,
     "analysis": {
@@ -30,17 +30,12 @@
       "owner": "1Panel-dev",
       "repo": "MaxKB",
       "by_sha": {
-        "a7bb173cc1bf0b8ad70f9531d5e9f7204b4e5f3c": {
+        "fe004c235c598c714506e8fa87c34e3e56e9c6d7": {
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "1Panel-dev/MaxKB@a7bb173cc1bf0b8ad70f9531d5e9f7204b4e5f3c/apps/models_provider/impl/siliconCloud_model_provider/model/stt.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 49",
-                "LLM call without explicit temperature parameter at line 57"
-              ]
-            },
-            "1Panel-dev/MaxKB@a7bb173cc1bf0b8ad70f9531d5e9f7204b4e5f3c/apps/models_provider/impl/deepseek_model_provider/model/llm.py": {}
+            "1Panel-dev/MaxKB@fe004c235c598c714506e8fa87c34e3e56e9c6d7/apps/models_provider/impl/tencent_model_provider/model/hunyuan.py": {},
+            "1Panel-dev/MaxKB@fe004c235c598c714506e8fa87c34e3e56e9c6d7/apps/models_provider/impl/anthropic_model_provider/model/llm.py": {}
           }
         }
       }
@@ -49,11 +44,11 @@
       "owner": "All-Hands-AI",
       "repo": "OpenHands",
       "by_sha": {
-        "c2e4172088203e74a93c71a6ee1de261a29e581a": {
+        "6605070d05de407f184e6c3dd2bfc783846d679b": {
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "All-Hands-AI/OpenHands@c2e4172088203e74a93c71a6ee1de261a29e581a/openhands/security/grayswan/utils.py": {}
+            "All-Hands-AI/OpenHands@6605070d05de407f184e6c3dd2bfc783846d679b/evaluation/benchmarks/the_agent_company/scripts/summarise_results.py": {}
           }
         }
       }
@@ -66,25 +61,70 @@
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/examples/batch-classification/run-cache.py": {
+            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/tests/llm/test_genai/test_format.py": {
               "R25": [
-                "LLM call without explicit temperature parameter at line 57"
-              ],
-              "R26": [
-                "LLM call without model version pinning at line 57"
+                "LLM call without explicit temperature parameter at line 23",
+                "LLM call without explicit temperature parameter at line 38",
+                "LLM call without explicit temperature parameter at line 62",
+                "LLM call without explicit temperature parameter at line 83",
+                "LLM call without explicit temperature parameter at line 108",
+                "LLM call without explicit temperature parameter at line 135",
+                "LLM call without explicit temperature parameter at line 163"
               ],
               "R27": [
-                "LLM chat call without a system message at line 57"
+                "LLM chat call without a system message at line 23",
+                "LLM chat call without a system message at line 62",
+                "LLM chat call without a system message at line 83",
+                "LLM chat call without a system message at line 135",
+                "LLM chat call without a system message at line 163"
               ],
               "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 57"
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 23",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 38",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 62",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 83",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 108",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 135",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 163"
               ],
               "R29": [
-                "LLM pipeline call without structured output at line 57"
+                "LLM pipeline call without structured output at line 23",
+                "LLM pipeline call without structured output at line 38",
+                "LLM pipeline call without structured output at line 62",
+                "LLM pipeline call without structured output at line 83",
+                "LLM pipeline call without structured output at line 108",
+                "LLM pipeline call without structured output at line 135",
+                "LLM pipeline call without structured output at line 163"
               ]
             },
-            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/instructor/providers/xai/utils.py": {},
-            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/scripts/audit_patterns.py": {}
+            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/instructor/validation/__init__.py": {},
+            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/examples/logfire-fastapi/server.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 34",
+                "LLM call without explicit temperature parameter at line 67",
+                "LLM call without explicit temperature parameter at line 48"
+              ],
+              "R26": [
+                "LLM call without model version pinning at line 34",
+                "LLM call without model version pinning at line 67",
+                "LLM call without model version pinning at line 48"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 34",
+                "LLM chat call without a system message at line 67",
+                "LLM chat call without a system message at line 48"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 34",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 67",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 48"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 34",
+                "LLM pipeline call without structured output at line 67",
+                "LLM pipeline call without structured output at line 48"
+              ]
+            }
           }
         }
       }
@@ -97,7 +137,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Aider-AI/aider@7301d4522dd41738a4a3488f51e051766391653b/aider/main.py": {}
+            "Aider-AI/aider@7301d4522dd41738a4a3488f51e051766391653b/aider/coders/base_coder.py": {}
           }
         }
       }
@@ -110,7 +150,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "BillSchumacher/Auto-GPT@bdd07b18bea674cf756ebfb3a0a8915042d9126f/autogpt/token_counter.py": {}
+            "BillSchumacher/Auto-GPT@bdd07b18bea674cf756ebfb3a0a8915042d9126f/autogpt/models/base_open_ai_plugin.py": {}
           }
         }
       }
@@ -123,7 +163,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Azure-Samples/azure-search-openai-demo@a643667646156caf891803e40cd11ff7f9263c5e/app/backend/approaches/promptmanager.py": {}
+            "Azure-Samples/azure-search-openai-demo@a643667646156caf891803e40cd11ff7f9263c5e/tests/test_agentic_retrieval.py": {}
           }
         }
       }
@@ -149,7 +189,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "FOLLGAD/Godmode-GPT@4e1dc7055580ab9bb3ce85114f9e17950ac96d7b/tests/integration/goal_oriented/test_write_file.py": {}
+            "FOLLGAD/Godmode-GPT@4e1dc7055580ab9bb3ce85114f9e17950ac96d7b/tests/integration/conftest.py": {}
           }
         }
       }
@@ -162,8 +202,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "InternLM/lmdeploy@d7c28d3dbfdf75c9fed0d00e9784774575e2156c/tests/test_lmdeploy/test_auto_backend.py": {},
-            "InternLM/lmdeploy@d7c28d3dbfdf75c9fed0d00e9784774575e2156c/lmdeploy/archs.py": {}
+            "InternLM/lmdeploy@d7c28d3dbfdf75c9fed0d00e9784774575e2156c/lmdeploy/pytorch/models/gemma.py": {},
+            "InternLM/lmdeploy@d7c28d3dbfdf75c9fed0d00e9784774575e2156c/lmdeploy/pytorch/models/chatglm2.py": {}
           }
         }
       }
@@ -176,29 +216,16 @@
           "num_listed_files": 10,
           "num_analyzed_files": 10,
           "alerts": {
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/callbacks/comet_ml_callback.py": {},
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/llms/ctransformers.py": {
-              "R26": [
-                "LLM call without model version pinning at line 73"
-              ]
-            },
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/agents/__init__.py": {},
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/memory/kg.py": {
-              "R29": [
-                "LLM pipeline call without structured output at line 88",
-                "LLM pipeline call without structured output at line 106"
-              ]
-            },
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/document_loaders/chatgpt.py": {},
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/agents/agent_toolkits/openapi/planner.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 54"
-              ]
-            },
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/base_language.py": {},
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/chains/natbot/prompt.py": {},
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/rich/_emoji_codes.py": {},
-            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/openai/api_resources/moderation.py": {}
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/llms/anyscale.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/openai/api_resources/customer.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/smith/__init__.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/experimental/autonomous_agents/baby_agi/baby_agi.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/document_loaders/markdown.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/retrievers/kendra.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/callbacks/tracers/stdout.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/agents/agent_toolkits/azure_cognitive_services/toolkit.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/llms/promptlayer_openai.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/chat_models/promptlayer_openai.py": {}
           }
         }
       }
@@ -211,7 +238,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Jerk400/h2ogpt-dev-local@ba56d6471080ec447c7c5347a2d4765ae4dba5b4/tests/test_prompter.py": {}
+            "Jerk400/h2ogpt-dev-local@ba56d6471080ec447c7c5347a2d4765ae4dba5b4/tests/test_eval.py": {}
           }
         }
       }
@@ -220,11 +247,11 @@
       "owner": "NVIDIA",
       "repo": "Megatron-LM",
       "by_sha": {
-        "d81b37b1ce89457044109959ee8f98594870c905": {
+        "7f471d720bdce99f971248ff430ed281a9eb07c5": {
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "NVIDIA/Megatron-LM@d81b37b1ce89457044109959ee8f98594870c905/megatron/core/ssm/triton_cache_manager.py": {}
+            "NVIDIA/Megatron-LM@7f471d720bdce99f971248ff430ed281a9eb07c5/megatron/training/tokenizer/gpt2_tokenization.py": {}
           }
         }
       }
@@ -237,7 +264,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "QuivrHQ/quivr@947a785415c6c35ab2ae8157222b4720b0710b4d/core/tests/processor/test_simple_txt_processor.py": {}
+            "QuivrHQ/quivr@947a785415c6c35ab2ae8157222b4720b0710b4d/core/quivr_core/files/file.py": {}
           }
         }
       }
@@ -246,11 +273,11 @@
       "owner": "RockChinQ",
       "repo": "LangBot",
       "by_sha": {
-        "ae772074a183952367f578b3b029b174bb1ac8ea": {
+        "ce82f87e4312929047dde05010a506a01afa000e": {
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "RockChinQ/LangBot@ae772074a183952367f578b3b029b174bb1ac8ea/src/langbot/pkg/provider/modelmgr/requesters/ollamachat.py": {}
+            "RockChinQ/LangBot@ce82f87e4312929047dde05010a506a01afa000e/src/langbot/pkg/provider/modelmgr/requesters/tokenponychatcmpl.py": {}
           }
         }
       }
@@ -263,49 +290,9 @@
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/paddlenlp/transformers/qwen2/modeling.py": {},
-            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/tests/peft/test_reft.py": {
-              "R26": [
-                "LLM call without model version pinning at line 48",
-                "LLM call without model version pinning at line 54",
-                "LLM call without model version pinning at line 89",
-                "LLM call without model version pinning at line 201",
-                "LLM call without model version pinning at line 226",
-                "LLM call without model version pinning at line 255",
-                "LLM call without model version pinning at line 293"
-              ]
-            },
-            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/llm/benchmark/mmlu_pro/evaluate_from_api.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 19",
-                "LLM call without explicit temperature parameter at line 82",
-                "LLM call without explicit temperature parameter at line 88"
-              ],
-              "R26": [
-                "LLM call without model version pinning at line 47"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 70",
-                "LLM chat call without a system message at line 82",
-                "LLM chat call without a system message at line 88",
-                "LLM chat call without a system message at line 106"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 82",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 88"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 70",
-                "LLM pipeline call without structured output at line 82",
-                "LLM pipeline call without structured output at line 93",
-                "LLM pipeline call without structured output at line 106"
-              ],
-              "R32": [
-                "Overspecified sampling at line 70",
-                "Overspecified sampling at line 93",
-                "Overspecified sampling at line 106"
-              ]
-            }
+            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/paddlenlp/transformers/qwen3_moe/configuration.py": {},
+            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/slm/model_zoo/gpt-3/ppfleetx/data/tokenizers/tokenization_utils_base.py": {},
+            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/paddlenlp/transformers/deepseek_v2/tokenizer_fast.py": {}
           }
         }
       }
@@ -314,54 +301,38 @@
       "owner": "BerriAI",
       "repo": "litellm",
       "by_sha": {
-        "5230e97448db5b6c207f1fb85b5669e1a64769d1": {
+        "abf14663ed876f07556d798987047e02bd991e4f": {
           "num_listed_files": 24,
           "num_analyzed_files": 24,
           "alerts": {
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/proxy_security_tests/test_master_key_not_in_db.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/caching/in_memory_cache.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/proxy/pass_through_endpoints/llm_provider_handlers/gemini_passthrough_logging_handler.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/types/integrations/pagerduty.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/test_litellm/google_genai/test_google_genai_adapter_fixes.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/llms/bedrock/chat/invoke_transformations/amazon_mistral_transformation.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/types/integrations/anthropic_cache_control_hook.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/llms/custom_llm.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/test_litellm/proxy/_experimental/mcp_server/test_mcp_metadata_preservation.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/enterprise/litellm_enterprise/proxy/guardrails/test_bedrock_apply_guardrail.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/llms/github_copilot/embedding/transformation.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/enterprise/litellm_enterprise/proxy/auth/test_user_api_key_auth.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/guardrails_tests/test_lakera_v2.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/proxy/proxy_cli.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 83",
-                "LLM call without explicit temperature parameter at line 85",
-                "LLM call without explicit temperature parameter at line 101",
-                "LLM call without explicit temperature parameter at line 114"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 85",
-                "LLM chat call without a system message at line 101"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 83",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 101",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 114"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 85",
-                "LLM pipeline call without structured output at line 101"
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/local_testing/test_router_max_parallel_requests.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/litellm_core_utils/prompt_templates/huggingface_template_handler.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/bedrock/image/amazon_nova_canvas_transformation.py": {
+              "MISSING_FILE": [
+                "Missing file: BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/bedrock/image/amazon_nova_canvas_transformation.py"
               ]
             },
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/test_litellm/proxy/discovery_endpoints/test_ui_discovery_endpoints.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/llms/azure_ai/embed/cohere_transformation.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/llms/milvus/vector_stores/transformation.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/proxy/management_endpoints/tag_management_endpoints.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/image_gen_tests/test_xinference.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/llms/fal_ai/image_generation/bria_transformation.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/litellm/files/utils.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/proxy_unit_tests/test_proxy_server_caching.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/test_litellm/proxy/db/mcp_server/test_db.py": {},
-            "BerriAI/litellm@5230e97448db5b6c207f1fb85b5669e1a64769d1/tests/code_coverage_tests/code_qa_check_tests.py": {}
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/jina_ai/embedding/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/code_coverage_tests/litellm_logging_code_coverage.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/integrations/azure_storage/azure_storage.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/vertex_ai/vertex_ai_partner_models/main.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/vector_store_files/main.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/guardrails_tests/conftest.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/triton/completion/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/proxy/management_endpoints/sso_helper_utils.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/azure/fine_tuning/handler.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/pass_through/guardrail_translation/__init__.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/proxy/batches_endpoints/endpoints.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/test_litellm/llms/azure/chat/test_azure_chat_gpt_transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/gemini/files/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/google_pse/search/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/heroku/chat/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/proxy/guardrails/guardrail_hooks/model_armor/model_armor.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/google_genai/streaming_iterator.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/responses/mcp/mcp_streaming_iterator.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/proxy/pass_through_endpoints/success_handler.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/bedrock/embed/amazon_titan_multimodal_transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/test_litellm/llms/openai_like/test_json_providers.py": {}
           }
         }
       }
@@ -374,7 +345,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "StanGirard/quivr@b6f38f7aff5f026eb46a071362c9362e057119df/backend/models/brains.py": {}
+            "StanGirard/quivr@b6f38f7aff5f026eb46a071362c9362e057119df/backend/repository/chat/format_chat_history.py": {}
           }
         }
       }
@@ -387,7 +358,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "TransformerOptimus/SuperAGI@c3c1982e7bd6a11cfed53c5a193ea502f924b1b6/superagi/resource_manager/resource_manager.py": {}
+            "TransformerOptimus/SuperAGI@c3c1982e7bd6a11cfed53c5a193ea502f924b1b6/superagi/tools/image_generation/image_generation_toolkit.py": {}
           }
         }
       }
@@ -396,12 +367,12 @@
       "owner": "Upsonic",
       "repo": "Upsonic",
       "by_sha": {
-        "67ea3ad7408d8b6d97c66931d0f9961186aa323b": {
+        "49e25669faf8748ce8d7b31c56512ec074d0582d": {
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "Upsonic/Upsonic@67ea3ad7408d8b6d97c66931d0f9961186aa323b/tests/smoke_tests/test_tool_call_limit.py": {},
-            "Upsonic/Upsonic@67ea3ad7408d8b6d97c66931d0f9961186aa323b/src/upsonic/uel/parallel.py": {}
+            "Upsonic/Upsonic@49e25669faf8748ce8d7b31c56512ec074d0582d/src/upsonic/usage.py": {},
+            "Upsonic/Upsonic@49e25669faf8748ce8d7b31c56512ec074d0582d/tests/smoke_tests/test_knowledgebase_context.py": {}
           }
         }
       }
@@ -414,7 +385,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "abetlen/llama-cpp-python@c37132bac860fcc333255c36313f89c4f49d4c8d/llama_cpp/llava_cpp.py": {}
+            "abetlen/llama-cpp-python@c37132bac860fcc333255c36313f89c4f49d4c8d/examples/high_level_api/high_level_api_infill.py": {}
           }
         }
       }
@@ -423,13 +394,31 @@
       "owner": "Shubhamsaboo",
       "repo": "awesome-llm-apps",
       "by_sha": {
-        "fb6dcd2460292ab6802f2a956d11bfb4ea403466": {
+        "a7f725854904f1655727138a429dd084f754d09f": {
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "Shubhamsaboo/awesome-llm-apps@fb6dcd2460292ab6802f2a956d11bfb4ea403466/ai_agent_framework_crash_course/google_adk_crash_course/3_structured_output_agent/3_1_customer_support_ticket_agent/customer_support_agent/agent.py": {},
-            "Shubhamsaboo/awesome-llm-apps@fb6dcd2460292ab6802f2a956d11bfb4ea403466/starter_ai_agents/web_scrapping_ai_agent/local_ai_scrapper.py": {},
-            "Shubhamsaboo/awesome-llm-apps@fb6dcd2460292ab6802f2a956d11bfb4ea403466/ai_agent_framework_crash_course/openai_sdk_crash_course/8_handoffs_delegation/advanced_handoffs.py": {}
+            "Shubhamsaboo/awesome-llm-apps@a7f725854904f1655727138a429dd084f754d09f/advanced_ai_agents/single_agent_apps/ai_personal_finance_agent/finance_agent.py": {},
+            "Shubhamsaboo/awesome-llm-apps@a7f725854904f1655727138a429dd084f754d09f/advanced_ai_agents/single_agent_apps/ai_customer_support_agent/customer_support_agent.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 36",
+                "LLM call without explicit temperature parameter at line 53",
+                "LLM call without explicit temperature parameter at line 96"
+              ],
+              "R26": [
+                "LLM call without model version pinning at line 53",
+                "LLM call without model version pinning at line 96"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 53",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 96"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 53",
+                "LLM pipeline call without structured output at line 96"
+              ]
+            },
+            "Shubhamsaboo/awesome-llm-apps@a7f725854904f1655727138a429dd084f754d09f/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/utils/load_api_keys.py": {}
           }
         }
       }
@@ -438,11 +427,11 @@
       "owner": "chidiwilliams",
       "repo": "buzz",
       "by_sha": {
-        "4dbde2b9486a7d3af6140a4d42cb3ca7b45db6a8": {
+        "de2a5b88ee8d52e9be7633e2881bb7cca450444b": {
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "chidiwilliams/buzz@4dbde2b9486a7d3af6140a4d42cb3ca7b45db6a8/buzz/widgets/transcriber/file_transcriber_widget.py": {}
+            "chidiwilliams/buzz@de2a5b88ee8d52e9be7633e2881bb7cca450444b/tests/transcriber/openai_whisper_api_file_transcriber_test.py": {}
           }
         }
       }
@@ -455,7 +444,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "chatchat-space/Langchain-Chatchat@bc7f01925fe49c622cf7d6e2540c03fd5a0679e1/model-providers/chatchat_model_providers/core/entities/message_entities.py": {}
+            "chatchat-space/Langchain-Chatchat@bc7f01925fe49c622cf7d6e2540c03fd5a0679e1/chatchat-server/chatchat_server/document_loaders/mypptloader.py": {}
           }
         }
       }
@@ -468,7 +457,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "cpacker/MemGPT@6e2c92e3abda617b9efc96c88b582195579717c8/memgpt/local_llm/llm_chat_completion_wrappers/zephyr.py": {}
+            "cpacker/MemGPT@6e2c92e3abda617b9efc96c88b582195579717c8/memgpt/server/websocket_client.py": {}
           }
         }
       }
@@ -477,11 +466,11 @@
       "owner": "deepset-ai",
       "repo": "haystack",
       "by_sha": {
-        "93491c64be526d13c8d9443ff6c63f52bace5d99": {
+        "8091034fb59351e2042b3b1c2a0b4d44eaf3ea1d": {
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "deepset-ai/haystack@93491c64be526d13c8d9443ff6c63f52bace5d99/haystack/components/connectors/openapi_service.py": {}
+            "deepset-ai/haystack@8091034fb59351e2042b3b1c2a0b4d44eaf3ea1d/haystack/components/generators/chat/hugging_face_api.py": {}
           }
         }
       }
@@ -494,8 +483,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "eosphoros-ai/DB-GPT@4b52cfa670fcbb170ea0348e187d4c26e28b0c2b/examples/agents/sql_agent_dialogue_example.py": {},
-            "eosphoros-ai/DB-GPT@4b52cfa670fcbb170ea0348e187d4c26e28b0c2b/packages/dbgpt-app/src/dbgpt_app/openapi/api_v2.py": {}
+            "eosphoros-ai/DB-GPT@4b52cfa670fcbb170ea0348e187d4c26e28b0c2b/packages/dbgpt-ext/src/dbgpt_ext/rag/knowledge/txt.py": {},
+            "eosphoros-ai/DB-GPT@4b52cfa670fcbb170ea0348e187d4c26e28b0c2b/i18n/translate_util.py": {}
           }
         }
       }
@@ -508,7 +497,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "goetzrobin/MemGPT@0e8918e79935d24210991d78da09bf0e4c796d2e/tests/test_different_embedding_size.py": {}
+            "goetzrobin/MemGPT@0e8918e79935d24210991d78da09bf0e4c796d2e/memgpt/local_llm/constants.py": {}
           }
         }
       }
@@ -521,7 +510,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "h2oai/h2ogpt@15f3a2d564541020f78cfc83bc90722dcda8a960/tests/test_inference_servers.py": {}
+            "h2oai/h2ogpt@15f3a2d564541020f78cfc83bc90722dcda8a960/metrics/quip.py": {}
           }
         }
       }
@@ -534,7 +523,11 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "fangyinc/DB-GPT@f317740d5557b56899d1a3e786ca7cc583fdd700/dbgpt/rag/embedding_engine/embedding_factory.py": {}
+            "fangyinc/DB-GPT@f317740d5557b56899d1a3e786ca7cc583fdd700/dbgpt/util/global_helper.py": {
+              "R26": [
+                "LLM call without model version pinning at line 253"
+              ]
+            }
           }
         }
       }
@@ -547,8 +540,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "hiyouga/LLaMA-Factory@8c74dca76a813129c175489c85bf50e2c614091f/src/llamafactory/v1/config/arg_utils.py": {},
-            "hiyouga/LLaMA-Factory@8c74dca76a813129c175489c85bf50e2c614091f/src/llamafactory/hparams/parser.py": {}
+            "hiyouga/LLaMA-Factory@8c74dca76a813129c175489c85bf50e2c614091f/tests/e2e/test_chat.py": {},
+            "hiyouga/LLaMA-Factory@8c74dca76a813129c175489c85bf50e2c614091f/src/llamafactory/model/model_utils/longlora.py": {}
           }
         }
       }
@@ -561,7 +554,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "huggingface/peft@261366de2e40cde64b702d6b9c527081ad850549/tests/test_adaption_prompt.py": {}
+            "huggingface/peft@261366de2e40cde64b702d6b9c527081ad850549/method_comparison/MetaMathQA/run.py": {}
           }
         }
       }
@@ -574,16 +567,9 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "huggingface/trl@1dc8bbca025ede5d964f6080eef5eea74819cbfb/tests/test_rloo_trainer.py": {
+            "huggingface/trl@1dc8bbca025ede5d964f6080eef5eea74819cbfb/trl/extras/vllm_client.py": {
               "R26": [
-                "LLM call without model version pinning at line 156",
-                "LLM call without model version pinning at line 195",
-                "LLM call without model version pinning at line 244",
-                "LLM call without model version pinning at line 612",
-                "LLM call without model version pinning at line 1379",
-                "LLM call without model version pinning at line 1405",
-                "LLM call without model version pinning at line 1408",
-                "LLM call without model version pinning at line 1433"
+                "LLM call without model version pinning at line 529"
               ]
             }
           }
@@ -598,23 +584,13 @@
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/example/GPU/Deepspeed-AutoTP-FastAPI/serving.py": {
+            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/src/ipex_llm/transformers/npu_models/xlm_mp.py": {},
+            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/example/GPU/Lightweight-Serving/lightweight_serving.py": {
               "R26": [
-                "LLM call without model version pinning at line 100",
-                "LLM call without model version pinning at line 142"
+                "LLM call without model version pinning at line 46"
               ]
             },
-            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/example/GPU/HuggingFace/LLM/codellama/generate.py": {
-              "R26": [
-                "LLM call without model version pinning at line 45"
-              ]
-            },
-            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/example/GPU/HuggingFace/LLM/cohere/generate.py": {
-              "R26": [
-                "LLM call without model version pinning at line 47",
-                "LLM call without model version pinning at line 55"
-              ]
-            }
+            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/src/ipex_llm/transformers/npu_pipeline_model/convert_pipeline.py": {}
           }
         }
       }
@@ -627,19 +603,19 @@
           "num_listed_files": 8,
           "num_analyzed_files": 8,
           "alerts": {
-            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/tests/generation/test_flash_attention_parity.py": {
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/csm/modular_csm.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/aimv2/modular_aimv2.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/cwm/configuration_cwm.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/image_processing_base.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/tests/models/aria/test_modeling_aria.py": {
               "R26": [
-                "LLM call without model version pinning at line 92",
-                "LLM call without model version pinning at line 87"
+                "LLM call without model version pinning at line 489",
+                "LLM call without model version pinning at line 494"
               ]
             },
-            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/llama4/configuration_llama4.py": {},
-            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/qwen3_omni_moe/modular_qwen3_omni_moe.py": {},
-            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/tests/utils/test_modeling_rope_utils.py": {},
-            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/granite_speech/processing_granite_speech.py": {},
-            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/gpt2/tokenization_gpt2.py": {},
-            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/xlm/convert_xlm_original_pytorch_checkpoint_to_pytorch.py": {},
-            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/owlv2/convert_owlv2_to_hf.py": {}
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/hunyuan_v1_dense/modular_hunyuan_v1_dense.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/convert_slow_tokenizer.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/llama4/image_processing_llama4_fast.py": {}
           }
         }
       }
@@ -652,7 +628,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "hzg0601/langchain-ChatGLM-annotation@da8085ba5fcb89a2e665cd3fde28cdafa38b9c29/test/textsplitter/test_zh_title_enhance.py": {}
+            "hzg0601/langchain-ChatGLM-annotation@da8085ba5fcb89a2e665cd3fde28cdafa38b9c29/chains/dialogue_answering/__main__.py": {}
           }
         }
       }
@@ -661,23 +637,14 @@
       "owner": "comet-ml",
       "repo": "opik",
       "by_sha": {
-        "d091be5b962e395d486e69198d766f3cb4e78d35": {
+        "76eadf798df8dbe37170cfc32ee10b1654f4ccae": {
           "num_listed_files": 4,
           "num_analyzed_files": 4,
           "alerts": {
-            "comet-ml/opik@d091be5b962e395d486e69198d766f3cb4e78d35/sdks/python/tests/library_integration/langchain/test_langgraph.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 249",
-                "LLM call without explicit temperature parameter at line 332"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 249",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 332"
-              ]
-            },
-            "comet-ml/opik@d091be5b962e395d486e69198d766f3cb4e78d35/sdks/python/src/opik/evaluation/metrics/conversation/g_eval_wrappers.py": {},
-            "comet-ml/opik@d091be5b962e395d486e69198d766f3cb4e78d35/sdks/python/src/opik/integrations/openai/stream_patchers.py": {},
-            "comet-ml/opik@d091be5b962e395d486e69198d766f3cb4e78d35/sdks/python/src/opik/integrations/adk/legacy_opik_tracer.py": {}
+            "comet-ml/opik@76eadf798df8dbe37170cfc32ee10b1654f4ccae/apps/opik-frontend/src/components/pages-shared/onboarding/FrameworkIntegrations/integration-scripts/OpenAIAgents.py": {},
+            "comet-ml/opik@76eadf798df8dbe37170cfc32ee10b1654f4ccae/sdks/opik_optimizer/tests/e2e/benchmarks/test_benchmark_fewshot_live.py": {},
+            "comet-ml/opik@76eadf798df8dbe37170cfc32ee10b1654f4ccae/sdks/python/tests/library_integration/adk/test_adk_sync.py": {},
+            "comet-ml/opik@76eadf798df8dbe37170cfc32ee10b1654f4ccae/sdks/opik_optimizer/benchmarks/core/benchmark_config.py": {}
           }
         }
       }
@@ -690,14 +657,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "khoj-ai/khoj@f4c519a9d00fcedfc8ab06e4f48307acc7555d39/src/khoj/routers/api.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 148"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 148"
-              ]
-            }
+            "khoj-ai/khoj@f4c519a9d00fcedfc8ab06e4f48307acc7555d39/src/khoj/database/migrations/0038_merge_20240425_0857.py": {}
           }
         }
       }
@@ -706,12 +666,12 @@
       "owner": "modelscope",
       "repo": "ms-swift",
       "by_sha": {
-        "bd3e5383d64336307cd7f3e6049496f0fd1ee200": {
+        "97b7291da3662577bc47652ea8e6f218e5d9e3ab": {
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "modelscope/ms-swift@bd3e5383d64336307cd7f3e6049496f0fd1ee200/tests/test_align/test_template/test_vision.py": {},
-            "modelscope/ms-swift@bd3e5383d64336307cd7f3e6049496f0fd1ee200/swift/megatron/model/gpt/__init__.py": {}
+            "modelscope/ms-swift@97b7291da3662577bc47652ea8e6f218e5d9e3ab/examples/eval/eval_url/demo.py": {},
+            "modelscope/ms-swift@97b7291da3662577bc47652ea8e6f218e5d9e3ab/swift/ui/llm_eval/eval.py": {}
           }
         }
       }
@@ -720,20 +680,16 @@
       "owner": "meta-llama",
       "repo": "llama-stack",
       "by_sha": {
-        "e710622d4c03c8a4549a93f70c993f22d0676910": {
+        "b6043bd53b377efae4607fe4c5e1ec0e67e45573": {
           "num_listed_files": 6,
           "num_analyzed_files": 6,
           "alerts": {
-            "meta-llama/llama-stack@e710622d4c03c8a4549a93f70c993f22d0676910/src/llama_stack/providers/remote/tool_runtime/model_context_protocol/model_context_protocol.py": {},
-            "meta-llama/llama-stack@e710622d4c03c8a4549a93f70c993f22d0676910/tests/unit/providers/inline/agents/meta_reference/responses/test_streaming.py": {},
-            "meta-llama/llama-stack@e710622d4c03c8a4549a93f70c993f22d0676910/src/llama_stack_api/scoring.py": {},
-            "meta-llama/llama-stack@e710622d4c03c8a4549a93f70c993f22d0676910/src/llama_stack/providers/remote/vector_io/pgvector/__init__.py": {},
-            "meta-llama/llama-stack@e710622d4c03c8a4549a93f70c993f22d0676910/src/llama_stack/providers/inline/batches/reference/config.py": {},
-            "meta-llama/llama-stack@e710622d4c03c8a4549a93f70c993f22d0676910/src/llama_stack/providers/inline/post_training/huggingface/recipes/finetune_single_device_dpo.py": {
-              "R26": [
-                "LLM call without model version pinning at line 219"
-              ]
-            }
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/src/llama_stack/core/routing_tables/benchmarks.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/src/llama_stack/providers/remote/inference/tgi/config.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/tests/unit/providers/utils/memory/test_vector_store.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/src/llama_stack/providers/utils/memory/file_utils.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/src/llama_stack/providers/remote/vector_io/qdrant/qdrant.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/tests/unit/utils/inference/test_inference_store.py": {}
           }
         }
       }
@@ -742,12 +698,12 @@
       "owner": "openai",
       "repo": "openai-agents-python",
       "by_sha": {
-        "56680f43d636fec36ae2ccb6dab681a813f2f5cf": {
+        "21b6a13830f5dd7706a4946437b5f6c6b16b0cb2": {
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "openai/openai-agents-python@56680f43d636fec36ae2ccb6dab681a813f2f5cf/src/agents/realtime/__init__.py": {},
-            "openai/openai-agents-python@56680f43d636fec36ae2ccb6dab681a813f2f5cf/tests/test_config.py": {}
+            "openai/openai-agents-python@21b6a13830f5dd7706a4946437b5f6c6b16b0cb2/examples/financial_research_agent/manager.py": {},
+            "openai/openai-agents-python@21b6a13830f5dd7706a4946437b5f6c6b16b0cb2/src/agents/tracing/__init__.py": {}
           }
         }
       }
@@ -756,17 +712,13 @@
       "owner": "openai",
       "repo": "openai-python",
       "by_sha": {
-        "f94256daf8f5d7268f28c2330dc343660a959c3e": {
+        "d3e632171c7842abf97b26379f564531d80ad096": {
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "openai/openai-python@f94256daf8f5d7268f28c2330dc343660a959c3e/src/openai/types/chat/parsed_function_tool_call.py": {},
-            "openai/openai-python@f94256daf8f5d7268f28c2330dc343660a959c3e/examples/parsing_tools_stream.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 15"
-              ]
-            },
-            "openai/openai-python@f94256daf8f5d7268f28c2330dc343660a959c3e/src/openai/resources/fine_tuning/jobs/jobs.py": {}
+            "openai/openai-python@d3e632171c7842abf97b26379f564531d80ad096/src/openai/_files.py": {},
+            "openai/openai-python@d3e632171c7842abf97b26379f564531d80ad096/src/openai/resources/beta/chatkit/chatkit.py": {},
+            "openai/openai-python@d3e632171c7842abf97b26379f564531d80ad096/src/openai/resources/beta/threads/threads.py": {}
           }
         }
       }
@@ -779,7 +731,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "oumi-ai/oumi@9094a4c940dbad24aff1fa1a486db6608234b42c/src/oumi/cli/infer.py": {}
+            "oumi-ai/oumi@9094a4c940dbad24aff1fa1a486db6608234b42c/src/oumi/core/configs/params/grpo_params.py": {}
           }
         }
       }
@@ -788,16 +740,16 @@
       "owner": "sgl-project",
       "repo": "sglang",
       "by_sha": {
-        "17e81c750ae14bd86301ad677f041427ab805ca7": {
+        "41bd76e18b08c06411ec451be51bf73b18b396f2": {
           "num_listed_files": 6,
           "num_analyzed_files": 6,
           "alerts": {
-            "sgl-project/sglang@17e81c750ae14bd86301ad677f041427ab805ca7/python/sglang/srt/models/mistral.py": {},
-            "sgl-project/sglang@17e81c750ae14bd86301ad677f041427ab805ca7/test/srt/test_quantization.py": {},
-            "sgl-project/sglang@17e81c750ae14bd86301ad677f041427ab805ca7/benchmark/multi_document_qa/build_dataset.py": {},
-            "sgl-project/sglang@17e81c750ae14bd86301ad677f041427ab805ca7/test/srt/test_fa3.py": {},
-            "sgl-project/sglang@17e81c750ae14bd86301ad677f041427ab805ca7/python/sglang/srt/layers/quantization/awq.py": {},
-            "sgl-project/sglang@17e81c750ae14bd86301ad677f041427ab805ca7/python/sglang/test/simple_eval_gpqa.py": {}
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/python/sglang/srt/function_call/base_format_detector.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/python/sglang/srt/multimodal/processors/mlama.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/sgl-kernel/benchmark/bench_fp8_gemm.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/python/sglang/multimodal_gen/runtime/distributed/utils.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/test/nightly/ascend/llm_models/test_ascend_llama_2_7b.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/python/sglang/srt/compilation/compilation_counter.py": {}
           }
         }
       }
@@ -810,7 +762,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "unslothai/unsloth@d5b61a6bc6d546ca6afa9043f9c4b15713ecac62/unsloth/models/loader_utils.py": {}
+            "unslothai/unsloth@d5b61a6bc6d546ca6afa9043f9c4b15713ecac62/tests/saving/text_to_speech_models/test_lasa.py": {}
           }
         }
       }
@@ -823,120 +775,32 @@
           "num_listed_files": 22,
           "num_analyzed_files": 22,
           "alerts": {
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/online_serving/openai_chat_completion_tool_calls_with_reasoning.py": {
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/v1/entrypoints/conftest.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/offline_inference/kv_load_failure_recovery/prefill_example.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/pooling/embed/openai_embedding_client.py": {
               "R25": [
-                "LLM call without explicit temperature parameter at line 106",
-                "LLM call without explicit temperature parameter at line 115",
-                "LLM call without explicit temperature parameter at line 126",
-                "LLM call without explicit temperature parameter at line 139",
-                "LLM call without explicit temperature parameter at line 152"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 115",
-                "LLM chat call without a system message at line 126",
-                "LLM chat call without a system message at line 139",
-                "LLM chat call without a system message at line 152"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 115",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 126",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 139",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 152"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 115",
-                "LLM pipeline call without structured output at line 126",
-                "LLM pipeline call without structured output at line 139",
-                "LLM pipeline call without structured output at line 152"
+                "LLM call without explicit temperature parameter at line 17"
               ]
             },
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/tool_parsers/minimax_tool_parser.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/benchmarks/disagg_benchmarks/round_robin_proxy.py": {},
             "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/models/language/pooling/test_truncation_control.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/v1/worker/gpu/dp_utils.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/bailing_moe.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/config/device.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/tool_parsers/__init__.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/models/language/generation/test_mistral.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/lora/utils.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/internlm2_ve.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/entrypoints/openai/test_audio.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 110",
-                "LLM call without explicit temperature parameter at line 219",
-                "LLM call without explicit temperature parameter at line 242"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 159",
-                "LLM chat call without a system message at line 183",
-                "LLM chat call without a system message at line 219",
-                "LLM chat call without a system message at line 242",
-                "LLM chat call without a system message at line 262",
-                "LLM chat call without a system message at line 272",
-                "LLM chat call without a system message at line 322",
-                "LLM chat call without a system message at line 332",
-                "LLM chat call without a system message at line 137",
-                "LLM chat call without a system message at line 385",
-                "LLM chat call without a system message at line 368"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 86",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 110",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 159",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 183",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 219",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 242",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 262",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 272",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 322",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 332",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 137",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 385",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 368"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 86",
-                "LLM pipeline call without structured output at line 110",
-                "LLM pipeline call without structured output at line 159",
-                "LLM pipeline call without structured output at line 183",
-                "LLM pipeline call without structured output at line 219",
-                "LLM pipeline call without structured output at line 242",
-                "LLM pipeline call without structured output at line 262",
-                "LLM pipeline call without structured output at line 272",
-                "LLM pipeline call without structured output at line 322",
-                "LLM pipeline call without structured output at line 332",
-                "LLM pipeline call without structured output at line 137",
-                "LLM pipeline call without structured output at line 385",
-                "LLM pipeline call without structured output at line 368"
-              ]
-            },
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/layers/mamba/abstract.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/offline_inference/llm_engine_example.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/tool_use/test_parallel_tool_calls.py": {
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 35",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 72",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 162",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 180",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 225",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 243"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 35",
-                "LLM pipeline call without structured output at line 72",
-                "LLM pipeline call without structured output at line 162",
-                "LLM pipeline call without structured output at line 180",
-                "LLM pipeline call without structured output at line 225",
-                "LLM pipeline call without structured output at line 243"
-              ]
-            },
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/phi3v.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/v1/cudagraph_dispatcher.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/benchmarks/benchmark_prefix_block_hash.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/models/language/pooling/test_nomic_max_model_len.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/multimodal/utils.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/distributed/test_expert_parallel.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/falcon_h1.py": {}
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/compile/test_fusion_attn.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/layers/quantization/utils/marlin_utils_test_24.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/transformers/causal.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/aya_vision.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/v1/worker/gpu/spec_decode/eagle_cudagraph.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/entrypoints/openai/tool_parsers/test_olmo3_tool_parser.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/layers/rotary_embedding/xdrope.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/compile/fullgraph/test_simple.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/mimo_mtp.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/mixtral.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/transformers_utils/processors/ovis.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/transformers/__init__.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/entrypoints/openai/test_serving_responses.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/layers/quantization/compressed_tensors/utils.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/kernels/quantization/test_machete_mm.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/v1/attention/test_sparse_mla_backends.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/dots1.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/lora/test_default_mm_loras.py": {}
           }
         }
       }
@@ -949,8 +813,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "xtekky/gpt4free@807b7c8b06eddea24239a21d14bff04d21960d11/g4f/Provider/needs_auth/FenayAI.py": {},
-            "xtekky/gpt4free@807b7c8b06eddea24239a21d14bff04d21960d11/g4f/Provider/needs_auth/OpenaiAPI.py": {}
+            "xtekky/gpt4free@807b7c8b06eddea24239a21d14bff04d21960d11/g4f/providers/any_provider.py": {},
+            "xtekky/gpt4free@807b7c8b06eddea24239a21d14bff04d21960d11/g4f/Provider/EasyChat.py": {}
           }
         }
       }
@@ -963,7 +827,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "uukuguy/DB-GPT-Lite@d857cb71f2c19e8535d0f5e9692e15c4e4dd100d/dbgpt/model/operators/__init__.py": {}
+            "uukuguy/DB-GPT-Lite@d857cb71f2c19e8535d0f5e9692e15c4e4dd100d/dbgpt/model/adapter/vllm_adapter.py": {}
           }
         }
       }
@@ -976,7 +840,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "yujiosaka/ChatIQ@def21481b0c132173b51d1d7a314b103db324ca2/chatiq/block_builders/home_screen.py": {}
+            "yujiosaka/ChatIQ@def21481b0c132173b51d1d7a314b103db324ca2/tests/handlers/test_app_home_opened.py": {}
           }
         }
       }
@@ -985,12 +849,12 @@
       "owner": "xorbitsai",
       "repo": "inference",
       "by_sha": {
-        "e7e9bc26838e130110f30199531ab0d2ad171a68": {
+        "4057395f4856ef46a65b33cc42cdd3ad19583ed0": {
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "xorbitsai/inference@e7e9bc26838e130110f30199531ab0d2ad171a68/xinference/model/llm/vllm/xavier/allocator.py": {},
-            "xorbitsai/inference@e7e9bc26838e130110f30199531ab0d2ad171a68/xinference/model/llm/vllm/xavier/scheduler.py": {}
+            "xorbitsai/inference@4057395f4856ef46a65b33cc42cdd3ad19583ed0/xinference/model/audio/tests/test_chattts.py": {},
+            "xorbitsai/inference@4057395f4856ef46a65b33cc42cdd3ad19583ed0/xinference/client/common.py": {}
           }
         }
       }
@@ -1003,7 +867,20 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "zilliztech/GPTCache@c59fb3a6152a4458b2a070ca183b61c4b614095f/docs/bootcamp/streamlit/gptcache-streamlit-audio/audio.py": {}
+            "zilliztech/GPTCache@c59fb3a6152a4458b2a070ca183b61c4b614095f/examples/processor/temperature_example.py": {
+              "R26": [
+                "LLM call without model version pinning at line 33"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 33"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 33"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 33"
+              ]
+            }
           }
         }
       }
@@ -1012,44 +889,59 @@
       "owner": "run-llama",
       "repo": "llama_index",
       "by_sha": {
-        "911ae36931b65b037d6ed4e4a5630b19eee544ad": {
+        "64782258f4ebdba8bebe53ca66de276ab1139758": {
           "num_listed_files": 34,
           "num_analyzed_files": 34,
           "alerts": {
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/readers/llama-index-readers-microsoft-outlook/llama_index/readers/microsoft_outlook/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-packs/llama-index-packs-snowflake-query-engine/tests/test_packs_snowflake_query_engine.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/readers/llama-index-readers-genius/tests/test_readers_genius.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/vector_stores/llama-index-vector-stores-analyticdb/llama_index/vector_stores/analyticdb/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-core/llama_index/core/response/notebook_utils.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/llms/llama-index-llms-upstage/llama_index/llms/upstage/utils.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/readers/llama-index-readers-oracleai/llama_index/readers/oracleai/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-packs/llama-index-packs-stock-market-data-query-engine/llama_index/packs/stock_market_data_query_engine/__init__.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/readers/llama-index-readers-microsoft-onedrive/llama_index/readers/microsoft_onedrive/__init__.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/storage/index_store/llama-index-storage-index-store-duckdb/llama_index/storage/index_store/duckdb/__init__.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-packs/llama-index-packs-arize-phoenix-query-engine/llama_index/packs/arize_phoenix_query_engine/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-instrumentation/tests/test_dispatcher.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-core/llama_index/core/utilities/token_counting.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/embeddings/llama-index-embeddings-zhipuai/llama_index/embeddings/zhipuai/__init__.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/llms/llama-index-llms-octoai/tests/test_llms_octoai.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/readers/llama-index-readers-notion/llama_index/readers/notion/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/postprocessor/llama-index-postprocessor-xinference-rerank/llama_index/postprocessor/xinference_rerank/__init__.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-core/llama_index/core/schema.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/embeddings/llama-index-embeddings-cloudflare-workersai/tests/test_embeddings_cloudflare-workersai.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/embeddings/llama-index-embeddings-gaudi/llama_index/embeddings/gaudi/__init__.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/readers/llama-index-readers-metal/llama_index/readers/metal/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-packs/llama-index-packs-evaluator-benchmarker/tests/test_packs_evaluator_benchmarker.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-core/llama_index/core/query_engine/multi_modal.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-core/llama_index/core/selectors/llm_selectors.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/protocols/llama-index-protocols-ag-ui/llama_index/protocols/ag_ui/router.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-core/llama_index/core/tools/calling.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-finetuning/llama_index/finetuning/embeddings/adapter.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-core/tests/storage/kvstore/test_simple_kvstore.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/vector_stores/llama-index-vector-stores-rocksetdb/llama_index/vector_stores/rocksetdb/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/readers/llama-index-readers-stripe-docs/llama_index/readers/stripe_docs/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/llms/llama-index-llms-pipeshift/llama_index/llms/pipeshift/base.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-core/llama_index/core/chat_engine/condense_question.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/vector_stores/llama-index-vector-stores-mongodb/tests/test_filters.py": {},
-            "run-llama/llama_index@911ae36931b65b037d6ed4e4a5630b19eee544ad/llama-index-integrations/vector_stores/llama-index-vector-stores-faiss/llama_index/vector_stores/faiss/map_store.py": {}
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/storage/chat_store/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-s3/tests/test_readers_s3.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/program/llama-index-program-evaporate/llama_index/program/evaporate/prompts.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/tools/llama-index-tools-metaphor/tests/test_tools_metaphor.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/embeddings/llama-index-embeddings-upstage/llama_index/embeddings/upstage/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-konko/llama_index/llms/konko/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-utils/llama-index-utils-qianfan/llama_index/utils/qianfan/apis.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/storage/chat_store/llama-index-storage-chat-store-postgres/tests/test_chat_store_postgres_chat_store.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-hwp/llama_index/readers/hwp/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/instrumentation/events/exception.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/postprocessor/llama-index-postprocessor-rankgpt-rerank/llama_index/postprocessor/rankgpt_rerank/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/retrievers/llama-index-retrievers-vertexai-search/llama_index/retrievers/vertexai_search/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/indices/query/schema.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/tests/tools/tool_spec/test_base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-deepinfra/llama_index/llms/deepinfra/constants.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/tools/tool_spec/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-wordpress/llama_index/readers/wordpress/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-ipex-llm/llama_index/llms/ipex_llm/base.py": {
+              "R26": [
+                "LLM call without model version pinning at line 231"
+              ]
+            },
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/vector_stores/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-dad-jokes/tests/test_readers_dad_jokes.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/data_structs/data_structs.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-file/tests/test_rtf.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/tools/llama-index-tools-jira-issue/tests/test_tools_jira_issue.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/indices/property_graph/sub_retrievers/llm_synonym.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/vector_stores/llama-index-vector-stores-neptune/llama_index/vector_stores/neptune/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/storage/index_store/llama-index-storage-index-store-mongodb/llama_index/storage/index_store/mongodb/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/embeddings/llama-index-embeddings-gaudi/llama_index/embeddings/gaudi/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-oxylabs/llama_index/readers/oxylabs/amazon_sellers.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-ai21/llama_index/llms/ai21/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/selectors/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/node_parser/llama-index-node-parser-alibabacloud-aisearch/llama_index/node_parser/alibabacloud_aisearch/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-zhipuai/llama_index/llms/zhipuai/base.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 245",
+                "LLM call without explicit temperature parameter at line 307",
+                "LLM call without explicit temperature parameter at line 344"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 245",
+                "LLM pipeline call without structured output at line 307",
+                "LLM pipeline call without structured output at line 344"
+              ]
+            },
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/tests/indices/document_summary/test_retrievers.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/extractors/llama-index-extractors-entity/llama_index/extractors/entity/base.py": {}
           }
         }
       }
@@ -1062,32 +954,26 @@
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/tests/otel/test_attributes_from_confident_exporter.py": {},
-            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/tests/test_integrations/test_openai/test_tool_call_flow_completion.py": {
+            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/deepeval/models/llms/gemini_model.py": {
               "R25": [
-                "LLM call without explicit temperature parameter at line 68"
-              ],
-              "R26": [
-                "LLM call without model version pinning at line 82",
-                "LLM call without model version pinning at line 127"
+                "LLM call without explicit temperature parameter at line 237",
+                "LLM call without explicit temperature parameter at line 240",
+                "LLM call without explicit temperature parameter at line 253",
+                "LLM call without explicit temperature parameter at line 281",
+                "LLM call without explicit temperature parameter at line 284",
+                "LLM call without explicit temperature parameter at line 297"
               ],
               "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 82",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 127"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 82",
-                "LLM pipeline call without structured output at line 127"
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 237",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 240",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 253",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 281",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 284",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 297"
               ]
             },
-            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/tests/test_docs/test_deepeval/test_ai_agent_evals/test_langchain/test_langchain_online_evals.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 16"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 16"
-              ]
-            }
+            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/deepeval/models/retry_policy.py": {},
+            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/deepeval/openai/utils.py": {}
           }
         }
       }
@@ -1100,8 +986,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "ai-dynamo/dynamo@aaed4f3b873aee186dfa176709b850a1234d32b4/components/src/dynamo/vllm/multimodal_utils/chat_processor.py": {},
-            "ai-dynamo/dynamo@aaed4f3b873aee186dfa176709b850a1234d32b4/lib/bindings/python/examples/hello_world/server_sglang_tok.py": {}
+            "ai-dynamo/dynamo@aaed4f3b873aee186dfa176709b850a1234d32b4/lib/bindings/kvbm/python/kvbm/vllm_integration/kv_cache_manager.py": {},
+            "ai-dynamo/dynamo@aaed4f3b873aee186dfa176709b850a1234d32b4/tests/fault_tolerance/deploy/parse_results.py": {}
           }
         }
       }
@@ -1114,7 +1000,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Lightning-AI/litgpt@df94ee2cae47d8d2fb20815c175e98fd1f64a27a/litgpt/data/__init__.py": {}
+            "Lightning-AI/litgpt@df94ee2cae47d8d2fb20815c175e98fd1f64a27a/litgpt/prompts.py": {}
           }
         }
       }
@@ -1127,7 +1013,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "NVIDIA/Model-Optimizer@b286165362317940fb11bef02e1cad183ad22acb/tests/examples/llm_ptq/test_deploy.py": {}
+            "NVIDIA/Model-Optimizer@b286165362317940fb11bef02e1cad183ad22acb/modelopt/torch/export/plugins/mcore_custom.py": {}
           }
         }
       }
@@ -1140,12 +1026,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "unslothai/notebooks@b9224375ef697bdb67444f6b31a0859a6dcdd34e/python_scripts/Kaggle-Gemma2_(2B)-Alpaca.py": {
-              "R26": [
-                "LLM call without model version pinning at line 313"
-              ]
-            },
-            "unslothai/notebooks@b9224375ef697bdb67444f6b31a0859a6dcdd34e/python_scripts/Kaggle-DeepSeek_R1_0528_Qwen3_(8B)_GRPO.py": {}
+            "unslothai/notebooks@b9224375ef697bdb67444f6b31a0859a6dcdd34e/python_scripts/HuggingFace Course-Qwen2_5_7B_VL_GRPO.py": {},
+            "unslothai/notebooks@b9224375ef697bdb67444f6b31a0859a6dcdd34e/python_scripts/Qwen3_(14B)-Reasoning-Conversational.py": {}
           }
         }
       }
@@ -1158,8 +1040,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "volcengine/verl@249c0831b793751f488d80bcfeafb8f7c544cd65/verl/workers/rollout/vllm_rollout/utils.py": {},
-            "volcengine/verl@249c0831b793751f488d80bcfeafb8f7c544cd65/verl/workers/rollout/base.py": {}
+            "volcengine/verl@249c0831b793751f488d80bcfeafb8f7c544cd65/setup.py": {},
+            "volcengine/verl@249c0831b793751f488d80bcfeafb8f7c544cd65/verl/tools/geo3k_tool.py": {}
           }
         }
       }
@@ -1172,7 +1054,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "intel/auto-round@6723ef0aec7026c0ea38ce156aafbd25a9a0eadb/auto_round/experimental/kv_cache.py": {}
+            "intel/auto-round@6723ef0aec7026c0ea38ce156aafbd25a9a0eadb/auto_round_extension/cuda/gptqmodel_marlin.py": {}
           }
         }
       }
@@ -1185,7 +1067,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "epam/ai-dial-adapter-bedrock@b110bd99865c13f30f3b2827325f3445bfacbda5/aidial_adapter_bedrock/llm/model/adapter.py": {}
+            "epam/ai-dial-adapter-bedrock@b110bd99865c13f30f3b2827325f3445bfacbda5/tests/utils/__init__.py": {}
           }
         }
       }
@@ -1198,7 +1080,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "SkastVnT/AI-Assistant@49692e858f31fe68c385b8e9404c0e9657a2980e/services/speech2text/app/core/run_dual_fast.py": {}
+            "SkastVnT/AI-Assistant@49692e858f31fe68c385b8e9404c0e9657a2980e/services/mcp-server/examples.py": {}
           }
         }
       }
@@ -1211,12 +1093,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "ModelCloud/GPTQModel@5b568257e2a662ce396401a65dcad7dd4f26726f/gptqmodel/models/definitions/mimo.py": {},
-            "ModelCloud/GPTQModel@5b568257e2a662ce396401a65dcad7dd4f26726f/tests/test_save_loaded_quantized_model.py": {
-              "R26": [
-                "LLM call without model version pinning at line 37"
-              ]
-            }
+            "ModelCloud/GPTQModel@5b568257e2a662ce396401a65dcad7dd4f26726f/tests/models/test_longllama.py": {},
+            "ModelCloud/GPTQModel@5b568257e2a662ce396401a65dcad7dd4f26726f/gptqmodel/models/definitions/decilm.py": {}
           }
         }
       }
@@ -1229,7 +1107,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "flagos-ai/FlagScale@528cea1680556b85f88b55170dd1d5de472d3373/flagscale/serve/args_mapping/gen_template_funcs.py": {}
+            "flagos-ai/FlagScale@528cea1680556b85f88b55170dd1d5de472d3373/tools/checkpoint/aquila/model.py": {}
           }
         }
       }
@@ -1242,7 +1120,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "gpustack/gpustack@543c80bc5f80f820fb7a1cd805086798173f265e/gpustack/routes/models.py": {}
+            "gpustack/gpustack@543c80bc5f80f820fb7a1cd805086798173f265e/gpustack/worker/runtime_metrics_aggregator.py": {}
           }
         }
       }
@@ -1255,7 +1133,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "getzep/graphiti@cb53cd1b08485855a0117a63e4fa363033f815f0/tests/utils/maintenance/test_temporal_operations_int.py": {}
+            "getzep/graphiti@cb53cd1b08485855a0117a63e4fa363033f815f0/tests/llm_client/test_anthropic_client.py": {}
           }
         }
       }
@@ -1268,8 +1146,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "HakAl/scrappy@2eded1f5617a24821c44017b8554951c2ed1a67c/tests/task_router/test_task_router_io_injection.py": {},
-            "HakAl/scrappy@2eded1f5617a24821c44017b8554951c2ed1a67c/src/scrappy/orchestrator/core.py": {}
+            "HakAl/scrappy@2eded1f5617a24821c44017b8554951c2ed1a67c/tests/cli/test_user_interaction.py": {},
+            "HakAl/scrappy@2eded1f5617a24821c44017b8554951c2ed1a67c/scripts/evaluate_models.py": {}
           }
         }
       }
@@ -1282,8 +1160,13 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "ucsb-mlsec/VulnLLM-R@cf4759373dd83235399cc0aad5e6896e7b07d6ac/vulscan/train/LLaMA-Factory/src/llamafactory/chat/__init__.py": {},
-            "ucsb-mlsec/VulnLLM-R@cf4759373dd83235399cc0aad5e6896e7b07d6ac/vulscan/train/LLaMA-Factory/src/api.py": {}
+            "ucsb-mlsec/VulnLLM-R@cf4759373dd83235399cc0aad5e6896e7b07d6ac/vulscan/train/LLaMA-Factory/scripts/stat_utils/cal_ppl.py": {},
+            "ucsb-mlsec/VulnLLM-R@cf4759373dd83235399cc0aad5e6896e7b07d6ac/vulscan/train/LLaMA-Factory/src/llamafactory/model/loader.py": {
+              "R26": [
+                "LLM call without model version pinning at line 78",
+                "LLM call without model version pinning at line 86"
+              ]
+            }
           }
         }
       }
@@ -1296,7 +1179,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "microsoft/Olive@7c5b3b8c947311ebfb3fe4efe2b733719d6ebc93/olive/passes/openvino/io_update.py": {}
+            "microsoft/Olive@7c5b3b8c947311ebfb3fe4efe2b733719d6ebc93/olive/evaluator/olive_evaluator.py": {}
           }
         }
       }
@@ -1309,7 +1192,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "princeton-pli/hal-harness@caaa72c7f2bb13799064090463cbe86ddbb4dd25/agents/inspect/agentharm/scorer.py": {}
+            "princeton-pli/hal-harness@caaa72c7f2bb13799064090463cbe86ddbb4dd25/agents/USACO/USACOBench/models/models.py": {}
           }
         }
       }
@@ -1322,18 +1205,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "AI-Hypercomputer/maxtext@bc53aaa15c78d74179f79f4f302d2f8ec66ebdce/src/MaxText/experimental/agent/code_generation_agent/llm_agent.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 86"
-              ],
-              "R26": [
-                "LLM call without model version pinning at line 60"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 86"
-              ]
-            },
-            "AI-Hypercomputer/maxtext@bc53aaa15c78d74179f79f4f302d2f8ec66ebdce/src/MaxText/experimental/agent/orchestration_agent/utils.py": {}
+            "AI-Hypercomputer/maxtext@bc53aaa15c78d74179f79f4f302d2f8ec66ebdce/tests/aot_hlo_identical_test.py": {},
+            "AI-Hypercomputer/maxtext@bc53aaa15c78d74179f79f4f302d2f8ec66ebdce/src/MaxText/utils/ckpt_scripts/convert_gpt_oss_ckpt.py": {}
           }
         }
       }
@@ -1346,7 +1219,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Bessouat40/RAGLight@211a8d986c22da6d46db98302ee77653327495b5/examples/discussion_example.py": {}
+            "Bessouat40/RAGLight@211a8d986c22da6d46db98302ee77653327495b5/tests/tests_llm/test_gemini_model.py": {}
           }
         }
       }
@@ -1359,7 +1232,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "intel/neural-compressor@eb7c1e377d93e577c3179c0f76b4c8fc7b1fea9c/neural_compressor/torch/utils/block_wise.py": {}
+            "intel/neural-compressor@eb7c1e377d93e577c3179c0f76b4c8fc7b1fea9c/neural_compressor/torch/algorithms/mixed_low_precision/custom_methods/quarot_utils.py": {}
           }
         }
       }
@@ -1372,13 +1245,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "lemony-ai/cascadeflow@c6554a2bf9a7db4f7545da3c8b7d1630bb1b81fe/examples/langchain_langsmith.py": {
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 46",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 47"
-              ]
-            },
-            "lemony-ai/cascadeflow@c6554a2bf9a7db4f7545da3c8b7d1630bb1b81fe/cascadeflow/agent.py": {}
+            "lemony-ai/cascadeflow@c6554a2bf9a7db4f7545da3c8b7d1630bb1b81fe/cascadeflow/routing/domain.py": {},
+            "lemony-ai/cascadeflow@c6554a2bf9a7db4f7545da3c8b7d1630bb1b81fe/cascadeflow/telemetry/cost_tracker.py": {}
           }
         }
       }
@@ -1391,7 +1259,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "qtalen/agentic-ai-playground@dd618c69ea02e06e4b75549bd0b3d5225b790938/05_Image_Generation_Workflow/ctx_manager.py": {}
+            "qtalen/agentic-ai-playground@dd618c69ea02e06e4b75549bd0b3d5225b790938/08_DeepSeek_OCR_Agentic_RAG/ocr_agentic_rag.py": {}
           }
         }
       }
@@ -1404,8 +1272,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "aliasrobotics/cai@da1c6202e5857494a1968937c60c5030467dcabd/src/cai/sdk/agents/items.py": {},
-            "aliasrobotics/cai@da1c6202e5857494a1968937c60c5030467dcabd/src/cai/agents/bug_bounter.py": {}
+            "aliasrobotics/cai@da1c6202e5857494a1968937c60c5030467dcabd/src/cai/repl/commands/parallel.py": {},
+            "aliasrobotics/cai@da1c6202e5857494a1968937c60c5030467dcabd/src/cai/repl/commands/history.py": {}
           }
         }
       }
@@ -1418,18 +1286,13 @@
           "num_listed_files": 7,
           "num_analyzed_files": 7,
           "alerts": {
-            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/tests/special_e2e/envs/digit_completion/__init__.py": {},
-            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/models/mistral/hf_mistral_7b_instruct_v0_1.py": {},
-            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/datasets/humaneval/humaneval_passk_gen_8e312c.py": {},
-            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/datasets/truthfulqa.py": {
-              "R26": [
-                "LLM call without model version pinning at line 114",
-                "LLM call without model version pinning at line 112"
-              ]
-            },
-            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/recipe/sppo/main_sppo.py": {},
-            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/verl/trainer/main_ppo.py": {},
-            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/datasets/humaneval/humaneval_gen_8e312c.py": {}
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/models/qwen/vllm_qwen_series.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/models/gemma/vllm_gemma_3_12b_it.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/datasets/needlebench/needlebench_4k/needlebench_multi_reasoning_4k.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/examples/eval_corebench_2409_longcontext.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/recipe/entropy/main_entropy.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/verl/third_party/sglang/parallel_state.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/verl/models/llama/megatron/layers/__init__.py": {}
           }
         }
       }
@@ -1455,7 +1318,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "aradlein/hass-agent-llm@2a3d75aae2cf588909f6f2cdf99efde544f5b928/custom_components/home_agent/agent/streaming.py": {}
+            "aradlein/hass-agent-llm@2a3d75aae2cf588909f6f2cdf99efde544f5b928/tests/unit/test_memory_tools.py": {}
           }
         }
       }
@@ -1468,7 +1331,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "volcengine/ai-app-lab@423c8216acf9897a1eee632341969129477cc154/demohouse/ad_video_gen/backend/app/market-agent/src/market_agent/utils/types.py": {}
+            "volcengine/ai-app-lab@423c8216acf9897a1eee632341969129477cc154/demohouse/ad_video_gen/backend/app/director-agent/src/director_agent/utils/types.py": {}
           }
         }
       }
@@ -1481,8 +1344,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "agentuniverse-ai/agentUniverse@d11c8f4e2ff4c9b8f9a0a7f5f796f16b9f24affd/agentuniverse/agent/action/tool/common_tool/bing_search_tool.py": {},
-            "agentuniverse-ai/agentUniverse@d11c8f4e2ff4c9b8f9a0a7f5f796f16b9f24affd/examples/third_party_examples/apps/primary_chinese_teacher_agent/intelligence/agentic/llm/langchian_instance/langchain_instance.py": {}
+            "agentuniverse-ai/agentUniverse@d11c8f4e2ff4c9b8f9a0a7f5f796f16b9f24affd/examples/sample_standard_app/config/yaml_func_extension.py": {},
+            "agentuniverse-ai/agentUniverse@d11c8f4e2ff4c9b8f9a0a7f5f796f16b9f24affd/agentuniverse/agent/template/react_agent_template.py": {}
           }
         }
       }
@@ -1495,7 +1358,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "omarkamali/borgllm@8f3aefdaef172393b1520baba177cc6170ba464e/tests/test_core.py": {}
+            "omarkamali/borgllm@8f3aefdaef172393b1520baba177cc6170ba464e/examples/langchain/configurable_cooldown_timeout/main.py": {}
           }
         }
       }
@@ -1508,7 +1371,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Jilliansea/TinyZeroWithSFT@1fe50777fc1b6b441058a4ae35e5514a7036e8bf/verl/utils/megatron_utils.py": {}
+            "Jilliansea/TinyZeroWithSFT@1fe50777fc1b6b441058a4ae35e5514a7036e8bf/verl/models/transformers/qwen2.py": {}
           }
         }
       }
@@ -1521,9 +1384,24 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "1789336421/Omni-Mol@8a9426d9a14d52efaf70942e79dc2819cf204f0c/peft/examples/ephemeral_gpu_offloading/load_with_dora.py": {
+            "1789336421/Omni-Mol@8a9426d9a14d52efaf70942e79dc2819cf204f0c/peft/tests/test_initialization.py": {
               "R26": [
-                "LLM call without model version pinning at line 86"
+                "LLM call without model version pinning at line 1859",
+                "LLM call without model version pinning at line 1867",
+                "LLM call without model version pinning at line 1882",
+                "LLM call without model version pinning at line 956",
+                "LLM call without model version pinning at line 962",
+                "LLM call without model version pinning at line 973",
+                "LLM call without model version pinning at line 1582",
+                "LLM call without model version pinning at line 1589",
+                "LLM call without model version pinning at line 1628",
+                "LLM call without model version pinning at line 1641",
+                "LLM call without model version pinning at line 1680",
+                "LLM call without model version pinning at line 1897",
+                "LLM call without model version pinning at line 1903",
+                "LLM call without model version pinning at line 2573",
+                "LLM call without model version pinning at line 2600",
+                "LLM call without model version pinning at line 1610"
               ]
             }
           }
@@ -1538,7 +1416,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "danielcamposramos/Knowledge3D@274cf368b822e370903b7f97132e242a8c3c06c7/tests/test_step11_shape_composition.py": {}
+            "danielcamposramos/Knowledge3D@274cf368b822e370903b7f97132e242a8c3c06c7/knowledge3d/cranium/ptx_runtime/world_model_manager.py": {}
           }
         }
       }
@@ -1551,7 +1429,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "ai-christianson/RA.Aid@e71bb83dcfdf8796d41c746ad99bf4838d1d5914/examples/custom-tools-mcp/tools.py": {}
+            "ai-christianson/RA.Aid@e71bb83dcfdf8796d41c746ad99bf4838d1d5914/ra_aid/tools/write_file.py": {}
           }
         }
       }
@@ -1564,8 +1442,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "openaiotlab/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/src/llamafactory/chat/vllm_engine.py": {},
-            "openaiotlab/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/src/llamafactory/chat/__init__.py": {}
+            "openaiotlab/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/tests/model/model_utils/test_checkpointing.py": {},
+            "openaiotlab/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/scripts/stat_utils/cal_lr.py": {}
           }
         }
       }
@@ -1578,8 +1456,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "bf-yang/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/src/llamafactory/webui/components/infer.py": {},
-            "bf-yang/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/tests/model/test_full.py": {}
+            "bf-yang/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/src/llamafactory/data/collator.py": {},
+            "bf-yang/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/src/llamafactory/data/template.py": {}
           }
         }
       }
@@ -1592,9 +1470,9 @@
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/test/models/test_nvidia_model.py": {},
-            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/camel/models/aiml_model.py": {},
-            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/camel/agents/deductive_reasoner_agent.py": {}
+            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/camel/storages/key_value_storages/json.py": {},
+            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/test/memories/test_vector_db_memory.py": {},
+            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/test/agents/tool_agents/test_hugging_face_tool_agent.py": {}
           }
         }
       }
@@ -1607,7 +1485,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "AIGeeksGroup/MobileVLA-R1@2554dfdba8190687ad4f417066ad7ce62b60247e/llava/train/transformers_replace/models/llama/configuring_llama.py": {}
+            "AIGeeksGroup/MobileVLA-R1@2554dfdba8190687ad4f417066ad7ce62b60247e/llava/train/transformers_replace/models/mistral/configuration_mistral.py": {}
           }
         }
       }
@@ -1620,7 +1498,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Simple-Efficient/RL-Factory@d0abc1dbac31cf936af4d4a50009e337a9406f94/verl/workers/rollout/async_server.py": {}
+            "Simple-Efficient/RL-Factory@d0abc1dbac31cf936af4d4a50009e337a9406f94/verl/utils/flops_counter.py": {}
           }
         }
       }
@@ -1633,7 +1511,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "ariannamethod/ariannamethod@de35fe338db13d1abeae51e3f4c43a9343bccf1a/.claude-defender/tools/github-scout-daemon.py": {}
+            "ariannamethod/ariannamethod@de35fe338db13d1abeae51e3f4c43a9343bccf1a/arianna_core_utils/genesis_monday.py": {}
           }
         }
       }
@@ -1646,7 +1524,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Blaizzy/mlx-vlm@c4ea290e47e2155b67d94c708c662f8ab64e1b37/mlx_vlm/models/mllama/config.py": {}
+            "Blaizzy/mlx-vlm@c4ea290e47e2155b67d94c708c662f8ab64e1b37/mlx_vlm/models/phi3_v/config.py": {}
           }
         }
       }
@@ -1659,11 +1537,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "duyhominhnguyen/Exgra-Med@e9a3daaf912a82bccdc3bad26b9661325d47ea60/exgra_med/llava/eval/model_vqa_science.py": {
-              "R26": [
-                "LLM call without model version pinning at line 118"
-              ]
-            }
+            "duyhominhnguyen/Exgra-Med@e9a3daaf912a82bccdc3bad26b9661325d47ea60/exgra_med/llava/train/train_pre.py": {}
           }
         }
       }
@@ -1676,7 +1550,11 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "cambrian-mllm/cambrian-s@9b770e46ed09ff0245f6455b7e091e9ace8c22ee/lmms-eval/tools/live_bench/live_bench/data_generator/utils/extract_information.py": {}
+            "cambrian-mllm/cambrian-s@9b770e46ed09ff0245f6455b7e091e9ace8c22ee/lmms-eval/tools/live_bench/live_bench/data_generator/question_finalizer.py": {
+              "R26": [
+                "LLM call without model version pinning at line 66"
+              ]
+            }
           }
         }
       }
@@ -1689,7 +1567,13 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Zhoues/RoboRefer@d97a995ad28376720a4c8beb64915c58ed16c844/llava/model/language_model/fp8activationresidualqwen2.py": {}
+            "Zhoues/RoboRefer@d97a995ad28376720a4c8beb64915c58ed16c844/llava/model/language_model/builder.py": {
+              "R26": [
+                "LLM call without model version pinning at line 195",
+                "LLM call without model version pinning at line 178",
+                "LLM call without model version pinning at line 183"
+              ]
+            }
           }
         }
       }
@@ -1702,8 +1586,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "Kiln-AI/Kiln@229b88880644ff3114b895a68186096abf1231cd/libs/core/kiln_ai/adapters/run_output.py": {},
-            "Kiln-AI/Kiln@229b88880644ff3114b895a68186096abf1231cd/libs/core/kiln_ai/tools/test_mcp_server_tool.py": {}
+            "Kiln-AI/Kiln@229b88880644ff3114b895a68186096abf1231cd/libs/core/kiln_ai/datamodel/test_basemodel.py": {},
+            "Kiln-AI/Kiln@229b88880644ff3114b895a68186096abf1231cd/libs/core/kiln_ai/adapters/embedding/test_litellm_embedding_adapter.py": {}
           }
         }
       }
@@ -1716,7 +1600,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "inclusionAI/AReaL@b942ed019df2c66b851c397c0836fd31a3787b70/realhf/impl/model/backend/thirdparty/vllm/__init__.py": {}
+            "inclusionAI/AReaL@b942ed019df2c66b851c397c0836fd31a3787b70/areal/utils/proxy_utils.py": {}
           }
         }
       }
@@ -1729,7 +1613,22 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "brendanhogan/2025_advent_of_small_ml@f6aacd728812835360057d6a93b910dd5eef9c3d/src/day4/vllm_server.py": {}
+            "brendanhogan/2025_advent_of_small_ml@f6aacd728812835360057d6a93b910dd5eef9c3d/src/day10/gepa_main.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 854",
+                "LLM call without explicit temperature parameter at line 848"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 525"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 525"
+              ],
+              "R32": [
+                "Overspecified sampling at line 261",
+                "Overspecified sampling at line 285"
+              ]
+            }
           }
         }
       }
@@ -1742,16 +1641,16 @@
           "num_listed_files": 10,
           "num_analyzed_files": 10,
           "alerts": {
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/integration/test_zai_coding_plan.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/connectors/gemini_base/credential_providers/__init__.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/core/domain/streaming/parsing/raw_chunk_parser.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/core/test_validation_constants.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/connectors/gemini_base/endpoints.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/core/domain/configuration/reasoning_config.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/scripts/test_antigravity_backend.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/core/domain/test_raw_text_translator_phase12.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/core/ports/test_streaming_error_propagation.py": {},
-            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/scripts/debug_streaming_reproduction.py": {}
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/connectors/test_gemini_oauth_antigravity.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/memory/test_summary_generator.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/connectors/openai.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/test_emergency_command_filter.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/helpers/angel_factory_stub.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/connectors/gemini_oauth_plan.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/connectors/gemini_base/streaming_executor.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/commands/test_unit_model_command_handler.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/core/services/resilience/coordinator.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/gemini_connector_tests/test_openrouter_headers.py": {}
           }
         }
       }
@@ -1764,7 +1663,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "yichuan-w/LEANN@a6ee95b18a64a29e9dd158c126d5b69a36bab1cf/apps/code_rag.py": {}
+            "yichuan-w/LEANN@a6ee95b18a64a29e9dd158c126d5b69a36bab1cf/examples/basic_demo.py": {}
           }
         }
       }
@@ -1777,7 +1676,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "EvolvingLMMs-Lab/OpenMMReasoner@d7bf5769469800d636b69945b81f1ba51b89695e/verl/models/llama/megatron/checkpoint_utils/llama_loader.py": {}
+            "EvolvingLMMs-Lab/OpenMMReasoner@d7bf5769469800d636b69945b81f1ba51b89695e/verl/models/transformers/kimi_vl.py": {}
           }
         }
       }
@@ -1790,8 +1689,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "EvolvingLMMs-Lab/LongVT@93a349cf9b79fa3bf95e3e131b506e10a6329dc6/tests/models/test_transformer.py": {},
-            "EvolvingLMMs-Lab/LongVT@93a349cf9b79fa3bf95e3e131b506e10a6329dc6/verl/models/transformers/qwen2.py": {}
+            "EvolvingLMMs-Lab/LongVT@93a349cf9b79fa3bf95e3e131b506e10a6329dc6/verl/utils/import_utils.py": {},
+            "EvolvingLMMs-Lab/LongVT@93a349cf9b79fa3bf95e3e131b506e10a6329dc6/tests/tools/test_base_tool_on_cpu.py": {}
           }
         }
       }
@@ -1804,7 +1703,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "chrishayuk/mcp-cli@ae6db3d572c604b4b0b3e9b9d2136eca043ea109/src/mcp_cli/chat/__main__.py": {}
+            "chrishayuk/mcp-cli@ae6db3d572c604b4b0b3e9b9d2136eca043ea109/src/mcp_cli/auth/provider_tokens.py": {}
           }
         }
       }
@@ -1817,7 +1716,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "agentscope-ai/agentscope@19cba5ce88b4865b72e4c2b6ea9f3c0a8e9b66c2/src/agentscope/formatter/_ollama_formatter.py": {}
+            "agentscope-ai/agentscope@19cba5ce88b4865b72e4c2b6ea9f3c0a8e9b66c2/src/agentscope/formatter/_openai_formatter.py": {}
           }
         }
       }
@@ -1830,7 +1729,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "rscheiwe/vel@41e4dd67e162cc719ad90d3294ebe758e9ea8a7d/examples/archive/custom_data_events.py": {}
+            "rscheiwe/vel@41e4dd67e162cc719ad90d3294ebe758e9ea8a7d/vel/thinking/config.py": {}
           }
         }
       }
@@ -1843,8 +1742,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "taylorai/lm-deluge@96124f3c6010848b4f34232a5ed7e0adc9bd17cc/tests/models/test_openrouter_generic.py": {},
-            "taylorai/lm-deluge@96124f3c6010848b4f34232a5ed7e0adc9bd17cc/tests/core/test_otc_live.py": {}
+            "taylorai/lm-deluge@96124f3c6010848b4f34232a5ed7e0adc9bd17cc/src/lm_deluge/pipelines/gepa/__init__.py": {},
+            "taylorai/lm-deluge@96124f3c6010848b4f34232a5ed7e0adc9bd17cc/tests/core/test_postprocess.py": {}
           }
         }
       }
@@ -1857,7 +1756,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "HKUDS/LightRAG@9562a974d216268021b4027f7be7ec250477fe96/lightrag/tools/download_cache.py": {}
+            "HKUDS/LightRAG@9562a974d216268021b4027f7be7ec250477fe96/lightrag/api/utils_api.py": {}
           }
         }
       }
@@ -1870,7 +1769,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "mims-harvard/ToolUniverse@132458e90eae0d23245caed295dd0bb9518cd240/src/tooluniverse/database_setup/provider_resolver.py": {}
+            "mims-harvard/ToolUniverse@132458e90eae0d23245caed295dd0bb9518cd240/src/tooluniverse/smolagent_tool.py": {}
           }
         }
       }
@@ -1883,7 +1782,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "LLM360/Reasoning360@13158341d2a0dfe5f3bb80e7126ff21de0d16676/verl/trainer/main_ppo.py": {}
+            "LLM360/Reasoning360@13158341d2a0dfe5f3bb80e7126ff21de0d16676/scripts/tools/model_merger.py": {}
           }
         }
       }
@@ -1896,7 +1795,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "DylanLRPollock/Monkey-Head-Project@6b0c9ec5d0a56d3d44693dd97055d90f7fc2aa24/src/huey/pygpt_net/provider/agents/planner.py": {}
+            "DylanLRPollock/Monkey-Head-Project@6b0c9ec5d0a56d3d44693dd97055d90f7fc2aa24/repo/pygpt-MHP/src/pygpt_net/plugin/agent/config.py": {}
           }
         }
       }
@@ -1909,7 +1808,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "microsoft/openaivec@cd2760bc392cc82eebffcbd2ca81882a22860f85/src/openaivec/task/nlp/translation.py": {}
+            "microsoft/openaivec@cd2760bc392cc82eebffcbd2ca81882a22860f85/src/openaivec/task/__init__.py": {}
           }
         }
       }
@@ -1922,27 +1821,68 @@
           "num_listed_files": 7,
           "num_analyzed_files": 7,
           "alerts": {
-            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/granite/modular_granite.py": {},
-            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/generation/watermarking.py": {},
-            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/tests/models/vision_encoder_decoder/test_modeling_flax_vision_encoder_decoder.py": {
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/idefics3/convert_idefics3_weights_to_hf.py": {
               "R26": [
-                "LLM call without model version pinning at line 362"
+                "LLM call without model version pinning at line 158",
+                "LLM call without model version pinning at line 163"
               ]
             },
-            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/tests/models/phi3/test_modeling_phi3.py": {
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/tests/models/auto/test_tokenization_auto.py": {
               "R26": [
-                "LLM call without model version pinning at line 403",
-                "LLM call without model version pinning at line 425",
-                "LLM call without model version pinning at line 464",
-                "LLM call without model version pinning at line 486",
-                "LLM call without model version pinning at line 516",
-                "LLM call without model version pinning at line 612",
-                "LLM call without model version pinning at line 634"
+                "LLM call without model version pinning at line 86",
+                "LLM call without model version pinning at line 91",
+                "LLM call without model version pinning at line 99",
+                "LLM call without model version pinning at line 186",
+                "LLM call without model version pinning at line 191",
+                "LLM call without model version pinning at line 197",
+                "LLM call without model version pinning at line 206",
+                "LLM call without model version pinning at line 216",
+                "LLM call without model version pinning at line 232",
+                "LLM call without model version pinning at line 316",
+                "LLM call without model version pinning at line 320",
+                "LLM call without model version pinning at line 357",
+                "LLM call without model version pinning at line 415",
+                "LLM call without model version pinning at line 446",
+                "LLM call without model version pinning at line 74",
+                "LLM call without model version pinning at line 80",
+                "LLM call without model version pinning at line 107",
+                "LLM call without model version pinning at line 114",
+                "LLM call without model version pinning at line 122",
+                "LLM call without model version pinning at line 129",
+                "LLM call without model version pinning at line 134",
+                "LLM call without model version pinning at line 180",
+                "LLM call without model version pinning at line 182",
+                "LLM call without model version pinning at line 210",
+                "LLM call without model version pinning at line 309",
+                "LLM call without model version pinning at line 312",
+                "LLM call without model version pinning at line 328",
+                "LLM call without model version pinning at line 336",
+                "LLM call without model version pinning at line 377",
+                "LLM call without model version pinning at line 380",
+                "LLM call without model version pinning at line 385",
+                "LLM call without model version pinning at line 390",
+                "LLM call without model version pinning at line 397",
+                "LLM call without model version pinning at line 402",
+                "LLM call without model version pinning at line 423",
+                "LLM call without model version pinning at line 435",
+                "LLM call without model version pinning at line 448",
+                "LLM call without model version pinning at line 253",
+                "LLM call without model version pinning at line 294",
+                "LLM call without model version pinning at line 297",
+                "LLM call without model version pinning at line 344",
+                "LLM call without model version pinning at line 513",
+                "LLM call without model version pinning at line 516"
               ]
             },
-            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/examples/modular-transformers/image_processing_new_imgproc_model.py": {},
-            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/cohere/configuration_cohere.py": {},
-            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/pytorch_utils.py": {}
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/tests/models/llava/test_processor_llava.py": {
+              "R26": [
+                "LLM call without model version pinning at line 81"
+              ]
+            },
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/chameleon/processing_chameleon.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/tests/models/cohere/test_tokenization_cohere.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/llava_onevision/video_processing_llava_onevision.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/instructblipvideo/image_processing_instructblipvideo.py": {}
           }
         }
       }
@@ -1955,8 +1895,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "xuyang-liu16/VidCom2@ce46008b959c6715b8233ea1b9d1c063d22a4b2c/lmms-eval/lmms_eval/models/whisper.py": {},
-            "xuyang-liu16/VidCom2@ce46008b959c6715b8233ea1b9d1c063d22a4b2c/lmms-eval/lmms_eval/models/video_chatgpt/single_video_inference.py": {}
+            "xuyang-liu16/VidCom2@ce46008b959c6715b8233ea1b9d1c063d22a4b2c/llava/eval/evaluate_interleave.py": {},
+            "xuyang-liu16/VidCom2@ce46008b959c6715b8233ea1b9d1c063d22a4b2c/lmms-eval/lmms_eval/tasks/mmbench/en_utils.py": {}
           }
         }
       }
@@ -1969,11 +1909,35 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "owadev777/EgoVLA_Release@92ebbd916f6bad4b79dc7d3efbb485d10f80b113/VILA/llava/model/make_delta.py": {
+            "owadev777/EgoVLA_Release@92ebbd916f6bad4b79dc7d3efbb485d10f80b113/VILA/tests/utils/client.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 3",
+                "LLM call without explicit temperature parameter at line 9",
+                "LLM call without explicit temperature parameter at line 31",
+                "LLM call without explicit temperature parameter at line 47",
+                "LLM call without explicit temperature parameter at line 70"
+              ],
               "R26": [
-                "LLM call without model version pinning at line 34",
-                "LLM call without model version pinning at line 38",
-                "LLM call without model version pinning at line 64"
+                "LLM call without model version pinning at line 9",
+                "LLM call without model version pinning at line 31",
+                "LLM call without model version pinning at line 47",
+                "LLM call without model version pinning at line 70"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 9",
+                "LLM chat call without a system message at line 31",
+                "LLM chat call without a system message at line 47",
+                "LLM chat call without a system message at line 70"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 9",
+                "LLM pipeline call without structured output at line 31",
+                "LLM pipeline call without structured output at line 47",
+                "LLM pipeline call without structured output at line 70"
+              ],
+              "R31": [
+                "Unbounded vision payloads at line 9",
+                "Unbounded vision payloads at line 47"
               ]
             }
           }
@@ -1988,8 +1952,12 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "axolotl-ai-cloud/axolotl@3750d7dd64a2c0699d5009392d85de525f7414c6/tests/e2e/test_llama_vision.py": {},
-            "axolotl-ai-cloud/axolotl@3750d7dd64a2c0699d5009392d85de525f7414c6/src/axolotl/prompt_strategies/llama2_chat.py": {}
+            "axolotl-ai-cloud/axolotl@3750d7dd64a2c0699d5009392d85de525f7414c6/tests/utils/schemas/validation/test_fsdp.py": {},
+            "axolotl-ai-cloud/axolotl@3750d7dd64a2c0699d5009392d85de525f7414c6/src/axolotl/integrations/liger/plugin.py": {
+              "R26": [
+                "LLM call without model version pinning at line 124"
+              ]
+            }
           }
         }
       }
@@ -2002,7 +1970,16 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "openvinotoolkit/openvino.genai@87f9d9ef73f7e827d593bd8e00eccf6740bf9cbe/tests/python_tests/samples/test_beam_search_causal_lm.py": {}
+            "openvinotoolkit/openvino.genai@87f9d9ef73f7e827d593bd8e00eccf6740bf9cbe/samples/python/text_generation/structured_output_generation.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 76",
+                "LLM call without explicit temperature parameter at line 89"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 76",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 89"
+              ]
+            }
           }
         }
       }
@@ -2015,7 +1992,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "ggml-org/llama.cpp@f9ec8858edea4a0ecfea149d6815ebfb5ecc3bcd/examples/convert_legacy_llama.py": {}
+            "ggml-org/llama.cpp@f9ec8858edea4a0ecfea149d6815ebfb5ecc3bcd/tools/server/tests/unit/test_slot_save.py": {}
           }
         }
       }
@@ -2028,8 +2005,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "Fir-lat/LaVer@abe70c7c19666decbefb5811d7d878d490f1e56c/src/llamafactory/chat/kt_engine.py": {},
-            "Fir-lat/LaVer@abe70c7c19666decbefb5811d7d878d490f1e56c/src/llamafactory/webui/engine.py": {}
+            "Fir-lat/LaVer@abe70c7c19666decbefb5811d7d878d490f1e56c/src/llamafactory/train/pt/workflow.py": {},
+            "Fir-lat/LaVer@abe70c7c19666decbefb5811d7d878d490f1e56c/src/llamafactory/data/mm_plugin.py": {}
           }
         }
       }
@@ -2042,8 +2019,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "pytorch/executorch@c61b2ed1d022ae0681e1a6547bbba8c95acd6854/examples/models/llama3_2_vision/vision_encoder/test/test_vision_encoder.py": {},
-            "pytorch/executorch@c61b2ed1d022ae0681e1a6547bbba8c95acd6854/examples/models/smollm2/convert_weights.py": {}
+            "pytorch/executorch@c61b2ed1d022ae0681e1a6547bbba8c95acd6854/extension/llm/custom_ops/custom_ops.py": {},
+            "pytorch/executorch@c61b2ed1d022ae0681e1a6547bbba8c95acd6854/examples/qualcomm/oss_scripts/llama/__init__.py": {}
           }
         }
       }
@@ -2056,7 +2033,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "huggingface/optimum-habana@6afa2ca282d345ccb27838bf580e997ce13c4d8c/optimum/habana/transformers/models/starcoder2/modeling_starcoder2.py": {}
+            "huggingface/optimum-habana@6afa2ca282d345ccb27838bf580e997ce13c4d8c/optimum/habana/distributed/serialization.py": {}
           }
         }
       }
@@ -2069,7 +2046,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "quic/efficient-transformers@46ed92b22abb6b14f5df95c2b92df32d5efbd051/QEfficient/transformers/models/falcon/modeling_falcon.py": {}
+            "quic/efficient-transformers@46ed92b22abb6b14f5df95c2b92df32d5efbd051/examples/peft/multi_adapter.py": {}
           }
         }
       }
@@ -2082,8 +2059,17 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "jiaxiaojunQAQ/OmniSafeBench-MM@84a4d1708e42e8059cf3150e5c35dcd821c0b39e/multimodalmodels/minigpt4/minigpt4/runners/__init__.py": {},
-            "jiaxiaojunQAQ/OmniSafeBench-MM@84a4d1708e42e8059cf3150e5c35dcd821c0b39e/tests/test_core.py": {}
+            "jiaxiaojunQAQ/OmniSafeBench-MM@84a4d1708e42e8059cf3150e5c35dcd821c0b39e/models/google_model.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 78",
+                "LLM call without explicit temperature parameter at line 35"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 78",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 35"
+              ]
+            },
+            "jiaxiaojunQAQ/OmniSafeBench-MM@84a4d1708e42e8059cf3150e5c35dcd821c0b39e/defenses/llama_guard_4.py": {}
           }
         }
       }
@@ -2096,21 +2082,12 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "EvolvingLMMs-Lab/lmms-eval@b0da65de53bfa6fd52010b7d1a86dfd2f598764c/lmms_eval/tasks/mathvista/mathvista_evals.py": {},
-            "EvolvingLMMs-Lab/lmms-eval@b0da65de53bfa6fd52010b7d1a86dfd2f598764c/lmms_eval/tasks/mathverse/mathverse_evals.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 21"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 47"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 47"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 47"
+            "EvolvingLMMs-Lab/lmms-eval@b0da65de53bfa6fd52010b7d1a86dfd2f598764c/lmms_eval/tasks/videomathqa/cot_step_evaluation.py": {
+              "R26": [
+                "LLM call without model version pinning at line 171"
               ]
-            }
+            },
+            "EvolvingLMMs-Lab/lmms-eval@b0da65de53bfa6fd52010b7d1a86dfd2f598764c/lmms_eval/llm_judge/factory.py": {}
           }
         }
       }
@@ -2123,7 +2100,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Luckybalabala/llama-cpp-AutoGLM@694dc092b1c34b16ce7008e83bf41683128640dc/scripts/sync_vendor.py": {}
+            "Luckybalabala/llama-cpp-AutoGLM@694dc092b1c34b16ce7008e83bf41683128640dc/examples/pydantic_models_to_grammar_examples.py": {}
           }
         }
       }
@@ -2136,13 +2113,12 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "jacklishufan/LaViDa@24220c0077f403d24ca52968b6a7c55b687d5c2f/eval/lmms_eval/models/llava_vid.py": {},
-            "jacklishufan/LaViDa@24220c0077f403d24ca52968b6a7c55b687d5c2f/eval/lmms_eval/models/internvl2.py": {
-              "R26": [
-                "LLM call without model version pinning at line 208",
-                "LLM call without model version pinning at line 207"
+            "jacklishufan/LaViDa@24220c0077f403d24ca52968b6a7c55b687d5c2f/eval/lmms_eval/models/cambrian.py": {
+              "R31": [
+                "Unbounded vision payloads at line 280"
               ]
-            }
+            },
+            "jacklishufan/LaViDa@24220c0077f403d24ca52968b6a7c55b687d5c2f/eval/lmms_eval/tasks/vitatecs/utils.py": {}
           }
         }
       }
@@ -2155,7 +2131,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "shakfu/cyllama@3bf0290c31ecc276c6be543a1b674040f32bb2b0/tests/test_async_agents.py": {}
+            "shakfu/cyllama@3bf0290c31ecc276c6be543a1b674040f32bb2b0/tests/test_tts_fix.py": {}
           }
         }
       }
@@ -2168,7 +2144,19 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "ParisNeo/lollms_client@e10bd27f49b7a25daa59c086aaa9cf8dc596bc92/src/lollms_client/stt_bindings/whisper/__init__.py": {}
+            "ParisNeo/lollms_client@e10bd27f49b7a25daa59c086aaa9cf8dc596bc92/src/lollms_client/llm_bindings/open_router/__init__.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 48",
+                "LLM call without explicit temperature parameter at line 152"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 48",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 152"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 152"
+              ]
+            }
           }
         }
       }
@@ -2181,7 +2169,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "IP127000/openVLA-Qwen2-0.5B@940c7616deaef12458493089846c7b67749865f2/llava/model/multimodal_encoder/builder.py": {}
+            "IP127000/openVLA-Qwen2-0.5B@940c7616deaef12458493089846c7b67749865f2/llava/serve/gradio_web_server.py": {}
           }
         }
       }
@@ -2194,25 +2182,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "bytedance/Sa2VA@f445521bd1dc74d33078b30762c6423dab876199/sa2va_eval/vlmeval/api/gemini.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 87",
-                "LLM call without explicit temperature parameter at line 105"
-              ],
-              "R26": [
-                "LLM call without model version pinning at line 78",
-                "LLM call without model version pinning at line 81",
-                "LLM call without model version pinning at line 102"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 87",
-                "LLM chat call without a system message at line 105"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 87",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 105"
-              ]
-            }
+            "bytedance/Sa2VA@f445521bd1dc74d33078b30762c6423dab876199/vlm/utils/modeling_rope_utils.py": {}
           }
         }
       }
@@ -2225,7 +2195,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "nkkbr/ViCA@96e8a61b7afe23da3908280cc4872d36311945aa/llava/__init__.py": {}
+            "nkkbr/ViCA@96e8a61b7afe23da3908280cc4872d36311945aa/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/transform.py": {}
           }
         }
       }
@@ -2238,7 +2208,12 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "erfanzar/EasyDeL@748550c8a2d7514557477de02a4b8053a41a90f4/easydel/infra/modeling_outputs.py": {}
+            "erfanzar/EasyDeL@748550c8a2d7514557477de02a4b8053a41a90f4/easydel/inference/esurge/esurge_engine.py": {
+              "R26": [
+                "LLM call without model version pinning at line 370",
+                "LLM call without model version pinning at line 375"
+              ]
+            }
           }
         }
       }
@@ -2251,7 +2226,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "dusty-nv/jetson-containers@bf3c8b0b94f09f5c353dd8b94badb76235d866e4/packages/llm/local_llm/local_llm.py": {}
+            "dusty-nv/jetson-containers@bf3c8b0b94f09f5c353dd8b94badb76235d866e4/packages/llm/vllm/test.py": {}
           }
         }
       }
@@ -2264,7 +2239,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "lanxiang1017/GEM@7edee7e20408cf3e855a4ace6f6b291b1e7b8485/llava/eval/summarize_gpt_review.py": {}
+            "lanxiang1017/GEM@7edee7e20408cf3e855a4ace6f6b291b1e7b8485/ecg_coca/open_clip/constants.py": {}
           }
         }
       }
@@ -2274,10 +2249,11 @@
       "repo": "UnifiedReward",
       "by_sha": {
         "3c16510485bb9c924bfedc8b4d09c1b4e4f772ba": {
-          "num_listed_files": 1,
-          "num_analyzed_files": 1,
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
           "alerts": {
-            "CodeGoat24/UnifiedReward@3c16510485bb9c924bfedc8b4d09c1b4e4f772ba/llava/__init__.py": {}
+            "CodeGoat24/UnifiedReward@3c16510485bb9c924bfedc8b4d09c1b4e4f772ba/llava/utils.py": {},
+            "CodeGoat24/UnifiedReward@3c16510485bb9c924bfedc8b4d09c1b4e4f772ba/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/__init__.py": {}
           }
         }
       }
@@ -2290,7 +2266,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "SafeRL-Lab/AccidentBench@4abe9d836d0b978f0d9a7953fc0546eefd1fb4ed/lmms_eval/models/whisper_vllm.py": {}
+            "SafeRL-Lab/AccidentBench@4abe9d836d0b978f0d9a7953fc0546eefd1fb4ed/lmms_eval/tasks/mathverse/mathverse_evals.py": {}
           }
         }
       }
@@ -2303,7 +2279,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Ganador1/FenixAI_tradingBot@6e12bb342f040f1a1c1b06ea6fa5c1bfd2d1efc1/src/tools/chart_generator.py": {}
+            "Ganador1/FenixAI_tradingBot@6e12bb342f040f1a1c1b06ea6fa5c1bfd2d1efc1/src/cost/advanced_cost_manager.py": {}
           }
         }
       }
@@ -2316,10 +2292,10 @@
           "num_listed_files": 4,
           "num_analyzed_files": 4,
           "alerts": {
-            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/utils/check_docstrings.py": {},
-            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/src/transformers/models/cohere/tokenization_cohere_fast.py": {},
-            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/tests/generation/test_configuration_utils.py": {},
-            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/src/transformers/models/cohere/modeling_cohere.py": {}
+            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/src/transformers/models/clip/tokenization_clip_fast.py": {},
+            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/tests/models/auto/test_modeling_tf_auto.py": {},
+            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/src/transformers/models/llama/modeling_flax_llama.py": {},
+            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/src/transformers/models/imagegpt/convert_imagegpt_original_tf2_to_pytorch.py": {}
           }
         }
       }
@@ -2332,8 +2308,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "xuyang-liu16/MixKV@bf5ddc459597d2ea9fcd62482e54880409f9ec2a/visual_head/LLaVA-NeXT/llava/serve/cli.py": {},
-            "xuyang-liu16/MixKV@bf5ddc459597d2ea9fcd62482e54880409f9ec2a/lmms-eval/tools/live_bench/live_bench/data_generator/utils/extract_information.py": {}
+            "xuyang-liu16/MixKV@bf5ddc459597d2ea9fcd62482e54880409f9ec2a/lmms-eval/lmms_eval/tasks/detailcaps/utils.py": {},
+            "xuyang-liu16/MixKV@bf5ddc459597d2ea9fcd62482e54880409f9ec2a/visual_head/LLaVA-NeXT/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/openai.py": {}
           }
         }
       }
@@ -2346,7 +2322,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "thunlp/ChartCoder@47d965c971be15eebc5bd495c87efcfa34b2016a/llava/model/multimodal_encoder/builder.py": {}
+            "thunlp/ChartCoder@47d965c971be15eebc5bd495c87efcfa34b2016a/llava/model/language_model/llava_mistral.py": {}
           }
         }
       }
@@ -2359,11 +2335,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "fereenwong/cdViews@5b64ba3ea44e1253317466c90914efa8b442062a/llava/model/multimodal_encoder/hf_vision.py": {
-              "R26": [
-                "LLM call without model version pinning at line 34"
-              ]
-            }
+            "fereenwong/cdViews@5b64ba3ea44e1253317466c90914efa8b442062a/llava/model/multimodal_encoder/open_clip_encoder.py": {}
           }
         }
       }
@@ -2376,7 +2348,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "zaiquanyang/LLaVA_Next_STVG@d904f1a7e8e386694baa91698134fadc5f7b8f8c/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/openai.py": {}
+            "zaiquanyang/LLaVA_Next_STVG@d904f1a7e8e386694baa91698134fadc5f7b8f8c/llava/train/llama_flash_attn_monkey_patch.py": {}
           }
         }
       }
@@ -2389,7 +2361,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "NVIDIA-NeMo/Megatron-Bridge@c299283eca10d37e1081749a2f275c630dfc8101/examples/conversion/hf_megatron_roundtrip.py": {}
+            "NVIDIA-NeMo/Megatron-Bridge@c299283eca10d37e1081749a2f275c630dfc8101/tutorials/recipes/llama/00_quickstart_pretrain.py": {}
           }
         }
       }
@@ -2402,12 +2374,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "vllm-project/llm-compressor@3f25fd114448fe16853e49e407e51f28b254daa2/examples/awq/qwen3_moe_example.py": {
-              "R26": [
-                "LLM call without model version pinning at line 11",
-                "LLM call without model version pinning at line 12"
-              ]
-            }
+            "vllm-project/llm-compressor@3f25fd114448fe16853e49e407e51f28b254daa2/examples/quantization_w8a8_fp8/whisper_example.py": {}
           }
         }
       }
@@ -2420,7 +2387,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "trycua/cua@7404c13e7736c668170afce36a0c5ddff4f4c534/libs/python/agent/agent/tools/base.py": {}
+            "trycua/cua@7404c13e7736c668170afce36a0c5ddff4f4c534/libs/python/agent/agent/computers/cua.py": {}
           }
         }
       }
@@ -2433,9 +2400,9 @@
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/llm/modelopt/quantization/quantizer.py": {},
-            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/llm/recipes/llama3_8b_16k.py": {},
-            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/avlm/recipes/avlm_8b.py": {}
+            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/speechlm2/data/salm_dataset.py": {},
+            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/diffusion/encoders/conditioner.py": {},
+            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/llm/recipes/llama3_8b_16k.py": {}
           }
         }
       }
@@ -2448,10 +2415,10 @@
           "num_listed_files": 4,
           "num_analyzed_files": 4,
           "alerts": {
-            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/qwen/qwen1/qwen_7b/qwen_7b_qlora_arxiv_gentitle_e3.py": {},
-            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/llama/llama_7b/llama_7b_qlora_arxiv_gentitle_e3.py": {},
-            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/qwen/qwen1/qwen_72b/qwen_72b_qlora_alpaca_enzh_oasst1_e3.py": {},
-            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/llama/llama2_7b/llama2_7b_qlora_medical_e1.py": {}
+            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/llava/internlm_chat_7b_clip_vit_large_p14_336/pretrain/llava_internlm_chat_7b_clip_vit_large_p14_336_e1_gpu8_pretrain.py": {},
+            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/.dev_scripts/rl_config_factory.py": {},
+            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/mixtral/mixtral_8x7b_instruct/mixtral_8x7b_instruct_full_oasst1_e3.py": {},
+            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/minicpm/1_2b/minicpm_1b_full_alpaca_zh_e3.py": {}
           }
         }
       }
@@ -2464,7 +2431,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "modelscope/evalscope@1ab8fcaea0f6b6172610f8b9c4603f8d7905eb57/tests/cli/test_custom.py": {}
+            "modelscope/evalscope@1ab8fcaea0f6b6172610f8b9c4603f8d7905eb57/evalscope/metrics/metrics.py": {}
           }
         }
       }
@@ -2477,7 +2444,14 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "UKGovernmentBEIS/inspect_evals@80b12adcf8e9de124b5b4fb333bc92c0c074f796/tests/paperbench/test_sandbox.py": {}
+            "UKGovernmentBEIS/inspect_evals@80b12adcf8e9de124b5b4fb333bc92c0c074f796/src/inspect_evals/gdm_capabilities/self_reasoning/data/calculator_improvement/agent.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 8"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 8"
+              ]
+            }
           }
         }
       }
@@ -2490,7 +2464,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "NVIDIA-NeMo/RL@48dbb37970e4e5b50d5f6f684a1031d820350753/tests/unit/utils/test_logger.py": {}
+            "NVIDIA-NeMo/RL@48dbb37970e4e5b50d5f6f684a1031d820350753/nemo_rl/environments/math_environment.py": {}
           }
         }
       }
@@ -2503,8 +2477,24 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "stanford-crfm/helm@26b9af43b761fe73d571fc5b7fe04e80698c9179/src/helm/benchmark/metrics/code_metrics_helper.py": {},
-            "stanford-crfm/helm@26b9af43b761fe73d571fc5b7fe04e80698c9179/src/helm/benchmark/metrics/gpt4_audio_refusal_metrics.py": {}
+            "stanford-crfm/helm@26b9af43b761fe73d571fc5b7fe04e80698c9179/src/helm/clients/anthropic_client.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 97",
+                "LLM call without explicit temperature parameter at line 405"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 97",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 405"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 405"
+              ],
+              "R31": [
+                "Unbounded vision payloads at line 97",
+                "Unbounded vision payloads at line 405"
+              ]
+            },
+            "stanford-crfm/helm@26b9af43b761fe73d571fc5b7fe04e80698c9179/src/helm/benchmark/annotation/omni_math_annotator.py": {}
           }
         }
       }
@@ -2517,7 +2507,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "linagora/openrag@efa103ff60e9f554d4845c30acd29a18b1fc68d5/openrag/components/indexer/loaders/CustomDocLoader.py": {}
+            "linagora/openrag@efa103ff60e9f554d4845c30acd29a18b1fc68d5/openrag/components/indexer/loaders/serializer.py": {}
           }
         }
       }
@@ -2530,7 +2520,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "linkedin/Liger-Kernel@6059dfb2158cf3399b27f2b124939aac8e4fcd31/src/liger_kernel/ops/fused_add_rms_norm.py": {}
+            "linkedin/Liger-Kernel@6059dfb2158cf3399b27f2b124939aac8e4fcd31/benchmark/scripts/benchmark_tiled_mlp.py": {}
           }
         }
       }
@@ -2543,7 +2533,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "NVIDIA-AI-Blueprints/rag@42962afb228a788ce234ce63c04f754049e74310/src/nvidia_rag/rag_server/response_generator.py": {}
+            "NVIDIA-AI-Blueprints/rag@42962afb228a788ce234ce63c04f754049e74310/src/nvidia_rag/rag_server/query_decomposition.py": {}
           }
         }
       }
@@ -2556,7 +2546,12 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "markl-a/My-AI-Learning-Notes@a0991e3243be331c841590f7b0dfa32c3b8c8577/5.AI研究前沿_2024-2025/實戰項目/RAG-ChatBot/tests/test_rag_engine.py": {}
+            "markl-a/My-AI-Learning-Notes@a0991e3243be331c841590f7b0dfa32c3b8c8577/5.AI研究前沿_2024-2025/1.大型語言模型(LLM)/examples/01_llama31_complete.py": {
+              "R26": [
+                "LLM call without model version pinning at line 64",
+                "LLM call without model version pinning at line 67"
+              ]
+            }
           }
         }
       }
@@ -2569,8 +2564,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "kungfuai/CVlization@6c7e2824aa453250271d57563d8bfb32569e0960/examples/agentic/llamaindex/react_finance_query_agent/scripts/download_10k.py": {},
-            "kungfuai/CVlization@6c7e2824aa453250271d57563d8bfb32569e0960/examples/generative/video_generation/framepack/predict_f1.py": {}
+            "kungfuai/CVlization@6c7e2824aa453250271d57563d8bfb32569e0960/examples/generative/image_generation/dit/diffusion/__init__.py": {},
+            "kungfuai/CVlization@6c7e2824aa453250271d57563d8bfb32569e0960/examples/generative/image_generation/pixart/diffusion/model/timestep_sampler.py": {}
           }
         }
       }
@@ -2583,7 +2578,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "IntelLabs/blueglass@869a1f3d2b132b6a31f7b71032b31f11f396ebf5/blueglass/modeling/modelstore/llava/llava/model/multimodal_encoder/imagebind.py": {}
+            "IntelLabs/blueglass@869a1f3d2b132b6a31f7b71032b31f11f396ebf5/blueglass/modeling/modelstore/closed_source/__init__.py": {}
           }
         }
       }
@@ -2596,7 +2591,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "sii-research/siiRL@297950ae5429ff6b35e7ae38b2c608bcf0cfe18d/siirl/engine/megatron_workers.py": {}
+            "sii-research/siiRL@297950ae5429ff6b35e7ae38b2c608bcf0cfe18d/siirl/models/model_utils/visual.py": {}
           }
         }
       }
@@ -2609,14 +2604,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Marker-Inc-Korea/KO-VLM-Benchmark@1c786dca65dd02698f0c4bde80513efce229d8df/ko_vlm_benchmark/nano_banana_pipeline/chains/multi_hop_question.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 74"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 74"
-              ]
-            }
+            "Marker-Inc-Korea/KO-VLM-Benchmark@1c786dca65dd02698f0c4bde80513efce229d8df/tests/ko_vlm_benchmark/nano_banana_pipeline/test_pipeline.py": {}
           }
         }
       }
@@ -2629,24 +2617,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "allenai/olmocr@b274e893d7d80f7063b52e1de357170b4beb7262/olmocr/bench/miners/check_old_scans_math.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 38",
-                "LLM call without explicit temperature parameter at line 59"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 59"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 59"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 59"
-              ],
-              "R31": [
-                "Unbounded vision payloads at line 59"
-              ]
-            }
+            "allenai/olmocr@b274e893d7d80f7063b52e1de357170b4beb7262/scripts/data/buildsilver.py": {}
           }
         }
       }
@@ -2659,14 +2630,10 @@
           "num_listed_files": 4,
           "num_analyzed_files": 4,
           "alerts": {
-            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/utils/constants.py": {},
-            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/prismatic/models/vlas/openvla.py": {},
-            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/llava/convert_llava_weights_to_hf.py": {
-              "R26": [
-                "LLM call without model version pinning at line 78"
-              ]
-            },
-            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/trainer.py": {}
+            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/code_llama/__init__.py": {},
+            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/clip/image_processing_clip.py": {},
+            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/persimmon/convert_persimmon_weights_to_hf.py": {},
+            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/imagegpt/convert_imagegpt_original_tf2_to_pytorch.py": {}
           }
         }
       }
@@ -2679,7 +2646,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "langfengQ/verl-agent@373e6b221cd88db45a1d303da5dd7871630efe09/verl/third_party/vllm/vllm_v_0_5_4/arg_utils.py": {}
+            "langfengQ/verl-agent@373e6b221cd88db45a1d303da5dd7871630efe09/verl/workers/rollout/schemas.py": {}
           }
         }
       }
@@ -2692,7 +2659,14 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "Fsoft-AIC/LibMoE@52fa34981f008b26aee89eff1be608b676b63b21/vision_language_model/evaluate/lmms_eval/models/llava.py": {}
+            "Fsoft-AIC/LibMoE@52fa34981f008b26aee89eff1be608b676b63b21/vision_language_model/evaluate/lmms_eval/models/claude.py": {
+              "R29": [
+                "LLM pipeline call without structured output at line 237"
+              ],
+              "R32": [
+                "Overspecified sampling at line 237"
+              ]
+            }
           }
         }
       }
@@ -2705,12 +2679,15 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "lee101/stock-prediction@a941985bcede694bfacf9651e80da9e92179675b/test_gemini_vs_chronos2.py": {
+            "lee101/stock-prediction@a941985bcede694bfacf9651e80da9e92179675b/stockagentopus/opus_wrapper.py": {
               "R25": [
-                "LLM call without explicit temperature parameter at line 111"
+                "LLM call without explicit temperature parameter at line 215"
               ],
               "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 111"
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 215"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 215"
               ]
             }
           }
@@ -2725,7 +2702,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "AdaptVision/AdaptVision@e8b1fa3df4a71892b8e2daed292ef10fc60c455a/verl/third_party/vllm/vllm_v_0_3_1/tokenizer.py": {}
+            "AdaptVision/AdaptVision@e8b1fa3df4a71892b8e2daed292ef10fc60c455a/verl/third_party/vllm/vllm_v_0_4_2/llm.py": {}
           }
         }
       }
@@ -2738,7 +2715,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "NVIDIA-NeMo/Automodel@4e9d32b599ab84501bb8964e601285e4adc3dc70/nemo_automodel/components/models/biencoder/__init__.py": {}
+            "NVIDIA-NeMo/Automodel@4e9d32b599ab84501bb8964e601285e4adc3dc70/nemo_automodel/components/models/llama/model.py": {}
           }
         }
       }
@@ -2751,18 +2728,22 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "shell-nlp/gpt_server@8fad613be165f5a79d64ac93ceb0d4a8b4cac990/gpt_server/serving/chat_ui.py": {
+            "shell-nlp/gpt_server@8fad613be165f5a79d64ac93ceb0d4a8b4cac990/tests/test_openai_chat.py": {
               "R25": [
-                "LLM call without explicit temperature parameter at line 31"
+                "LLM call without explicit temperature parameter at line 4",
+                "LLM call without explicit temperature parameter at line 7"
+              ],
+              "R26": [
+                "LLM call without model version pinning at line 7"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 7"
               ],
               "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 72"
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 7"
               ],
               "R29": [
-                "LLM pipeline call without structured output at line 72"
-              ],
-              "R32": [
-                "Overspecified sampling at line 72"
+                "LLM pipeline call without structured output at line 7"
               ]
             }
           }
@@ -2777,7 +2758,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "modelscope/modelscope@a7f50d45164cfaa3f8797d05a63a039eb7163fd0/modelscope/models/multi_modal/diffusion/structbert.py": {}
+            "modelscope/modelscope@a7f50d45164cfaa3f8797d05a63a039eb7163fd0/modelscope/models/cv/image_view_transform/ldm/openaimodel.py": {}
           }
         }
       }
@@ -2790,7 +2771,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "vllm-project/speculators@b3f6b104e828178bb537d4ac80f01f49dbfc8bc4/src/speculators/__init__.py": {}
+            "vllm-project/speculators@b3f6b104e828178bb537d4ac80f01f49dbfc8bc4/src/speculators/models/eagle3/model_definitions.py": {}
           }
         }
       }
@@ -2803,8 +2784,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "lpalbou/AbstractCore@5bfd9a86fcf91751182471a8de9f1d1f1a6a8189/examples/tooltag_cli_demo.py": {},
-            "lpalbou/AbstractCore@5bfd9a86fcf91751182471a8de9f1d1f1a6a8189/abstractcore/providers/mlx_provider.py": {}
+            "lpalbou/AbstractCore@5bfd9a86fcf91751182471a8de9f1d1f1a6a8189/abstractcore/providers/lmstudio_provider.py": {},
+            "lpalbou/AbstractCore@5bfd9a86fcf91751182471a8de9f1d1f1a6a8189/tests/media_handling/test_cli_media.py": {}
           }
         }
       }
@@ -2817,7 +2798,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "NVIDIA-NeMo/Export-Deploy@c7e272779137adc2ecd7e5d29d85b00c723fcd35/nemo_deploy/llm/__init__.py": {}
+            "NVIDIA-NeMo/Export-Deploy@c7e272779137adc2ecd7e5d29d85b00c723fcd35/tests/functional_tests/tests_inframework/test_export_deploy_query_pytriton.py": {}
           }
         }
       }
@@ -2830,7 +2811,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "YWenxi/think-with-images-through-self-calling@fd872eebca5157f570de062c23a5336baf3de8ad/recipe/sppo/main_sppo.py": {}
+            "YWenxi/think-with-images-through-self-calling@fd872eebca5157f570de062c23a5336baf3de8ad/verl/tools/image_zoom_in_tool.py": {}
           }
         }
       }
@@ -2843,11 +2824,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "SYuan03/MM-IFEngine@af6430c6e0bd9ad81cceeaf4062257d8854e9626/tests/data/processor/test_unsupervised.py": {
-              "R26": [
-                "LLM call without model version pinning at line 51"
-              ]
-            }
+            "SYuan03/MM-IFEngine@af6430c6e0bd9ad81cceeaf4062257d8854e9626/tests/data/test_formatter.py": {}
           }
         }
       }
@@ -2860,7 +2837,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "xhguo7/PAPO-Eval@b57d909f49f707f8913cf5064b9da2b50575970d/src/llamafactory/model/model_utils/longlora.py": {}
+            "xhguo7/PAPO-Eval@b57d909f49f707f8913cf5064b9da2b50575970d/evaluation/mmlu/mmlu.py": {}
           }
         }
       }
@@ -2873,7 +2850,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "InternLM/ARM-Thinker@b70dfe967941450d88f8a8ce526f85af87e2c624/verl/models/qwen2/megatron/layers/parallel_linear.py": {}
+            "InternLM/ARM-Thinker@b70dfe967941450d88f8a8ce526f85af87e2c624/verl/models/transformers/llama.py": {}
           }
         }
       }
@@ -2886,13 +2863,8 @@
           "num_listed_files": 2,
           "num_analyzed_files": 2,
           "alerts": {
-            "PaddlePaddle/FastDeploy@d6574556169e4da8a55cc3d44d505cf7a8c3f79c/fastdeploy/benchmarks/lib/endpoint_request_func.py": {},
-            "PaddlePaddle/FastDeploy@d6574556169e4da8a55cc3d44d505cf7a8c3f79c/fastdeploy/input/text_processor.py": {
-              "R26": [
-                "LLM call without model version pinning at line 652",
-                "LLM call without model version pinning at line 656"
-              ]
-            }
+            "PaddlePaddle/FastDeploy@d6574556169e4da8a55cc3d44d505cf7a8c3f79c/tests/e2e/test_ernie_03b_pd_router_v1_ipc.py": {},
+            "PaddlePaddle/FastDeploy@d6574556169e4da8a55cc3d44d505cf7a8c3f79c/fastdeploy/entrypoints/engine_client.py": {}
           }
         }
       }
@@ -2905,7 +2877,20 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "rllm-org/rllm@1a5bcdf57c79f2ac67dc5d9f2397d0be94169ede/examples/strands/eval/gaia/run_gaia_eval.py": {}
+            "rllm-org/rllm@1a5bcdf57c79f2ac67dc5d9f2397d0be94169ede/rllm/engine/rollout/fireworks_engine.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 83"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 83"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 83"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 83"
+              ]
+            }
           }
         }
       }
@@ -2918,7 +2903,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "keta1930/mcp-agent-graph@1e0f983701e4a11d1e7d89983d0ea025ef45ca80/mag/app/services/system_tools/task_manager/register_task.py": {}
+            "keta1930/mcp-agent-graph@1e0f983701e4a11d1e7d89983d0ea025ef45ca80/mag/app/api/conversation_routes.py": {}
           }
         }
       }
@@ -2931,7 +2916,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "OpenMind/OM1@2c2615b14d0ca05530e0ed50ca9ffd7a3aa6442a/src/llm/plugins/multi_llm.py": {}
+            "OpenMind/OM1@2c2615b14d0ca05530e0ed50ca9ffd7a3aa6442a/src/inputs/plugins/vlm_openai_rtsp.py": {}
           }
         }
       }
@@ -2944,7 +2929,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "EleutherAI/lm-evaluation-harness@69ecd0b929701d346c1119d5cd0563ade4ab3536/lm_eval/models/vllm_vlms.py": {}
+            "EleutherAI/lm-evaluation-harness@69ecd0b929701d346c1119d5cd0563ade4ab3536/tests/models/test_api.py": {}
           }
         }
       }
@@ -2957,7 +2942,11 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "alibaba/ROLL@c7e897d41cff9449088e8f8403d44cbc24fcf4ca/roll/third_party/vllm/vllm_0_10_0/v1/ray_distributed_executor.py": {}
+            "alibaba/ROLL@c7e897d41cff9449088e8f8403d44cbc24fcf4ca/tests/third_party/vllm/test_vllm_local_async.py": {
+              "R26": [
+                "LLM call without model version pinning at line 25"
+              ]
+            }
           }
         }
       }
@@ -2970,7 +2959,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "deepsense-ai/ragbits@c8487b2e01cd72966062b99a68007b0d9cc49fda/packages/ragbits-guardrails/tests/unit/test_openai_moderation.py": {}
+            "deepsense-ai/ragbits@c8487b2e01cd72966062b99a68007b0d9cc49fda/packages/ragbits-core/tests/unit/llms/test_litellm.py": {}
           }
         }
       }
@@ -2983,7 +2972,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "GetStream/Vision-Agents@b5649a8998622d01eeb0c351d680f550bdc450fe/plugins/gemini/vision_agents/plugins/gemini/__init__.py": {}
+            "GetStream/Vision-Agents@b5649a8998622d01eeb0c351d680f550bdc450fe/examples/02_golf_coach_example/golf_coach_example.py": {}
           }
         }
       }
@@ -2996,7 +2985,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "damianomarsili/VALOR@cf2442b4485eada8fdade3ebc14040e300317486/valor/reasoning_training/verl/verl/trainer/constants_ppo.py": {}
+            "damianomarsili/VALOR@cf2442b4485eada8fdade3ebc14040e300317486/valor/reasoning_training/verl/verl/utils/reward_score/prime_math/math_normalize.py": {}
           }
         }
       }
@@ -3009,9 +2998,9 @@
           "num_listed_files": 3,
           "num_analyzed_files": 3,
           "alerts": {
-            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/STRL/verl_lib/recipe/one_step_off_policy/vllm_sharding_manager.py": {},
-            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/STRL/verl_lib/verl/workers/rollout/vllm_rollout/vllm_async_server.py": {},
-            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/MTRL/verl/models/llama/megatron/layers/__init__.py": {}
+            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/MTRL/verl/utils/reward_score/prime_math/__init__.py": {},
+            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/MTRL/recipe/sppo/main_sppo.py": {},
+            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/STRL/verl_lib/verl/workers/rollout/vllm_rollout/__init__.py": {}
           }
         }
       }
@@ -3024,7 +3013,7 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "DataArcTech/RAG-ARC@f1f37bc149eb5ef6d10d13aae5a12c303fd17679/config/encapsulation/llm/chat/openai.py": {}
+            "DataArcTech/RAG-ARC@f1f37bc149eb5ef6d10d13aae5a12c303fd17679/config/core/file_management/extractor/graphextractor_config.py": {}
           }
         }
       }
@@ -3037,19 +3026,14 @@
           "num_listed_files": 1,
           "num_analyzed_files": 1,
           "alerts": {
-            "SearchSavior/OpenArc@14dec900ac34ec72d75249c04820eefe223f5ff6/src/tests/old_tests_from_dev/openai_llm_tool.py": {
+            "SearchSavior/OpenArc@14dec900ac34ec72d75249c04820eefe223f5ff6/src/tests/old_tests_from_dev/completions_test.py": {
               "R25": [
-                "LLM call without explicit temperature parameter at line 11",
-                "LLM call without explicit temperature parameter at line 63",
-                "LLM call without explicit temperature parameter at line 109"
+                "LLM call without explicit temperature parameter at line 9",
+                "LLM call without explicit temperature parameter at line 38",
+                "LLM call without explicit temperature parameter at line 77"
               ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 63",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 109"
-              ],
-              "R29": [
-                "LLM pipeline call without structured output at line 63",
-                "LLM pipeline call without structured output at line 109"
+              "R32": [
+                "Overspecified sampling at line 87"
               ]
             }
           }
@@ -3064,11 +3048,38 @@
           "num_listed_files": 5,
           "num_analyzed_files": 5,
           "alerts": {
-            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tensorrt_llm/_torch/models/checkpoints/__init__.py": {},
-            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/unittest/_torch/modeling/test_modeling_llava_next.py": {},
-            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tensorrt_llm/llmapi/llm_args.py": {},
-            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tensorrt_llm/serve/openai_server.py": {},
-            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/unittest/_torch/auto_deploy/unit/singlegpu/models/test_llama4_vlm_patch.py": {}
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tensorrt_llm/_torch/models/modeling_llava_next.py": {
+              "R26": [
+                "LLM call without model version pinning at line 54"
+              ]
+            },
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/unittest/llmapi/apps/_test_openai_cache_salt.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 225"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 131",
+                "LLM pipeline call without structured output at line 148",
+                "LLM pipeline call without structured output at line 167",
+                "LLM pipeline call without structured output at line 186",
+                "LLM pipeline call without structured output at line 208",
+                "LLM pipeline call without structured output at line 225"
+              ]
+            },
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/unittest/_torch/sampler/test_beam_search.py": {},
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/unittest/llmapi/test_llm_pytorch.py": {
+              "R26": [
+                "LLM call without model version pinning at line 250",
+                "LLM call without model version pinning at line 560",
+                "LLM call without model version pinning at line 613"
+              ]
+            },
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/integration/defs/test_e2e.py": {
+              "R26": [
+                "LLM call without model version pinning at line 414",
+                "LLM call without model version pinning at line 3051"
+              ]
+            }
           }
         }
       }
