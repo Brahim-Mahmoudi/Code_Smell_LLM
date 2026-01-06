@@ -1,4 +1,4 @@
-rule R30 "No Structured Output in Pipeline":
+rule R30 "Reasoning Effort Not Explicitly Set":
     condition:
         exists node in AST: (
             isReasoningModelCall(node) and hasNoReasoningEffort(node)

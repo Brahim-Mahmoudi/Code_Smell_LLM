@@ -2353,9 +2353,10 @@ def isReasoningModelCall(node: ast.AST) -> bool:
     # Modèles de raisonnement connus
     reasoning_model_patterns = [
         r"^o1(-preview|-mini)?$",           # OpenAI o1, o1-preview, o1-mini
-        r"^gpt-5",                          # OpenAI GPT-5.x
-        r"^claude-3-7-sonnet",              # Claude 3.7 Sonnet (thinking)
-        r"^gemini-2\.0-flash-thinking",     # Gemini 2.0 thinking
+        r"^o3(-mini)?$",                     # OpenAI o3, o3-mini
+        r"^gpt-5(\.\d+)?(-pro|-mini|-nano)?(-\d{4}-\d{2}-\d{2}|\d{8})?$",  # OpenAI GPT-5.x pinned variants
+        r"^claude-3-7-sonnet.*$",             # Claude 3.7 Sonnet (thinking)
+        r"^gemini-2\.0-flash-thinking.*$",     # Gemini 2.0 thinking
     ]
 
     # Vérifie le paramètre 'model' pour OpenAI/Anthropic
@@ -3186,7 +3187,7 @@ def rule_R30(ast_node):
     import ast
     add_parent_info(ast_node)
     #set_deterministic_flag(ast_node)
-    # "No Structured Output in Pipeline"
+    # "Reasoning Effort Not Explicitly Set"
     variable_ops = gather_scale_sensitive_ops(ast_node)
     scaled_vars = gather_scaled_vars(ast_node)
     problems = {}

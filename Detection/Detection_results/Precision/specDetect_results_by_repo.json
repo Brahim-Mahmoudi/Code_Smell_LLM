@@ -1,0 +1,3088 @@
+{
+  "meta": {
+    "seed": 58,
+    "repo_sampling": "pps",
+    "target_repos": 692,
+    "population_N": 38981,
+    "target_n": 381,
+    "eligible_repos": 604,
+    "selected_repos": 186,
+    "total_selected_files": 381,
+    "skipped_missing_owner_repo": 0,
+    "skipped_empty_files": 0,
+    "analysis": {
+      "rules": [
+        "R25",
+        "R26",
+        "R27",
+        "R28",
+        "R29",
+        "R30",
+        "R31",
+        "R32",
+        "R33"
+      ],
+      "max_repos": 0
+    }
+  },
+  "repos": {
+    "1Panel-dev/MaxKB": {
+      "owner": "1Panel-dev",
+      "repo": "MaxKB",
+      "by_sha": {
+        "fe004c235c598c714506e8fa87c34e3e56e9c6d7": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "1Panel-dev/MaxKB@fe004c235c598c714506e8fa87c34e3e56e9c6d7/apps/models_provider/impl/tencent_model_provider/model/hunyuan.py": {},
+            "1Panel-dev/MaxKB@fe004c235c598c714506e8fa87c34e3e56e9c6d7/apps/models_provider/impl/anthropic_model_provider/model/llm.py": {}
+          }
+        }
+      }
+    },
+    "All-Hands-AI/OpenHands": {
+      "owner": "All-Hands-AI",
+      "repo": "OpenHands",
+      "by_sha": {
+        "6605070d05de407f184e6c3dd2bfc783846d679b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "All-Hands-AI/OpenHands@6605070d05de407f184e6c3dd2bfc783846d679b/evaluation/benchmarks/the_agent_company/scripts/summarise_results.py": {}
+          }
+        }
+      }
+    },
+    "567-labs/instructor": {
+      "owner": "567-labs",
+      "repo": "instructor",
+      "by_sha": {
+        "130c034c4b7ec9fe6b7d06ad836fa1318f78fd43": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/tests/llm/test_genai/test_format.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 23",
+                "LLM call without explicit temperature parameter at line 38",
+                "LLM call without explicit temperature parameter at line 62",
+                "LLM call without explicit temperature parameter at line 83",
+                "LLM call without explicit temperature parameter at line 108",
+                "LLM call without explicit temperature parameter at line 135",
+                "LLM call without explicit temperature parameter at line 163"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 23",
+                "LLM chat call without a system message at line 62",
+                "LLM chat call without a system message at line 83",
+                "LLM chat call without a system message at line 135",
+                "LLM chat call without a system message at line 163"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 23",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 38",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 62",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 83",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 108",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 135",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 163"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 23",
+                "LLM pipeline call without structured output at line 38",
+                "LLM pipeline call without structured output at line 62",
+                "LLM pipeline call without structured output at line 83",
+                "LLM pipeline call without structured output at line 108",
+                "LLM pipeline call without structured output at line 135",
+                "LLM pipeline call without structured output at line 163"
+              ]
+            },
+            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/instructor/validation/__init__.py": {},
+            "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/examples/logfire-fastapi/server.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 34",
+                "LLM call without explicit temperature parameter at line 67",
+                "LLM call without explicit temperature parameter at line 48"
+              ],
+              "R26": [
+                "LLM call without model version pinning at line 34",
+                "LLM call without model version pinning at line 67",
+                "LLM call without model version pinning at line 48"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 34",
+                "LLM chat call without a system message at line 67",
+                "LLM chat call without a system message at line 48"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 34",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 67",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 48"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 34",
+                "LLM pipeline call without structured output at line 67",
+                "LLM pipeline call without structured output at line 48"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Aider-AI/aider": {
+      "owner": "Aider-AI",
+      "repo": "aider",
+      "by_sha": {
+        "7301d4522dd41738a4a3488f51e051766391653b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Aider-AI/aider@7301d4522dd41738a4a3488f51e051766391653b/aider/coders/base_coder.py": {}
+          }
+        }
+      }
+    },
+    "BillSchumacher/Auto-GPT": {
+      "owner": "BillSchumacher",
+      "repo": "Auto-GPT",
+      "by_sha": {
+        "bdd07b18bea674cf756ebfb3a0a8915042d9126f": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "BillSchumacher/Auto-GPT@bdd07b18bea674cf756ebfb3a0a8915042d9126f/autogpt/models/base_open_ai_plugin.py": {}
+          }
+        }
+      }
+    },
+    "Azure-Samples/azure-search-openai-demo": {
+      "owner": "Azure-Samples",
+      "repo": "azure-search-openai-demo",
+      "by_sha": {
+        "a643667646156caf891803e40cd11ff7f9263c5e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Azure-Samples/azure-search-openai-demo@a643667646156caf891803e40cd11ff7f9263c5e/tests/test_agentic_retrieval.py": {}
+          }
+        }
+      }
+    },
+    "ATheorell/AutoGPTArenaHack": {
+      "owner": "ATheorell",
+      "repo": "AutoGPTArenaHack",
+      "by_sha": {
+        "1e4f2dc004b92b9f236543674f94fb9f0af9bb2e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ATheorell/AutoGPTArenaHack@1e4f2dc004b92b9f236543674f94fb9f0af9bb2e/autogpts/autogpt/autogpt/processing/text.py": {}
+          }
+        }
+      }
+    },
+    "FOLLGAD/Godmode-GPT": {
+      "owner": "FOLLGAD",
+      "repo": "Godmode-GPT",
+      "by_sha": {
+        "4e1dc7055580ab9bb3ce85114f9e17950ac96d7b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "FOLLGAD/Godmode-GPT@4e1dc7055580ab9bb3ce85114f9e17950ac96d7b/tests/integration/conftest.py": {}
+          }
+        }
+      }
+    },
+    "InternLM/lmdeploy": {
+      "owner": "InternLM",
+      "repo": "lmdeploy",
+      "by_sha": {
+        "d7c28d3dbfdf75c9fed0d00e9784774575e2156c": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "InternLM/lmdeploy@d7c28d3dbfdf75c9fed0d00e9784774575e2156c/lmdeploy/pytorch/models/gemma.py": {},
+            "InternLM/lmdeploy@d7c28d3dbfdf75c9fed0d00e9784774575e2156c/lmdeploy/pytorch/models/chatglm2.py": {}
+          }
+        }
+      }
+    },
+    "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database": {
+      "owner": "Devansh968",
+      "repo": "Chat-with-Pdf-using-Qdrant-vector-database",
+      "by_sha": {
+        "771195f36a735a6f4ac1b63edc04661c11a67f3f": {
+          "num_listed_files": 10,
+          "num_analyzed_files": 10,
+          "alerts": {
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/llms/anyscale.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/openai/api_resources/customer.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/smith/__init__.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/experimental/autonomous_agents/baby_agi/baby_agi.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/document_loaders/markdown.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/retrievers/kendra.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/callbacks/tracers/stdout.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/agents/agent_toolkits/azure_cognitive_services/toolkit.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/llms/promptlayer_openai.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f36a735a6f4ac1b63edc04661c11a67f3f/-/Lib/site-packages/langchain/chat_models/promptlayer_openai.py": {}
+          }
+        }
+      }
+    },
+    "Jerk400/h2ogpt-dev-local": {
+      "owner": "Jerk400",
+      "repo": "h2ogpt-dev-local",
+      "by_sha": {
+        "ba56d6471080ec447c7c5347a2d4765ae4dba5b4": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Jerk400/h2ogpt-dev-local@ba56d6471080ec447c7c5347a2d4765ae4dba5b4/tests/test_eval.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA/Megatron-LM": {
+      "owner": "NVIDIA",
+      "repo": "Megatron-LM",
+      "by_sha": {
+        "7f471d720bdce99f971248ff430ed281a9eb07c5": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA/Megatron-LM@7f471d720bdce99f971248ff430ed281a9eb07c5/megatron/training/tokenizer/gpt2_tokenization.py": {}
+          }
+        }
+      }
+    },
+    "QuivrHQ/quivr": {
+      "owner": "QuivrHQ",
+      "repo": "quivr",
+      "by_sha": {
+        "947a785415c6c35ab2ae8157222b4720b0710b4d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "QuivrHQ/quivr@947a785415c6c35ab2ae8157222b4720b0710b4d/core/quivr_core/files/file.py": {}
+          }
+        }
+      }
+    },
+    "RockChinQ/LangBot": {
+      "owner": "RockChinQ",
+      "repo": "LangBot",
+      "by_sha": {
+        "ce82f87e4312929047dde05010a506a01afa000e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "RockChinQ/LangBot@ce82f87e4312929047dde05010a506a01afa000e/src/langbot/pkg/provider/modelmgr/requesters/tokenponychatcmpl.py": {}
+          }
+        }
+      }
+    },
+    "PaddlePaddle/PaddleNLP": {
+      "owner": "PaddlePaddle",
+      "repo": "PaddleNLP",
+      "by_sha": {
+        "587a5cdf97138ac5032b4bb97cf7fc22a038aaf4": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/paddlenlp/transformers/qwen3_moe/configuration.py": {},
+            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/slm/model_zoo/gpt-3/ppfleetx/data/tokenizers/tokenization_utils_base.py": {},
+            "PaddlePaddle/PaddleNLP@587a5cdf97138ac5032b4bb97cf7fc22a038aaf4/paddlenlp/transformers/deepseek_v2/tokenizer_fast.py": {}
+          }
+        }
+      }
+    },
+    "BerriAI/litellm": {
+      "owner": "BerriAI",
+      "repo": "litellm",
+      "by_sha": {
+        "abf14663ed876f07556d798987047e02bd991e4f": {
+          "num_listed_files": 24,
+          "num_analyzed_files": 24,
+          "alerts": {
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/local_testing/test_router_max_parallel_requests.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/litellm_core_utils/prompt_templates/huggingface_template_handler.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/bedrock/image/amazon_nova_canvas_transformation.py": {
+              "MISSING_FILE": [
+                "Missing file: BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/bedrock/image/amazon_nova_canvas_transformation.py"
+              ]
+            },
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/jina_ai/embedding/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/code_coverage_tests/litellm_logging_code_coverage.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/integrations/azure_storage/azure_storage.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/vertex_ai/vertex_ai_partner_models/main.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/vector_store_files/main.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/guardrails_tests/conftest.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/triton/completion/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/proxy/management_endpoints/sso_helper_utils.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/azure/fine_tuning/handler.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/pass_through/guardrail_translation/__init__.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/proxy/batches_endpoints/endpoints.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/test_litellm/llms/azure/chat/test_azure_chat_gpt_transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/gemini/files/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/google_pse/search/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/heroku/chat/transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/proxy/guardrails/guardrail_hooks/model_armor/model_armor.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/google_genai/streaming_iterator.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/responses/mcp/mcp_streaming_iterator.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/proxy/pass_through_endpoints/success_handler.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/litellm/llms/bedrock/embed/amazon_titan_multimodal_transformation.py": {},
+            "BerriAI/litellm@abf14663ed876f07556d798987047e02bd991e4f/tests/test_litellm/llms/openai_like/test_json_providers.py": {}
+          }
+        }
+      }
+    },
+    "StanGirard/quivr": {
+      "owner": "StanGirard",
+      "repo": "quivr",
+      "by_sha": {
+        "b6f38f7aff5f026eb46a071362c9362e057119df": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "StanGirard/quivr@b6f38f7aff5f026eb46a071362c9362e057119df/backend/repository/chat/format_chat_history.py": {}
+          }
+        }
+      }
+    },
+    "TransformerOptimus/SuperAGI": {
+      "owner": "TransformerOptimus",
+      "repo": "SuperAGI",
+      "by_sha": {
+        "c3c1982e7bd6a11cfed53c5a193ea502f924b1b6": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "TransformerOptimus/SuperAGI@c3c1982e7bd6a11cfed53c5a193ea502f924b1b6/superagi/tools/image_generation/image_generation_toolkit.py": {}
+          }
+        }
+      }
+    },
+    "Upsonic/Upsonic": {
+      "owner": "Upsonic",
+      "repo": "Upsonic",
+      "by_sha": {
+        "49e25669faf8748ce8d7b31c56512ec074d0582d": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "Upsonic/Upsonic@49e25669faf8748ce8d7b31c56512ec074d0582d/src/upsonic/usage.py": {},
+            "Upsonic/Upsonic@49e25669faf8748ce8d7b31c56512ec074d0582d/tests/smoke_tests/test_knowledgebase_context.py": {}
+          }
+        }
+      }
+    },
+    "abetlen/llama-cpp-python": {
+      "owner": "abetlen",
+      "repo": "llama-cpp-python",
+      "by_sha": {
+        "c37132bac860fcc333255c36313f89c4f49d4c8d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "abetlen/llama-cpp-python@c37132bac860fcc333255c36313f89c4f49d4c8d/examples/high_level_api/high_level_api_infill.py": {}
+          }
+        }
+      }
+    },
+    "Shubhamsaboo/awesome-llm-apps": {
+      "owner": "Shubhamsaboo",
+      "repo": "awesome-llm-apps",
+      "by_sha": {
+        "a7f725854904f1655727138a429dd084f754d09f": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "Shubhamsaboo/awesome-llm-apps@a7f725854904f1655727138a429dd084f754d09f/advanced_ai_agents/single_agent_apps/ai_personal_finance_agent/finance_agent.py": {},
+            "Shubhamsaboo/awesome-llm-apps@a7f725854904f1655727138a429dd084f754d09f/advanced_ai_agents/single_agent_apps/ai_customer_support_agent/customer_support_agent.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 36",
+                "LLM call without explicit temperature parameter at line 53",
+                "LLM call without explicit temperature parameter at line 96"
+              ],
+              "R26": [
+                "LLM call without model version pinning at line 53",
+                "LLM call without model version pinning at line 96"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 53",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 96"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 53",
+                "LLM pipeline call without structured output at line 96"
+              ]
+            },
+            "Shubhamsaboo/awesome-llm-apps@a7f725854904f1655727138a429dd084f754d09f/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/utils/load_api_keys.py": {}
+          }
+        }
+      }
+    },
+    "chidiwilliams/buzz": {
+      "owner": "chidiwilliams",
+      "repo": "buzz",
+      "by_sha": {
+        "de2a5b88ee8d52e9be7633e2881bb7cca450444b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "chidiwilliams/buzz@de2a5b88ee8d52e9be7633e2881bb7cca450444b/tests/transcriber/openai_whisper_api_file_transcriber_test.py": {}
+          }
+        }
+      }
+    },
+    "chatchat-space/Langchain-Chatchat": {
+      "owner": "chatchat-space",
+      "repo": "Langchain-Chatchat",
+      "by_sha": {
+        "bc7f01925fe49c622cf7d6e2540c03fd5a0679e1": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "chatchat-space/Langchain-Chatchat@bc7f01925fe49c622cf7d6e2540c03fd5a0679e1/chatchat-server/chatchat_server/document_loaders/mypptloader.py": {}
+          }
+        }
+      }
+    },
+    "cpacker/MemGPT": {
+      "owner": "cpacker",
+      "repo": "MemGPT",
+      "by_sha": {
+        "6e2c92e3abda617b9efc96c88b582195579717c8": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "cpacker/MemGPT@6e2c92e3abda617b9efc96c88b582195579717c8/memgpt/server/websocket_client.py": {}
+          }
+        }
+      }
+    },
+    "deepset-ai/haystack": {
+      "owner": "deepset-ai",
+      "repo": "haystack",
+      "by_sha": {
+        "8091034fb59351e2042b3b1c2a0b4d44eaf3ea1d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "deepset-ai/haystack@8091034fb59351e2042b3b1c2a0b4d44eaf3ea1d/haystack/components/generators/chat/hugging_face_api.py": {}
+          }
+        }
+      }
+    },
+    "eosphoros-ai/DB-GPT": {
+      "owner": "eosphoros-ai",
+      "repo": "DB-GPT",
+      "by_sha": {
+        "4b52cfa670fcbb170ea0348e187d4c26e28b0c2b": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "eosphoros-ai/DB-GPT@4b52cfa670fcbb170ea0348e187d4c26e28b0c2b/packages/dbgpt-ext/src/dbgpt_ext/rag/knowledge/txt.py": {},
+            "eosphoros-ai/DB-GPT@4b52cfa670fcbb170ea0348e187d4c26e28b0c2b/i18n/translate_util.py": {}
+          }
+        }
+      }
+    },
+    "goetzrobin/MemGPT": {
+      "owner": "goetzrobin",
+      "repo": "MemGPT",
+      "by_sha": {
+        "0e8918e79935d24210991d78da09bf0e4c796d2e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "goetzrobin/MemGPT@0e8918e79935d24210991d78da09bf0e4c796d2e/memgpt/local_llm/constants.py": {}
+          }
+        }
+      }
+    },
+    "h2oai/h2ogpt": {
+      "owner": "h2oai",
+      "repo": "h2ogpt",
+      "by_sha": {
+        "15f3a2d564541020f78cfc83bc90722dcda8a960": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "h2oai/h2ogpt@15f3a2d564541020f78cfc83bc90722dcda8a960/metrics/quip.py": {}
+          }
+        }
+      }
+    },
+    "fangyinc/DB-GPT": {
+      "owner": "fangyinc",
+      "repo": "DB-GPT",
+      "by_sha": {
+        "f317740d5557b56899d1a3e786ca7cc583fdd700": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "fangyinc/DB-GPT@f317740d5557b56899d1a3e786ca7cc583fdd700/dbgpt/util/global_helper.py": {
+              "R26": [
+                "LLM call without model version pinning at line 253"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "hiyouga/LLaMA-Factory": {
+      "owner": "hiyouga",
+      "repo": "LLaMA-Factory",
+      "by_sha": {
+        "8c74dca76a813129c175489c85bf50e2c614091f": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "hiyouga/LLaMA-Factory@8c74dca76a813129c175489c85bf50e2c614091f/tests/e2e/test_chat.py": {},
+            "hiyouga/LLaMA-Factory@8c74dca76a813129c175489c85bf50e2c614091f/src/llamafactory/model/model_utils/longlora.py": {}
+          }
+        }
+      }
+    },
+    "huggingface/peft": {
+      "owner": "huggingface",
+      "repo": "peft",
+      "by_sha": {
+        "261366de2e40cde64b702d6b9c527081ad850549": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "huggingface/peft@261366de2e40cde64b702d6b9c527081ad850549/method_comparison/MetaMathQA/run.py": {}
+          }
+        }
+      }
+    },
+    "huggingface/trl": {
+      "owner": "huggingface",
+      "repo": "trl",
+      "by_sha": {
+        "1dc8bbca025ede5d964f6080eef5eea74819cbfb": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "huggingface/trl@1dc8bbca025ede5d964f6080eef5eea74819cbfb/trl/extras/vllm_client.py": {
+              "R26": [
+                "LLM call without model version pinning at line 529"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intel/ipex-llm": {
+      "owner": "intel",
+      "repo": "ipex-llm",
+      "by_sha": {
+        "197f6531bfbe844f53393cb6c8a743251d1ea4b3": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/src/ipex_llm/transformers/npu_models/xlm_mp.py": {},
+            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/example/GPU/Lightweight-Serving/lightweight_serving.py": {
+              "R26": [
+                "LLM call without model version pinning at line 46"
+              ]
+            },
+            "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/src/ipex_llm/transformers/npu_pipeline_model/convert_pipeline.py": {}
+          }
+        }
+      }
+    },
+    "huggingface/transformers": {
+      "owner": "huggingface",
+      "repo": "transformers",
+      "by_sha": {
+        "b62e5b3e4060c07b0e595f670135d85bb51673fe": {
+          "num_listed_files": 8,
+          "num_analyzed_files": 8,
+          "alerts": {
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/csm/modular_csm.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/aimv2/modular_aimv2.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/cwm/configuration_cwm.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/image_processing_base.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/tests/models/aria/test_modeling_aria.py": {
+              "R26": [
+                "LLM call without model version pinning at line 489",
+                "LLM call without model version pinning at line 494"
+              ]
+            },
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/hunyuan_v1_dense/modular_hunyuan_v1_dense.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/convert_slow_tokenizer.py": {},
+            "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/llama4/image_processing_llama4_fast.py": {}
+          }
+        }
+      }
+    },
+    "hzg0601/langchain-ChatGLM-annotation": {
+      "owner": "hzg0601",
+      "repo": "langchain-ChatGLM-annotation",
+      "by_sha": {
+        "da8085ba5fcb89a2e665cd3fde28cdafa38b9c29": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "hzg0601/langchain-ChatGLM-annotation@da8085ba5fcb89a2e665cd3fde28cdafa38b9c29/chains/dialogue_answering/__main__.py": {}
+          }
+        }
+      }
+    },
+    "comet-ml/opik": {
+      "owner": "comet-ml",
+      "repo": "opik",
+      "by_sha": {
+        "76eadf798df8dbe37170cfc32ee10b1654f4ccae": {
+          "num_listed_files": 4,
+          "num_analyzed_files": 4,
+          "alerts": {
+            "comet-ml/opik@76eadf798df8dbe37170cfc32ee10b1654f4ccae/apps/opik-frontend/src/components/pages-shared/onboarding/FrameworkIntegrations/integration-scripts/OpenAIAgents.py": {},
+            "comet-ml/opik@76eadf798df8dbe37170cfc32ee10b1654f4ccae/sdks/opik_optimizer/tests/e2e/benchmarks/test_benchmark_fewshot_live.py": {},
+            "comet-ml/opik@76eadf798df8dbe37170cfc32ee10b1654f4ccae/sdks/python/tests/library_integration/adk/test_adk_sync.py": {},
+            "comet-ml/opik@76eadf798df8dbe37170cfc32ee10b1654f4ccae/sdks/opik_optimizer/benchmarks/core/benchmark_config.py": {}
+          }
+        }
+      }
+    },
+    "khoj-ai/khoj": {
+      "owner": "khoj-ai",
+      "repo": "khoj",
+      "by_sha": {
+        "f4c519a9d00fcedfc8ab06e4f48307acc7555d39": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "khoj-ai/khoj@f4c519a9d00fcedfc8ab06e4f48307acc7555d39/src/khoj/database/migrations/0038_merge_20240425_0857.py": {}
+          }
+        }
+      }
+    },
+    "modelscope/ms-swift": {
+      "owner": "modelscope",
+      "repo": "ms-swift",
+      "by_sha": {
+        "97b7291da3662577bc47652ea8e6f218e5d9e3ab": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "modelscope/ms-swift@97b7291da3662577bc47652ea8e6f218e5d9e3ab/examples/eval/eval_url/demo.py": {},
+            "modelscope/ms-swift@97b7291da3662577bc47652ea8e6f218e5d9e3ab/swift/ui/llm_eval/eval.py": {}
+          }
+        }
+      }
+    },
+    "meta-llama/llama-stack": {
+      "owner": "meta-llama",
+      "repo": "llama-stack",
+      "by_sha": {
+        "b6043bd53b377efae4607fe4c5e1ec0e67e45573": {
+          "num_listed_files": 6,
+          "num_analyzed_files": 6,
+          "alerts": {
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/src/llama_stack/core/routing_tables/benchmarks.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/src/llama_stack/providers/remote/inference/tgi/config.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/tests/unit/providers/utils/memory/test_vector_store.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/src/llama_stack/providers/utils/memory/file_utils.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/src/llama_stack/providers/remote/vector_io/qdrant/qdrant.py": {},
+            "meta-llama/llama-stack@b6043bd53b377efae4607fe4c5e1ec0e67e45573/tests/unit/utils/inference/test_inference_store.py": {}
+          }
+        }
+      }
+    },
+    "openai/openai-agents-python": {
+      "owner": "openai",
+      "repo": "openai-agents-python",
+      "by_sha": {
+        "21b6a13830f5dd7706a4946437b5f6c6b16b0cb2": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "openai/openai-agents-python@21b6a13830f5dd7706a4946437b5f6c6b16b0cb2/examples/financial_research_agent/manager.py": {},
+            "openai/openai-agents-python@21b6a13830f5dd7706a4946437b5f6c6b16b0cb2/src/agents/tracing/__init__.py": {}
+          }
+        }
+      }
+    },
+    "openai/openai-python": {
+      "owner": "openai",
+      "repo": "openai-python",
+      "by_sha": {
+        "d3e632171c7842abf97b26379f564531d80ad096": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "openai/openai-python@d3e632171c7842abf97b26379f564531d80ad096/src/openai/_files.py": {},
+            "openai/openai-python@d3e632171c7842abf97b26379f564531d80ad096/src/openai/resources/beta/chatkit/chatkit.py": {},
+            "openai/openai-python@d3e632171c7842abf97b26379f564531d80ad096/src/openai/resources/beta/threads/threads.py": {}
+          }
+        }
+      }
+    },
+    "oumi-ai/oumi": {
+      "owner": "oumi-ai",
+      "repo": "oumi",
+      "by_sha": {
+        "9094a4c940dbad24aff1fa1a486db6608234b42c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "oumi-ai/oumi@9094a4c940dbad24aff1fa1a486db6608234b42c/src/oumi/core/configs/params/grpo_params.py": {}
+          }
+        }
+      }
+    },
+    "sgl-project/sglang": {
+      "owner": "sgl-project",
+      "repo": "sglang",
+      "by_sha": {
+        "41bd76e18b08c06411ec451be51bf73b18b396f2": {
+          "num_listed_files": 6,
+          "num_analyzed_files": 6,
+          "alerts": {
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/python/sglang/srt/function_call/base_format_detector.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/python/sglang/srt/multimodal/processors/mlama.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/sgl-kernel/benchmark/bench_fp8_gemm.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/python/sglang/multimodal_gen/runtime/distributed/utils.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/test/nightly/ascend/llm_models/test_ascend_llama_2_7b.py": {},
+            "sgl-project/sglang@41bd76e18b08c06411ec451be51bf73b18b396f2/python/sglang/srt/compilation/compilation_counter.py": {}
+          }
+        }
+      }
+    },
+    "unslothai/unsloth": {
+      "owner": "unslothai",
+      "repo": "unsloth",
+      "by_sha": {
+        "d5b61a6bc6d546ca6afa9043f9c4b15713ecac62": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "unslothai/unsloth@d5b61a6bc6d546ca6afa9043f9c4b15713ecac62/tests/saving/text_to_speech_models/test_lasa.py": {}
+          }
+        }
+      }
+    },
+    "vllm-project/vllm": {
+      "owner": "vllm-project",
+      "repo": "vllm",
+      "by_sha": {
+        "62be3670cb97e7196c30be26fe347d12d183429c": {
+          "num_listed_files": 22,
+          "num_analyzed_files": 22,
+          "alerts": {
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/v1/entrypoints/conftest.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/offline_inference/kv_load_failure_recovery/prefill_example.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/pooling/embed/openai_embedding_client.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 17"
+              ]
+            },
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/models/language/pooling/test_truncation_control.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/compile/test_fusion_attn.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/layers/quantization/utils/marlin_utils_test_24.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/transformers/causal.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/aya_vision.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/v1/worker/gpu/spec_decode/eagle_cudagraph.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/entrypoints/openai/tool_parsers/test_olmo3_tool_parser.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/layers/rotary_embedding/xdrope.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/compile/fullgraph/test_simple.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/mimo_mtp.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/mixtral.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/transformers_utils/processors/ovis.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/transformers/__init__.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/entrypoints/openai/test_serving_responses.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/layers/quantization/compressed_tensors/utils.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/kernels/quantization/test_machete_mm.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/v1/attention/test_sparse_mla_backends.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/models/dots1.py": {},
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/lora/test_default_mm_loras.py": {}
+          }
+        }
+      }
+    },
+    "xtekky/gpt4free": {
+      "owner": "xtekky",
+      "repo": "gpt4free",
+      "by_sha": {
+        "807b7c8b06eddea24239a21d14bff04d21960d11": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "xtekky/gpt4free@807b7c8b06eddea24239a21d14bff04d21960d11/g4f/providers/any_provider.py": {},
+            "xtekky/gpt4free@807b7c8b06eddea24239a21d14bff04d21960d11/g4f/Provider/EasyChat.py": {}
+          }
+        }
+      }
+    },
+    "uukuguy/DB-GPT-Lite": {
+      "owner": "uukuguy",
+      "repo": "DB-GPT-Lite",
+      "by_sha": {
+        "d857cb71f2c19e8535d0f5e9692e15c4e4dd100d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "uukuguy/DB-GPT-Lite@d857cb71f2c19e8535d0f5e9692e15c4e4dd100d/dbgpt/model/adapter/vllm_adapter.py": {}
+          }
+        }
+      }
+    },
+    "yujiosaka/ChatIQ": {
+      "owner": "yujiosaka",
+      "repo": "ChatIQ",
+      "by_sha": {
+        "def21481b0c132173b51d1d7a314b103db324ca2": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "yujiosaka/ChatIQ@def21481b0c132173b51d1d7a314b103db324ca2/tests/handlers/test_app_home_opened.py": {}
+          }
+        }
+      }
+    },
+    "xorbitsai/inference": {
+      "owner": "xorbitsai",
+      "repo": "inference",
+      "by_sha": {
+        "4057395f4856ef46a65b33cc42cdd3ad19583ed0": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "xorbitsai/inference@4057395f4856ef46a65b33cc42cdd3ad19583ed0/xinference/model/audio/tests/test_chattts.py": {},
+            "xorbitsai/inference@4057395f4856ef46a65b33cc42cdd3ad19583ed0/xinference/client/common.py": {}
+          }
+        }
+      }
+    },
+    "zilliztech/GPTCache": {
+      "owner": "zilliztech",
+      "repo": "GPTCache",
+      "by_sha": {
+        "c59fb3a6152a4458b2a070ca183b61c4b614095f": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "zilliztech/GPTCache@c59fb3a6152a4458b2a070ca183b61c4b614095f/examples/processor/temperature_example.py": {
+              "R26": [
+                "LLM call without model version pinning at line 33"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 33"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 33"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 33"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "run-llama/llama_index": {
+      "owner": "run-llama",
+      "repo": "llama_index",
+      "by_sha": {
+        "64782258f4ebdba8bebe53ca66de276ab1139758": {
+          "num_listed_files": 34,
+          "num_analyzed_files": 34,
+          "alerts": {
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/storage/chat_store/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-s3/tests/test_readers_s3.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/program/llama-index-program-evaporate/llama_index/program/evaporate/prompts.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/tools/llama-index-tools-metaphor/tests/test_tools_metaphor.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/embeddings/llama-index-embeddings-upstage/llama_index/embeddings/upstage/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-konko/llama_index/llms/konko/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-utils/llama-index-utils-qianfan/llama_index/utils/qianfan/apis.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/storage/chat_store/llama-index-storage-chat-store-postgres/tests/test_chat_store_postgres_chat_store.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-hwp/llama_index/readers/hwp/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/instrumentation/events/exception.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/postprocessor/llama-index-postprocessor-rankgpt-rerank/llama_index/postprocessor/rankgpt_rerank/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/retrievers/llama-index-retrievers-vertexai-search/llama_index/retrievers/vertexai_search/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/indices/query/schema.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/tests/tools/tool_spec/test_base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-deepinfra/llama_index/llms/deepinfra/constants.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/tools/tool_spec/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-wordpress/llama_index/readers/wordpress/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-ipex-llm/llama_index/llms/ipex_llm/base.py": {
+              "R26": [
+                "LLM call without model version pinning at line 231"
+              ]
+            },
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/vector_stores/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-dad-jokes/tests/test_readers_dad_jokes.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/data_structs/data_structs.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-file/tests/test_rtf.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/tools/llama-index-tools-jira-issue/tests/test_tools_jira_issue.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/indices/property_graph/sub_retrievers/llm_synonym.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/vector_stores/llama-index-vector-stores-neptune/llama_index/vector_stores/neptune/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/storage/index_store/llama-index-storage-index-store-mongodb/llama_index/storage/index_store/mongodb/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/embeddings/llama-index-embeddings-gaudi/llama_index/embeddings/gaudi/base.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-oxylabs/llama_index/readers/oxylabs/amazon_sellers.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-ai21/llama_index/llms/ai21/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/selectors/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/node_parser/llama-index-node-parser-alibabacloud-aisearch/llama_index/node_parser/alibabacloud_aisearch/__init__.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-zhipuai/llama_index/llms/zhipuai/base.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 245",
+                "LLM call without explicit temperature parameter at line 307",
+                "LLM call without explicit temperature parameter at line 344"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 245",
+                "LLM pipeline call without structured output at line 307",
+                "LLM pipeline call without structured output at line 344"
+              ]
+            },
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/tests/indices/document_summary/test_retrievers.py": {},
+            "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/extractors/llama-index-extractors-entity/llama_index/extractors/entity/base.py": {}
+          }
+        }
+      }
+    },
+    "confident-ai/deepeval": {
+      "owner": "confident-ai",
+      "repo": "deepeval",
+      "by_sha": {
+        "847e12c6f59aaf4b1ed5d908af9b7da7e1232263": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/deepeval/models/llms/gemini_model.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 237",
+                "LLM call without explicit temperature parameter at line 240",
+                "LLM call without explicit temperature parameter at line 253",
+                "LLM call without explicit temperature parameter at line 281",
+                "LLM call without explicit temperature parameter at line 284",
+                "LLM call without explicit temperature parameter at line 297"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 237",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 240",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 253",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 281",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 284",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 297"
+              ]
+            },
+            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/deepeval/models/retry_policy.py": {},
+            "confident-ai/deepeval@847e12c6f59aaf4b1ed5d908af9b7da7e1232263/deepeval/openai/utils.py": {}
+          }
+        }
+      }
+    },
+    "ai-dynamo/dynamo": {
+      "owner": "ai-dynamo",
+      "repo": "dynamo",
+      "by_sha": {
+        "aaed4f3b873aee186dfa176709b850a1234d32b4": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "ai-dynamo/dynamo@aaed4f3b873aee186dfa176709b850a1234d32b4/lib/bindings/kvbm/python/kvbm/vllm_integration/kv_cache_manager.py": {},
+            "ai-dynamo/dynamo@aaed4f3b873aee186dfa176709b850a1234d32b4/tests/fault_tolerance/deploy/parse_results.py": {}
+          }
+        }
+      }
+    },
+    "Lightning-AI/litgpt": {
+      "owner": "Lightning-AI",
+      "repo": "litgpt",
+      "by_sha": {
+        "df94ee2cae47d8d2fb20815c175e98fd1f64a27a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Lightning-AI/litgpt@df94ee2cae47d8d2fb20815c175e98fd1f64a27a/litgpt/prompts.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA/Model-Optimizer": {
+      "owner": "NVIDIA",
+      "repo": "Model-Optimizer",
+      "by_sha": {
+        "b286165362317940fb11bef02e1cad183ad22acb": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA/Model-Optimizer@b286165362317940fb11bef02e1cad183ad22acb/modelopt/torch/export/plugins/mcore_custom.py": {}
+          }
+        }
+      }
+    },
+    "unslothai/notebooks": {
+      "owner": "unslothai",
+      "repo": "notebooks",
+      "by_sha": {
+        "b9224375ef697bdb67444f6b31a0859a6dcdd34e": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "unslothai/notebooks@b9224375ef697bdb67444f6b31a0859a6dcdd34e/python_scripts/HuggingFace Course-Qwen2_5_7B_VL_GRPO.py": {},
+            "unslothai/notebooks@b9224375ef697bdb67444f6b31a0859a6dcdd34e/python_scripts/Qwen3_(14B)-Reasoning-Conversational.py": {}
+          }
+        }
+      }
+    },
+    "volcengine/verl": {
+      "owner": "volcengine",
+      "repo": "verl",
+      "by_sha": {
+        "249c0831b793751f488d80bcfeafb8f7c544cd65": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "volcengine/verl@249c0831b793751f488d80bcfeafb8f7c544cd65/setup.py": {},
+            "volcengine/verl@249c0831b793751f488d80bcfeafb8f7c544cd65/verl/tools/geo3k_tool.py": {}
+          }
+        }
+      }
+    },
+    "intel/auto-round": {
+      "owner": "intel",
+      "repo": "auto-round",
+      "by_sha": {
+        "6723ef0aec7026c0ea38ce156aafbd25a9a0eadb": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "intel/auto-round@6723ef0aec7026c0ea38ce156aafbd25a9a0eadb/auto_round_extension/cuda/gptqmodel_marlin.py": {}
+          }
+        }
+      }
+    },
+    "epam/ai-dial-adapter-bedrock": {
+      "owner": "epam",
+      "repo": "ai-dial-adapter-bedrock",
+      "by_sha": {
+        "b110bd99865c13f30f3b2827325f3445bfacbda5": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "epam/ai-dial-adapter-bedrock@b110bd99865c13f30f3b2827325f3445bfacbda5/tests/utils/__init__.py": {}
+          }
+        }
+      }
+    },
+    "SkastVnT/AI-Assistant": {
+      "owner": "SkastVnT",
+      "repo": "AI-Assistant",
+      "by_sha": {
+        "49692e858f31fe68c385b8e9404c0e9657a2980e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "SkastVnT/AI-Assistant@49692e858f31fe68c385b8e9404c0e9657a2980e/services/mcp-server/examples.py": {}
+          }
+        }
+      }
+    },
+    "ModelCloud/GPTQModel": {
+      "owner": "ModelCloud",
+      "repo": "GPTQModel",
+      "by_sha": {
+        "5b568257e2a662ce396401a65dcad7dd4f26726f": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "ModelCloud/GPTQModel@5b568257e2a662ce396401a65dcad7dd4f26726f/tests/models/test_longllama.py": {},
+            "ModelCloud/GPTQModel@5b568257e2a662ce396401a65dcad7dd4f26726f/gptqmodel/models/definitions/decilm.py": {}
+          }
+        }
+      }
+    },
+    "flagos-ai/FlagScale": {
+      "owner": "flagos-ai",
+      "repo": "FlagScale",
+      "by_sha": {
+        "528cea1680556b85f88b55170dd1d5de472d3373": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "flagos-ai/FlagScale@528cea1680556b85f88b55170dd1d5de472d3373/tools/checkpoint/aquila/model.py": {}
+          }
+        }
+      }
+    },
+    "gpustack/gpustack": {
+      "owner": "gpustack",
+      "repo": "gpustack",
+      "by_sha": {
+        "543c80bc5f80f820fb7a1cd805086798173f265e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "gpustack/gpustack@543c80bc5f80f820fb7a1cd805086798173f265e/gpustack/worker/runtime_metrics_aggregator.py": {}
+          }
+        }
+      }
+    },
+    "getzep/graphiti": {
+      "owner": "getzep",
+      "repo": "graphiti",
+      "by_sha": {
+        "cb53cd1b08485855a0117a63e4fa363033f815f0": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "getzep/graphiti@cb53cd1b08485855a0117a63e4fa363033f815f0/tests/llm_client/test_anthropic_client.py": {}
+          }
+        }
+      }
+    },
+    "HakAl/scrappy": {
+      "owner": "HakAl",
+      "repo": "scrappy",
+      "by_sha": {
+        "2eded1f5617a24821c44017b8554951c2ed1a67c": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "HakAl/scrappy@2eded1f5617a24821c44017b8554951c2ed1a67c/tests/cli/test_user_interaction.py": {},
+            "HakAl/scrappy@2eded1f5617a24821c44017b8554951c2ed1a67c/scripts/evaluate_models.py": {}
+          }
+        }
+      }
+    },
+    "ucsb-mlsec/VulnLLM-R": {
+      "owner": "ucsb-mlsec",
+      "repo": "VulnLLM-R",
+      "by_sha": {
+        "cf4759373dd83235399cc0aad5e6896e7b07d6ac": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "ucsb-mlsec/VulnLLM-R@cf4759373dd83235399cc0aad5e6896e7b07d6ac/vulscan/train/LLaMA-Factory/scripts/stat_utils/cal_ppl.py": {},
+            "ucsb-mlsec/VulnLLM-R@cf4759373dd83235399cc0aad5e6896e7b07d6ac/vulscan/train/LLaMA-Factory/src/llamafactory/model/loader.py": {
+              "R26": [
+                "LLM call without model version pinning at line 78",
+                "LLM call without model version pinning at line 86"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "microsoft/Olive": {
+      "owner": "microsoft",
+      "repo": "Olive",
+      "by_sha": {
+        "7c5b3b8c947311ebfb3fe4efe2b733719d6ebc93": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "microsoft/Olive@7c5b3b8c947311ebfb3fe4efe2b733719d6ebc93/olive/evaluator/olive_evaluator.py": {}
+          }
+        }
+      }
+    },
+    "princeton-pli/hal-harness": {
+      "owner": "princeton-pli",
+      "repo": "hal-harness",
+      "by_sha": {
+        "caaa72c7f2bb13799064090463cbe86ddbb4dd25": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "princeton-pli/hal-harness@caaa72c7f2bb13799064090463cbe86ddbb4dd25/agents/USACO/USACOBench/models/models.py": {}
+          }
+        }
+      }
+    },
+    "AI-Hypercomputer/maxtext": {
+      "owner": "AI-Hypercomputer",
+      "repo": "maxtext",
+      "by_sha": {
+        "bc53aaa15c78d74179f79f4f302d2f8ec66ebdce": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "AI-Hypercomputer/maxtext@bc53aaa15c78d74179f79f4f302d2f8ec66ebdce/tests/aot_hlo_identical_test.py": {},
+            "AI-Hypercomputer/maxtext@bc53aaa15c78d74179f79f4f302d2f8ec66ebdce/src/MaxText/utils/ckpt_scripts/convert_gpt_oss_ckpt.py": {}
+          }
+        }
+      }
+    },
+    "Bessouat40/RAGLight": {
+      "owner": "Bessouat40",
+      "repo": "RAGLight",
+      "by_sha": {
+        "211a8d986c22da6d46db98302ee77653327495b5": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Bessouat40/RAGLight@211a8d986c22da6d46db98302ee77653327495b5/tests/tests_llm/test_gemini_model.py": {}
+          }
+        }
+      }
+    },
+    "intel/neural-compressor": {
+      "owner": "intel",
+      "repo": "neural-compressor",
+      "by_sha": {
+        "eb7c1e377d93e577c3179c0f76b4c8fc7b1fea9c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "intel/neural-compressor@eb7c1e377d93e577c3179c0f76b4c8fc7b1fea9c/neural_compressor/torch/algorithms/mixed_low_precision/custom_methods/quarot_utils.py": {}
+          }
+        }
+      }
+    },
+    "lemony-ai/cascadeflow": {
+      "owner": "lemony-ai",
+      "repo": "cascadeflow",
+      "by_sha": {
+        "c6554a2bf9a7db4f7545da3c8b7d1630bb1b81fe": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "lemony-ai/cascadeflow@c6554a2bf9a7db4f7545da3c8b7d1630bb1b81fe/cascadeflow/routing/domain.py": {},
+            "lemony-ai/cascadeflow@c6554a2bf9a7db4f7545da3c8b7d1630bb1b81fe/cascadeflow/telemetry/cost_tracker.py": {}
+          }
+        }
+      }
+    },
+    "qtalen/agentic-ai-playground": {
+      "owner": "qtalen",
+      "repo": "agentic-ai-playground",
+      "by_sha": {
+        "dd618c69ea02e06e4b75549bd0b3d5225b790938": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "qtalen/agentic-ai-playground@dd618c69ea02e06e4b75549bd0b3d5225b790938/08_DeepSeek_OCR_Agentic_RAG/ocr_agentic_rag.py": {}
+          }
+        }
+      }
+    },
+    "aliasrobotics/cai": {
+      "owner": "aliasrobotics",
+      "repo": "cai",
+      "by_sha": {
+        "da1c6202e5857494a1968937c60c5030467dcabd": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "aliasrobotics/cai@da1c6202e5857494a1968937c60c5030467dcabd/src/cai/repl/commands/parallel.py": {},
+            "aliasrobotics/cai@da1c6202e5857494a1968937c60c5030467dcabd/src/cai/repl/commands/history.py": {}
+          }
+        }
+      }
+    },
+    "zldscr0/SENT": {
+      "owner": "zldscr0",
+      "repo": "SENT",
+      "by_sha": {
+        "2a7c40fa77ea3ce882534a30a1029db06d561825": {
+          "num_listed_files": 7,
+          "num_analyzed_files": 7,
+          "alerts": {
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/models/qwen/vllm_qwen_series.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/models/gemma/vllm_gemma_3_12b_it.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/opencompass/configs/datasets/needlebench/needlebench_4k/needlebench_multi_reasoning_4k.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/eval/examples/eval_corebench_2409_longcontext.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/recipe/entropy/main_entropy.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/verl/third_party/sglang/parallel_state.py": {},
+            "zldscr0/SENT@2a7c40fa77ea3ce882534a30a1029db06d561825/verl/models/llama/megatron/layers/__init__.py": {}
+          }
+        }
+      }
+    },
+    "Open-Technology-Foundation/customkb": {
+      "owner": "Open-Technology-Foundation",
+      "repo": "customkb",
+      "by_sha": {
+        "950c7791d40e04cc375018539a9a3bfe9b19c697": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Open-Technology-Foundation/customkb@950c7791d40e04cc375018539a9a3bfe9b19c697/tests/unit/utils/test_security_utils.py": {}
+          }
+        }
+      }
+    },
+    "aradlein/hass-agent-llm": {
+      "owner": "aradlein",
+      "repo": "hass-agent-llm",
+      "by_sha": {
+        "2a3d75aae2cf588909f6f2cdf99efde544f5b928": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "aradlein/hass-agent-llm@2a3d75aae2cf588909f6f2cdf99efde544f5b928/tests/unit/test_memory_tools.py": {}
+          }
+        }
+      }
+    },
+    "volcengine/ai-app-lab": {
+      "owner": "volcengine",
+      "repo": "ai-app-lab",
+      "by_sha": {
+        "423c8216acf9897a1eee632341969129477cc154": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "volcengine/ai-app-lab@423c8216acf9897a1eee632341969129477cc154/demohouse/ad_video_gen/backend/app/director-agent/src/director_agent/utils/types.py": {}
+          }
+        }
+      }
+    },
+    "agentuniverse-ai/agentUniverse": {
+      "owner": "agentuniverse-ai",
+      "repo": "agentUniverse",
+      "by_sha": {
+        "d11c8f4e2ff4c9b8f9a0a7f5f796f16b9f24affd": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "agentuniverse-ai/agentUniverse@d11c8f4e2ff4c9b8f9a0a7f5f796f16b9f24affd/examples/sample_standard_app/config/yaml_func_extension.py": {},
+            "agentuniverse-ai/agentUniverse@d11c8f4e2ff4c9b8f9a0a7f5f796f16b9f24affd/agentuniverse/agent/template/react_agent_template.py": {}
+          }
+        }
+      }
+    },
+    "omarkamali/borgllm": {
+      "owner": "omarkamali",
+      "repo": "borgllm",
+      "by_sha": {
+        "8f3aefdaef172393b1520baba177cc6170ba464e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "omarkamali/borgllm@8f3aefdaef172393b1520baba177cc6170ba464e/examples/langchain/configurable_cooldown_timeout/main.py": {}
+          }
+        }
+      }
+    },
+    "Jilliansea/TinyZeroWithSFT": {
+      "owner": "Jilliansea",
+      "repo": "TinyZeroWithSFT",
+      "by_sha": {
+        "1fe50777fc1b6b441058a4ae35e5514a7036e8bf": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Jilliansea/TinyZeroWithSFT@1fe50777fc1b6b441058a4ae35e5514a7036e8bf/verl/models/transformers/qwen2.py": {}
+          }
+        }
+      }
+    },
+    "1789336421/Omni-Mol": {
+      "owner": "1789336421",
+      "repo": "Omni-Mol",
+      "by_sha": {
+        "8a9426d9a14d52efaf70942e79dc2819cf204f0c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "1789336421/Omni-Mol@8a9426d9a14d52efaf70942e79dc2819cf204f0c/peft/tests/test_initialization.py": {
+              "R26": [
+                "LLM call without model version pinning at line 1859",
+                "LLM call without model version pinning at line 1867",
+                "LLM call without model version pinning at line 1882",
+                "LLM call without model version pinning at line 956",
+                "LLM call without model version pinning at line 962",
+                "LLM call without model version pinning at line 973",
+                "LLM call without model version pinning at line 1582",
+                "LLM call without model version pinning at line 1589",
+                "LLM call without model version pinning at line 1628",
+                "LLM call without model version pinning at line 1641",
+                "LLM call without model version pinning at line 1680",
+                "LLM call without model version pinning at line 1897",
+                "LLM call without model version pinning at line 1903",
+                "LLM call without model version pinning at line 2573",
+                "LLM call without model version pinning at line 2600",
+                "LLM call without model version pinning at line 1610"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "danielcamposramos/Knowledge3D": {
+      "owner": "danielcamposramos",
+      "repo": "Knowledge3D",
+      "by_sha": {
+        "274cf368b822e370903b7f97132e242a8c3c06c7": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "danielcamposramos/Knowledge3D@274cf368b822e370903b7f97132e242a8c3c06c7/knowledge3d/cranium/ptx_runtime/world_model_manager.py": {}
+          }
+        }
+      }
+    },
+    "ai-christianson/RA.Aid": {
+      "owner": "ai-christianson",
+      "repo": "RA.Aid",
+      "by_sha": {
+        "e71bb83dcfdf8796d41c746ad99bf4838d1d5914": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ai-christianson/RA.Aid@e71bb83dcfdf8796d41c746ad99bf4838d1d5914/ra_aid/tools/write_file.py": {}
+          }
+        }
+      }
+    },
+    "openaiotlab/ContextAgent": {
+      "owner": "openaiotlab",
+      "repo": "ContextAgent",
+      "by_sha": {
+        "f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "openaiotlab/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/tests/model/model_utils/test_checkpointing.py": {},
+            "openaiotlab/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/scripts/stat_utils/cal_lr.py": {}
+          }
+        }
+      }
+    },
+    "bf-yang/ContextAgent": {
+      "owner": "bf-yang",
+      "repo": "ContextAgent",
+      "by_sha": {
+        "f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "bf-yang/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/src/llamafactory/data/collator.py": {},
+            "bf-yang/ContextAgent@f4674bf2a1385ce829c6a7f2ea9c53871dd1a8ce/LLaMA-Factory/src/llamafactory/data/template.py": {}
+          }
+        }
+      }
+    },
+    "hailsham/mcpverse": {
+      "owner": "hailsham",
+      "repo": "mcpverse",
+      "by_sha": {
+        "982f66cab6112a50536a83eb84053c88245e814f": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/camel/storages/key_value_storages/json.py": {},
+            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/test/memories/test_vector_db_memory.py": {},
+            "hailsham/mcpverse@982f66cab6112a50536a83eb84053c88245e814f/test/agents/tool_agents/test_hugging_face_tool_agent.py": {}
+          }
+        }
+      }
+    },
+    "AIGeeksGroup/MobileVLA-R1": {
+      "owner": "AIGeeksGroup",
+      "repo": "MobileVLA-R1",
+      "by_sha": {
+        "2554dfdba8190687ad4f417066ad7ce62b60247e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "AIGeeksGroup/MobileVLA-R1@2554dfdba8190687ad4f417066ad7ce62b60247e/llava/train/transformers_replace/models/mistral/configuration_mistral.py": {}
+          }
+        }
+      }
+    },
+    "Simple-Efficient/RL-Factory": {
+      "owner": "Simple-Efficient",
+      "repo": "RL-Factory",
+      "by_sha": {
+        "d0abc1dbac31cf936af4d4a50009e337a9406f94": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Simple-Efficient/RL-Factory@d0abc1dbac31cf936af4d4a50009e337a9406f94/verl/utils/flops_counter.py": {}
+          }
+        }
+      }
+    },
+    "ariannamethod/ariannamethod": {
+      "owner": "ariannamethod",
+      "repo": "ariannamethod",
+      "by_sha": {
+        "de35fe338db13d1abeae51e3f4c43a9343bccf1a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ariannamethod/ariannamethod@de35fe338db13d1abeae51e3f4c43a9343bccf1a/arianna_core_utils/genesis_monday.py": {}
+          }
+        }
+      }
+    },
+    "Blaizzy/mlx-vlm": {
+      "owner": "Blaizzy",
+      "repo": "mlx-vlm",
+      "by_sha": {
+        "c4ea290e47e2155b67d94c708c662f8ab64e1b37": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Blaizzy/mlx-vlm@c4ea290e47e2155b67d94c708c662f8ab64e1b37/mlx_vlm/models/phi3_v/config.py": {}
+          }
+        }
+      }
+    },
+    "duyhominhnguyen/Exgra-Med": {
+      "owner": "duyhominhnguyen",
+      "repo": "Exgra-Med",
+      "by_sha": {
+        "e9a3daaf912a82bccdc3bad26b9661325d47ea60": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "duyhominhnguyen/Exgra-Med@e9a3daaf912a82bccdc3bad26b9661325d47ea60/exgra_med/llava/train/train_pre.py": {}
+          }
+        }
+      }
+    },
+    "cambrian-mllm/cambrian-s": {
+      "owner": "cambrian-mllm",
+      "repo": "cambrian-s",
+      "by_sha": {
+        "9b770e46ed09ff0245f6455b7e091e9ace8c22ee": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "cambrian-mllm/cambrian-s@9b770e46ed09ff0245f6455b7e091e9ace8c22ee/lmms-eval/tools/live_bench/live_bench/data_generator/question_finalizer.py": {
+              "R26": [
+                "LLM call without model version pinning at line 66"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Zhoues/RoboRefer": {
+      "owner": "Zhoues",
+      "repo": "RoboRefer",
+      "by_sha": {
+        "d97a995ad28376720a4c8beb64915c58ed16c844": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Zhoues/RoboRefer@d97a995ad28376720a4c8beb64915c58ed16c844/llava/model/language_model/builder.py": {
+              "R26": [
+                "LLM call without model version pinning at line 195",
+                "LLM call without model version pinning at line 178",
+                "LLM call without model version pinning at line 183"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Kiln-AI/Kiln": {
+      "owner": "Kiln-AI",
+      "repo": "Kiln",
+      "by_sha": {
+        "229b88880644ff3114b895a68186096abf1231cd": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "Kiln-AI/Kiln@229b88880644ff3114b895a68186096abf1231cd/libs/core/kiln_ai/datamodel/test_basemodel.py": {},
+            "Kiln-AI/Kiln@229b88880644ff3114b895a68186096abf1231cd/libs/core/kiln_ai/adapters/embedding/test_litellm_embedding_adapter.py": {}
+          }
+        }
+      }
+    },
+    "inclusionAI/AReaL": {
+      "owner": "inclusionAI",
+      "repo": "AReaL",
+      "by_sha": {
+        "b942ed019df2c66b851c397c0836fd31a3787b70": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "inclusionAI/AReaL@b942ed019df2c66b851c397c0836fd31a3787b70/areal/utils/proxy_utils.py": {}
+          }
+        }
+      }
+    },
+    "brendanhogan/2025_advent_of_small_ml": {
+      "owner": "brendanhogan",
+      "repo": "2025_advent_of_small_ml",
+      "by_sha": {
+        "f6aacd728812835360057d6a93b910dd5eef9c3d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "brendanhogan/2025_advent_of_small_ml@f6aacd728812835360057d6a93b910dd5eef9c3d/src/day10/gepa_main.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 854",
+                "LLM call without explicit temperature parameter at line 848"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 525"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 525"
+              ],
+              "R32": [
+                "Overspecified sampling at line 261",
+                "Overspecified sampling at line 285"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "matdev83/llm-interactive-proxy": {
+      "owner": "matdev83",
+      "repo": "llm-interactive-proxy",
+      "by_sha": {
+        "e5f0eababe6ed1a4cb3bce8a0227b2897606a208": {
+          "num_listed_files": 10,
+          "num_analyzed_files": 10,
+          "alerts": {
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/connectors/test_gemini_oauth_antigravity.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/memory/test_summary_generator.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/connectors/openai.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/test_emergency_command_filter.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/helpers/angel_factory_stub.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/connectors/gemini_oauth_plan.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/connectors/gemini_base/streaming_executor.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/commands/test_unit_model_command_handler.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/src/core/services/resilience/coordinator.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eababe6ed1a4cb3bce8a0227b2897606a208/tests/unit/gemini_connector_tests/test_openrouter_headers.py": {}
+          }
+        }
+      }
+    },
+    "yichuan-w/LEANN": {
+      "owner": "yichuan-w",
+      "repo": "LEANN",
+      "by_sha": {
+        "a6ee95b18a64a29e9dd158c126d5b69a36bab1cf": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "yichuan-w/LEANN@a6ee95b18a64a29e9dd158c126d5b69a36bab1cf/examples/basic_demo.py": {}
+          }
+        }
+      }
+    },
+    "EvolvingLMMs-Lab/OpenMMReasoner": {
+      "owner": "EvolvingLMMs-Lab",
+      "repo": "OpenMMReasoner",
+      "by_sha": {
+        "d7bf5769469800d636b69945b81f1ba51b89695e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "EvolvingLMMs-Lab/OpenMMReasoner@d7bf5769469800d636b69945b81f1ba51b89695e/verl/models/transformers/kimi_vl.py": {}
+          }
+        }
+      }
+    },
+    "EvolvingLMMs-Lab/LongVT": {
+      "owner": "EvolvingLMMs-Lab",
+      "repo": "LongVT",
+      "by_sha": {
+        "93a349cf9b79fa3bf95e3e131b506e10a6329dc6": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "EvolvingLMMs-Lab/LongVT@93a349cf9b79fa3bf95e3e131b506e10a6329dc6/verl/utils/import_utils.py": {},
+            "EvolvingLMMs-Lab/LongVT@93a349cf9b79fa3bf95e3e131b506e10a6329dc6/tests/tools/test_base_tool_on_cpu.py": {}
+          }
+        }
+      }
+    },
+    "chrishayuk/mcp-cli": {
+      "owner": "chrishayuk",
+      "repo": "mcp-cli",
+      "by_sha": {
+        "ae6db3d572c604b4b0b3e9b9d2136eca043ea109": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "chrishayuk/mcp-cli@ae6db3d572c604b4b0b3e9b9d2136eca043ea109/src/mcp_cli/auth/provider_tokens.py": {}
+          }
+        }
+      }
+    },
+    "agentscope-ai/agentscope": {
+      "owner": "agentscope-ai",
+      "repo": "agentscope",
+      "by_sha": {
+        "19cba5ce88b4865b72e4c2b6ea9f3c0a8e9b66c2": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "agentscope-ai/agentscope@19cba5ce88b4865b72e4c2b6ea9f3c0a8e9b66c2/src/agentscope/formatter/_openai_formatter.py": {}
+          }
+        }
+      }
+    },
+    "rscheiwe/vel": {
+      "owner": "rscheiwe",
+      "repo": "vel",
+      "by_sha": {
+        "41e4dd67e162cc719ad90d3294ebe758e9ea8a7d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "rscheiwe/vel@41e4dd67e162cc719ad90d3294ebe758e9ea8a7d/vel/thinking/config.py": {}
+          }
+        }
+      }
+    },
+    "taylorai/lm-deluge": {
+      "owner": "taylorai",
+      "repo": "lm-deluge",
+      "by_sha": {
+        "96124f3c6010848b4f34232a5ed7e0adc9bd17cc": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "taylorai/lm-deluge@96124f3c6010848b4f34232a5ed7e0adc9bd17cc/src/lm_deluge/pipelines/gepa/__init__.py": {},
+            "taylorai/lm-deluge@96124f3c6010848b4f34232a5ed7e0adc9bd17cc/tests/core/test_postprocess.py": {}
+          }
+        }
+      }
+    },
+    "HKUDS/LightRAG": {
+      "owner": "HKUDS",
+      "repo": "LightRAG",
+      "by_sha": {
+        "9562a974d216268021b4027f7be7ec250477fe96": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "HKUDS/LightRAG@9562a974d216268021b4027f7be7ec250477fe96/lightrag/api/utils_api.py": {}
+          }
+        }
+      }
+    },
+    "mims-harvard/ToolUniverse": {
+      "owner": "mims-harvard",
+      "repo": "ToolUniverse",
+      "by_sha": {
+        "132458e90eae0d23245caed295dd0bb9518cd240": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "mims-harvard/ToolUniverse@132458e90eae0d23245caed295dd0bb9518cd240/src/tooluniverse/smolagent_tool.py": {}
+          }
+        }
+      }
+    },
+    "LLM360/Reasoning360": {
+      "owner": "LLM360",
+      "repo": "Reasoning360",
+      "by_sha": {
+        "13158341d2a0dfe5f3bb80e7126ff21de0d16676": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "LLM360/Reasoning360@13158341d2a0dfe5f3bb80e7126ff21de0d16676/scripts/tools/model_merger.py": {}
+          }
+        }
+      }
+    },
+    "DylanLRPollock/Monkey-Head-Project": {
+      "owner": "DylanLRPollock",
+      "repo": "Monkey-Head-Project",
+      "by_sha": {
+        "6b0c9ec5d0a56d3d44693dd97055d90f7fc2aa24": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "DylanLRPollock/Monkey-Head-Project@6b0c9ec5d0a56d3d44693dd97055d90f7fc2aa24/repo/pygpt-MHP/src/pygpt_net/plugin/agent/config.py": {}
+          }
+        }
+      }
+    },
+    "microsoft/openaivec": {
+      "owner": "microsoft",
+      "repo": "openaivec",
+      "by_sha": {
+        "cd2760bc392cc82eebffcbd2ca81882a22860f85": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "microsoft/openaivec@cd2760bc392cc82eebffcbd2ca81882a22860f85/src/openaivec/task/__init__.py": {}
+          }
+        }
+      }
+    },
+    "SqueezeAILab/MultipoleAttention": {
+      "owner": "SqueezeAILab",
+      "repo": "MultipoleAttention",
+      "by_sha": {
+        "db65e51d582b9bcb89807b9d9397c3532d1099ef": {
+          "num_listed_files": 7,
+          "num_analyzed_files": 7,
+          "alerts": {
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/idefics3/convert_idefics3_weights_to_hf.py": {
+              "R26": [
+                "LLM call without model version pinning at line 158",
+                "LLM call without model version pinning at line 163"
+              ]
+            },
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/tests/models/auto/test_tokenization_auto.py": {
+              "R26": [
+                "LLM call without model version pinning at line 86",
+                "LLM call without model version pinning at line 91",
+                "LLM call without model version pinning at line 99",
+                "LLM call without model version pinning at line 186",
+                "LLM call without model version pinning at line 191",
+                "LLM call without model version pinning at line 197",
+                "LLM call without model version pinning at line 206",
+                "LLM call without model version pinning at line 216",
+                "LLM call without model version pinning at line 232",
+                "LLM call without model version pinning at line 316",
+                "LLM call without model version pinning at line 320",
+                "LLM call without model version pinning at line 357",
+                "LLM call without model version pinning at line 415",
+                "LLM call without model version pinning at line 446",
+                "LLM call without model version pinning at line 74",
+                "LLM call without model version pinning at line 80",
+                "LLM call without model version pinning at line 107",
+                "LLM call without model version pinning at line 114",
+                "LLM call without model version pinning at line 122",
+                "LLM call without model version pinning at line 129",
+                "LLM call without model version pinning at line 134",
+                "LLM call without model version pinning at line 180",
+                "LLM call without model version pinning at line 182",
+                "LLM call without model version pinning at line 210",
+                "LLM call without model version pinning at line 309",
+                "LLM call without model version pinning at line 312",
+                "LLM call without model version pinning at line 328",
+                "LLM call without model version pinning at line 336",
+                "LLM call without model version pinning at line 377",
+                "LLM call without model version pinning at line 380",
+                "LLM call without model version pinning at line 385",
+                "LLM call without model version pinning at line 390",
+                "LLM call without model version pinning at line 397",
+                "LLM call without model version pinning at line 402",
+                "LLM call without model version pinning at line 423",
+                "LLM call without model version pinning at line 435",
+                "LLM call without model version pinning at line 448",
+                "LLM call without model version pinning at line 253",
+                "LLM call without model version pinning at line 294",
+                "LLM call without model version pinning at line 297",
+                "LLM call without model version pinning at line 344",
+                "LLM call without model version pinning at line 513",
+                "LLM call without model version pinning at line 516"
+              ]
+            },
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/tests/models/llava/test_processor_llava.py": {
+              "R26": [
+                "LLM call without model version pinning at line 81"
+              ]
+            },
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/chameleon/processing_chameleon.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/tests/models/cohere/test_tokenization_cohere.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/llava_onevision/video_processing_llava_onevision.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51d582b9bcb89807b9d9397c3532d1099ef/transformers/src/transformers/models/instructblipvideo/image_processing_instructblipvideo.py": {}
+          }
+        }
+      }
+    },
+    "xuyang-liu16/VidCom2": {
+      "owner": "xuyang-liu16",
+      "repo": "VidCom2",
+      "by_sha": {
+        "ce46008b959c6715b8233ea1b9d1c063d22a4b2c": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "xuyang-liu16/VidCom2@ce46008b959c6715b8233ea1b9d1c063d22a4b2c/llava/eval/evaluate_interleave.py": {},
+            "xuyang-liu16/VidCom2@ce46008b959c6715b8233ea1b9d1c063d22a4b2c/lmms-eval/lmms_eval/tasks/mmbench/en_utils.py": {}
+          }
+        }
+      }
+    },
+    "owadev777/EgoVLA_Release": {
+      "owner": "owadev777",
+      "repo": "EgoVLA_Release",
+      "by_sha": {
+        "92ebbd916f6bad4b79dc7d3efbb485d10f80b113": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "owadev777/EgoVLA_Release@92ebbd916f6bad4b79dc7d3efbb485d10f80b113/VILA/tests/utils/client.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 3",
+                "LLM call without explicit temperature parameter at line 9",
+                "LLM call without explicit temperature parameter at line 31",
+                "LLM call without explicit temperature parameter at line 47",
+                "LLM call without explicit temperature parameter at line 70"
+              ],
+              "R26": [
+                "LLM call without model version pinning at line 9",
+                "LLM call without model version pinning at line 31",
+                "LLM call without model version pinning at line 47",
+                "LLM call without model version pinning at line 70"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 9",
+                "LLM chat call without a system message at line 31",
+                "LLM chat call without a system message at line 47",
+                "LLM chat call without a system message at line 70"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 9",
+                "LLM pipeline call without structured output at line 31",
+                "LLM pipeline call without structured output at line 47",
+                "LLM pipeline call without structured output at line 70"
+              ],
+              "R31": [
+                "Unbounded vision payloads at line 9",
+                "Unbounded vision payloads at line 47"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "axolotl-ai-cloud/axolotl": {
+      "owner": "axolotl-ai-cloud",
+      "repo": "axolotl",
+      "by_sha": {
+        "3750d7dd64a2c0699d5009392d85de525f7414c6": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "axolotl-ai-cloud/axolotl@3750d7dd64a2c0699d5009392d85de525f7414c6/tests/utils/schemas/validation/test_fsdp.py": {},
+            "axolotl-ai-cloud/axolotl@3750d7dd64a2c0699d5009392d85de525f7414c6/src/axolotl/integrations/liger/plugin.py": {
+              "R26": [
+                "LLM call without model version pinning at line 124"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "openvinotoolkit/openvino.genai": {
+      "owner": "openvinotoolkit",
+      "repo": "openvino.genai",
+      "by_sha": {
+        "87f9d9ef73f7e827d593bd8e00eccf6740bf9cbe": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "openvinotoolkit/openvino.genai@87f9d9ef73f7e827d593bd8e00eccf6740bf9cbe/samples/python/text_generation/structured_output_generation.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 76",
+                "LLM call without explicit temperature parameter at line 89"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 76",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 89"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ggml-org/llama.cpp": {
+      "owner": "ggml-org",
+      "repo": "llama.cpp",
+      "by_sha": {
+        "f9ec8858edea4a0ecfea149d6815ebfb5ecc3bcd": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ggml-org/llama.cpp@f9ec8858edea4a0ecfea149d6815ebfb5ecc3bcd/tools/server/tests/unit/test_slot_save.py": {}
+          }
+        }
+      }
+    },
+    "Fir-lat/LaVer": {
+      "owner": "Fir-lat",
+      "repo": "LaVer",
+      "by_sha": {
+        "abe70c7c19666decbefb5811d7d878d490f1e56c": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "Fir-lat/LaVer@abe70c7c19666decbefb5811d7d878d490f1e56c/src/llamafactory/train/pt/workflow.py": {},
+            "Fir-lat/LaVer@abe70c7c19666decbefb5811d7d878d490f1e56c/src/llamafactory/data/mm_plugin.py": {}
+          }
+        }
+      }
+    },
+    "pytorch/executorch": {
+      "owner": "pytorch",
+      "repo": "executorch",
+      "by_sha": {
+        "c61b2ed1d022ae0681e1a6547bbba8c95acd6854": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "pytorch/executorch@c61b2ed1d022ae0681e1a6547bbba8c95acd6854/extension/llm/custom_ops/custom_ops.py": {},
+            "pytorch/executorch@c61b2ed1d022ae0681e1a6547bbba8c95acd6854/examples/qualcomm/oss_scripts/llama/__init__.py": {}
+          }
+        }
+      }
+    },
+    "huggingface/optimum-habana": {
+      "owner": "huggingface",
+      "repo": "optimum-habana",
+      "by_sha": {
+        "6afa2ca282d345ccb27838bf580e997ce13c4d8c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "huggingface/optimum-habana@6afa2ca282d345ccb27838bf580e997ce13c4d8c/optimum/habana/distributed/serialization.py": {}
+          }
+        }
+      }
+    },
+    "quic/efficient-transformers": {
+      "owner": "quic",
+      "repo": "efficient-transformers",
+      "by_sha": {
+        "46ed92b22abb6b14f5df95c2b92df32d5efbd051": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "quic/efficient-transformers@46ed92b22abb6b14f5df95c2b92df32d5efbd051/examples/peft/multi_adapter.py": {}
+          }
+        }
+      }
+    },
+    "jiaxiaojunQAQ/OmniSafeBench-MM": {
+      "owner": "jiaxiaojunQAQ",
+      "repo": "OmniSafeBench-MM",
+      "by_sha": {
+        "84a4d1708e42e8059cf3150e5c35dcd821c0b39e": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "jiaxiaojunQAQ/OmniSafeBench-MM@84a4d1708e42e8059cf3150e5c35dcd821c0b39e/models/google_model.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 78",
+                "LLM call without explicit temperature parameter at line 35"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 78",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 35"
+              ]
+            },
+            "jiaxiaojunQAQ/OmniSafeBench-MM@84a4d1708e42e8059cf3150e5c35dcd821c0b39e/defenses/llama_guard_4.py": {}
+          }
+        }
+      }
+    },
+    "EvolvingLMMs-Lab/lmms-eval": {
+      "owner": "EvolvingLMMs-Lab",
+      "repo": "lmms-eval",
+      "by_sha": {
+        "b0da65de53bfa6fd52010b7d1a86dfd2f598764c": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "EvolvingLMMs-Lab/lmms-eval@b0da65de53bfa6fd52010b7d1a86dfd2f598764c/lmms_eval/tasks/videomathqa/cot_step_evaluation.py": {
+              "R26": [
+                "LLM call without model version pinning at line 171"
+              ]
+            },
+            "EvolvingLMMs-Lab/lmms-eval@b0da65de53bfa6fd52010b7d1a86dfd2f598764c/lmms_eval/llm_judge/factory.py": {}
+          }
+        }
+      }
+    },
+    "Luckybalabala/llama-cpp-AutoGLM": {
+      "owner": "Luckybalabala",
+      "repo": "llama-cpp-AutoGLM",
+      "by_sha": {
+        "694dc092b1c34b16ce7008e83bf41683128640dc": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Luckybalabala/llama-cpp-AutoGLM@694dc092b1c34b16ce7008e83bf41683128640dc/examples/pydantic_models_to_grammar_examples.py": {}
+          }
+        }
+      }
+    },
+    "jacklishufan/LaViDa": {
+      "owner": "jacklishufan",
+      "repo": "LaViDa",
+      "by_sha": {
+        "24220c0077f403d24ca52968b6a7c55b687d5c2f": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "jacklishufan/LaViDa@24220c0077f403d24ca52968b6a7c55b687d5c2f/eval/lmms_eval/models/cambrian.py": {
+              "R31": [
+                "Unbounded vision payloads at line 280"
+              ]
+            },
+            "jacklishufan/LaViDa@24220c0077f403d24ca52968b6a7c55b687d5c2f/eval/lmms_eval/tasks/vitatecs/utils.py": {}
+          }
+        }
+      }
+    },
+    "shakfu/cyllama": {
+      "owner": "shakfu",
+      "repo": "cyllama",
+      "by_sha": {
+        "3bf0290c31ecc276c6be543a1b674040f32bb2b0": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "shakfu/cyllama@3bf0290c31ecc276c6be543a1b674040f32bb2b0/tests/test_tts_fix.py": {}
+          }
+        }
+      }
+    },
+    "ParisNeo/lollms_client": {
+      "owner": "ParisNeo",
+      "repo": "lollms_client",
+      "by_sha": {
+        "e10bd27f49b7a25daa59c086aaa9cf8dc596bc92": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ParisNeo/lollms_client@e10bd27f49b7a25daa59c086aaa9cf8dc596bc92/src/lollms_client/llm_bindings/open_router/__init__.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 48",
+                "LLM call without explicit temperature parameter at line 152"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 48",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 152"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 152"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "IP127000/openVLA-Qwen2-0.5B": {
+      "owner": "IP127000",
+      "repo": "openVLA-Qwen2-0.5B",
+      "by_sha": {
+        "940c7616deaef12458493089846c7b67749865f2": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "IP127000/openVLA-Qwen2-0.5B@940c7616deaef12458493089846c7b67749865f2/llava/serve/gradio_web_server.py": {}
+          }
+        }
+      }
+    },
+    "bytedance/Sa2VA": {
+      "owner": "bytedance",
+      "repo": "Sa2VA",
+      "by_sha": {
+        "f445521bd1dc74d33078b30762c6423dab876199": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "bytedance/Sa2VA@f445521bd1dc74d33078b30762c6423dab876199/vlm/utils/modeling_rope_utils.py": {}
+          }
+        }
+      }
+    },
+    "nkkbr/ViCA": {
+      "owner": "nkkbr",
+      "repo": "ViCA",
+      "by_sha": {
+        "96e8a61b7afe23da3908280cc4872d36311945aa": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "nkkbr/ViCA@96e8a61b7afe23da3908280cc4872d36311945aa/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/transform.py": {}
+          }
+        }
+      }
+    },
+    "erfanzar/EasyDeL": {
+      "owner": "erfanzar",
+      "repo": "EasyDeL",
+      "by_sha": {
+        "748550c8a2d7514557477de02a4b8053a41a90f4": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "erfanzar/EasyDeL@748550c8a2d7514557477de02a4b8053a41a90f4/easydel/inference/esurge/esurge_engine.py": {
+              "R26": [
+                "LLM call without model version pinning at line 370",
+                "LLM call without model version pinning at line 375"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "dusty-nv/jetson-containers": {
+      "owner": "dusty-nv",
+      "repo": "jetson-containers",
+      "by_sha": {
+        "bf3c8b0b94f09f5c353dd8b94badb76235d866e4": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "dusty-nv/jetson-containers@bf3c8b0b94f09f5c353dd8b94badb76235d866e4/packages/llm/vllm/test.py": {}
+          }
+        }
+      }
+    },
+    "lanxiang1017/GEM": {
+      "owner": "lanxiang1017",
+      "repo": "GEM",
+      "by_sha": {
+        "7edee7e20408cf3e855a4ace6f6b291b1e7b8485": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "lanxiang1017/GEM@7edee7e20408cf3e855a4ace6f6b291b1e7b8485/ecg_coca/open_clip/constants.py": {}
+          }
+        }
+      }
+    },
+    "CodeGoat24/UnifiedReward": {
+      "owner": "CodeGoat24",
+      "repo": "UnifiedReward",
+      "by_sha": {
+        "3c16510485bb9c924bfedc8b4d09c1b4e4f772ba": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "CodeGoat24/UnifiedReward@3c16510485bb9c924bfedc8b4d09c1b4e4f772ba/llava/utils.py": {},
+            "CodeGoat24/UnifiedReward@3c16510485bb9c924bfedc8b4d09c1b4e4f772ba/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/__init__.py": {}
+          }
+        }
+      }
+    },
+    "SafeRL-Lab/AccidentBench": {
+      "owner": "SafeRL-Lab",
+      "repo": "AccidentBench",
+      "by_sha": {
+        "4abe9d836d0b978f0d9a7953fc0546eefd1fb4ed": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "SafeRL-Lab/AccidentBench@4abe9d836d0b978f0d9a7953fc0546eefd1fb4ed/lmms_eval/tasks/mathverse/mathverse_evals.py": {}
+          }
+        }
+      }
+    },
+    "Ganador1/FenixAI_tradingBot": {
+      "owner": "Ganador1",
+      "repo": "FenixAI_tradingBot",
+      "by_sha": {
+        "6e12bb342f040f1a1c1b06ea6fa5c1bfd2d1efc1": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Ganador1/FenixAI_tradingBot@6e12bb342f040f1a1c1b06ea6fa5c1bfd2d1efc1/src/cost/advanced_cost_manager.py": {}
+          }
+        }
+      }
+    },
+    "Visual-AI/3DRS": {
+      "owner": "Visual-AI",
+      "repo": "3DRS",
+      "by_sha": {
+        "0401f547778c5de2e9e889c0606442087128c13d": {
+          "num_listed_files": 4,
+          "num_analyzed_files": 4,
+          "alerts": {
+            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/src/transformers/models/clip/tokenization_clip_fast.py": {},
+            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/tests/models/auto/test_modeling_tf_auto.py": {},
+            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/src/transformers/models/llama/modeling_flax_llama.py": {},
+            "Visual-AI/3DRS@0401f547778c5de2e9e889c0606442087128c13d/transformers/src/transformers/models/imagegpt/convert_imagegpt_original_tf2_to_pytorch.py": {}
+          }
+        }
+      }
+    },
+    "xuyang-liu16/MixKV": {
+      "owner": "xuyang-liu16",
+      "repo": "MixKV",
+      "by_sha": {
+        "bf5ddc459597d2ea9fcd62482e54880409f9ec2a": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "xuyang-liu16/MixKV@bf5ddc459597d2ea9fcd62482e54880409f9ec2a/lmms-eval/lmms_eval/tasks/detailcaps/utils.py": {},
+            "xuyang-liu16/MixKV@bf5ddc459597d2ea9fcd62482e54880409f9ec2a/visual_head/LLaVA-NeXT/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/openai.py": {}
+          }
+        }
+      }
+    },
+    "thunlp/ChartCoder": {
+      "owner": "thunlp",
+      "repo": "ChartCoder",
+      "by_sha": {
+        "47d965c971be15eebc5bd495c87efcfa34b2016a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "thunlp/ChartCoder@47d965c971be15eebc5bd495c87efcfa34b2016a/llava/model/language_model/llava_mistral.py": {}
+          }
+        }
+      }
+    },
+    "fereenwong/cdViews": {
+      "owner": "fereenwong",
+      "repo": "cdViews",
+      "by_sha": {
+        "5b64ba3ea44e1253317466c90914efa8b442062a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "fereenwong/cdViews@5b64ba3ea44e1253317466c90914efa8b442062a/llava/model/multimodal_encoder/open_clip_encoder.py": {}
+          }
+        }
+      }
+    },
+    "zaiquanyang/LLaVA_Next_STVG": {
+      "owner": "zaiquanyang",
+      "repo": "LLaVA_Next_STVG",
+      "by_sha": {
+        "d904f1a7e8e386694baa91698134fadc5f7b8f8c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "zaiquanyang/LLaVA_Next_STVG@d904f1a7e8e386694baa91698134fadc5f7b8f8c/llava/train/llama_flash_attn_monkey_patch.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/Megatron-Bridge": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "Megatron-Bridge",
+      "by_sha": {
+        "c299283eca10d37e1081749a2f275c630dfc8101": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-NeMo/Megatron-Bridge@c299283eca10d37e1081749a2f275c630dfc8101/tutorials/recipes/llama/00_quickstart_pretrain.py": {}
+          }
+        }
+      }
+    },
+    "vllm-project/llm-compressor": {
+      "owner": "vllm-project",
+      "repo": "llm-compressor",
+      "by_sha": {
+        "3f25fd114448fe16853e49e407e51f28b254daa2": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "vllm-project/llm-compressor@3f25fd114448fe16853e49e407e51f28b254daa2/examples/quantization_w8a8_fp8/whisper_example.py": {}
+          }
+        }
+      }
+    },
+    "trycua/cua": {
+      "owner": "trycua",
+      "repo": "cua",
+      "by_sha": {
+        "7404c13e7736c668170afce36a0c5ddff4f4c534": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "trycua/cua@7404c13e7736c668170afce36a0c5ddff4f4c534/libs/python/agent/agent/computers/cua.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/NeMo": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "NeMo",
+      "by_sha": {
+        "93950b796abb03695b2e37434769e7caa7335a17": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/speechlm2/data/salm_dataset.py": {},
+            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/diffusion/encoders/conditioner.py": {},
+            "NVIDIA-NeMo/NeMo@93950b796abb03695b2e37434769e7caa7335a17/nemo/collections/llm/recipes/llama3_8b_16k.py": {}
+          }
+        }
+      }
+    },
+    "InternLM/xtuner": {
+      "owner": "InternLM",
+      "repo": "xtuner",
+      "by_sha": {
+        "8d569d5f61ba3aa70a34b28492bb4beee812d010": {
+          "num_listed_files": 4,
+          "num_analyzed_files": 4,
+          "alerts": {
+            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/llava/internlm_chat_7b_clip_vit_large_p14_336/pretrain/llava_internlm_chat_7b_clip_vit_large_p14_336_e1_gpu8_pretrain.py": {},
+            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/.dev_scripts/rl_config_factory.py": {},
+            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/mixtral/mixtral_8x7b_instruct/mixtral_8x7b_instruct_full_oasst1_e3.py": {},
+            "InternLM/xtuner@8d569d5f61ba3aa70a34b28492bb4beee812d010/xtuner/configs/minicpm/1_2b/minicpm_1b_full_alpaca_zh_e3.py": {}
+          }
+        }
+      }
+    },
+    "modelscope/evalscope": {
+      "owner": "modelscope",
+      "repo": "evalscope",
+      "by_sha": {
+        "1ab8fcaea0f6b6172610f8b9c4603f8d7905eb57": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "modelscope/evalscope@1ab8fcaea0f6b6172610f8b9c4603f8d7905eb57/evalscope/metrics/metrics.py": {}
+          }
+        }
+      }
+    },
+    "UKGovernmentBEIS/inspect_evals": {
+      "owner": "UKGovernmentBEIS",
+      "repo": "inspect_evals",
+      "by_sha": {
+        "80b12adcf8e9de124b5b4fb333bc92c0c074f796": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "UKGovernmentBEIS/inspect_evals@80b12adcf8e9de124b5b4fb333bc92c0c074f796/src/inspect_evals/gdm_capabilities/self_reasoning/data/calculator_improvement/agent.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 8"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 8"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/RL": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "RL",
+      "by_sha": {
+        "48dbb37970e4e5b50d5f6f684a1031d820350753": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-NeMo/RL@48dbb37970e4e5b50d5f6f684a1031d820350753/nemo_rl/environments/math_environment.py": {}
+          }
+        }
+      }
+    },
+    "stanford-crfm/helm": {
+      "owner": "stanford-crfm",
+      "repo": "helm",
+      "by_sha": {
+        "26b9af43b761fe73d571fc5b7fe04e80698c9179": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "stanford-crfm/helm@26b9af43b761fe73d571fc5b7fe04e80698c9179/src/helm/clients/anthropic_client.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 97",
+                "LLM call without explicit temperature parameter at line 405"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 97",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 405"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 405"
+              ],
+              "R31": [
+                "Unbounded vision payloads at line 97",
+                "Unbounded vision payloads at line 405"
+              ]
+            },
+            "stanford-crfm/helm@26b9af43b761fe73d571fc5b7fe04e80698c9179/src/helm/benchmark/annotation/omni_math_annotator.py": {}
+          }
+        }
+      }
+    },
+    "linagora/openrag": {
+      "owner": "linagora",
+      "repo": "openrag",
+      "by_sha": {
+        "efa103ff60e9f554d4845c30acd29a18b1fc68d5": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "linagora/openrag@efa103ff60e9f554d4845c30acd29a18b1fc68d5/openrag/components/indexer/loaders/serializer.py": {}
+          }
+        }
+      }
+    },
+    "linkedin/Liger-Kernel": {
+      "owner": "linkedin",
+      "repo": "Liger-Kernel",
+      "by_sha": {
+        "6059dfb2158cf3399b27f2b124939aac8e4fcd31": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "linkedin/Liger-Kernel@6059dfb2158cf3399b27f2b124939aac8e4fcd31/benchmark/scripts/benchmark_tiled_mlp.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-AI-Blueprints/rag": {
+      "owner": "NVIDIA-AI-Blueprints",
+      "repo": "rag",
+      "by_sha": {
+        "42962afb228a788ce234ce63c04f754049e74310": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-AI-Blueprints/rag@42962afb228a788ce234ce63c04f754049e74310/src/nvidia_rag/rag_server/query_decomposition.py": {}
+          }
+        }
+      }
+    },
+    "markl-a/My-AI-Learning-Notes": {
+      "owner": "markl-a",
+      "repo": "My-AI-Learning-Notes",
+      "by_sha": {
+        "a0991e3243be331c841590f7b0dfa32c3b8c8577": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "markl-a/My-AI-Learning-Notes@a0991e3243be331c841590f7b0dfa32c3b8c8577/5.AI研究前沿_2024-2025/1.大型語言模型(LLM)/examples/01_llama31_complete.py": {
+              "R26": [
+                "LLM call without model version pinning at line 64",
+                "LLM call without model version pinning at line 67"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "kungfuai/CVlization": {
+      "owner": "kungfuai",
+      "repo": "CVlization",
+      "by_sha": {
+        "6c7e2824aa453250271d57563d8bfb32569e0960": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "kungfuai/CVlization@6c7e2824aa453250271d57563d8bfb32569e0960/examples/generative/image_generation/dit/diffusion/__init__.py": {},
+            "kungfuai/CVlization@6c7e2824aa453250271d57563d8bfb32569e0960/examples/generative/image_generation/pixart/diffusion/model/timestep_sampler.py": {}
+          }
+        }
+      }
+    },
+    "IntelLabs/blueglass": {
+      "owner": "IntelLabs",
+      "repo": "blueglass",
+      "by_sha": {
+        "869a1f3d2b132b6a31f7b71032b31f11f396ebf5": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "IntelLabs/blueglass@869a1f3d2b132b6a31f7b71032b31f11f396ebf5/blueglass/modeling/modelstore/closed_source/__init__.py": {}
+          }
+        }
+      }
+    },
+    "sii-research/siiRL": {
+      "owner": "sii-research",
+      "repo": "siiRL",
+      "by_sha": {
+        "297950ae5429ff6b35e7ae38b2c608bcf0cfe18d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "sii-research/siiRL@297950ae5429ff6b35e7ae38b2c608bcf0cfe18d/siirl/models/model_utils/visual.py": {}
+          }
+        }
+      }
+    },
+    "Marker-Inc-Korea/KO-VLM-Benchmark": {
+      "owner": "Marker-Inc-Korea",
+      "repo": "KO-VLM-Benchmark",
+      "by_sha": {
+        "1c786dca65dd02698f0c4bde80513efce229d8df": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Marker-Inc-Korea/KO-VLM-Benchmark@1c786dca65dd02698f0c4bde80513efce229d8df/tests/ko_vlm_benchmark/nano_banana_pipeline/test_pipeline.py": {}
+          }
+        }
+      }
+    },
+    "allenai/olmocr": {
+      "owner": "allenai",
+      "repo": "olmocr",
+      "by_sha": {
+        "b274e893d7d80f7063b52e1de357170b4beb7262": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "allenai/olmocr@b274e893d7d80f7063b52e1de357170b4beb7262/scripts/data/buildsilver.py": {}
+          }
+        }
+      }
+    },
+    "guanweifan/RoboNeuron": {
+      "owner": "guanweifan",
+      "repo": "RoboNeuron",
+      "by_sha": {
+        "f4b2a705380050a76765583251490b2cc5c6e173": {
+          "num_listed_files": 4,
+          "num_analyzed_files": 4,
+          "alerts": {
+            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/code_llama/__init__.py": {},
+            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/clip/image_processing_clip.py": {},
+            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/persimmon/convert_persimmon_weights_to_hf.py": {},
+            "guanweifan/RoboNeuron@f4b2a705380050a76765583251490b2cc5c6e173/vla_src/openvla/transformers/src/transformers/models/imagegpt/convert_imagegpt_original_tf2_to_pytorch.py": {}
+          }
+        }
+      }
+    },
+    "langfengQ/verl-agent": {
+      "owner": "langfengQ",
+      "repo": "verl-agent",
+      "by_sha": {
+        "373e6b221cd88db45a1d303da5dd7871630efe09": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "langfengQ/verl-agent@373e6b221cd88db45a1d303da5dd7871630efe09/verl/workers/rollout/schemas.py": {}
+          }
+        }
+      }
+    },
+    "Fsoft-AIC/LibMoE": {
+      "owner": "Fsoft-AIC",
+      "repo": "LibMoE",
+      "by_sha": {
+        "52fa34981f008b26aee89eff1be608b676b63b21": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Fsoft-AIC/LibMoE@52fa34981f008b26aee89eff1be608b676b63b21/vision_language_model/evaluate/lmms_eval/models/claude.py": {
+              "R29": [
+                "LLM pipeline call without structured output at line 237"
+              ],
+              "R32": [
+                "Overspecified sampling at line 237"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "lee101/stock-prediction": {
+      "owner": "lee101",
+      "repo": "stock-prediction",
+      "by_sha": {
+        "a941985bcede694bfacf9651e80da9e92179675b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "lee101/stock-prediction@a941985bcede694bfacf9651e80da9e92179675b/stockagentopus/opus_wrapper.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 215"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 215"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 215"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "AdaptVision/AdaptVision": {
+      "owner": "AdaptVision",
+      "repo": "AdaptVision",
+      "by_sha": {
+        "e8b1fa3df4a71892b8e2daed292ef10fc60c455a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "AdaptVision/AdaptVision@e8b1fa3df4a71892b8e2daed292ef10fc60c455a/verl/third_party/vllm/vllm_v_0_4_2/llm.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/Automodel": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "Automodel",
+      "by_sha": {
+        "4e9d32b599ab84501bb8964e601285e4adc3dc70": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-NeMo/Automodel@4e9d32b599ab84501bb8964e601285e4adc3dc70/nemo_automodel/components/models/llama/model.py": {}
+          }
+        }
+      }
+    },
+    "shell-nlp/gpt_server": {
+      "owner": "shell-nlp",
+      "repo": "gpt_server",
+      "by_sha": {
+        "8fad613be165f5a79d64ac93ceb0d4a8b4cac990": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "shell-nlp/gpt_server@8fad613be165f5a79d64ac93ceb0d4a8b4cac990/tests/test_openai_chat.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 4",
+                "LLM call without explicit temperature parameter at line 7"
+              ],
+              "R26": [
+                "LLM call without model version pinning at line 7"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 7"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 7"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 7"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "modelscope/modelscope": {
+      "owner": "modelscope",
+      "repo": "modelscope",
+      "by_sha": {
+        "a7f50d45164cfaa3f8797d05a63a039eb7163fd0": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "modelscope/modelscope@a7f50d45164cfaa3f8797d05a63a039eb7163fd0/modelscope/models/cv/image_view_transform/ldm/openaimodel.py": {}
+          }
+        }
+      }
+    },
+    "vllm-project/speculators": {
+      "owner": "vllm-project",
+      "repo": "speculators",
+      "by_sha": {
+        "b3f6b104e828178bb537d4ac80f01f49dbfc8bc4": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "vllm-project/speculators@b3f6b104e828178bb537d4ac80f01f49dbfc8bc4/src/speculators/models/eagle3/model_definitions.py": {}
+          }
+        }
+      }
+    },
+    "lpalbou/AbstractCore": {
+      "owner": "lpalbou",
+      "repo": "AbstractCore",
+      "by_sha": {
+        "5bfd9a86fcf91751182471a8de9f1d1f1a6a8189": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "lpalbou/AbstractCore@5bfd9a86fcf91751182471a8de9f1d1f1a6a8189/abstractcore/providers/lmstudio_provider.py": {},
+            "lpalbou/AbstractCore@5bfd9a86fcf91751182471a8de9f1d1f1a6a8189/tests/media_handling/test_cli_media.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/Export-Deploy": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "Export-Deploy",
+      "by_sha": {
+        "c7e272779137adc2ecd7e5d29d85b00c723fcd35": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-NeMo/Export-Deploy@c7e272779137adc2ecd7e5d29d85b00c723fcd35/tests/functional_tests/tests_inframework/test_export_deploy_query_pytriton.py": {}
+          }
+        }
+      }
+    },
+    "YWenxi/think-with-images-through-self-calling": {
+      "owner": "YWenxi",
+      "repo": "think-with-images-through-self-calling",
+      "by_sha": {
+        "fd872eebca5157f570de062c23a5336baf3de8ad": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "YWenxi/think-with-images-through-self-calling@fd872eebca5157f570de062c23a5336baf3de8ad/verl/tools/image_zoom_in_tool.py": {}
+          }
+        }
+      }
+    },
+    "SYuan03/MM-IFEngine": {
+      "owner": "SYuan03",
+      "repo": "MM-IFEngine",
+      "by_sha": {
+        "af6430c6e0bd9ad81cceeaf4062257d8854e9626": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "SYuan03/MM-IFEngine@af6430c6e0bd9ad81cceeaf4062257d8854e9626/tests/data/test_formatter.py": {}
+          }
+        }
+      }
+    },
+    "xhguo7/PAPO-Eval": {
+      "owner": "xhguo7",
+      "repo": "PAPO-Eval",
+      "by_sha": {
+        "b57d909f49f707f8913cf5064b9da2b50575970d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "xhguo7/PAPO-Eval@b57d909f49f707f8913cf5064b9da2b50575970d/evaluation/mmlu/mmlu.py": {}
+          }
+        }
+      }
+    },
+    "InternLM/ARM-Thinker": {
+      "owner": "InternLM",
+      "repo": "ARM-Thinker",
+      "by_sha": {
+        "b70dfe967941450d88f8a8ce526f85af87e2c624": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "InternLM/ARM-Thinker@b70dfe967941450d88f8a8ce526f85af87e2c624/verl/models/transformers/llama.py": {}
+          }
+        }
+      }
+    },
+    "PaddlePaddle/FastDeploy": {
+      "owner": "PaddlePaddle",
+      "repo": "FastDeploy",
+      "by_sha": {
+        "d6574556169e4da8a55cc3d44d505cf7a8c3f79c": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "PaddlePaddle/FastDeploy@d6574556169e4da8a55cc3d44d505cf7a8c3f79c/tests/e2e/test_ernie_03b_pd_router_v1_ipc.py": {},
+            "PaddlePaddle/FastDeploy@d6574556169e4da8a55cc3d44d505cf7a8c3f79c/fastdeploy/entrypoints/engine_client.py": {}
+          }
+        }
+      }
+    },
+    "rllm-org/rllm": {
+      "owner": "rllm-org",
+      "repo": "rllm",
+      "by_sha": {
+        "1a5bcdf57c79f2ac67dc5d9f2397d0be94169ede": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "rllm-org/rllm@1a5bcdf57c79f2ac67dc5d9f2397d0be94169ede/rllm/engine/rollout/fireworks_engine.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 83"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 83"
+              ],
+              "R28": [
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 83"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 83"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "keta1930/mcp-agent-graph": {
+      "owner": "keta1930",
+      "repo": "mcp-agent-graph",
+      "by_sha": {
+        "1e0f983701e4a11d1e7d89983d0ea025ef45ca80": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "keta1930/mcp-agent-graph@1e0f983701e4a11d1e7d89983d0ea025ef45ca80/mag/app/api/conversation_routes.py": {}
+          }
+        }
+      }
+    },
+    "OpenMind/OM1": {
+      "owner": "OpenMind",
+      "repo": "OM1",
+      "by_sha": {
+        "2c2615b14d0ca05530e0ed50ca9ffd7a3aa6442a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "OpenMind/OM1@2c2615b14d0ca05530e0ed50ca9ffd7a3aa6442a/src/inputs/plugins/vlm_openai_rtsp.py": {}
+          }
+        }
+      }
+    },
+    "EleutherAI/lm-evaluation-harness": {
+      "owner": "EleutherAI",
+      "repo": "lm-evaluation-harness",
+      "by_sha": {
+        "69ecd0b929701d346c1119d5cd0563ade4ab3536": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "EleutherAI/lm-evaluation-harness@69ecd0b929701d346c1119d5cd0563ade4ab3536/tests/models/test_api.py": {}
+          }
+        }
+      }
+    },
+    "alibaba/ROLL": {
+      "owner": "alibaba",
+      "repo": "ROLL",
+      "by_sha": {
+        "c7e897d41cff9449088e8f8403d44cbc24fcf4ca": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "alibaba/ROLL@c7e897d41cff9449088e8f8403d44cbc24fcf4ca/tests/third_party/vllm/test_vllm_local_async.py": {
+              "R26": [
+                "LLM call without model version pinning at line 25"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "deepsense-ai/ragbits": {
+      "owner": "deepsense-ai",
+      "repo": "ragbits",
+      "by_sha": {
+        "c8487b2e01cd72966062b99a68007b0d9cc49fda": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "deepsense-ai/ragbits@c8487b2e01cd72966062b99a68007b0d9cc49fda/packages/ragbits-core/tests/unit/llms/test_litellm.py": {}
+          }
+        }
+      }
+    },
+    "GetStream/Vision-Agents": {
+      "owner": "GetStream",
+      "repo": "Vision-Agents",
+      "by_sha": {
+        "b5649a8998622d01eeb0c351d680f550bdc450fe": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "GetStream/Vision-Agents@b5649a8998622d01eeb0c351d680f550bdc450fe/examples/02_golf_coach_example/golf_coach_example.py": {}
+          }
+        }
+      }
+    },
+    "damianomarsili/VALOR": {
+      "owner": "damianomarsili",
+      "repo": "VALOR",
+      "by_sha": {
+        "cf2442b4485eada8fdade3ebc14040e300317486": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "damianomarsili/VALOR@cf2442b4485eada8fdade3ebc14040e300317486/valor/reasoning_training/verl/verl/utils/reward_score/prime_math/math_normalize.py": {}
+          }
+        }
+      }
+    },
+    "CraftJarvis/OpenHA": {
+      "owner": "CraftJarvis",
+      "repo": "OpenHA",
+      "by_sha": {
+        "2127a3448831aad52dadc19f70c7d1b5d21a5fe0": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/MTRL/verl/utils/reward_score/prime_math/__init__.py": {},
+            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/MTRL/recipe/sppo/main_sppo.py": {},
+            "CraftJarvis/OpenHA@2127a3448831aad52dadc19f70c7d1b5d21a5fe0/CrossAgent/STRL/verl_lib/verl/workers/rollout/vllm_rollout/__init__.py": {}
+          }
+        }
+      }
+    },
+    "DataArcTech/RAG-ARC": {
+      "owner": "DataArcTech",
+      "repo": "RAG-ARC",
+      "by_sha": {
+        "f1f37bc149eb5ef6d10d13aae5a12c303fd17679": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "DataArcTech/RAG-ARC@f1f37bc149eb5ef6d10d13aae5a12c303fd17679/config/core/file_management/extractor/graphextractor_config.py": {}
+          }
+        }
+      }
+    },
+    "SearchSavior/OpenArc": {
+      "owner": "SearchSavior",
+      "repo": "OpenArc",
+      "by_sha": {
+        "14dec900ac34ec72d75249c04820eefe223f5ff6": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "SearchSavior/OpenArc@14dec900ac34ec72d75249c04820eefe223f5ff6/src/tests/old_tests_from_dev/completions_test.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 9",
+                "LLM call without explicit temperature parameter at line 38",
+                "LLM call without explicit temperature parameter at line 77"
+              ],
+              "R32": [
+                "Overspecified sampling at line 87"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "NVIDIA/TensorRT-LLM": {
+      "owner": "NVIDIA",
+      "repo": "TensorRT-LLM",
+      "by_sha": {
+        "0b279f4ad4b9c2842cb79e1a45754ec1fd51646a": {
+          "num_listed_files": 5,
+          "num_analyzed_files": 5,
+          "alerts": {
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tensorrt_llm/_torch/models/modeling_llava_next.py": {
+              "R26": [
+                "LLM call without model version pinning at line 54"
+              ]
+            },
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/unittest/llmapi/apps/_test_openai_cache_salt.py": {
+              "R25": [
+                "LLM call without explicit temperature parameter at line 225"
+              ],
+              "R29": [
+                "LLM pipeline call without structured output at line 131",
+                "LLM pipeline call without structured output at line 148",
+                "LLM pipeline call without structured output at line 167",
+                "LLM pipeline call without structured output at line 186",
+                "LLM pipeline call without structured output at line 208",
+                "LLM pipeline call without structured output at line 225"
+              ]
+            },
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/unittest/_torch/sampler/test_beam_search.py": {},
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/unittest/llmapi/test_llm_pytorch.py": {
+              "R26": [
+                "LLM call without model version pinning at line 250",
+                "LLM call without model version pinning at line 560",
+                "LLM call without model version pinning at line 613"
+              ]
+            },
+            "NVIDIA/TensorRT-LLM@0b279f4ad4b9c2842cb79e1a45754ec1fd51646a/tests/integration/defs/test_e2e.py": {
+              "R26": [
+                "LLM call without model version pinning at line 414",
+                "LLM call without model version pinning at line 3051"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
