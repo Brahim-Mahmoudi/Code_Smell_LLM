@@ -173,9 +173,6 @@ Detecting OSP can be framed as a structural check over LLM invocation sites:
 - Conservative handling of wrappers that pass parameters indirectly
 - Does not judge whether the selected control is the correct choice for a task
 
-## Prevalence
-
-In the analyzed corpus, OSP affects **13.44% of projects** (93 out of 692) with **302 occurrences**.
 
 
 ### Sources

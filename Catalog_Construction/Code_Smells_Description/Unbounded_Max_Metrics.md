@@ -138,6 +138,6 @@ def generate(prompt: str) -> str:
 
 - [RooCodeInc. fix — handle empty stream responses from GLM models [Pull request #8483]. In Roo-Code (GitHub repository). GitHub.](https://github.com/RooCodeInc/Roo-Code/pull/8483)
 
--[Stack Overflow. RAG — “connection to OpenAI API failed with status: 400 error: -19577 is less than the minimum of 1 — max_tokens” (Accepted answer).](https://stackoverflow.com/questions/77172214/rag-error-connection-to-openai-api-failed-with-status-400-error-19577)
+- [Stack Overflow. RAG — “connection to OpenAI API failed with status: 400 error: -19577 is less than the minimum of 1 — max_tokens” (Accepted answer).](https://stackoverflow.com/questions/77172214/rag-error-connection-to-openai-api-failed-with-status-400-error-19577)
 
--[Stack Overflow. AI server crashes when I make a request after adding OpenAI code (Accepted answer).](https://stackoverflow.com/questions/77354317/ai-server-crashes-when-i-make-a-request-after-adding-openai-code)
+- [Stack Overflow. AI server crashes when I make a request after adding OpenAI code (Accepted answer).](https://stackoverflow.com/questions/77354317/ai-server-crashes-when-i-make-a-request-after-adding-openai-code)
