@@ -9,9 +9,15 @@ This document details how we (i) searched and selected the literature on LLM int
 - [No_Version_Model_Pinning](Code_Smells_Description/No_Version_Model_Pinning.md)
 - [Temperature_Not_Explicitly_Set](Code_Smells_Description/Temperature_Not_Explicitly_Set.md)
 - [Unbounded_Max_Metrics](Code_Smells_Description/Unbounded_Max_Metrics.md)
+- [Overspecified_Sampling_Parameters](Code_Smells_Description/Overspecified_Sampling_Parameters.md)
+- [Reasoning_Effort_Not_Explicitly_Set](Code_Smells_Description/Reasoning_Effort_Not_Explicitly_Set.md)
+- [Raw_Vision_Payload](Code_Smells_Description/Raw_Vision_Payload.md)
+- [Anonymous_Inference_Call](Code_Smells_Description/Anonymous_Inference_Call.md)
 
 
-## 1) Scope & Research Questions
+## Methodology
+
+### Scope & Research Questions
 
 We target code-level issues that arise when integrating Large Language Models (LLMs) into software systems (e.g., API misuse, quota handling, structured output, prompt plumbing, reliability, cost/performance risks). Our review asks:
 
@@ -19,77 +25,109 @@ We target code-level issues that arise when integrating Large Language Models (L
 - **RQ2 — Practices**: What mitigation strategies, refactorings, or best practices are suggested?
 - **RQ3 — Catalog**: How can these findings be consolidated into a practitioner-oriented code smell catalog?
 
+### Data Sources
+
+- **Academic literature**: ACM Digital Library, Compendex, IEEE Xplore, ScienceDirect, SpringerLink, Scopus, arXiv, Wiley
+- **Grey and empirical literature**: Provider documentation, engineering blogs, GitHub issues, GitHub repositories, Stack Overflow, technical posts
+
+### Catalog Construction Methodology
+
+The code smell was identified through a systematic multi-source approach combining academic literature review with grey and empirical literature mining.
+
+#### 1. Systematic Literature Review (SLR)
+
+We followed the updated PRISMA 2020 guidelines and Kitchenham et al.'s guidelines for systematic reviews in software engineering. The review consisted of four main steps:
+
+**Search Strategy**:
+- **Databases**: ACM Digital Library, Compendex, IEEE Xplore, ScienceDirect, SpringerLink, Scopus, arXiv, Wiley
+- **Time Frame**: 2017-2025 (capturing the rise of LLM research)
+- **Search Query** (using PICO framework):
+```
+  ("large language model*" OR "LLM*") AND 
+  ("integrat*" OR "API*" OR "software system*") AND 
+  ("misuse*" OR "defect*" OR "bug*" OR "smell*" OR "pitfall*")
+```
+
+**Selection Process**:
+1. **Database Identification**: Initial search yielded 2,243 papers across seven libraries
+2. **Duplicates Removal**: Exact match on title, first author, and venue
+3. **Screening**: Two-phase screening using inclusion/exclusion criteria
+   - Phase 1: Title and abstract screening (Cohen's Kappa κ=0.85, near-perfect agreement)
+   - Phase 2: Full-text review (Cohen's Kappa κ=0.93, near-perfect agreement)
+4. **Snowballing**: Two iterations of backward and forward snowballing added 16 studies
+5. **Final Selection**: 27 papers retained for evidence extraction
+
+**Inclusion Criteria**:
+- Written in English
+- Published between 2017-2025
+- Presents LLM-based software system or engineering practice
+- Reports concrete integration issues, misuses, defects, or failures
+- Provides technical detail about LLM invocation or API configuration
+- Provides information to characterize at least one LLM code smell
+- Full text available online
+- Peer-reviewed
+
+**Exclusion Criteria**:
+- Secondary sources (reviews, surveys, opinion pieces)
+- No LLM API/SDK interaction described
+- No implementation detail for analyzing integration defects
+- Focuses exclusively on training/datasets without integration aspects
+- Not available online or not in English
+
+#### 2. Grey and Empirical Literature Mining
+
+To capture real-world practices not yet documented in academic venues, we conducted structured mining of grey and empirical literature using GLiSE [Grey Literature Search Engine](https://arxiv.org/abs/2512.23066), a three-step, prompt-driven and ML-powered tool for extracting software engineering literature from Google, GitHub issues, GitHub repositories, and Stack Overflow.
+
+**GLiSE Methodology**:
+
+1. **Prompts Creation**: We created ten distinct textual prompts with varying granularity:
+   - Generic prompts for broad LLM integration coverage
+   - Specific prompts targeting particular API features and functionalities
+   - This multi-prompt approach mitigates risks of overly generic or narrow searches
+
+2. **Extraction with GLiSE**: For each prompt, GLiSE:
+   - Generates source-specific search queries
+   - Executes queries using respective APIs
+   - Screens results based on semantic relevance using embeddings and ML classifiers
+   - **Initial Results**: 574 sources (167 Google, 181 GitHub issues, 226 GitHub repos, 0 Stack Overflow)
+
+3. **Manual Filtering**: Additional screening to ensure quality and relevance:
+   - GLiSE's automated filtering combined with manual review
+   - Strict relevance criteria specific to LLM code smells
+   - Exclusion of sources confused with related concepts (e.g., code smells in LLM-generated code)
+   - **Final Selection**: 118 sources (47 Google, 40 GitHub issues, 31 GitHub repos, 0 Stack Overflow)
+
+**Complementary Manual Searches**: Targeted searches of official documentation from major providers:
+- OpenAI, Gemini, Anthropic, Hugging Face, Ollama
+- Focus on reliable sources directly aligned with study subject
+
+#### 3. Evidence Synthesis and Triangulation
+
+For each candidate code smell:
+- **Multi-source validation**: Required converging evidence across academic, grey, and empirical sources
+- **Triangulation**: Academic publications provide systematic views; grey literature reflects practical developer concerns
+- **Conservative admission**: Smells admitted only when:
+  - Observable at code level
+  - Supported by multiple independent sources
+  - Associated with accessible remediation strategy
+  - Can be classified within the taxonomy
+
+**Documentation Structure**: Each smell formalized with:
+- Name & Definition
+- Context & Motivation
+- Problem description
+- Solution & recommendations
+- Examples (bad → good)
+- Detection strategy
+- Quality effects (robustness, performance, maintainability, reliability)
+- Sources & references
 
 
-## 2) Data Sources
+### Threats to Validity
 
-- **Academic**: Google Scholar, ACM Digital Library, IEEE Xplore, arXiv, Scopus.
-- **Grey literature**: provider docs, engineering blogs, cookbooks, issue trackers, Q&A, and technical posts.
-
-
-
-
-## 3) Literature Analysis Methodology
-
-### Manual Literature Search in Academic Sources
-
-The first step was a manual bibliographic search across established academic portals. Simple queries were issued on platforms such as Google Scholar, IEEE Xplore, and the ACM Digital Library, as well as open repositories like arXiv. These searches aimed to gather publications that address—directly or indirectly—code-level LLM integration. Because the notion of "LLM code smell" was not yet formalized, we employed a broad set of keywords around defects, poor practices, and recommendations for using LLMs in software. Examples include "LLM integration issues", "LLM best practices in code", and "pitfalls of using LLM APIs".
-
-This manual search produced an initial corpus of potentially relevant academic articles. At this stage, the emphasis was on coverage rather than precision: we preferred to cast a wide net to avoid missing important sources. The process was entirely manual and qualitative—no automated crawling scripts were used. The goal was to prioritize deep understanding of content over raw volume.
-
-### Selection and Filtering of Relevant Sources
-
-After assembling the initial list from the queries, we manually screened sources for relevance. Each result was examined by reading its title and abstract to quickly assess whether it addressed concrete coding or software engineering aspects of LLM integration. Selection criteria included:
-
-- The source explicitly discussed LLM integration in code (e.g., LLM API calls, parameter configurations, architectural concerns around LLMs).
-- Ideally, it identified concrete problems, limitations, or pitfalls of LLM integration, or offered actionable coding recommendations.
-- Work that was purely conceptual or too high-level was excluded.
-
-Applying these criteria, we refined the initial corpus and retained the most relevant articles for in-depth reading. This manual triage narrowed the set to studies and reports likely to reveal recurrent poor coding practices when integrating LLMs in real projects.
-
-### In-Depth Reading and Analysis of Selected Sources
-
-For each retained source, we performed a full, in-depth reading. This qualitative analysis had two aims:
-1. Extract any passages describing a difficulty, frequent mistake, or coding advice related to LLM implementation
-2. Identify recurring themes across sources
-
-We kept structured notes per reference, recording the problems mentioned (e.g., "not specifying temperature can cause issues"), their context, and any suggested best practices or fixes.
-
-As this analytical reading progressed, candidate code smells emerged. Whenever a poor practice was mentioned across multiple independent sources, we treated it as a credible code smell rather than an isolated anecdote.
-
-### Grey Literature and Triangulation
-
-To enrich and validate observations, we also consulted grey literature:
-- Technical blog posts
-- Developer write-ups
-- Official documentation from LLM API providers
-- Community experience reports
-
-The goal was to triangulate perspectives: academic publications provide structured, systematic views of problems, while grey literature reflects practical developer concerns and field-tested guidance.
-
-This triangulation was essential to validate each candidate code smell. For every poor practice identified in academic sources, we looked for supporting evidence in blogs or documentation (and vice versa). Items mentioned by only a single source were treated cautiously or discarded if they lacked corroboration.
-
-### Final Extraction and Formalization of Code Smells
-
-Following analysis and triangulation, we identified five recurrent poor practices in LLM integration. Each smell was then formalized and documented with:
-
-- **Name & Intent**
-- **Context**
-- **Problem**
-- **Solution**
-- **Effect on Software Quality**
-- **Minimal Example (bad → good)**
-- **Sources/References**
-
-This documentation structure follows established code smell catalogs in software engineering, facilitating developer uptake. The five smells obtained from this manual, triangulated analysis provide a first formal basis to recognize and avoid poor coding practices in LLM integration.
-
-
-
-
-
-## 4) Threats to Validity
-
-- Search bias: mitigated via multiple portals, synonym expansion, and snowballing.
-- Grey-literature credibility: mitigated by favoring provider docs and well-established engineering sources.
-- Evolving APIs: vendor limits and SDKs change; we timestamp sources and note model/API versions.
-- Construct validity: our smells target code-integration phenomena (not prompt quality alone); definitions underwent expert review.
+- **Search bias**: Mitigated via multiple portals, PRISMA guidelines, and snowballing
+- **Grey-literature credibility**: Mitigated through GLiSE's ML-powered filtering and favoring official provider documentation
+- **Evolving APIs**: Reasoning controls are recent; we timestamp sources and note model/API versions
+- **Construct validity**: Smells target code-integration phenomena; definitions underwent multi-source triangulation and expert review
+- **Observability limits**: Static analysis may miss reasoning configuration in external files or dynamic contexts
+- **Corpus composition**: Open-source Python projects may not reflect industrial or multi-language practices
