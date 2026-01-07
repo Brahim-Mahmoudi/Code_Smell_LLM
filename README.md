@@ -1,6 +1,6 @@
 ![Overview](static/MethoLLMP.png)
 
-# LLM integration Code Smells — Replication Package
+# LLM Code Smells — Replication Package
 
 > Companion materials for **specifying**, **detecting**, and **measuring the prevalence** of *LLM integration code smells*.
 
@@ -21,13 +21,6 @@ python Detection/specDetect4LLM.py --input-dir ./my_project --all
 ```
 
 For Docker setup and web UI, follow: [Web-app](Detection/docs/docker.md)
-
-## Pipeline overview
-
-```
-Catalog_Construction  ->  Detection  ->  Prevalence  ->  Results/Figures
-      (specs)             (rules)        (dataset)        (metrics)
-```
 
 
 
@@ -50,7 +43,7 @@ High-level organization and where to look:
   - `Extraction_LLM_Files/`: repo selection and file extraction pipeline.
   - `Extracted_Metrics/`: computed metrics and figures.
   - `Precision_Calculation/`: manual analysis and agreement data.
-- `web-app/`: Flask web UI for running the detector.
+- `web-app/`: Flask web UI for running the analyser.
 - `static/`: figures used in documentation.
 - `Dockerfile`, `requirements.txt`: runtime dependencies for CLI/web.
 
