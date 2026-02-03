@@ -89,6 +89,6 @@ This folder provides:
 
 ## 4) Manual Annotation Web App
 
-The web application used for the **manual annotation of LLM Code Smells** during ** SpecDetect4LLM's precision and recall study** is available here:
+The web application used for the **manual annotation of LLM Code Smells** during **SpecDetect4LLM's precision and recall study** is available here:
 
 https://github.com/ChL-Z/LLM-code-smells-manual-annotation
