@@ -4,79 +4,91 @@
 
 **No Model Version Pinning (NMVP)**
 
-Intent: prevent reproducibility and audit gaps that arise when calling an LLM by a moving alias (e.g., `gpt-4o`) rather than an immutable version/snapshot (e.g., `gpt-4o-2024-11-20`). Pinning the exact model version (and recording it with run metadata) stabilizes behavior across time, enables traceability, and supports controlled upgrades through change management. In our empirical study, NMVP appears in 36.00% (72/200) of systems, with a manual-audit precision of 95.65%.
+Intent: avoid reproducibility and audit gaps that arise when calling an LLM by a moving alias (for example `gpt-4o`) rather than an immutable version or snapshot (for example `gpt-4o-2024-11-20`). Pinning the exact model version stabilizes behavior across time and enables traceability.
 
 ## Context
 
-Most providers and runtimes expose two ways to reference a model:
-- A moving alias (e.g., `gpt-4o`, `claude-3-opus`, `llama3.1`), whose underlying weights/prompting/safety layers can change over time
-- An immutable version/snapshot (e.g., `gpt-4o-2024-11-20`, a specific Hugging Face revision/commit, an Ollama tag), which pins the exact artifact
-
-Teams often start with aliases during prototyping, but when such references propagate into production (SDK calls, workflow YAML, env vars, router policies), behavior can drift silently as providers roll out updates.
+Providers expose moving aliases and immutable versions. Aliases can advance as providers update weights, prompts, or safety filters. When aliases propagate into production, behavior can drift silently.
 
 ## Problem
 
-Without explicit version pinning, several risks accumulate:
-
-- Silent behavior drift as providers update weights, prompts, or safety filters behind the alias
-- Eroded traceability & reproducibility
-- Portability issues across environments
-- Maintenance overhead for incident analysis and audits
-- Difficult rollbacks and change control
-
-Empirically, NMVP generates the most alerts (2,472) yet appears in fewer projects (72/200) than other smells—consistent with alias propagation inside projects once adopted.
+Using aliases removes explicit versioning. Weights and safety layers can change without notice and shift behavior, reducing maintainability, traceability, and reproducibility.
 
 ## Solution
 
-### General Guidelines
-1. Adopt strict version pinning:
-   - Use dated model IDs (OpenAI)
-   - Use revision commits (Hugging Face)
-   - Use image-like tags (Ollama)
-2. Govern upgrades via change control
-3. Centralize configuration
-4. Log & audit
-5. Test portability
-
-### OpenAI Implementation
-- Prefer dated model IDs (e.g., `gpt-4o-2024-11-20`) over moving aliases
-- Pin provider-specific versions in routing layers
-- Store model metadata with each run
+Always specify an immutable model identifier and record it with run metadata. Update versions through change control instead of relying on moving aliases.
 
 ## Effect on Software Quality
 
 ### Maintainability (M)
-- Traceability & auditability
-- Change control
-- Configuration hygiene
+- Traceability and auditability
+- Controlled upgrades
 
 ### Reliability (R)
-- Stable behavior across time/environments
-- Comparable evaluations and reproducible outcomes
+- Stable behavior across time and environments
+- Reproducible evaluations
 
-## Minimal Example (bad → good)
+## Minimal Example (bad -> good)
 
 ```python
-# BAD — Using a moving alias (unPinned)
+# BAD — using a moving alias
 from openai import OpenAI
 client = OpenAI()
 
 resp = client.chat.completions.create(
-    model="gpt-4o",              # moving alias → behavior can change over time
+    model="gpt-4o",
     messages=messages
 )
 
-# GOOD — Pin an immutable, dated model version + log it
+# GOOD — pin an immutable version
 from openai import OpenAI
 client = OpenAI()
 
-MODEL_ID = "gpt-4o-2024-11-20"   # pinned version/snapshot
+MODEL_ID = "gpt-4o-2024-11-20"
 resp = client.chat.completions.create(
     model=MODEL_ID,
     messages=messages
-    # optional: persist MODEL_ID with other run metadata
 )
 ```
+
+## Additional Examples
+
+Anthropic
+
+```python
+import anthropic
+
+client = anthropic.Anthropic()
+
+# BAD — moving alias
+message = client.messages.create(
+    model="claude-3-5-sonnet",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Summarize this."}]
+)
+
+# GOOD — pinned version
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Summarize this."}]
+)
+```
+
+Gemini
+
+```python
+import google.generativeai as genai
+
+# BAD — moving alias
+model = genai.GenerativeModel("gemini-1.5-pro")
+resp = model.generate_content("Summarize this.")
+
+# GOOD — pinned version
+model = genai.GenerativeModel("gemini-1.5-pro-002")
+resp = model.generate_content("Summarize this.")
+```
+
 ### Sources
 
 ***Papers***

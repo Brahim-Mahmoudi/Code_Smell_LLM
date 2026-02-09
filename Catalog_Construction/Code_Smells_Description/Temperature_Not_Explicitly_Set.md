@@ -4,48 +4,34 @@
 
 **LLM Temperature Not Explicitly Set (TNES)**
 
-Intent: avoid relying on a provider/model/framework default temperature when invoking an LLM. Temperature controls the randomness of token sampling; leaving it implicit harms reproducibility, portability, and consistency because defaults vary across providers and can change over time. Projects should make temperature explicit, document it, and tune it by task (lower for precision/repeatability, higher for creativity).
+Intent: avoid relying on provider or model defaults for temperature. Temperature controls sampling randomness, and leaving it implicit harms reproducibility, portability, and consistency because defaults vary and can change over time.
 
 ## Context
 
-Modern LLM stacks (APIs, SDKs, local runtimes) expose temperature as a first-class decoding parameter (e.g., OpenAI, Hugging Face/Transformers, Ollama). In practice, teams often prototype without setting temperature, then that omission persists into agents, batch jobs, or evaluation pipelines, where stable behavior over time matters. Because defaults differ across providers/models—and may be revised—leaving temperature implicit pushes hidden choices into the platform, weakening traceability and auditability of runs.
+LLM APIs expose temperature alongside other sampling controls such as top_p and top_k. These parameters are core to decoding behavior and must be treated as explicit configuration.
 
 ## Problem
 
-Not explicitly setting the temperature creates several quality risks:
-
-- Maintainability & reliability regressions due to different defaults
-- Reduced reproducibility & portability
-- Hidden changes over time from platform updates
-- Undermined stability and audits
+Implicit temperature reduces maintainability and reliability. Defaults differ across providers and models and may change over time, silently altering behavior.
 
 ## Solution
 
-### General Guidelines
-Always set temperature explicitly and document the choice. Tune by task:
-- Low (≈0–0.3) for precise, repeatable automation
-- Higher (≈0.7–1.0) for creative/divergent generation
-- Avoid extremes that degrade coherence
-
-### OpenAI Implementation
-- Provide explicit temperature in every call
-- Treat temperature as part of run configuration
-- Keep temperature conservative with structured outputs
+Always specify temperature explicitly and document the choice. Use low values (about 0.0 to 0.3) for precise, repeatable automation and higher values (about 0.7 to 1.0) for creative generation. Avoid extremes. If top_p or top_k is explicitly set, do not also set temperature to avoid overspecification.
 
 ## Effect on Software Quality
 
 ### Maintainability (M)
 - Configuration is explicit and versionable
-- Reduces drift across environments/providers
+- Reduced drift across environments
 
 ### Reliability (R)
-- Consistent behavior over time/runs
+- Consistent behavior over time and runs
 - Fewer surprises from default changes
 
-## Minimal Example (bad → good)
+## Minimal Example (bad -> good)
 
 ```python
-# BAD — Omits temperature (smell)
+# BAD — temperature omitted
 from openai import OpenAI
 client = OpenAI()
 
@@ -54,17 +40,57 @@ resp = client.chat.completions.create(
     messages=messages
 )
 
-# GOOD — Make temperature explicit + treat it as config
+# GOOD — temperature explicit
 from openai import OpenAI
 client = OpenAI()
 
-TEMP = 1.0  # choose per task; keep low (≈0–0.3) for repeatability, higher for creativity
 resp = client.chat.completions.create(
     model="gpt-4o-2024-11-20",
     messages=messages,
-    temperature=TEMP
+    temperature=1.0
 )
-# Log TEMP with other run metadata for traceability
+```
+
+## Additional Examples
+
+Anthropic
+
+```python
+import anthropic
+
+client = anthropic.Anthropic()
+
+# BAD — temperature omitted
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Write a short story."}]
+)
+
+# GOOD — temperature explicit
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Write a short story."}],
+    temperature=0.9
+)
+```
+
+Gemini
+
+```python
+import google.generativeai as genai
+
+model = genai.GenerativeModel("gemini-1.5-pro")
+
+# BAD — temperature omitted
+resp = model.generate_content("Write a short story.")
+
+# GOOD — temperature explicit
+resp = model.generate_content(
+    "Write a short story.",
+    generation_config=genai.GenerationConfig(temperature=0.9)
+)
 ```
 
 ### Sources

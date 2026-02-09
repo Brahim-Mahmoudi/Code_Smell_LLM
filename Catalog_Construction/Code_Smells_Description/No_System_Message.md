@@ -4,114 +4,100 @@
 
 **No System Message (NSM)**
 
-Intent: avoid initiating an LLM chat without a system-role instruction. The system message encodes global controller hints—role, objectives, scope, safety/format constraints—that shape all subsequent turns. Omitting it discards a primary lever for behavioral steering, making responses less consistent and harder to constrain across a conversation. In our empirical study, NSM appears in 34.50% (69/200) of systems.
+Intent: avoid initiating an LLM chat without a system role instruction. The system message sets global behavior, constraints, and tone for the assistant across the conversation.
 
 ## Context
 
-Modern chat LLM interfaces (OpenAI, Azure OpenAI, Anthropic, etc.) model dialogue as a sequence of role-tagged messages: system (global guidance), user (task/query), and assistant (model replies). The system message is the canonical place to set persona, domain scope, tone, format contracts, and guardrails. When teams skip this message—often in prototypes, quick demos, or legacy migrations—they effectively start from an under-specified prior, relying on ad-hoc user prompts or post-hoc filtering to coerce behavior.
+Role-based chat APIs model dialogue as a sequence of role-tagged messages. The system message is the canonical place to define the assistant role, scope, and constraints that apply to all turns.
 
 ## Problem
 
-Without a system message, the assistant receives no up-front, global constraints, creating issues:
-
-- Ungrounded behavior & drift across turns
-- Lower specificity & relevance 
-- Weaker constraint adherence
-- Heavier prompt payloads
-- Harder reproducibility
-- Tighter coupling downstream
-- Reduced controllability in agent loops
+Without a system message, the model lacks high-level guidance. Outputs become more generic and less consistent, and adherence to constraints weakens. This reduces reliability and usually requires longer user prompts or extra iterations to achieve acceptable results.
 
 ## Solution
 
-### General Guidelines
-1. Establish a standardized system message as the first message in every conversation:
-   - Define role & scope
-   - Specify global constraints
-   - Separate concerns
-   - Version & test
-   - Provide fallbacks
-   - Implement governance
-
-### OpenAI Implementation
-- Always include a first message with `{"role": "system", "content": "..."}`.
-- Keep global rules concise and stable
-- Consider combining with `response_format` for shape guarantees
-- Pin model versions and maintain tests
+Always include a clear system message that defines role, goals, and constraints. Keep task specifics in the user message.
 
 ## Effect on Software Quality
 
 ### Maintainability (M)
 - Centralizes global rules
-- Facilitates versioning and testing
-- Eases refactoring
+- Easier versioning and testing
 
 ### Reliability (R)
-- Improves consistency
-- Reduces format/style violations
-- Lowers variance in agent pipelines
+- More consistent outputs
+- Better adherence to format and constraints
 
-## Minimal Example (bad → good)
+## Minimal Example (bad -> good)
 
-````python
-# BAD — No system message (smell)
+```python
+# BAD — no system message
 from openai import OpenAI
 client = OpenAI()
 
 resp = client.chat.completions.create(
     model="gpt-4o-2024-11-20",
     messages=[
-        {"role": "user", "content": "Explain recursion with a simple example."}
+        {"role": "user", "content": "Explain recursion with an example."}
     ]
 )
 text = resp.choices[0].message.content
 
-# GOOD — Add a concise system message to set role/constraints
+# GOOD — add a concise system message
 from openai import OpenAI
 client = OpenAI()
 
 resp = client.chat.completions.create(
     model="gpt-4o-2024-11-20",
     messages=[
-        {
-            "role": "system",
-            "content": (
-                "You are a Computer Science tutor. "
-                "Explain concepts step by step, avoid jargon, and include a short code example."
-            )
-        },
-        {"role": "user", "content": "Explain recursion with a simple example."}
+        {"role": "system", "content": "You are a Computer Science tutor. Answer clearly."},
+        {"role": "user", "content": "Explain recursion with an example."}
     ]
 )
 text = resp.choices[0].message.content
+```
 
-# OPTIONAL — Combine with structured outputs
-from openai import OpenAI
-import json
-client = OpenAI()
+## Additional Examples
 
-schema = {
-    "type": "object",
-    "required": ["explanation", "code_snippet"],
-    "properties": {
-        "explanation": {"type": "string", "minLength": 20},
-        "code_snippet": {"type": "string"}
-    },
-    "additionalProperties": False
-}
+Anthropic
 
-resp = client.chat.completions.create(
-    model="gpt-4o-2024-11-20",
-    messages=[
-        {"role": "system",
-         "content": "You are a CS tutor. Respond in JSON with keys: explanation, code_snippet."},
-        {"role": "user", "content": "Explain recursion with a simple example."}
-    ],
-    response_format={"type": "json_schema",
-                     "json_schema": {"name": "TutorReply", "schema": schema}}
+```python
+import anthropic
+
+client = anthropic.Anthropic()
+
+# BAD — no system message
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Explain recursion."}]
 )
-data = json.loads(resp.choices[0].message.content)
-````
+
+# GOOD — system message anchors behavior
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    system="You are a Computer Science tutor. Answer clearly.",
+    messages=[{"role": "user", "content": "Explain recursion."}]
+)
+```
+
+Gemini
+
+```python
+import google.generativeai as genai
+
+# BAD — no system instruction
+model = genai.GenerativeModel("gemini-1.5-pro")
+resp = model.generate_content("Explain recursion.")
+
+# GOOD — set system instruction
+model = genai.GenerativeModel(
+    "gemini-1.5-pro",
+    system_instruction="You are a Computer Science tutor. Answer clearly."
+)
+resp = model.generate_content("Explain recursion.")
+```
 
 ### Sources
 

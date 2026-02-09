@@ -4,94 +4,98 @@
 
 **Unbounded Max Metrics (UMM)**
 
-Intent: avoid calling LLMs without explicit upper bounds on key resource controls (e.g., `max_output_tokens`, `max_tokens`, input-token budget, timeouts, retries). Explicit bounds reduce error-proneness, keep latency and cost predictable, and prevent memory blowups.
+Intent: avoid calling LLMs without explicit bounds on output tokens, timeouts, and retries. Explicit limits reduce error-proneness, keep latency and cost predictable, and prevent runaway requests.
 
 ## Context
 
-Hosted LLM APIs expose finite token windows, per-request output caps, and quotas (RPM/TPM/ITPM/OTPM). Systems that ignore these constraints—or omit their own limits on concurrency/response size—are prone to throttling (429s), partial outputs, unstable memory, and runaway latency/costs. This applies across chat/completions/responses, tools/agents, batch jobs, and RAG pipelines.
+Hosted LLM APIs expose finite token windows, per-request output caps, and rate limits. Pipelines that omit their own bounds or ignore provider limits are prone to throttling, partial outputs, and unstable latency or cost.
 
 ## Problem
 
-- Unpredictable behavior & costs without hard bounds
-- Partial outputs slipping through as "success"
-- Inflated memory/instability from unbounded streaming/JSON
-- Queue collapse/throughput loss from unbounded timeouts/retries
+Unbounded token budgets can yield outputs that exceed context limits or inflate costs. Missing timeouts and retry limits can cause requests to hang indefinitely, reducing throughput and causing unpredictable latency.
 
 ## Solution
 
-### General Guidelines
-1. Bound everything up front:
-   - Set `max_output_tokens`
-   - Enforce input-token budget
-   - Pace requests to quotas
-   - Apply timeouts and guards
-2. Verify after the call
-3. Instrument token usage
-
-### OpenAI Implementation
-- Use client-level timeouts and bounded retries
-- Pass `max_output_tokens` per request
-- Log token usage and finish reasons
-- Add alerting on retry spikes
+Always bound and adjust max output tokens, timeouts, and max retries. Monitor input tokens and log usage to detect drift over time.
 
 ## Effect on Software Quality
 
 ### Robustness (RO)
-- Fewer truncations/overflow paths
-- Safer memory behavior
+- Fewer truncations and overflow paths
 
 ### Performance (P)
-- Predictable latency/throughput
+- Predictable latency and throughput
 - Controlled cost
-
-### Reliability (R)
-- Fewer timeouts/429 storms
-- Graceful degradation
 
 ### Maintainability (M)
 - Explicit, auditable limits
-- Easier SRE/playbooks
 
-## Minimal Example (bad → good)
+### Reliability (R)
+- Fewer timeouts and retry storms
+
+## Minimal Example (bad -> good)
 
 ```python
-# BAD — Unbounded metrics
+# BAD — unbounded metrics
+from openai import OpenAI
 client = OpenAI()
-resp = client.responses.create(model="gpt-4o-2024-11-20", input=prompt)
 
-# GOOD — Bound tokens, timeouts, retries
-from openai import OpenAI, RateLimitError, APITimeoutError, APIError
-import time, random
+resp = client.responses.create(
+    model="gpt-4o-2024-11-20",
+    input=prompt
+)
 
+# GOOD — bounded tokens, timeouts, retries
+from openai import OpenAI
 client = OpenAI(timeout=20, max_retries=3)
 
-def generate(prompt: str) -> str:
-    MAX_OUT   = 256
-    TIMEOUT_S = 20
-    MAX_TRIES = 5
+resp = client.responses.create(
+    model="gpt-4o-2024-11-20",
+    input=prompt,
+    max_output_tokens=256
+)
+```
 
-    for attempt in range(MAX_TRIES):
-        try:
-            with client.with_options(timeout=TIMEOUT_S):
-                resp = client.responses.create(
-                    model="gpt-4.1-mini",
-                    input=prompt,
-                    max_output_tokens=MAX_OUT
-                )
-            return resp.output_text
+## Additional Examples
 
-        except RateLimitError as e:
-            retry_after = getattr(e, "retry_after", None)
-            delay = retry_after or min(8.0, 0.5 * (2 ** attempt)) + random.uniform(0, 0.25)
-            time.sleep(delay)
+Anthropic
 
-        except (APITimeoutError, APIError):
-            delay = min(8.0, 0.5 * (2 ** attempt))
-            time.sleep(delay)
+```python
+import anthropic
 
-    raise RuntimeError("LLM call failed after bounded retries")
-```   
-    
+client = anthropic.Anthropic()
+
+# BAD — max_tokens omitted
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    messages=[{"role": "user", "content": "Generate a detailed report."}]
+)
+
+# GOOD — bound output tokens
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=512,
+    messages=[{"role": "user", "content": "Generate a detailed report."}]
+)
+```
+
+Gemini
+
+```python
+import google.generativeai as genai
+
+model = genai.GenerativeModel("gemini-1.5-pro")
+
+# BAD — no output cap
+resp = model.generate_content("Generate a detailed report.")
+
+# GOOD — explicit max_output_tokens
+resp = model.generate_content(
+    "Generate a detailed report.",
+    generation_config=genai.GenerationConfig(max_output_tokens=512)
+)
+```
+
 ### Sources
 
 ***Papers***

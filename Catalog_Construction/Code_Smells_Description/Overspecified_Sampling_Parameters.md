@@ -1,179 +1,84 @@
+# OSP — Overspecified Sampling Parameters
 
-# Code Smell: Overspecified Sampling Parameters (OSP)
+## Name & Intent
 
-## Definition
+**Overspecified Sampling Parameters (OSP)**
 
-The Overspecified Sampling Parameters (OSP) code smell occurs when multiple sampling controls are specified simultaneously in a call to an LLM. These parameters (`temperature`, `top_p`, `top_k`) are not independent — they each modify or constrain the distribution of next-token probabilities — which can make the final decoding behavior hard to predict and difficult to reproduce.
+Intent: avoid setting multiple sampling controls (temperature, top_p, top_k) in the same call. These controls are not independent, and combining them makes decoding behavior harder to predict and reproduce.
 
-## Motivation
+## Context
 
-Modern LLM runtimes expose several sampling controls that influence decoding stochasticity:
-- **temperature**: controls overall randomness
-- **top_p** (nucleus sampling): restricts to tokens whose cumulative probability reaches p
-- **top_k**: limits to the k most probable tokens
+Modern LLM APIs expose several parameters that shape randomness. Their exact semantics and supported combinations vary across providers and model families.
 
-Problems arise when these controls are combined because:
-- Exact semantics differ across providers
-- The application order is not always clear
-- Which parameter becomes dominant can change without warning
-- Reproducibility across providers can become impossible
+## Problem
 
-## Impact
+OSP occurs when multiple randomness controls are pinned at once. This overspecification makes the effective decoding policy hard to reason about and harder to reproduce across providers, which reduces maintainability and portability.
 
-- **Reduced maintainability**: behavior becomes harder to understand and document
-- **Compromised portability**: different providers may return different results
-- **Harder debugging**: effects of individual parameters are difficult to isolate
-- **Silent regressions**: quality changes without clear explanation
+## Solution
 
-## Examples
+Pick a single primary control for randomness and document the choice. If temperature is used, set it explicitly. If top_p or top_k is used, keep temperature unset. Validate changes with small regression suites when updating models or providers.
 
-### ❌ Bad practices
+## Effect on Software Quality
+
+### Maintainability (M)
+- Simpler, explainable sampling configuration
+
+### Reliability (R)
+- More stable generation behavior across environments
+
+## Minimal Example (bad -> good)
+
 ```python
-# Multiple sampling controls in a single call
-response = client.messages.create(
+import anthropic
+
+client = anthropic.Anthropic()
+
+# BAD — multiple sampling controls
+message = client.messages.create(
     model="claude-3-5-sonnet-20241022",
     max_tokens=1024,
-    messages=[{"role": "user", "content": "Write a story"}],
+    messages=[
+        {"role": "user", "content": "Write a sci-fi story about Mars."}
+    ],
     temperature=0.9,
-    top_p=0.95,
-    top_k=50  # Overspecification!
-)
-
-# OpenAI-style call with multiple controls
-response = openai.chat.completions.create(
-    model="gpt-4",
-    messages=[{"role": "user", "content": "Write a story"}],
-    temperature=0.8,
-    top_p=0.9  # Overspecification!
-)
-
-# Wrapper configuration with overspecification
-llm = ChatAnthropic(
-    model="claude-3-opus-20240229",
-    temperature=1.0,
-    top_p=0.95,  # Overspecification!
-    top_k=40
-)
-
-# Overspecification via context manager
-with client.with_options(temperature=0.9, top_p=0.95):
-    response = client.messages.create(
-        model="claude-3-5-sonnet-20241022",
-        messages=[{"role": "user", "content": "Generate content"}]
-    )
-
-# Split between context and call site
-def generate_text():
-    with client.with_options(temperature=0.8):
-        return client.messages.create(
-            model="claude-3-5-sonnet-20241022",
-            messages=[{"role": "user", "content": "Write"}],
-            top_p=0.9  # Overspecification!
-        )
-```
-
-### ✅ Good practices
-```python
-# Single control: temperature only
-response = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
-    max_tokens=1024,
-    messages=[{"role": "user", "content": "Write a creative story"}],
-    temperature=0.9
-)
-
-# Single control: top_p only
-response = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
-    max_tokens=1024,
-    messages=[{"role": "user", "content": "Produce diverse outputs"}],
     top_p=0.95
 )
 
-# Centralized sampling configuration
-SAMPLING_CONFIGS = {
-    "creative": {"temperature": 0.9},
-    "balanced": {"temperature": 0.7},
-    "factual": {"temperature": 0.3},
-    "deterministic": {"temperature": 0.0},
-    "diverse": {"top_p": 0.95},
-    "focused": {"top_p": 0.5}
-}
-
-def generate_with_config(prompt, config_name="balanced"):
-    config = SAMPLING_CONFIGS[config_name]
-    return client.messages.create(
-        model="claude-3-5-sonnet-20241022",
-        messages=[{"role": "user", "content": prompt}],
-        **config
-    )
-
-# Context manager with a single control
-with client.with_options(temperature=0.8):
-    response = client.messages.create(
-        model="claude-3-5-sonnet-20241022",
-        messages=[{"role": "user", "content": "Generate"}]
-    )
+# GOOD — single primary control
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=1024,
+    messages=[
+        {"role": "user", "content": "Write a sci-fi story about Mars."}
+    ],
+    temperature=0.9
+)
 ```
 
-## Task-specific sampling guide
+## Additional Examples
+
+Gemini
+
 ```python
-TASK_SAMPLING = {
-    # Creative tasks (higher temperature)
-    "creative_writing": {"temperature": 0.9},
-    "brainstorming": {"temperature": 0.8},
-    "storytelling": {"temperature": 0.85},
-    
-    # Conversational tasks (medium temperature)
-    "general_chat": {"temperature": 0.7},
-    "summarization": {"temperature": 0.5},
-    
-    # Precise tasks (low temperature)
-    "translation": {"temperature": 0.3},
-    "code_generation": {"temperature": 0.2},
-    "data_extraction": {"temperature": 0.1},
-    
-    # Deterministic tasks (zero temperature)
-    "classification": {"temperature": 0.0},
-    "structured_output": {"temperature": 0.0},
-    "yes_no_questions": {"temperature": 0.0}
-}
+import google.generativeai as genai
 
-def generate_for_task(prompt, task_type):
-    sampling = TASK_SAMPLING.get(task_type, {"temperature": 0.7})
-    return client.messages.create(
-        model="claude-3-5-sonnet-20241022",
-        messages=[{"role": "user", "content": prompt}],
-        **sampling
+model = genai.GenerativeModel("gemini-1.5-pro")
+
+# BAD — multiple sampling controls
+resp = model.generate_content(
+    "Write a creative story.",
+    generation_config=genai.GenerationConfig(
+        temperature=0.9,
+        top_p=0.95
     )
+)
+
+# GOOD — single primary control
+resp = model.generate_content(
+    "Write a creative story.",
+    generation_config=genai.GenerationConfig(temperature=0.9)
+)
 ```
-
-## Detection strategy
-
-Detecting OSP can be framed as a structural check over LLM invocation sites:
-
-1. **Parse the code**: build an AST with scope information
-2. **Identify calls**: detect provider-specific call sites (`messages.create`, `chat.completions.create`, etc.)
-3. **Check sampling controls**: detect multiple sampling parameters set at the same call
-4. **Context analysis**: account for context managers and option wrappers
-5. **Conservative exclusions**: ignore cases with a single explicit parameter
-
-## Recommendations
-
-1. **Pick a single primary control** per call
-2. **Document the rationale** for the chosen control
-3. **Centralize defaults** in a wrapper layer
-4. **Validate with regression tests** after provider or model changes
-5. **Avoid implicit defaults** that may change across providers
-
-## Limitations
-
-- Static detection cannot fully resolve dynamically constructed configurations
-- May miss overspecification spread across separate configuration files
-- Conservative handling of wrappers that pass parameters indirectly
-- Does not judge whether the selected control is the correct choice for a task
-
-
 
 ### Sources
 

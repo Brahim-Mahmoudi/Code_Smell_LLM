@@ -2,65 +2,49 @@
 
 ## Name & Intent
 
-**No Structured Output (NSO)**. 
+**No Structured Output (NSO)**
 
-***Intent***: prevent consuming free-form LLM text where typed fields (e.g., JSON) are expected by enforcing and validating an output schema strictly at the boundary before any parsing, indexing, execution, or storage. In our empirical study, NSO affects 40.50% (81/200) of systems with 80.00% precision in the audited sample.
+Intent: avoid consuming free-form LLM text where structured fields (for example JSON) are required. Enforce and validate a schema at the boundary before parsing, indexing, executing, or storing the output.
 
-***Context***
+## Context
 
-NSO arises when LLM-integrating systems expect structured/typed outputs but instead rely on free-form inference text in their prompt and subsequently parse/index/execute it as structured content. This is common across assistants/agents, data pipelines, automation inferences and any integration that later treats the model response as structured data.
+LLM-integrating systems often expect typed fields but rely on free-form inference output. This smell applies when the output is later parsed, indexed, or executed as if it were structured.
 
-***Problem***
+## Problem
 
-Without an enforced output schema, the system can receive free-form text where structured fields are required, leading to:
-- Schema drift
-- Missing/renamed fields
-- Type mismatches
-- Silent truncation mistaken for success
-- Breaking parsers and downstream steps
-- Reliability degradation as runs become inconsistent
-- Stores accumulating corrupted/hallucinated values
-- Execution/storage/display paths facing higher injection risks
+Without an enforced output schema, the system may receive free-form text where structured fields are expected. This leads to schema drift, missing or renamed fields, type mismatches, and silent truncation that passes as success. Downstream parsers and storage paths then fail or accept corrupted data, degrading reliability.
 
-***Solution***
+## Solution
 
-Enforce structured output at the API boundary and validate the response's format before use.
-
-***OpenAI Implementation***
-- Declare JSON Schema via `response_format` (chat completions) or `text.format` (responses)
-- Alternatively Use Python SDK to bind formats to classes
-- Always validate results to handle refusals/errors
-
-
+Enforce structured output at the API boundary. With OpenAI, declare a JSON Schema via `response_format` and validate the response before use. Always handle refusals or schema violations explicitly.
 
 ## Effect on Software Quality
 
 ### Robustness (RO)
-- Error-prone behavior from schema drift
-- Type mismatches
-- Truncation that "passes" as success
+- Schema drift and type mismatches
+- Truncation that passes as success
 
 ### Reliability (R)
-- Inconsistent runs
-- Corrupted/hallucinated values in stores
-- Injection risks along execution/storage/display paths
+- Inconsistent runs and corrupted stored data
+- Injection risk in downstream execution and storage paths
 
-## Minimal Example (bad → good)
+## Minimal Example (bad -> good)
 
 ```python
-# BAD — Free-form output; no schema; brittle parsing
+# BAD — free-form output; brittle parsing
 from openai import OpenAI
 client = OpenAI()
 
+messages = [{"role": "user", "content": "Return user profile"}]
+
 resp = client.chat.completions.create(
     model="gpt-4o-2024-11-20",
-    messages=[{"role": "user", "content": "Return user profile"}]
+    messages=messages
 )
 text = resp.choices[0].message.content
-# Downstream code *assumes* JSON and may crash or silently misparse.
-# data = json.loads(text)
+# Downstream code assumes JSON and may crash or misparse.
 
-# GOOD — Enforce JSON Schema + strict parse/validate at the boundary
+# GOOD — enforce JSON Schema and validate at the boundary
 from openai import OpenAI
 import json, jsonschema
 
@@ -79,18 +63,91 @@ user_schema = {
 
 resp = client.chat.completions.create(
     model="gpt-4o-2024-11-20",
-    messages=[{"role": "user", "content": "Return user profile"}],
+    messages=messages,
     response_format={
         "type": "json_schema",
         "json_schema": {"name": "UserRecord", "schema": user_schema}
     }
 )
-payload = resp.choices[0].message  # SDK returns JSON matching the schema
-data = json.loads(payload.content)
-jsonschema.validate(instance=data, schema=user_schema)  # defense-in-depth
+
+data = json.loads(resp.choices[0].message.content)
+jsonschema.validate(instance=data, schema=user_schema)
 ```
 
+## Additional Examples
 
+Anthropic (tool schema for structured output)
+
+```python
+import anthropic
+
+client = anthropic.Anthropic()
+
+profile_schema = {
+    "type": "object",
+    "required": ["id", "name", "email"],
+    "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"},
+        "email": {"type": "string"}
+    },
+    "additionalProperties": False
+}
+
+# BAD — free-form text only
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Return user profile"}]
+)
+
+# GOOD — enforce a structured tool schema
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Return user profile"}],
+    tools=[{
+        "name": "emit_profile",
+        "description": "Return a user profile",
+        "input_schema": profile_schema
+    }],
+    tool_choice={"type": "tool", "name": "emit_profile"}
+)
+```
+
+Gemini (JSON response + validation)
+
+```python
+import json, jsonschema
+import google.generativeai as genai
+
+model = genai.GenerativeModel("gemini-1.5-pro")
+
+profile_schema = {
+    "type": "object",
+    "required": ["id", "name", "email"],
+    "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"},
+        "email": {"type": "string"}
+    },
+    "additionalProperties": False
+}
+
+# BAD — plain text without schema control
+resp = model.generate_content("Return user profile")
+
+# GOOD — request JSON and validate
+resp = model.generate_content(
+    "Return user profile as JSON with id, name, email",
+    generation_config=genai.GenerationConfig(
+        response_mime_type="application/json"
+    )
+)
+
+data = json.loads(resp.text)
+jsonschema.validate(instance=data, schema=profile_schema)
+```
 
 ### Sources
 

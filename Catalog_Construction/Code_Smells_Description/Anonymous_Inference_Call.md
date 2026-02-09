@@ -1,49 +1,37 @@
-# AIC Anonymous Inference Call
+# AIC — Anonymous Inference Call
 
 ## Name & Intent
 
-**Anonymous Inference Call (AIC)**.
+**Anonymous Inference Call (AIC)**
 
-***Intent***: prevent untraceable LLM requests in multi user or multi tenant systems by attaching a stable end user identifier or equivalent attribution metadata to each inference call, then propagating it through logs, monitoring, and cost accounting.
+Intent: avoid issuing LLM requests without a stable user or session identifier in multi-user systems. The identifier enables traceability, auditing, abuse monitoring, and per-user governance.
 
-***Context***
+## Context
 
-AIC arises when an application generates LLM outputs on behalf of end users but the inference call is emitted without any end user identifier at the provider boundary and without equivalent attribution in telemetry. Many providers expose optional fields intended to support abuse monitoring, auditing, and operational attribution. When these fields are omitted, the system loses an essential link between a generated output and the user context that triggered it.
+Many providers allow attaching optional request metadata (for example a user or session identifier). In multi-user applications, this metadata links each inference to the originating user or session and supports accountable logging and abuse monitoring.
 
-***Problem***
+## Problem
 
-Without end user attribution at the boundary, the system cannot reliably answer who triggered a given output, which tenant is affected, or which session produced anomalous behaviour. This weakens incident response, makes debugging user specific issues harder, and complicates governance workflows such as abuse monitoring, safety audits, and compliance investigations. Operationally, it also obscures cost attribution and rate limit enforcement because usage collapses to aggregate signals rather than user scoped signals.
+When inference calls are anonymous, incidents, cost spikes, and misuse cannot be attributed to a specific user or session. This weakens debugging, auditing, and policy enforcement and reduces reliability in multi-tenant systems.
 
-***Solution***
+## Solution
 
-Attach a stable pseudonymized identifier for each end user or session to every inference call in multi user contexts. Ensure the attribution is consistently propagated across wrappers, background jobs, retries, and provider specific SDK layers. Log the attribution alongside request identifiers to support traceability while avoiding direct personal data.
-
-***OpenAI Implementation***
-
-Use the provider supported attribution field for the endpoint you call. In OpenAI APIs this can be a legacy `user` field or a newer `safety_identifier` depending on the surface you use. Prefer a stable pseudonymized value that does not contain raw PII.
-
-***Anthropic Implementation***
-
-Use request metadata such as `metadata.user_id` when creating messages and ensure it is stable across sessions or mapped from your internal user identity.
-
-***Azure OpenAI Implementation***
-
-Use the `user` field where supported to pass a unique end user identifier for abuse monitoring and operational attribution.
+Propagate a stable, pseudonymous user identifier from the application boundary to every LLM request. Keep the mapping in application storage and log it with model and request metadata for traceability.
 
 ## Effect on Software Quality
 
-### Robustness (RO)
-
-AIC increases error proneness during debugging and incident response because user specific prompt histories, tool invocations, tenancy configuration, and authentication context cannot be reconstructed reliably from provider side traces or internal logs.
+### Maintainability (M)
+- Harder incident analysis and post-mortems
+- Weaker operational traceability
 
 ### Reliability (R)
-
-AIC reduces operational reliability by weakening safety monitoring, anomaly triage, and governance. Abuse detection and rate limiting become less targeted, and cost spikes become harder to attribute. In multi tenant systems, missing attribution increases the chance that harmful or noisy usage patterns remain undetected until they affect overall service quality.
+- Reduced accountability and monitoring
+- Harder per-user throttling and abuse detection
 
 ## Minimal Example (bad -> good)
 
 ```python
-# BAD  Multi user call without end user attribution
+# BAD — multi-user call without user attribution
 from openai import OpenAI
 client = OpenAI()
 
@@ -51,44 +39,49 @@ def get_response(user_session_id: str, prompt: str) -> str:
     resp = client.chat.completions.create(
         model="gpt-4o",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.7,
-        # Missing attribution field
+        temperature=0.7
+        # Missing user identifier
     )
     return resp.choices[0].message.content
 
-
-# GOOD  Attach stable pseudonymized attribution and log it
-import hashlib
-import logging
+# GOOD — attach a stable user identifier for traceability
 from openai import OpenAI
-
-logger = logging.getLogger(__name__)
 client = OpenAI()
 
-def pseudonymize(user_session_id: str) -> str:
-    return hashlib.sha256(user_session_id.encode("utf-8")).hexdigest()[:16]
-
 def get_response(user_session_id: str, prompt: str) -> str:
-    attribution_id = pseudonymize(user_session_id)
-
     resp = client.chat.completions.create(
         model="gpt-4o",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7,
-        safety_identifier=attribution_id,
-    )
-
-    logger.info(
-        "llm_inference",
-        extra={
-            "safety_identifier": attribution_id,
-            "model": "gpt-4o",
-            "request_id": getattr(resp, "id", None),
-        },
+        user=user_session_id
     )
     return resp.choices[0].message.content
 ```
 
+## Additional Examples
+
+Anthropic (bad -> good)
+
+```python
+import anthropic
+
+client = anthropic.Anthropic()
+
+# BAD — missing user attribution
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Summarize this document."}]
+)
+
+# GOOD — attach a stable user identifier
+message = client.messages.create(
+    model="claude-3-5-sonnet-20241022",
+    max_tokens=256,
+    messages=[{"role": "user", "content": "Summarize this document."}],
+    metadata={"user_id": user_session_id}
+)
+```
 
 ### Sources
 
