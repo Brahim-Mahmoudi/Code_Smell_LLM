@@ -27,80 +27,80 @@
     "rq1_rule_confusion": {
       "R26": {
         "smell": "NMVP",
-        "alerts": 98,
-        "TP": 85,
+        "alerts": 97,
+        "TP": 84,
         "FP": 13,
         "FN": 14,
-        "TN": 120,
-        "Precision": 0.867,
-        "Recall": 0.859,
-        "F1": 0.863
+        "TN": 121,
+        "Precision": 0.866,
+        "Recall": 0.857,
+        "F1": 0.862
       },
       "R25": {
         "smell": "TNES",
-        "alerts": 47,
-        "TP": 38,
+        "alerts": 42,
+        "TP": 33,
         "FP": 9,
         "FN": 15,
-        "TN": 170,
-        "Precision": 0.809,
-        "Recall": 0.717,
-        "F1": 0.76
+        "TN": 175,
+        "Precision": 0.786,
+        "Recall": 0.688,
+        "F1": 0.733
       },
       "R29": {
         "smell": "NSO",
-        "alerts": 33,
-        "TP": 29,
+        "alerts": 30,
+        "TP": 26,
         "FP": 4,
         "FN": 8,
-        "TN": 191,
-        "Precision": 0.879,
-        "Recall": 0.784,
-        "F1": 0.829
+        "TN": 194,
+        "Precision": 0.867,
+        "Recall": 0.765,
+        "F1": 0.812
       },
       "R28": {
         "smell": "UMM",
-        "alerts": 31,
-        "TP": 26,
+        "alerts": 23,
+        "TP": 18,
         "FP": 5,
         "FN": 14,
-        "TN": 187,
-        "Precision": 0.839,
-        "Recall": 0.65,
-        "F1": 0.732
+        "TN": 195,
+        "Precision": 0.783,
+        "Recall": 0.562,
+        "F1": 0.655
       },
       "R27": {
         "smell": "NSM",
         "alerts": 16,
         "TP": 16,
         "FP": 0,
-        "FN": 16,
-        "TN": 200,
+        "FN": 1,
+        "TN": 215,
         "Precision": 1.0,
-        "Recall": 0.5,
-        "F1": 0.667
+        "Recall": 0.941,
+        "F1": 0.97
       },
       "R31": {
         "smell": "RVP",
-        "alerts": 5,
-        "TP": 5,
+        "alerts": 3,
+        "TP": 3,
         "FP": 0,
         "FN": 2,
-        "TN": 225,
+        "TN": 227,
         "Precision": 1.0,
-        "Recall": 0.714,
-        "F1": 0.833
+        "Recall": 0.6,
+        "F1": 0.75
       },
       "R32": {
         "smell": "OSP",
-        "alerts": 4,
-        "TP": 4,
+        "alerts": 3,
+        "TP": 3,
         "FP": 0,
         "FN": 1,
-        "TN": 227,
+        "TN": 228,
         "Precision": 1.0,
-        "Recall": 0.8,
-        "F1": 0.889
+        "Recall": 0.75,
+        "F1": 0.857
       },
       "R30": {
         "smell": "RENES",
@@ -129,17 +129,17 @@
     },
     "rq1_aggregates": {
       "micro_average": {
-        "Precision": 0.868,
-        "Recall": 0.744,
-        "F1": 0.801
+        "Precision": 0.855,
+        "Recall": 0.769,
+        "F1": 0.81
       },
       "macro_average": {
-        "Precision": 0.913,
-        "Recall": 0.718,
-        "F1": 0.796
+        "Precision": 0.9,
+        "Recall": 0.738,
+        "F1": 0.806
       }
     },
-    "rq1_note": "For each rule, alerts = TP + FP. Counts are the RQ1 per-smell confusion outcomes on the manually annotated set."
+    "rq1_note": "Counts are recomputed by comparing Ground_Truth_Manual_Annotation.csv with specDetect_results_by_repo.json."
   },
   "repos": {
     "1Panel-dev/MaxKB": {
@@ -199,6 +199,13 @@
                 "LLM pipeline call without structured output at line 39",
                 "LLM pipeline call without structured output at line 63",
                 "LLM pipeline call without structured output at line 84"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 23",
+                "LLM chat call without a system message at line 62",
+                "LLM chat call without a system message at line 83",
+                "LLM chat call without a system message at line 135",
+                "LLM chat call without a system message at line 163"
               ]
             },
             "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/instructor/validation/__init__.py": {},
@@ -216,6 +223,11 @@
                 "LLM pipeline call without structured output at line 34",
                 "LLM pipeline call without structured output at line 67",
                 "LLM pipeline call without structured output at line 48"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 34",
+                "LLM chat call without a system message at line 67",
+                "LLM chat call without a system message at line 48"
               ]
             }
           }
@@ -953,6 +965,9 @@
               ],
               "R29": [
                 "LLM pipeline call without structured output at line 33"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 33"
               ]
             }
           }
@@ -1696,6 +1711,9 @@
               ],
               "R32": [
                 "Overspecified sampling at line 285"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 525"
               ]
             }
           }
@@ -1997,6 +2015,12 @@
                 "LLM pipeline call without structured output at line 31",
                 "LLM pipeline call without structured output at line 47",
                 "LLM pipeline call without structured output at line 70"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 9",
+                "LLM chat call without a system message at line 31",
+                "LLM chat call without a system message at line 47",
+                "LLM chat call without a system message at line 70"
               ]
             }
           }
@@ -2800,6 +2824,9 @@
               ],
               "R29": [
                 "LLM pipeline call without structured output at line 7"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 7"
               ]
             }
           }
@@ -2937,14 +2964,14 @@
               "R25": [
                 "LLM call without explicit temperature parameter at line 83"
               ],
-              "R27": [
-                "LLM chat call without a system message at line 83"
-              ],
               "R28": [
                 "LLM call without bounded metrics (tokens/timeout/response size) at line 83"
               ],
               "R29": [
                 "LLM pipeline call without structured output at line 83"
+              ],
+              "R27": [
+                "LLM chat call without a system message at line 83"
               ]
             }
           }
