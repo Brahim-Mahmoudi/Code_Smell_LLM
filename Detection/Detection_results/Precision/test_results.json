@@ -1,0 +1,2653 @@
+{
+  "meta": {
+    "analysis": {
+      "rules": [],
+      "input_csv": "Ground_Truth_Manual_Annotation.csv",
+      "commit_col": "CommitSHA",
+      "rows_read": 381,
+      "groups": 186,
+      "total_files_listed": 381
+    },
+    "row_errors": [],
+    "row_errors_truncated": false
+  },
+  "repos": {
+    "run-llama/llama_index": {
+      "owner": "run-llama",
+      "repo": "llama_index",
+      "by_sha": {
+        "9831c7c": {
+          "num_listed_files": 34,
+          "num_analyzed_files": 34,
+          "alerts": {
+            "run-llama/llama_index@9831c7c/llama-index-core/llama_index/core/storage/chat_store/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/readers/llama-index-readers-s3/tests/test_readers_s3.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/program/llama-index-program-evaporate/llama_index/program/evaporate/prompts.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/tools/llama-index-tools-metaphor/tests/test_tools_metaphor.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-upstage/llama_index/embeddings/upstage/__init__.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/llms/llama-index-llms-konko/llama_index/llms/konko/__init__.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-utils/llama-index-utils-qianfan/llama_index/utils/qianfan/apis.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/storage/chat_store/llama-index-storage-chat-store-postgres/tests/test_chat_store_postgres_chat_store.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/readers/llama-index-readers-hwp/llama_index/readers/hwp/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/llama_index/core/instrumentation/events/exception.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/postprocessor/llama-index-postprocessor-rankgpt-rerank/llama_index/postprocessor/rankgpt_rerank/__init__.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/retrievers/llama-index-retrievers-vertexai-search/llama_index/retrievers/vertexai_search/__init__.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/llama_index/core/indices/query/schema.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/tests/tools/tool_spec/test_base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/llms/llama-index-llms-deepinfra/llama_index/llms/deepinfra/constants.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/llama_index/core/tools/tool_spec/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/readers/llama-index-readers-wordpress/llama_index/readers/wordpress/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/llms/llama-index-llms-ipex-llm/llama_index/llms/ipex_llm/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/llama_index/core/vector_stores/__init__.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/readers/llama-index-readers-dad-jokes/tests/test_readers_dad_jokes.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/llama_index/core/data_structs/data_structs.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/readers/llama-index-readers-file/tests/test_rtf.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/tools/llama-index-tools-jira-issue/tests/test_tools_jira_issue.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/llama_index/core/indices/property_graph/sub_retrievers/llm_synonym.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/vector_stores/llama-index-vector-stores-neptune/llama_index/vector_stores/neptune/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/storage/index_store/llama-index-storage-index-store-mongodb/llama_index/storage/index_store/mongodb/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/embeddings/llama-index-embeddings-gaudi/llama_index/embeddings/gaudi/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/readers/llama-index-readers-oxylabs/llama_index/readers/oxylabs/amazon_sellers.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/llms/llama-index-llms-ai21/llama_index/llms/ai21/__init__.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/llama_index/core/selectors/__init__.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/node_parser/llama-index-node-parser-alibabacloud-aisearch/llama_index/node_parser/alibabacloud_aisearch/__init__.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/llms/llama-index-llms-zhipuai/llama_index/llms/zhipuai/base.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-core/tests/indices/document_summary/test_retrievers.py": {},
+            "run-llama/llama_index@9831c7c/llama-index-integrations/extractors/llama-index-extractors-entity/llama_index/extractors/entity/base.py": {}
+          }
+        }
+      }
+    },
+    "EvolvingLMMs-Lab/lmms-eval": {
+      "owner": "EvolvingLMMs-Lab",
+      "repo": "lmms-eval",
+      "by_sha": {
+        "b0da65d": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "EvolvingLMMs-Lab/lmms-eval@b0da65d/lmms_eval/tasks/videomathqa/cot_step_evaluation.py": {},
+            "EvolvingLMMs-Lab/lmms-eval@b0da65d/lmms_eval/llm_judge/factory.py": {}
+          }
+        }
+      }
+    },
+    "PaddlePaddle/FastDeploy": {
+      "owner": "PaddlePaddle",
+      "repo": "FastDeploy",
+      "by_sha": {
+        "d657455": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "PaddlePaddle/FastDeploy@d657455/tests/e2e/test_ernie_03b_pd_router_v1_ipc.py": {},
+            "PaddlePaddle/FastDeploy@d657455/fastdeploy/entrypoints/engine_client.py": {}
+          }
+        }
+      }
+    },
+    "StanGirard/quivr": {
+      "owner": "StanGirard",
+      "repo": "quivr",
+      "by_sha": {
+        "b6f38f7": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "StanGirard/quivr@b6f38f7/backend/repository/chat/format_chat_history.py": {}
+          }
+        }
+      }
+    },
+    "goetzrobin/MemGPT": {
+      "owner": "goetzrobin",
+      "repo": "MemGPT",
+      "by_sha": {
+        "0e8918e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "goetzrobin/MemGPT@0e8918e/memgpt/local_llm/constants.py": {}
+          }
+        }
+      }
+    },
+    "oumi-ai/oumi": {
+      "owner": "oumi-ai",
+      "repo": "oumi",
+      "by_sha": {
+        "9094a4c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "oumi-ai/oumi@9094a4c/src/oumi/core/configs/params/grpo_params.py": {}
+          }
+        }
+      }
+    },
+    "intel/auto-round": {
+      "owner": "intel",
+      "repo": "auto-round",
+      "by_sha": {
+        "6723ef0": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "intel/auto-round@6723ef0/auto_round_extension/cuda/gptqmodel_marlin.py": {}
+          }
+        }
+      }
+    },
+    "princeton-pli/hal-harness": {
+      "owner": "princeton-pli",
+      "repo": "hal-harness",
+      "by_sha": {
+        "caaa72c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "princeton-pli/hal-harness@caaa72c/agents/USACO/USACOBench/models/models.py": {}
+          }
+        }
+      }
+    },
+    "omarkamali/borgllm": {
+      "owner": "omarkamali",
+      "repo": "borgllm",
+      "by_sha": {
+        "8f3aefd": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "omarkamali/borgllm@8f3aefd/examples/langchain/configurable_cooldown_timeout/main.py": {}
+          }
+        }
+      }
+    },
+    "ariannamethod/ariannamethod": {
+      "owner": "ariannamethod",
+      "repo": "ariannamethod",
+      "by_sha": {
+        "de35fe3": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ariannamethod/ariannamethod@de35fe3/arianna_core_utils/genesis_monday.py": {}
+          }
+        }
+      }
+    },
+    "yichuan-w/LEANN": {
+      "owner": "yichuan-w",
+      "repo": "LEANN",
+      "by_sha": {
+        "a6ee95b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "yichuan-w/LEANN@a6ee95b/examples/basic_demo.py": {}
+          }
+        }
+      }
+    },
+    "LLM360/Reasoning360": {
+      "owner": "LLM360",
+      "repo": "Reasoning360",
+      "by_sha": {
+        "1315834": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "LLM360/Reasoning360@1315834/scripts/tools/model_merger.py": {}
+          }
+        }
+      }
+    },
+    "quic/efficient-transformers": {
+      "owner": "quic",
+      "repo": "efficient-transformers",
+      "by_sha": {
+        "46ed92b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "quic/efficient-transformers@46ed92b/examples/peft/multi_adapter.py": {}
+          }
+        }
+      }
+    },
+    "erfanzar/EasyDeL": {
+      "owner": "erfanzar",
+      "repo": "EasyDeL",
+      "by_sha": {
+        "748550c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "erfanzar/EasyDeL@748550c/easydel/inference/esurge/esurge_engine.py": {}
+          }
+        }
+      }
+    },
+    "zaiquanyang/LLaVA_Next_STVG": {
+      "owner": "zaiquanyang",
+      "repo": "LLaVA_Next_STVG",
+      "by_sha": {
+        "d904f1a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "zaiquanyang/LLaVA_Next_STVG@d904f1a/llava/train/llama_flash_attn_monkey_patch.py": {}
+          }
+        }
+      }
+    },
+    "linagora/openrag": {
+      "owner": "linagora",
+      "repo": "openrag",
+      "by_sha": {
+        "efa103f": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "linagora/openrag@efa103f/openrag/components/indexer/loaders/serializer.py": {}
+          }
+        }
+      }
+    },
+    "allenai/olmocr": {
+      "owner": "allenai",
+      "repo": "olmocr",
+      "by_sha": {
+        "b274e89": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "allenai/olmocr@b274e89/scripts/data/buildsilver.py": {}
+          }
+        }
+      }
+    },
+    "modelscope/modelscope": {
+      "owner": "modelscope",
+      "repo": "modelscope",
+      "by_sha": {
+        "a7f50d4": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "modelscope/modelscope@a7f50d4/modelscope/models/cv/image_view_transform/ldm/openaimodel.py": {}
+          }
+        }
+      }
+    },
+    "rllm-org/rllm": {
+      "owner": "rllm-org",
+      "repo": "rllm",
+      "by_sha": {
+        "1a5bcdf": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "rllm-org/rllm@1a5bcdf/rllm/engine/rollout/fireworks_engine.py": {}
+          }
+        }
+      }
+    },
+    "damianomarsili/VALOR": {
+      "owner": "damianomarsili",
+      "repo": "VALOR",
+      "by_sha": {
+        "cf2442b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "damianomarsili/VALOR@cf2442b/valor/reasoning_training/verl/verl/utils/reward_score/prime_math/math_normalize.py": {}
+          }
+        }
+      }
+    },
+    "BerriAI/litellm": {
+      "owner": "BerriAI",
+      "repo": "litellm",
+      "by_sha": {
+        "05f800f": {
+          "num_listed_files": 24,
+          "num_analyzed_files": 24,
+          "alerts": {
+            "BerriAI/litellm@05f800f/tests/local_testing/test_router_max_parallel_requests.py": {},
+            "BerriAI/litellm@05f800f/litellm/litellm_core_utils/prompt_templates/huggingface_template_handler.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/bedrock/image/amazon_nova_canvas_transformation.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/jina_ai/embedding/transformation.py": {},
+            "BerriAI/litellm@05f800f/tests/code_coverage_tests/litellm_logging_code_coverage.py": {},
+            "BerriAI/litellm@05f800f/litellm/integrations/azure_storage/azure_storage.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/vertex_ai/vertex_ai_partner_models/main.py": {},
+            "BerriAI/litellm@05f800f/litellm/vector_store_files/main.py": {},
+            "BerriAI/litellm@05f800f/tests/guardrails_tests/conftest.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/triton/completion/transformation.py": {},
+            "BerriAI/litellm@05f800f/litellm/proxy/management_endpoints/sso_helper_utils.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/azure/fine_tuning/handler.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/pass_through/guardrail_translation/__init__.py": {},
+            "BerriAI/litellm@05f800f/litellm/proxy/batches_endpoints/endpoints.py": {},
+            "BerriAI/litellm@05f800f/tests/test_litellm/llms/azure/chat/test_azure_chat_gpt_transformation.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/gemini/files/transformation.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/google_pse/search/transformation.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/heroku/chat/transformation.py": {},
+            "BerriAI/litellm@05f800f/litellm/proxy/guardrails/guardrail_hooks/model_armor/model_armor.py": {},
+            "BerriAI/litellm@05f800f/litellm/google_genai/streaming_iterator.py": {},
+            "BerriAI/litellm@05f800f/litellm/responses/mcp/mcp_streaming_iterator.py": {},
+            "BerriAI/litellm@05f800f/litellm/proxy/pass_through_endpoints/success_handler.py": {},
+            "BerriAI/litellm@05f800f/litellm/llms/bedrock/embed/amazon_titan_multimodal_transformation.py": {},
+            "BerriAI/litellm@05f800f/tests/test_litellm/llms/openai_like/test_json_providers.py": {}
+          }
+        }
+      }
+    },
+    "1Panel-dev/MaxKB": {
+      "owner": "1Panel-dev",
+      "repo": "MaxKB",
+      "by_sha": {
+        "d33dd45": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "1Panel-dev/MaxKB@d33dd45/apps/models_provider/impl/tencent_model_provider/model/hunyuan.py": {},
+            "1Panel-dev/MaxKB@d33dd45/apps/models_provider/impl/anthropic_model_provider/model/llm.py": {}
+          }
+        }
+      }
+    },
+    "modelscope/ms-swift": {
+      "owner": "modelscope",
+      "repo": "ms-swift",
+      "by_sha": {
+        "57c294e": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "modelscope/ms-swift@57c294e/examples/eval/eval_url/demo.py": {},
+            "modelscope/ms-swift@57c294e/swift/ui/llm_eval/eval.py": {}
+          }
+        }
+      }
+    },
+    "volcengine/verl": {
+      "owner": "volcengine",
+      "repo": "verl",
+      "by_sha": {
+        "249c083": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "volcengine/verl@249c083/setup.py": {},
+            "volcengine/verl@249c083/verl/tools/geo3k_tool.py": {}
+          }
+        }
+      }
+    },
+    "aliasrobotics/cai": {
+      "owner": "aliasrobotics",
+      "repo": "cai",
+      "by_sha": {
+        "da1c620": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "aliasrobotics/cai@da1c620/src/cai/repl/commands/parallel.py": {},
+            "aliasrobotics/cai@da1c620/src/cai/repl/commands/history.py": {}
+          }
+        }
+      }
+    },
+    "taylorai/lm-deluge": {
+      "owner": "taylorai",
+      "repo": "lm-deluge",
+      "by_sha": {
+        "96124f3": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "taylorai/lm-deluge@96124f3/src/lm_deluge/pipelines/gepa/__init__.py": {},
+            "taylorai/lm-deluge@96124f3/tests/core/test_postprocess.py": {}
+          }
+        }
+      }
+    },
+    "jacklishufan/LaViDa": {
+      "owner": "jacklishufan",
+      "repo": "LaViDa",
+      "by_sha": {
+        "24220c0": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "jacklishufan/LaViDa@24220c0/eval/lmms_eval/models/cambrian.py": {},
+            "jacklishufan/LaViDa@24220c0/eval/lmms_eval/tasks/vitatecs/utils.py": {}
+          }
+        }
+      }
+    },
+    "All-Hands-AI/OpenHands": {
+      "owner": "All-Hands-AI",
+      "repo": "OpenHands",
+      "by_sha": {
+        "bf06b7e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "All-Hands-AI/OpenHands@bf06b7e/evaluation/benchmarks/the_agent_company/scripts/summarise_results.py": {}
+          }
+        }
+      }
+    },
+    "ATheorell/AutoGPTArenaHack": {
+      "owner": "ATheorell",
+      "repo": "AutoGPTArenaHack",
+      "by_sha": {
+        "1e4f2dc": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ATheorell/AutoGPTArenaHack@1e4f2dc/autogpts/autogpt/autogpt/processing/text.py": {}
+          }
+        }
+      }
+    },
+    "TransformerOptimus/SuperAGI": {
+      "owner": "TransformerOptimus",
+      "repo": "SuperAGI",
+      "by_sha": {
+        "c3c1982": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "TransformerOptimus/SuperAGI@c3c1982/superagi/tools/image_generation/image_generation_toolkit.py": {}
+          }
+        }
+      }
+    },
+    "h2oai/h2ogpt": {
+      "owner": "h2oai",
+      "repo": "h2ogpt",
+      "by_sha": {
+        "15f3a2d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "h2oai/h2ogpt@15f3a2d/metrics/quip.py": {}
+          }
+        }
+      }
+    },
+    "unslothai/unsloth": {
+      "owner": "unslothai",
+      "repo": "unsloth",
+      "by_sha": {
+        "d5b61a6": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "unslothai/unsloth@d5b61a6/tests/saving/text_to_speech_models/test_lasa.py": {}
+          }
+        }
+      }
+    },
+    "epam/ai-dial-adapter-bedrock": {
+      "owner": "epam",
+      "repo": "ai-dial-adapter-bedrock",
+      "by_sha": {
+        "b110bd9": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "epam/ai-dial-adapter-bedrock@b110bd9/tests/utils/__init__.py": {}
+          }
+        }
+      }
+    },
+    "Bessouat40/RAGLight": {
+      "owner": "Bessouat40",
+      "repo": "RAGLight",
+      "by_sha": {
+        "211a8d9": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Bessouat40/RAGLight@211a8d9/tests/tests_llm/test_gemini_model.py": {}
+          }
+        }
+      }
+    },
+    "Jilliansea/TinyZeroWithSFT": {
+      "owner": "Jilliansea",
+      "repo": "TinyZeroWithSFT",
+      "by_sha": {
+        "1fe5077": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Jilliansea/TinyZeroWithSFT@1fe5077/verl/models/transformers/qwen2.py": {}
+          }
+        }
+      }
+    },
+    "Blaizzy/mlx-vlm": {
+      "owner": "Blaizzy",
+      "repo": "mlx-vlm",
+      "by_sha": {
+        "c4ea290": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Blaizzy/mlx-vlm@c4ea290/mlx_vlm/models/phi3_v/config.py": {}
+          }
+        }
+      }
+    },
+    "EvolvingLMMs-Lab/OpenMMReasoner": {
+      "owner": "EvolvingLMMs-Lab",
+      "repo": "OpenMMReasoner",
+      "by_sha": {
+        "d7bf576": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "EvolvingLMMs-Lab/OpenMMReasoner@d7bf576/verl/models/transformers/kimi_vl.py": {}
+          }
+        }
+      }
+    },
+    "DylanLRPollock/Monkey-Head-Project": {
+      "owner": "DylanLRPollock",
+      "repo": "Monkey-Head-Project",
+      "by_sha": {
+        "6b0c9ec": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "DylanLRPollock/Monkey-Head-Project@6b0c9ec/repo/pygpt-MHP/src/pygpt_net/plugin/agent/config.py": {}
+          }
+        }
+      }
+    },
+    "Luckybalabala/llama-cpp-AutoGLM": {
+      "owner": "Luckybalabala",
+      "repo": "llama-cpp-AutoGLM",
+      "by_sha": {
+        "694dc09": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Luckybalabala/llama-cpp-AutoGLM@694dc09/examples/pydantic_models_to_grammar_examples.py": {}
+          }
+        }
+      }
+    },
+    "dusty-nv/jetson-containers": {
+      "owner": "dusty-nv",
+      "repo": "jetson-containers",
+      "by_sha": {
+        "bf3c8b0": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "dusty-nv/jetson-containers@bf3c8b0/packages/llm/vllm/test.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/Megatron-Bridge": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "Megatron-Bridge",
+      "by_sha": {
+        "c299283": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-NeMo/Megatron-Bridge@c299283/tutorials/recipes/llama/00_quickstart_pretrain.py": {}
+          }
+        }
+      }
+    },
+    "linkedin/Liger-Kernel": {
+      "owner": "linkedin",
+      "repo": "Liger-Kernel",
+      "by_sha": {
+        "6059dfb": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "linkedin/Liger-Kernel@6059dfb/benchmark/scripts/benchmark_tiled_mlp.py": {}
+          }
+        }
+      }
+    },
+    "langfengQ/verl-agent": {
+      "owner": "langfengQ",
+      "repo": "verl-agent",
+      "by_sha": {
+        "373e6b2": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "langfengQ/verl-agent@373e6b2/verl/workers/rollout/schemas.py": {}
+          }
+        }
+      }
+    },
+    "vllm-project/speculators": {
+      "owner": "vllm-project",
+      "repo": "speculators",
+      "by_sha": {
+        "b3f6b10": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "vllm-project/speculators@b3f6b10/src/speculators/models/eagle3/model_definitions.py": {}
+          }
+        }
+      }
+    },
+    "keta1930/mcp-agent-graph": {
+      "owner": "keta1930",
+      "repo": "mcp-agent-graph",
+      "by_sha": {
+        "1e0f983": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "keta1930/mcp-agent-graph@1e0f983/mag/app/api/conversation_routes.py": {}
+          }
+        }
+      }
+    },
+    "DataArcTech/RAG-ARC": {
+      "owner": "DataArcTech",
+      "repo": "RAG-ARC",
+      "by_sha": {
+        "f1f37bc": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "DataArcTech/RAG-ARC@f1f37bc/config/core/file_management/extractor/graphextractor_config.py": {}
+          }
+        }
+      }
+    },
+    "vllm-project/vllm": {
+      "owner": "vllm-project",
+      "repo": "vllm",
+      "by_sha": {
+        "62be367": {
+          "num_listed_files": 22,
+          "num_analyzed_files": 22,
+          "alerts": {
+            "vllm-project/vllm@62be367/tests/v1/entrypoints/conftest.py": {},
+            "vllm-project/vllm@62be367/examples/offline_inference/kv_load_failure_recovery/prefill_example.py": {},
+            "vllm-project/vllm@62be367/examples/pooling/embed/openai_embedding_client.py": {},
+            "vllm-project/vllm@62be367/tests/models/language/pooling/test_truncation_control.py": {},
+            "vllm-project/vllm@62be367/tests/compile/test_fusion_attn.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/layers/quantization/utils/marlin_utils_test_24.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/models/transformers/causal.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/models/aya_vision.py": {},
+            "vllm-project/vllm@62be367/vllm/v1/worker/gpu/spec_decode/eagle_cudagraph.py": {},
+            "vllm-project/vllm@62be367/tests/entrypoints/openai/tool_parsers/test_olmo3_tool_parser.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/layers/rotary_embedding/xdrope.py": {},
+            "vllm-project/vllm@62be367/tests/compile/fullgraph/test_simple.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/models/mimo_mtp.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/models/mixtral.py": {},
+            "vllm-project/vllm@62be367/vllm/transformers_utils/processors/ovis.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/models/transformers/__init__.py": {},
+            "vllm-project/vllm@62be367/tests/entrypoints/openai/test_serving_responses.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/layers/quantization/compressed_tensors/utils.py": {},
+            "vllm-project/vllm@62be367/tests/kernels/quantization/test_machete_mm.py": {},
+            "vllm-project/vllm@62be367/tests/v1/attention/test_sparse_mla_backends.py": {},
+            "vllm-project/vllm@62be367/vllm/model_executor/models/dots1.py": {},
+            "vllm-project/vllm@62be367/tests/lora/test_default_mm_loras.py": {}
+          }
+        }
+      }
+    },
+    "hailsham/mcpverse": {
+      "owner": "hailsham",
+      "repo": "mcpverse",
+      "by_sha": {
+        "982f66c": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "hailsham/mcpverse@982f66c/camel/storages/key_value_storages/json.py": {},
+            "hailsham/mcpverse@982f66c/test/memories/test_vector_db_memory.py": {},
+            "hailsham/mcpverse@982f66c/test/agents/tool_agents/test_hugging_face_tool_agent.py": {}
+          }
+        }
+      }
+    },
+    "eosphoros-ai/DB-GPT": {
+      "owner": "eosphoros-ai",
+      "repo": "DB-GPT",
+      "by_sha": {
+        "4b52cfa": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "eosphoros-ai/DB-GPT@4b52cfa/packages/dbgpt-ext/src/dbgpt_ext/rag/knowledge/txt.py": {},
+            "eosphoros-ai/DB-GPT@4b52cfa/i18n/translate_util.py": {}
+          }
+        }
+      }
+    },
+    "ai-dynamo/dynamo": {
+      "owner": "ai-dynamo",
+      "repo": "dynamo",
+      "by_sha": {
+        "aaed4f3": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "ai-dynamo/dynamo@aaed4f3/lib/bindings/kvbm/python/kvbm/vllm_integration/kv_cache_manager.py": {},
+            "ai-dynamo/dynamo@aaed4f3/tests/fault_tolerance/deploy/parse_results.py": {}
+          }
+        }
+      }
+    },
+    "AI-Hypercomputer/maxtext": {
+      "owner": "AI-Hypercomputer",
+      "repo": "maxtext",
+      "by_sha": {
+        "bc53aaa": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "AI-Hypercomputer/maxtext@bc53aaa/tests/aot_hlo_identical_test.py": {},
+            "AI-Hypercomputer/maxtext@bc53aaa/src/MaxText/utils/ckpt_scripts/convert_gpt_oss_ckpt.py": {}
+          }
+        }
+      }
+    },
+    "Kiln-AI/Kiln": {
+      "owner": "Kiln-AI",
+      "repo": "Kiln",
+      "by_sha": {
+        "229b888": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "Kiln-AI/Kiln@229b888/libs/core/kiln_ai/datamodel/test_basemodel.py": {},
+            "Kiln-AI/Kiln@229b888/libs/core/kiln_ai/adapters/embedding/test_litellm_embedding_adapter.py": {}
+          }
+        }
+      }
+    },
+    "pytorch/executorch": {
+      "owner": "pytorch",
+      "repo": "executorch",
+      "by_sha": {
+        "c61b2ed": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "pytorch/executorch@c61b2ed/extension/llm/custom_ops/custom_ops.py": {},
+            "pytorch/executorch@c61b2ed/examples/qualcomm/oss_scripts/llama/__init__.py": {}
+          }
+        }
+      }
+    },
+    "kungfuai/CVlization": {
+      "owner": "kungfuai",
+      "repo": "CVlization",
+      "by_sha": {
+        "6c7e282": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "kungfuai/CVlization@6c7e282/examples/generative/image_generation/dit/diffusion/__init__.py": {},
+            "kungfuai/CVlization@6c7e282/examples/generative/image_generation/pixart/diffusion/model/timestep_sampler.py": {}
+          }
+        }
+      }
+    },
+    "FOLLGAD/Godmode-GPT": {
+      "owner": "FOLLGAD",
+      "repo": "Godmode-GPT",
+      "by_sha": {
+        "4e1dc70": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "FOLLGAD/Godmode-GPT@4e1dc70/tests/integration/conftest.py": {}
+          }
+        }
+      }
+    },
+    "abetlen/llama-cpp-python": {
+      "owner": "abetlen",
+      "repo": "llama-cpp-python",
+      "by_sha": {
+        "c37132b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "abetlen/llama-cpp-python@c37132b/examples/high_level_api/high_level_api_infill.py": {}
+          }
+        }
+      }
+    },
+    "fangyinc/DB-GPT": {
+      "owner": "fangyinc",
+      "repo": "DB-GPT",
+      "by_sha": {
+        "f317740": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "fangyinc/DB-GPT@f317740/dbgpt/util/global_helper.py": {}
+          }
+        }
+      }
+    },
+    "uukuguy/DB-GPT-Lite": {
+      "owner": "uukuguy",
+      "repo": "DB-GPT-Lite",
+      "by_sha": {
+        "d857cb7": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "uukuguy/DB-GPT-Lite@d857cb7/dbgpt/model/adapter/vllm_adapter.py": {}
+          }
+        }
+      }
+    },
+    "SkastVnT/AI-Assistant": {
+      "owner": "SkastVnT",
+      "repo": "AI-Assistant",
+      "by_sha": {
+        "49692e8": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "SkastVnT/AI-Assistant@49692e8/services/mcp-server/examples.py": {}
+          }
+        }
+      }
+    },
+    "intel/neural-compressor": {
+      "owner": "intel",
+      "repo": "neural-compressor",
+      "by_sha": {
+        "eb7c1e3": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "intel/neural-compressor@eb7c1e3/neural_compressor/torch/algorithms/mixed_low_precision/custom_methods/quarot_utils.py": {}
+          }
+        }
+      }
+    },
+    "1789336421/Omni-Mol": {
+      "owner": "1789336421",
+      "repo": "Omni-Mol",
+      "by_sha": {
+        "8a9426d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "1789336421/Omni-Mol@8a9426d/peft/tests/test_initialization.py": {}
+          }
+        }
+      }
+    },
+    "duyhominhnguyen/Exgra-Med": {
+      "owner": "duyhominhnguyen",
+      "repo": "Exgra-Med",
+      "by_sha": {
+        "e9a3daa": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "duyhominhnguyen/Exgra-Med@e9a3daa/exgra_med/llava/train/train_pre.py": {}
+          }
+        }
+      }
+    },
+    "chrishayuk/mcp-cli": {
+      "owner": "chrishayuk",
+      "repo": "mcp-cli",
+      "by_sha": {
+        "ae6db3d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "chrishayuk/mcp-cli@ae6db3d/src/mcp_cli/auth/provider_tokens.py": {}
+          }
+        }
+      }
+    },
+    "microsoft/openaivec": {
+      "owner": "microsoft",
+      "repo": "openaivec",
+      "by_sha": {
+        "cd2760b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "microsoft/openaivec@cd2760b/src/openaivec/task/__init__.py": {}
+          }
+        }
+      }
+    },
+    "shakfu/cyllama": {
+      "owner": "shakfu",
+      "repo": "cyllama",
+      "by_sha": {
+        "3bf0290": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "shakfu/cyllama@3bf0290/tests/test_tts_fix.py": {}
+          }
+        }
+      }
+    },
+    "lanxiang1017/GEM": {
+      "owner": "lanxiang1017",
+      "repo": "GEM",
+      "by_sha": {
+        "7edee7e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "lanxiang1017/GEM@7edee7e/ecg_coca/open_clip/constants.py": {}
+          }
+        }
+      }
+    },
+    "vllm-project/llm-compressor": {
+      "owner": "vllm-project",
+      "repo": "llm-compressor",
+      "by_sha": {
+        "3f25fd1": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "vllm-project/llm-compressor@3f25fd1/examples/quantization_w8a8_fp8/whisper_example.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-AI-Blueprints/rag": {
+      "owner": "NVIDIA-AI-Blueprints",
+      "repo": "rag",
+      "by_sha": {
+        "42962af": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-AI-Blueprints/rag@42962af/src/nvidia_rag/rag_server/query_decomposition.py": {}
+          }
+        }
+      }
+    },
+    "Fsoft-AIC/LibMoE": {
+      "owner": "Fsoft-AIC",
+      "repo": "LibMoE",
+      "by_sha": {
+        "52fa349": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Fsoft-AIC/LibMoE@52fa349/vision_language_model/evaluate/lmms_eval/models/claude.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/Export-Deploy": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "Export-Deploy",
+      "by_sha": {
+        "c7e2727": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-NeMo/Export-Deploy@c7e2727/tests/functional_tests/tests_inframework/test_export_deploy_query_pytriton.py": {}
+          }
+        }
+      }
+    },
+    "OpenMind/OM1": {
+      "owner": "OpenMind",
+      "repo": "OM1",
+      "by_sha": {
+        "2c2615b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "OpenMind/OM1@2c2615b/src/inputs/plugins/vlm_openai_rtsp.py": {}
+          }
+        }
+      }
+    },
+    "SearchSavior/OpenArc": {
+      "owner": "SearchSavior",
+      "repo": "OpenArc",
+      "by_sha": {
+        "14dec90": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "SearchSavior/OpenArc@14dec90/src/tests/old_tests_from_dev/completions_test.py": {}
+          }
+        }
+      }
+    },
+    "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database": {
+      "owner": "Devansh968",
+      "repo": "Chat-with-Pdf-using-Qdrant-vector-database",
+      "by_sha": {
+        "771195f": {
+          "num_listed_files": 10,
+          "num_analyzed_files": 10,
+          "alerts": {
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/llms/anyscale.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/openai/api_resources/customer.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/smith/__init__.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/experimental/autonomous_agents/baby_agi/baby_agi.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/document_loaders/markdown.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/retrievers/kendra.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/callbacks/tracers/stdout.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/agents/agent_toolkits/azure_cognitive_services/toolkit.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/llms/promptlayer_openai.py": {},
+            "Devansh968/Chat-with-Pdf-using-Qdrant-vector-database@771195f/-/Lib/site-packages/langchain/chat_models/promptlayer_openai.py": {}
+          }
+        }
+      }
+    },
+    "sgl-project/sglang": {
+      "owner": "sgl-project",
+      "repo": "sglang",
+      "by_sha": {
+        "9a327bd": {
+          "num_listed_files": 6,
+          "num_analyzed_files": 6,
+          "alerts": {
+            "sgl-project/sglang@9a327bd/python/sglang/srt/function_call/base_format_detector.py": {
+              "MISSING_FILE": [
+                "Missing file: sgl-project/sglang@9a327bd/python/sglang/srt/function_call/base_format_detector.py"
+              ]
+            },
+            "sgl-project/sglang@9a327bd/python/sglang/srt/multimodal/processors/mlama.py": {
+              "MISSING_FILE": [
+                "Missing file: sgl-project/sglang@9a327bd/python/sglang/srt/multimodal/processors/mlama.py"
+              ]
+            },
+            "sgl-project/sglang@9a327bd/sgl-kernel/benchmark/bench_fp8_gemm.py": {
+              "MISSING_FILE": [
+                "Missing file: sgl-project/sglang@9a327bd/sgl-kernel/benchmark/bench_fp8_gemm.py"
+              ]
+            },
+            "sgl-project/sglang@9a327bd/python/sglang/multimodal_gen/runtime/distributed/utils.py": {
+              "MISSING_FILE": [
+                "Missing file: sgl-project/sglang@9a327bd/python/sglang/multimodal_gen/runtime/distributed/utils.py"
+              ]
+            },
+            "sgl-project/sglang@9a327bd/test/nightly/ascend/llm_models/test_ascend_llama_2_7b.py": {
+              "MISSING_FILE": [
+                "Missing file: sgl-project/sglang@9a327bd/test/nightly/ascend/llm_models/test_ascend_llama_2_7b.py"
+              ]
+            },
+            "sgl-project/sglang@9a327bd/python/sglang/srt/compilation/compilation_counter.py": {
+              "MISSING_FILE": [
+                "Missing file: sgl-project/sglang@9a327bd/python/sglang/srt/compilation/compilation_counter.py"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "guanweifan/RoboNeuron": {
+      "owner": "guanweifan",
+      "repo": "RoboNeuron",
+      "by_sha": {
+        "f4b2a70": {
+          "num_listed_files": 4,
+          "num_analyzed_files": 4,
+          "alerts": {
+            "guanweifan/RoboNeuron@f4b2a70/vla_src/openvla/transformers/src/transformers/models/code_llama/__init__.py": {},
+            "guanweifan/RoboNeuron@f4b2a70/vla_src/openvla/transformers/src/transformers/models/clip/image_processing_clip.py": {},
+            "guanweifan/RoboNeuron@f4b2a70/vla_src/openvla/transformers/src/transformers/models/persimmon/convert_persimmon_weights_to_hf.py": {},
+            "guanweifan/RoboNeuron@f4b2a70/vla_src/openvla/transformers/src/transformers/models/imagegpt/convert_imagegpt_original_tf2_to_pytorch.py": {}
+          }
+        }
+      }
+    },
+    "intel/ipex-llm": {
+      "owner": "intel",
+      "repo": "ipex-llm",
+      "by_sha": {
+        "197f653": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "intel/ipex-llm@197f653/python/llm/src/ipex_llm/transformers/npu_models/xlm_mp.py": {},
+            "intel/ipex-llm@197f653/python/llm/example/GPU/Lightweight-Serving/lightweight_serving.py": {},
+            "intel/ipex-llm@197f653/python/llm/src/ipex_llm/transformers/npu_pipeline_model/convert_pipeline.py": {}
+          }
+        }
+      }
+    },
+    "CraftJarvis/OpenHA": {
+      "owner": "CraftJarvis",
+      "repo": "OpenHA",
+      "by_sha": {
+        "2127a34": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "CraftJarvis/OpenHA@2127a34/CrossAgent/MTRL/verl/utils/reward_score/prime_math/__init__.py": {},
+            "CraftJarvis/OpenHA@2127a34/CrossAgent/MTRL/recipe/sppo/main_sppo.py": {},
+            "CraftJarvis/OpenHA@2127a34/CrossAgent/STRL/verl_lib/verl/workers/rollout/vllm_rollout/__init__.py": {}
+          }
+        }
+      }
+    },
+    "openai/openai-agents-python": {
+      "owner": "openai",
+      "repo": "openai-agents-python",
+      "by_sha": {
+        "df020d1": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "openai/openai-agents-python@df020d1/examples/financial_research_agent/manager.py": {},
+            "openai/openai-agents-python@df020d1/src/agents/tracing/__init__.py": {}
+          }
+        }
+      }
+    },
+    "ModelCloud/GPTQModel": {
+      "owner": "ModelCloud",
+      "repo": "GPTQModel",
+      "by_sha": {
+        "5b56825": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "ModelCloud/GPTQModel@5b56825/tests/models/test_longllama.py": {},
+            "ModelCloud/GPTQModel@5b56825/gptqmodel/models/definitions/decilm.py": {}
+          }
+        }
+      }
+    },
+    "agentuniverse-ai/agentUniverse": {
+      "owner": "agentuniverse-ai",
+      "repo": "agentUniverse",
+      "by_sha": {
+        "d11c8f4": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "agentuniverse-ai/agentUniverse@d11c8f4/examples/sample_standard_app/config/yaml_func_extension.py": {},
+            "agentuniverse-ai/agentUniverse@d11c8f4/agentuniverse/agent/template/react_agent_template.py": {}
+          }
+        }
+      }
+    },
+    "xuyang-liu16/VidCom2": {
+      "owner": "xuyang-liu16",
+      "repo": "VidCom2",
+      "by_sha": {
+        "ce46008": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "xuyang-liu16/VidCom2@ce46008/llava/eval/evaluate_interleave.py": {},
+            "xuyang-liu16/VidCom2@ce46008/lmms-eval/lmms_eval/tasks/mmbench/en_utils.py": {}
+          }
+        }
+      }
+    },
+    "CodeGoat24/UnifiedReward": {
+      "owner": "CodeGoat24",
+      "repo": "UnifiedReward",
+      "by_sha": {
+        "3c16510": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "CodeGoat24/UnifiedReward@3c16510/llava/utils.py": {},
+            "CodeGoat24/UnifiedReward@3c16510/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/__init__.py": {}
+          }
+        }
+      }
+    },
+    "Aider-AI/aider": {
+      "owner": "Aider-AI",
+      "repo": "aider",
+      "by_sha": {
+        "7301d45": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Aider-AI/aider@7301d45/aider/coders/base_coder.py": {}
+          }
+        }
+      }
+    },
+    "Jerk400/h2ogpt-dev-local": {
+      "owner": "Jerk400",
+      "repo": "h2ogpt-dev-local",
+      "by_sha": {
+        "ba56d64": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Jerk400/h2ogpt-dev-local@ba56d64/tests/test_eval.py": {}
+          }
+        }
+      }
+    },
+    "chidiwilliams/buzz": {
+      "owner": "chidiwilliams",
+      "repo": "buzz",
+      "by_sha": {
+        "11e59db": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "chidiwilliams/buzz@11e59db/tests/transcriber/openai_whisper_api_file_transcriber_test.py": {}
+          }
+        }
+      }
+    },
+    "huggingface/peft": {
+      "owner": "huggingface",
+      "repo": "peft",
+      "by_sha": {
+        "f2c0668": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "huggingface/peft@f2c0668/method_comparison/MetaMathQA/run.py": {}
+          }
+        }
+      }
+    },
+    "yujiosaka/ChatIQ": {
+      "owner": "yujiosaka",
+      "repo": "ChatIQ",
+      "by_sha": {
+        "def2148": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "yujiosaka/ChatIQ@def2148/tests/handlers/test_app_home_opened.py": {}
+          }
+        }
+      }
+    },
+    "flagos-ai/FlagScale": {
+      "owner": "flagos-ai",
+      "repo": "FlagScale",
+      "by_sha": {
+        "528cea1": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "flagos-ai/FlagScale@528cea1/tools/checkpoint/aquila/model.py": {}
+          }
+        }
+      }
+    },
+    "qtalen/agentic-ai-playground": {
+      "owner": "qtalen",
+      "repo": "agentic-ai-playground",
+      "by_sha": {
+        "dd618c6": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "qtalen/agentic-ai-playground@dd618c6/08_DeepSeek_OCR_Agentic_RAG/ocr_agentic_rag.py": {}
+          }
+        }
+      }
+    },
+    "danielcamposramos/Knowledge3D": {
+      "owner": "danielcamposramos",
+      "repo": "Knowledge3D",
+      "by_sha": {
+        "274cf36": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "danielcamposramos/Knowledge3D@274cf36/knowledge3d/cranium/ptx_runtime/world_model_manager.py": {}
+          }
+        }
+      }
+    },
+    "cambrian-mllm/cambrian-s": {
+      "owner": "cambrian-mllm",
+      "repo": "cambrian-s",
+      "by_sha": {
+        "9b770e4": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "cambrian-mllm/cambrian-s@9b770e4/lmms-eval/tools/live_bench/live_bench/data_generator/question_finalizer.py": {}
+          }
+        }
+      }
+    },
+    "agentscope-ai/agentscope": {
+      "owner": "agentscope-ai",
+      "repo": "agentscope",
+      "by_sha": {
+        "19cba5c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "agentscope-ai/agentscope@19cba5c/src/agentscope/formatter/_openai_formatter.py": {}
+          }
+        }
+      }
+    },
+    "owadev777/EgoVLA_Release": {
+      "owner": "owadev777",
+      "repo": "EgoVLA_Release",
+      "by_sha": {
+        "92ebbd9": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "owadev777/EgoVLA_Release@92ebbd9/VILA/tests/utils/client.py": {}
+          }
+        }
+      }
+    },
+    "ParisNeo/lollms_client": {
+      "owner": "ParisNeo",
+      "repo": "lollms_client",
+      "by_sha": {
+        "e10bd27": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ParisNeo/lollms_client@e10bd27/src/lollms_client/llm_bindings/open_router/__init__.py": {}
+          }
+        }
+      }
+    },
+    "SafeRL-Lab/AccidentBench": {
+      "owner": "SafeRL-Lab",
+      "repo": "AccidentBench",
+      "by_sha": {
+        "4abe9d8": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "SafeRL-Lab/AccidentBench@4abe9d8/lmms_eval/tasks/mathverse/mathverse_evals.py": {}
+          }
+        }
+      }
+    },
+    "trycua/cua": {
+      "owner": "trycua",
+      "repo": "cua",
+      "by_sha": {
+        "7404c13": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "trycua/cua@7404c13/libs/python/agent/agent/computers/cua.py": {}
+          }
+        }
+      }
+    },
+    "markl-a/My-AI-Learning-Notes": {
+      "owner": "markl-a",
+      "repo": "My-AI-Learning-Notes",
+      "by_sha": {
+        "a0991e3": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "markl-a/My-AI-Learning-Notes@a0991e3/5.AI研究前沿_2024-2025/1.大型語言模型(LLM)/examples/01_llama31_complete.py": {}
+          }
+        }
+      }
+    },
+    "lee101/stock-prediction": {
+      "owner": "lee101",
+      "repo": "stock-prediction",
+      "by_sha": {
+        "a941985": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "lee101/stock-prediction@a941985/stockagentopus/opus_wrapper.py": {}
+          }
+        }
+      }
+    },
+    "YWenxi/think-with-images-through-self-calling": {
+      "owner": "YWenxi",
+      "repo": "think-with-images-through-self-calling",
+      "by_sha": {
+        "fd872ee": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "YWenxi/think-with-images-through-self-calling@fd872ee/verl/tools/image_zoom_in_tool.py": {}
+          }
+        }
+      }
+    },
+    "EleutherAI/lm-evaluation-harness": {
+      "owner": "EleutherAI",
+      "repo": "lm-evaluation-harness",
+      "by_sha": {
+        "69ecd0b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "EleutherAI/lm-evaluation-harness@69ecd0b/tests/models/test_api.py": {}
+          }
+        }
+      }
+    },
+    "matdev83/llm-interactive-proxy": {
+      "owner": "matdev83",
+      "repo": "llm-interactive-proxy",
+      "by_sha": {
+        "e5f0eab": {
+          "num_listed_files": 10,
+          "num_analyzed_files": 10,
+          "alerts": {
+            "matdev83/llm-interactive-proxy@e5f0eab/tests/unit/connectors/test_gemini_oauth_antigravity.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/tests/unit/memory/test_summary_generator.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/src/connectors/openai.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/tests/unit/test_emergency_command_filter.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/tests/helpers/angel_factory_stub.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/src/connectors/gemini_oauth_plan.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/src/connectors/gemini_base/streaming_executor.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/tests/unit/commands/test_unit_model_command_handler.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/src/core/services/resilience/coordinator.py": {},
+            "matdev83/llm-interactive-proxy@e5f0eab/tests/unit/gemini_connector_tests/test_openrouter_headers.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA/TensorRT-LLM": {
+      "owner": "NVIDIA",
+      "repo": "TensorRT-LLM",
+      "by_sha": {
+        "0b279f4": {
+          "num_listed_files": 5,
+          "num_analyzed_files": 5,
+          "alerts": {
+            "NVIDIA/TensorRT-LLM@0b279f4/tensorrt_llm/_torch/models/modeling_llava_next.py": {},
+            "NVIDIA/TensorRT-LLM@0b279f4/tests/unittest/llmapi/apps/_test_openai_cache_salt.py": {},
+            "NVIDIA/TensorRT-LLM@0b279f4/tests/unittest/_torch/sampler/test_beam_search.py": {},
+            "NVIDIA/TensorRT-LLM@0b279f4/tests/unittest/llmapi/test_llm_pytorch.py": {},
+            "NVIDIA/TensorRT-LLM@0b279f4/tests/integration/defs/test_e2e.py": {}
+          }
+        }
+      }
+    },
+    "InternLM/xtuner": {
+      "owner": "InternLM",
+      "repo": "xtuner",
+      "by_sha": {
+        "8d569d5": {
+          "num_listed_files": 4,
+          "num_analyzed_files": 4,
+          "alerts": {
+            "InternLM/xtuner@8d569d5/xtuner/configs/llava/internlm_chat_7b_clip_vit_large_p14_336/pretrain/llava_internlm_chat_7b_clip_vit_large_p14_336_e1_gpu8_pretrain.py": {},
+            "InternLM/xtuner@8d569d5/.dev_scripts/rl_config_factory.py": {},
+            "InternLM/xtuner@8d569d5/xtuner/configs/mixtral/mixtral_8x7b_instruct/mixtral_8x7b_instruct_full_oasst1_e3.py": {},
+            "InternLM/xtuner@8d569d5/xtuner/configs/minicpm/1_2b/minicpm_1b_full_alpaca_zh_e3.py": {}
+          }
+        }
+      }
+    },
+    "Shubhamsaboo/awesome-llm-apps": {
+      "owner": "Shubhamsaboo",
+      "repo": "awesome-llm-apps",
+      "by_sha": {
+        "ff75e62": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "Shubhamsaboo/awesome-llm-apps@ff75e62/advanced_ai_agents/single_agent_apps/ai_personal_finance_agent/finance_agent.py": {},
+            "Shubhamsaboo/awesome-llm-apps@ff75e62/advanced_ai_agents/single_agent_apps/ai_customer_support_agent/customer_support_agent.py": {},
+            "Shubhamsaboo/awesome-llm-apps@ff75e62/advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/utils/load_api_keys.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/NeMo": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "NeMo",
+      "by_sha": {
+        "93950b7": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "NVIDIA-NeMo/NeMo@93950b7/nemo/collections/speechlm2/data/salm_dataset.py": {},
+            "NVIDIA-NeMo/NeMo@93950b7/nemo/collections/diffusion/encoders/conditioner.py": {},
+            "NVIDIA-NeMo/NeMo@93950b7/nemo/collections/llm/recipes/llama3_8b_16k.py": {}
+          }
+        }
+      }
+    },
+    "hiyouga/LLaMA-Factory": {
+      "owner": "hiyouga",
+      "repo": "LLaMA-Factory",
+      "by_sha": {
+        "8c74dca": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "hiyouga/LLaMA-Factory@8c74dca/tests/e2e/test_chat.py": {},
+            "hiyouga/LLaMA-Factory@8c74dca/src/llamafactory/model/model_utils/longlora.py": {}
+          }
+        }
+      }
+    },
+    "unslothai/notebooks": {
+      "owner": "unslothai",
+      "repo": "notebooks",
+      "by_sha": {
+        "b922437": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "unslothai/notebooks@b922437/python_scripts/HuggingFace Course-Qwen2_5_7B_VL_GRPO.py": {},
+            "unslothai/notebooks@b922437/python_scripts/Qwen3_(14B)-Reasoning-Conversational.py": {}
+          }
+        }
+      }
+    },
+    "lemony-ai/cascadeflow": {
+      "owner": "lemony-ai",
+      "repo": "cascadeflow",
+      "by_sha": {
+        "c6554a2": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "lemony-ai/cascadeflow@c6554a2/cascadeflow/routing/domain.py": {},
+            "lemony-ai/cascadeflow@c6554a2/cascadeflow/telemetry/cost_tracker.py": {}
+          }
+        }
+      }
+    },
+    "EvolvingLMMs-Lab/LongVT": {
+      "owner": "EvolvingLMMs-Lab",
+      "repo": "LongVT",
+      "by_sha": {
+        "93a349c": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "EvolvingLMMs-Lab/LongVT@93a349c/verl/utils/import_utils.py": {},
+            "EvolvingLMMs-Lab/LongVT@93a349c/tests/tools/test_base_tool_on_cpu.py": {}
+          }
+        }
+      }
+    },
+    "jiaxiaojunQAQ/OmniSafeBench-MM": {
+      "owner": "jiaxiaojunQAQ",
+      "repo": "OmniSafeBench-MM",
+      "by_sha": {
+        "84a4d17": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "jiaxiaojunQAQ/OmniSafeBench-MM@84a4d17/models/google_model.py": {},
+            "jiaxiaojunQAQ/OmniSafeBench-MM@84a4d17/defenses/llama_guard_4.py": {}
+          }
+        }
+      }
+    },
+    "lpalbou/AbstractCore": {
+      "owner": "lpalbou",
+      "repo": "AbstractCore",
+      "by_sha": {
+        "5bfd9a8": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "lpalbou/AbstractCore@5bfd9a8/abstractcore/providers/lmstudio_provider.py": {},
+            "lpalbou/AbstractCore@5bfd9a8/tests/media_handling/test_cli_media.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA/Megatron-LM": {
+      "owner": "NVIDIA",
+      "repo": "Megatron-LM",
+      "by_sha": {
+        "03b6d31": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA/Megatron-LM@03b6d31/megatron/training/tokenizer/gpt2_tokenization.py": {}
+          }
+        }
+      }
+    },
+    "chatchat-space/Langchain-Chatchat": {
+      "owner": "chatchat-space",
+      "repo": "Langchain-Chatchat",
+      "by_sha": {
+        "bc7f019": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "chatchat-space/Langchain-Chatchat@bc7f019/chatchat-server/chatchat_server/document_loaders/mypptloader.py": {}
+          }
+        }
+      }
+    },
+    "huggingface/trl": {
+      "owner": "huggingface",
+      "repo": "trl",
+      "by_sha": {
+        "1dc8bbc": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "huggingface/trl@1dc8bbc/trl/extras/vllm_client.py": {}
+          }
+        }
+      }
+    },
+    "zilliztech/GPTCache": {
+      "owner": "zilliztech",
+      "repo": "GPTCache",
+      "by_sha": {
+        "c59fb3a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "zilliztech/GPTCache@c59fb3a/examples/processor/temperature_example.py": {}
+          }
+        }
+      }
+    },
+    "gpustack/gpustack": {
+      "owner": "gpustack",
+      "repo": "gpustack",
+      "by_sha": {
+        "543c80b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "gpustack/gpustack@543c80b/gpustack/worker/runtime_metrics_aggregator.py": {}
+          }
+        }
+      }
+    },
+    "Open-Technology-Foundation/customkb": {
+      "owner": "Open-Technology-Foundation",
+      "repo": "customkb",
+      "by_sha": {
+        "950c779": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Open-Technology-Foundation/customkb@950c779/tests/unit/utils/test_security_utils.py": {}
+          }
+        }
+      }
+    },
+    "ai-christianson/RA.Aid": {
+      "owner": "ai-christianson",
+      "repo": "RA.Aid",
+      "by_sha": {
+        "e71bb83": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ai-christianson/RA.Aid@e71bb83/ra_aid/tools/write_file.py": {}
+          }
+        }
+      }
+    },
+    "Zhoues/RoboRefer": {
+      "owner": "Zhoues",
+      "repo": "RoboRefer",
+      "by_sha": {
+        "d97a995": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Zhoues/RoboRefer@d97a995/llava/model/language_model/builder.py": {}
+          }
+        }
+      }
+    },
+    "rscheiwe/vel": {
+      "owner": "rscheiwe",
+      "repo": "vel",
+      "by_sha": {
+        "41e4dd6": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "rscheiwe/vel@41e4dd6/vel/thinking/config.py": {}
+          }
+        }
+      }
+    },
+    "openvinotoolkit/openvino.genai": {
+      "owner": "openvinotoolkit",
+      "repo": "openvino.genai",
+      "by_sha": {
+        "87f9d9e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "openvinotoolkit/openvino.genai@87f9d9e/samples/python/text_generation/structured_output_generation.py": {}
+          }
+        }
+      }
+    },
+    "IP127000/openVLA-Qwen2-0.5B": {
+      "owner": "IP127000",
+      "repo": "openVLA-Qwen2-0.5B",
+      "by_sha": {
+        "940c761": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "IP127000/openVLA-Qwen2-0.5B@940c761/llava/serve/gradio_web_server.py": {}
+          }
+        }
+      }
+    },
+    "Ganador1/FenixAI_tradingBot": {
+      "owner": "Ganador1",
+      "repo": "FenixAI_tradingBot",
+      "by_sha": {
+        "6e12bb3": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Ganador1/FenixAI_tradingBot@6e12bb3/src/cost/advanced_cost_manager.py": {}
+          }
+        }
+      }
+    },
+    "modelscope/evalscope": {
+      "owner": "modelscope",
+      "repo": "evalscope",
+      "by_sha": {
+        "1ab8fca": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "modelscope/evalscope@1ab8fca/evalscope/metrics/metrics.py": {}
+          }
+        }
+      }
+    },
+    "IntelLabs/blueglass": {
+      "owner": "IntelLabs",
+      "repo": "blueglass",
+      "by_sha": {
+        "869a1f3": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "IntelLabs/blueglass@869a1f3/blueglass/modeling/modelstore/closed_source/__init__.py": {}
+          }
+        }
+      }
+    },
+    "AdaptVision/AdaptVision": {
+      "owner": "AdaptVision",
+      "repo": "AdaptVision",
+      "by_sha": {
+        "e8b1fa3": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "AdaptVision/AdaptVision@e8b1fa3/verl/third_party/vllm/vllm_v_0_4_2/llm.py": {}
+          }
+        }
+      }
+    },
+    "SYuan03/MM-IFEngine": {
+      "owner": "SYuan03",
+      "repo": "MM-IFEngine",
+      "by_sha": {
+        "af6430c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "SYuan03/MM-IFEngine@af6430c/tests/data/test_formatter.py": {}
+          }
+        }
+      }
+    },
+    "alibaba/ROLL": {
+      "owner": "alibaba",
+      "repo": "ROLL",
+      "by_sha": {
+        "c7e897d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "alibaba/ROLL@c7e897d/tests/third_party/vllm/test_vllm_local_async.py": {}
+          }
+        }
+      }
+    },
+    "huggingface/transformers": {
+      "owner": "huggingface",
+      "repo": "transformers",
+      "by_sha": {
+        "b62e5b3": {
+          "num_listed_files": 8,
+          "num_analyzed_files": 8,
+          "alerts": {
+            "huggingface/transformers@b62e5b3/src/transformers/models/csm/modular_csm.py": {},
+            "huggingface/transformers@b62e5b3/src/transformers/models/aimv2/modular_aimv2.py": {},
+            "huggingface/transformers@b62e5b3/src/transformers/models/cwm/configuration_cwm.py": {},
+            "huggingface/transformers@b62e5b3/src/transformers/image_processing_base.py": {},
+            "huggingface/transformers@b62e5b3/tests/models/aria/test_modeling_aria.py": {},
+            "huggingface/transformers@b62e5b3/src/transformers/models/hunyuan_v1_dense/modular_hunyuan_v1_dense.py": {},
+            "huggingface/transformers@b62e5b3/src/transformers/convert_slow_tokenizer.py": {},
+            "huggingface/transformers@b62e5b3/src/transformers/models/llama4/image_processing_llama4_fast.py": {}
+          }
+        }
+      }
+    },
+    "meta-llama/llama-stack": {
+      "owner": "meta-llama",
+      "repo": "llama-stack",
+      "by_sha": {
+        "d82a2cd": {
+          "num_listed_files": 6,
+          "num_analyzed_files": 6,
+          "alerts": {
+            "meta-llama/llama-stack@d82a2cd/src/llama_stack/core/routing_tables/benchmarks.py": {},
+            "meta-llama/llama-stack@d82a2cd/src/llama_stack/providers/remote/inference/tgi/config.py": {},
+            "meta-llama/llama-stack@d82a2cd/tests/unit/providers/utils/memory/test_vector_store.py": {},
+            "meta-llama/llama-stack@d82a2cd/src/llama_stack/providers/utils/memory/file_utils.py": {},
+            "meta-llama/llama-stack@d82a2cd/src/llama_stack/providers/remote/vector_io/qdrant/qdrant.py": {},
+            "meta-llama/llama-stack@d82a2cd/tests/unit/utils/inference/test_inference_store.py": {}
+          }
+        }
+      }
+    },
+    "comet-ml/opik": {
+      "owner": "comet-ml",
+      "repo": "opik",
+      "by_sha": {
+        "28440d1": {
+          "num_listed_files": 4,
+          "num_analyzed_files": 4,
+          "alerts": {
+            "comet-ml/opik@28440d1/apps/opik-frontend/src/components/pages-shared/onboarding/FrameworkIntegrations/integration-scripts/OpenAIAgents.py": {},
+            "comet-ml/opik@28440d1/sdks/opik_optimizer/tests/e2e/benchmarks/test_benchmark_fewshot_live.py": {},
+            "comet-ml/opik@28440d1/sdks/python/tests/library_integration/adk/test_adk_sync.py": {},
+            "comet-ml/opik@28440d1/sdks/opik_optimizer/benchmarks/core/benchmark_config.py": {}
+          }
+        }
+      }
+    },
+    "567-labs/instructor": {
+      "owner": "567-labs",
+      "repo": "instructor",
+      "by_sha": {
+        "130c034": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "567-labs/instructor@130c034/tests/llm/test_genai/test_format.py": {},
+            "567-labs/instructor@130c034/instructor/validation/__init__.py": {},
+            "567-labs/instructor@130c034/examples/logfire-fastapi/server.py": {}
+          }
+        }
+      }
+    },
+    "openai/openai-python": {
+      "owner": "openai",
+      "repo": "openai-python",
+      "by_sha": {
+        "dc76021": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "openai/openai-python@dc76021/src/openai/_files.py": {},
+            "openai/openai-python@dc76021/src/openai/resources/beta/chatkit/chatkit.py": {},
+            "openai/openai-python@dc76021/src/openai/resources/beta/threads/threads.py": {}
+          }
+        }
+      }
+    },
+    "InternLM/lmdeploy": {
+      "owner": "InternLM",
+      "repo": "lmdeploy",
+      "by_sha": {
+        "d7c28d3": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "InternLM/lmdeploy@d7c28d3/lmdeploy/pytorch/models/gemma.py": {},
+            "InternLM/lmdeploy@d7c28d3/lmdeploy/pytorch/models/chatglm2.py": {}
+          }
+        }
+      }
+    },
+    "xtekky/gpt4free": {
+      "owner": "xtekky",
+      "repo": "gpt4free",
+      "by_sha": {
+        "aa0aade": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "xtekky/gpt4free@aa0aade/g4f/providers/any_provider.py": {},
+            "xtekky/gpt4free@aa0aade/g4f/Provider/EasyChat.py": {}
+          }
+        }
+      }
+    },
+    "HakAl/scrappy": {
+      "owner": "HakAl",
+      "repo": "scrappy",
+      "by_sha": {
+        "2eded1f": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "HakAl/scrappy@2eded1f/tests/cli/test_user_interaction.py": {},
+            "HakAl/scrappy@2eded1f/scripts/evaluate_models.py": {}
+          }
+        }
+      }
+    },
+    "openaiotlab/ContextAgent": {
+      "owner": "openaiotlab",
+      "repo": "ContextAgent",
+      "by_sha": {
+        "f4674bf": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "openaiotlab/ContextAgent@f4674bf/LLaMA-Factory/tests/model/model_utils/test_checkpointing.py": {},
+            "openaiotlab/ContextAgent@f4674bf/LLaMA-Factory/scripts/stat_utils/cal_lr.py": {}
+          }
+        }
+      }
+    },
+    "axolotl-ai-cloud/axolotl": {
+      "owner": "axolotl-ai-cloud",
+      "repo": "axolotl",
+      "by_sha": {
+        "3750d7d": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "axolotl-ai-cloud/axolotl@3750d7d/tests/utils/schemas/validation/test_fsdp.py": {},
+            "axolotl-ai-cloud/axolotl@3750d7d/src/axolotl/integrations/liger/plugin.py": {}
+          }
+        }
+      }
+    },
+    "xuyang-liu16/MixKV": {
+      "owner": "xuyang-liu16",
+      "repo": "MixKV",
+      "by_sha": {
+        "bf5ddc4": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "xuyang-liu16/MixKV@bf5ddc4/lmms-eval/lmms_eval/tasks/detailcaps/utils.py": {},
+            "xuyang-liu16/MixKV@bf5ddc4/visual_head/LLaVA-NeXT/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/openai.py": {}
+          }
+        }
+      }
+    },
+    "BillSchumacher/Auto-GPT": {
+      "owner": "BillSchumacher",
+      "repo": "Auto-GPT",
+      "by_sha": {
+        "bdd07b1": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "BillSchumacher/Auto-GPT@bdd07b1/autogpt/models/base_open_ai_plugin.py": {}
+          }
+        }
+      }
+    },
+    "QuivrHQ/quivr": {
+      "owner": "QuivrHQ",
+      "repo": "quivr",
+      "by_sha": {
+        "947a785": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "QuivrHQ/quivr@947a785/core/quivr_core/files/file.py": {}
+          }
+        }
+      }
+    },
+    "cpacker/MemGPT": {
+      "owner": "cpacker",
+      "repo": "MemGPT",
+      "by_sha": {
+        "6e2c92e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "cpacker/MemGPT@6e2c92e/memgpt/server/websocket_client.py": {}
+          }
+        }
+      }
+    },
+    "hzg0601/langchain-ChatGLM-annotation": {
+      "owner": "hzg0601",
+      "repo": "langchain-ChatGLM-annotation",
+      "by_sha": {
+        "da8085b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "hzg0601/langchain-ChatGLM-annotation@da8085b/chains/dialogue_answering/__main__.py": {}
+          }
+        }
+      }
+    },
+    "Lightning-AI/litgpt": {
+      "owner": "Lightning-AI",
+      "repo": "litgpt",
+      "by_sha": {
+        "df94ee2": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Lightning-AI/litgpt@df94ee2/litgpt/prompts.py": {}
+          }
+        }
+      }
+    },
+    "getzep/graphiti": {
+      "owner": "getzep",
+      "repo": "graphiti",
+      "by_sha": {
+        "cb53cd1": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "getzep/graphiti@cb53cd1/tests/llm_client/test_anthropic_client.py": {}
+          }
+        }
+      }
+    },
+    "aradlein/hass-agent-llm": {
+      "owner": "aradlein",
+      "repo": "hass-agent-llm",
+      "by_sha": {
+        "2a3d75a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "aradlein/hass-agent-llm@2a3d75a/tests/unit/test_memory_tools.py": {}
+          }
+        }
+      }
+    },
+    "AIGeeksGroup/MobileVLA-R1": {
+      "owner": "AIGeeksGroup",
+      "repo": "MobileVLA-R1",
+      "by_sha": {
+        "2554dfd": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "AIGeeksGroup/MobileVLA-R1@2554dfd/llava/train/transformers_replace/models/mistral/configuration_mistral.py": {}
+          }
+        }
+      }
+    },
+    "inclusionAI/AReaL": {
+      "owner": "inclusionAI",
+      "repo": "AReaL",
+      "by_sha": {
+        "b942ed0": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "inclusionAI/AReaL@b942ed0/areal/utils/proxy_utils.py": {}
+          }
+        }
+      }
+    },
+    "HKUDS/LightRAG": {
+      "owner": "HKUDS",
+      "repo": "LightRAG",
+      "by_sha": {
+        "9562a97": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "HKUDS/LightRAG@9562a97/lightrag/api/utils_api.py": {}
+          }
+        }
+      }
+    },
+    "ggml-org/llama.cpp": {
+      "owner": "ggml-org",
+      "repo": "llama.cpp",
+      "by_sha": {
+        "f9ec885": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "ggml-org/llama.cpp@f9ec885/tools/server/tests/unit/test_slot_save.py": {}
+          }
+        }
+      }
+    },
+    "bytedance/Sa2VA": {
+      "owner": "bytedance",
+      "repo": "Sa2VA",
+      "by_sha": {
+        "f445521": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "bytedance/Sa2VA@f445521/vlm/utils/modeling_rope_utils.py": {}
+          }
+        }
+      }
+    },
+    "thunlp/ChartCoder": {
+      "owner": "thunlp",
+      "repo": "ChartCoder",
+      "by_sha": {
+        "47d965c": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "thunlp/ChartCoder@47d965c/llava/model/language_model/llava_mistral.py": {}
+          }
+        }
+      }
+    },
+    "UKGovernmentBEIS/inspect_evals": {
+      "owner": "UKGovernmentBEIS",
+      "repo": "inspect_evals",
+      "by_sha": {
+        "80b12ad": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "UKGovernmentBEIS/inspect_evals@80b12ad/src/inspect_evals/gdm_capabilities/self_reasoning/data/calculator_improvement/agent.py": {}
+          }
+        }
+      }
+    },
+    "sii-research/siiRL": {
+      "owner": "sii-research",
+      "repo": "siiRL",
+      "by_sha": {
+        "297950a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "sii-research/siiRL@297950a/siirl/models/model_utils/visual.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/Automodel": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "Automodel",
+      "by_sha": {
+        "4e9d32b": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-NeMo/Automodel@4e9d32b/nemo_automodel/components/models/llama/model.py": {}
+          }
+        }
+      }
+    },
+    "xhguo7/PAPO-Eval": {
+      "owner": "xhguo7",
+      "repo": "PAPO-Eval",
+      "by_sha": {
+        "b57d909": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "xhguo7/PAPO-Eval@b57d909/evaluation/mmlu/mmlu.py": {}
+          }
+        }
+      }
+    },
+    "deepsense-ai/ragbits": {
+      "owner": "deepsense-ai",
+      "repo": "ragbits",
+      "by_sha": {
+        "c8487b2": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "deepsense-ai/ragbits@c8487b2/packages/ragbits-core/tests/unit/llms/test_litellm.py": {}
+          }
+        }
+      }
+    },
+    "zldscr0/SENT": {
+      "owner": "zldscr0",
+      "repo": "SENT",
+      "by_sha": {
+        "2a7c40f": {
+          "num_listed_files": 7,
+          "num_analyzed_files": 7,
+          "alerts": {
+            "zldscr0/SENT@2a7c40f/eval/opencompass/configs/models/qwen/vllm_qwen_series.py": {},
+            "zldscr0/SENT@2a7c40f/eval/opencompass/configs/models/gemma/vllm_gemma_3_12b_it.py": {},
+            "zldscr0/SENT@2a7c40f/eval/opencompass/configs/datasets/needlebench/needlebench_4k/needlebench_multi_reasoning_4k.py": {},
+            "zldscr0/SENT@2a7c40f/eval/examples/eval_corebench_2409_longcontext.py": {},
+            "zldscr0/SENT@2a7c40f/recipe/entropy/main_entropy.py": {},
+            "zldscr0/SENT@2a7c40f/verl/third_party/sglang/parallel_state.py": {},
+            "zldscr0/SENT@2a7c40f/verl/models/llama/megatron/layers/__init__.py": {}
+          }
+        }
+      }
+    },
+    "SqueezeAILab/MultipoleAttention": {
+      "owner": "SqueezeAILab",
+      "repo": "MultipoleAttention",
+      "by_sha": {
+        "db65e51": {
+          "num_listed_files": 7,
+          "num_analyzed_files": 7,
+          "alerts": {
+            "SqueezeAILab/MultipoleAttention@db65e51/transformers/src/transformers/models/idefics3/convert_idefics3_weights_to_hf.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51/transformers/tests/models/auto/test_tokenization_auto.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51/transformers/tests/models/llava/test_processor_llava.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51/transformers/src/transformers/models/chameleon/processing_chameleon.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51/transformers/tests/models/cohere/test_tokenization_cohere.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51/transformers/src/transformers/models/llava_onevision/video_processing_llava_onevision.py": {},
+            "SqueezeAILab/MultipoleAttention@db65e51/transformers/src/transformers/models/instructblipvideo/image_processing_instructblipvideo.py": {}
+          }
+        }
+      }
+    },
+    "Visual-AI/3DRS": {
+      "owner": "Visual-AI",
+      "repo": "3DRS",
+      "by_sha": {
+        "0401f54": {
+          "num_listed_files": 4,
+          "num_analyzed_files": 4,
+          "alerts": {
+            "Visual-AI/3DRS@0401f54/transformers/src/transformers/models/clip/tokenization_clip_fast.py": {},
+            "Visual-AI/3DRS@0401f54/transformers/tests/models/auto/test_modeling_tf_auto.py": {},
+            "Visual-AI/3DRS@0401f54/transformers/src/transformers/models/llama/modeling_flax_llama.py": {},
+            "Visual-AI/3DRS@0401f54/transformers/src/transformers/models/imagegpt/convert_imagegpt_original_tf2_to_pytorch.py": {}
+          }
+        }
+      }
+    },
+    "PaddlePaddle/PaddleNLP": {
+      "owner": "PaddlePaddle",
+      "repo": "PaddleNLP",
+      "by_sha": {
+        "587a5cd": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "PaddlePaddle/PaddleNLP@587a5cd/paddlenlp/transformers/qwen3_moe/configuration.py": {},
+            "PaddlePaddle/PaddleNLP@587a5cd/slm/model_zoo/gpt-3/ppfleetx/data/tokenizers/tokenization_utils_base.py": {},
+            "PaddlePaddle/PaddleNLP@587a5cd/paddlenlp/transformers/deepseek_v2/tokenizer_fast.py": {}
+          }
+        }
+      }
+    },
+    "confident-ai/deepeval": {
+      "owner": "confident-ai",
+      "repo": "deepeval",
+      "by_sha": {
+        "847e12c": {
+          "num_listed_files": 3,
+          "num_analyzed_files": 3,
+          "alerts": {
+            "confident-ai/deepeval@847e12c/deepeval/models/llms/gemini_model.py": {},
+            "confident-ai/deepeval@847e12c/deepeval/models/retry_policy.py": {},
+            "confident-ai/deepeval@847e12c/deepeval/openai/utils.py": {}
+          }
+        }
+      }
+    },
+    "Upsonic/Upsonic": {
+      "owner": "Upsonic",
+      "repo": "Upsonic",
+      "by_sha": {
+        "f586dcf": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "Upsonic/Upsonic@f586dcf/src/upsonic/usage.py": {},
+            "Upsonic/Upsonic@f586dcf/tests/smoke_tests/test_knowledgebase_context.py": {}
+          }
+        }
+      }
+    },
+    "xorbitsai/inference": {
+      "owner": "xorbitsai",
+      "repo": "inference",
+      "by_sha": {
+        "8addbfb": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "xorbitsai/inference@8addbfb/xinference/model/audio/tests/test_chattts.py": {},
+            "xorbitsai/inference@8addbfb/xinference/client/common.py": {}
+          }
+        }
+      }
+    },
+    "ucsb-mlsec/VulnLLM-R": {
+      "owner": "ucsb-mlsec",
+      "repo": "VulnLLM-R",
+      "by_sha": {
+        "cf47593": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "ucsb-mlsec/VulnLLM-R@cf47593/vulscan/train/LLaMA-Factory/scripts/stat_utils/cal_ppl.py": {},
+            "ucsb-mlsec/VulnLLM-R@cf47593/vulscan/train/LLaMA-Factory/src/llamafactory/model/loader.py": {}
+          }
+        }
+      }
+    },
+    "bf-yang/ContextAgent": {
+      "owner": "bf-yang",
+      "repo": "ContextAgent",
+      "by_sha": {
+        "f4674bf": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "bf-yang/ContextAgent@f4674bf/LLaMA-Factory/src/llamafactory/data/collator.py": {},
+            "bf-yang/ContextAgent@f4674bf/LLaMA-Factory/src/llamafactory/data/template.py": {}
+          }
+        }
+      }
+    },
+    "Fir-lat/LaVer": {
+      "owner": "Fir-lat",
+      "repo": "LaVer",
+      "by_sha": {
+        "abe70c7": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "Fir-lat/LaVer@abe70c7/src/llamafactory/train/pt/workflow.py": {},
+            "Fir-lat/LaVer@abe70c7/src/llamafactory/data/mm_plugin.py": {}
+          }
+        }
+      }
+    },
+    "stanford-crfm/helm": {
+      "owner": "stanford-crfm",
+      "repo": "helm",
+      "by_sha": {
+        "26b9af4": {
+          "num_listed_files": 2,
+          "num_analyzed_files": 2,
+          "alerts": {
+            "stanford-crfm/helm@26b9af4/src/helm/clients/anthropic_client.py": {},
+            "stanford-crfm/helm@26b9af4/src/helm/benchmark/annotation/omni_math_annotator.py": {}
+          }
+        }
+      }
+    },
+    "Azure-Samples/azure-search-openai-demo": {
+      "owner": "Azure-Samples",
+      "repo": "azure-search-openai-demo",
+      "by_sha": {
+        "35a7885": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Azure-Samples/azure-search-openai-demo@35a7885/tests/test_agentic_retrieval.py": {}
+          }
+        }
+      }
+    },
+    "RockChinQ/LangBot": {
+      "owner": "RockChinQ",
+      "repo": "LangBot",
+      "by_sha": {
+        "2f51f5f": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "RockChinQ/LangBot@2f51f5f/src/langbot/pkg/provider/modelmgr/requesters/tokenponychatcmpl.py": {}
+          }
+        }
+      }
+    },
+    "deepset-ai/haystack": {
+      "owner": "deepset-ai",
+      "repo": "haystack",
+      "by_sha": {
+        "e4ca3ef": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "deepset-ai/haystack@e4ca3ef/haystack/components/generators/chat/hugging_face_api.py": {}
+          }
+        }
+      }
+    },
+    "khoj-ai/khoj": {
+      "owner": "khoj-ai",
+      "repo": "khoj",
+      "by_sha": {
+        "f4c519a": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "khoj-ai/khoj@f4c519a/src/khoj/database/migrations/0038_merge_20240425_0857.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA/Model-Optimizer": {
+      "owner": "NVIDIA",
+      "repo": "Model-Optimizer",
+      "by_sha": {
+        "b286165": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA/Model-Optimizer@b286165/modelopt/torch/export/plugins/mcore_custom.py": {}
+          }
+        }
+      }
+    },
+    "microsoft/Olive": {
+      "owner": "microsoft",
+      "repo": "Olive",
+      "by_sha": {
+        "7c5b3b8": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "microsoft/Olive@7c5b3b8/olive/evaluator/olive_evaluator.py": {}
+          }
+        }
+      }
+    },
+    "volcengine/ai-app-lab": {
+      "owner": "volcengine",
+      "repo": "ai-app-lab",
+      "by_sha": {
+        "423c821": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "volcengine/ai-app-lab@423c821/demohouse/ad_video_gen/backend/app/director-agent/src/director_agent/utils/types.py": {}
+          }
+        }
+      }
+    },
+    "Simple-Efficient/RL-Factory": {
+      "owner": "Simple-Efficient",
+      "repo": "RL-Factory",
+      "by_sha": {
+        "d0abc1d": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Simple-Efficient/RL-Factory@d0abc1d/verl/utils/flops_counter.py": {}
+          }
+        }
+      }
+    },
+    "brendanhogan/2025_advent_of_small_ml": {
+      "owner": "brendanhogan",
+      "repo": "2025_advent_of_small_ml",
+      "by_sha": {
+        "f6aacd7": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "brendanhogan/2025_advent_of_small_ml@f6aacd7/src/day10/gepa_main.py": {}
+          }
+        }
+      }
+    },
+    "mims-harvard/ToolUniverse": {
+      "owner": "mims-harvard",
+      "repo": "ToolUniverse",
+      "by_sha": {
+        "132458e": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "mims-harvard/ToolUniverse@132458e/src/tooluniverse/smolagent_tool.py": {}
+          }
+        }
+      }
+    },
+    "huggingface/optimum-habana": {
+      "owner": "huggingface",
+      "repo": "optimum-habana",
+      "by_sha": {
+        "6afa2ca": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "huggingface/optimum-habana@6afa2ca/optimum/habana/distributed/serialization.py": {}
+          }
+        }
+      }
+    },
+    "nkkbr/ViCA": {
+      "owner": "nkkbr",
+      "repo": "ViCA",
+      "by_sha": {
+        "96e8a61": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "nkkbr/ViCA@96e8a61/llava/model/multimodal_encoder/dev_eva_clip/eva_clip/transform.py": {}
+          }
+        }
+      }
+    },
+    "fereenwong/cdViews": {
+      "owner": "fereenwong",
+      "repo": "cdViews",
+      "by_sha": {
+        "5b64ba3": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "fereenwong/cdViews@5b64ba3/llava/model/multimodal_encoder/open_clip_encoder.py": {}
+          }
+        }
+      }
+    },
+    "NVIDIA-NeMo/RL": {
+      "owner": "NVIDIA-NeMo",
+      "repo": "RL",
+      "by_sha": {
+        "48dbb37": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "NVIDIA-NeMo/RL@48dbb37/nemo_rl/environments/math_environment.py": {}
+          }
+        }
+      }
+    },
+    "Marker-Inc-Korea/KO-VLM-Benchmark": {
+      "owner": "Marker-Inc-Korea",
+      "repo": "KO-VLM-Benchmark",
+      "by_sha": {
+        "1c786dc": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "Marker-Inc-Korea/KO-VLM-Benchmark@1c786dc/tests/ko_vlm_benchmark/nano_banana_pipeline/test_pipeline.py": {}
+          }
+        }
+      }
+    },
+    "shell-nlp/gpt_server": {
+      "owner": "shell-nlp",
+      "repo": "gpt_server",
+      "by_sha": {
+        "8fad613": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "shell-nlp/gpt_server@8fad613/tests/test_openai_chat.py": {}
+          }
+        }
+      }
+    },
+    "InternLM/ARM-Thinker": {
+      "owner": "InternLM",
+      "repo": "ARM-Thinker",
+      "by_sha": {
+        "b70dfe9": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "InternLM/ARM-Thinker@b70dfe9/verl/models/transformers/llama.py": {}
+          }
+        }
+      }
+    },
+    "GetStream/Vision-Agents": {
+      "owner": "GetStream",
+      "repo": "Vision-Agents",
+      "by_sha": {
+        "b5649a8": {
+          "num_listed_files": 1,
+          "num_analyzed_files": 1,
+          "alerts": {
+            "GetStream/Vision-Agents@b5649a8/examples/02_golf_coach_example/golf_coach_example.py": {}
+          }
+        }
+      }
+    }
+  }
+}

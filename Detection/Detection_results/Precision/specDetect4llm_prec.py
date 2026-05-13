@@ -17,7 +17,20 @@ import csv
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-RULES_ROOT = SCRIPT_DIR / "test_rules"
+
+
+def find_rules_root() -> Path:
+    candidates = [
+        SCRIPT_DIR / "test_rules",
+        SCRIPT_DIR.parents[1] / "test_rules",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return candidates[0]
+
+
+RULES_ROOT = find_rules_root()
 GITHUB_API = "https://api.github.com"
 API_VERSION = "2022-11-28"
 
@@ -214,6 +227,7 @@ def analyze_selected_files_remote(
 
 def main() -> int:
     sys.path.insert(0, str(SCRIPT_DIR))
+    sys.path.insert(0, str(RULES_ROOT.parent))
 
     ap = argparse.ArgumentParser(
         description="Analyze only listed files from a CSV (RepoName, FilePath) by fetching file contents via GitHub Contents API."
@@ -229,6 +243,10 @@ def main() -> int:
     args = ap.parse_args()
 
     available = discover_available_rules(RULES_ROOT)
+    if not available:
+        print(f"Error: no rules found under {RULES_ROOT}")
+        return 1
+
     if args.all:
         excluded = set(args.exclude or [])
         selected = [r for r in available if r not in excluded]
@@ -236,6 +254,10 @@ def main() -> int:
         selected = args.rules
     else:
         print("Error: provide --all or --rules")
+        return 1
+
+    if not selected:
+        print(f"Error: no rules selected from {RULES_ROOT}")
         return 1
 
     invalid = [r for r in selected if r not in available]
@@ -376,8 +398,8 @@ def main() -> int:
         print(f"Missing files: {missing_files}")
         print(f"HTTP errors: {http_errors}")
         print(f"Parse errors: {parse_errors}")
-        for rid, cnt in sorted(rule_counts.items()):
-            print(f"{rid}: {cnt}")
+        for rid in selected:
+            print(f"{rid}: {rule_counts.get(rid, 0)}")
 
         if errors:
             print(f"\nRow errors: {len(errors)} (first up to 20 shown)")

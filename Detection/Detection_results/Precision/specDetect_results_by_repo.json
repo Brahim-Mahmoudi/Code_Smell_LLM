@@ -23,7 +23,123 @@
         "R33"
       ],
       "max_repos": 0
-    }
+    },
+    "rq1_rule_confusion": {
+      "R26": {
+        "smell": "NMVP",
+        "alerts": 98,
+        "TP": 85,
+        "FP": 13,
+        "FN": 14,
+        "TN": 120,
+        "Precision": 0.867,
+        "Recall": 0.859,
+        "F1": 0.863
+      },
+      "R25": {
+        "smell": "TNES",
+        "alerts": 47,
+        "TP": 38,
+        "FP": 9,
+        "FN": 15,
+        "TN": 170,
+        "Precision": 0.809,
+        "Recall": 0.717,
+        "F1": 0.76
+      },
+      "R29": {
+        "smell": "NSO",
+        "alerts": 33,
+        "TP": 29,
+        "FP": 4,
+        "FN": 8,
+        "TN": 191,
+        "Precision": 0.879,
+        "Recall": 0.784,
+        "F1": 0.829
+      },
+      "R28": {
+        "smell": "UMM",
+        "alerts": 31,
+        "TP": 26,
+        "FP": 5,
+        "FN": 14,
+        "TN": 187,
+        "Precision": 0.839,
+        "Recall": 0.65,
+        "F1": 0.732
+      },
+      "R27": {
+        "smell": "NSM",
+        "alerts": 16,
+        "TP": 16,
+        "FP": 0,
+        "FN": 16,
+        "TN": 200,
+        "Precision": 1.0,
+        "Recall": 0.5,
+        "F1": 0.667
+      },
+      "R31": {
+        "smell": "RVP",
+        "alerts": 5,
+        "TP": 5,
+        "FP": 0,
+        "FN": 2,
+        "TN": 225,
+        "Precision": 1.0,
+        "Recall": 0.714,
+        "F1": 0.833
+      },
+      "R32": {
+        "smell": "OSP",
+        "alerts": 4,
+        "TP": 4,
+        "FP": 0,
+        "FN": 1,
+        "TN": 227,
+        "Precision": 1.0,
+        "Recall": 0.8,
+        "F1": 0.889
+      },
+      "R30": {
+        "smell": "RENES",
+        "alerts": 0,
+        "TP": 0,
+        "FP": 0,
+        "FN": null,
+        "TN": null,
+        "Precision": 0.0,
+        "Recall": null,
+        "F1": null,
+        "note": "Recall is not reported because the annotated set contains too few positives."
+      },
+      "R33": {
+        "smell": "AIC",
+        "alerts": 0,
+        "TP": 0,
+        "FP": 0,
+        "FN": null,
+        "TN": null,
+        "Precision": 0.0,
+        "Recall": null,
+        "F1": null,
+        "note": "Recall is not reported because the annotated set contains too few positives."
+      }
+    },
+    "rq1_aggregates": {
+      "micro_average": {
+        "Precision": 0.868,
+        "Recall": 0.744,
+        "F1": 0.801
+      },
+      "macro_average": {
+        "Precision": 0.913,
+        "Recall": 0.718,
+        "F1": 0.796
+      }
+    },
+    "rq1_note": "For each rule, alerts = TP + FP. Counts are the RQ1 per-smell confusion outcomes on the manually annotated set."
   },
   "repos": {
     "1Panel-dev/MaxKB": {
@@ -63,61 +179,38 @@
           "alerts": {
             "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/tests/llm/test_genai/test_format.py": {
               "R25": [
-                "LLM call without explicit temperature parameter at line 23",
-                "LLM call without explicit temperature parameter at line 38",
-                "LLM call without explicit temperature parameter at line 62",
-                "LLM call without explicit temperature parameter at line 83",
-                "LLM call without explicit temperature parameter at line 108",
-                "LLM call without explicit temperature parameter at line 135",
-                "LLM call without explicit temperature parameter at line 163"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 23",
-                "LLM chat call without a system message at line 62",
-                "LLM chat call without a system message at line 83",
-                "LLM chat call without a system message at line 135",
-                "LLM chat call without a system message at line 163"
+                "LLM call without explicit temperature parameter at line 24",
+                "LLM call without explicit temperature parameter at line 39",
+                "LLM call without explicit temperature parameter at line 63",
+                "LLM call without explicit temperature parameter at line 84",
+                "LLM call without explicit temperature parameter at line 109",
+                "LLM call without explicit temperature parameter at line 136",
+                "LLM call without explicit temperature parameter at line 164"
               ],
               "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 23",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 38",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 62",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 83",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 108",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 135",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 163"
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 24",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 39",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 63",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 84",
+                "LLM call without bounded metrics (tokens/timeout/response size) at line 109"
               ],
               "R29": [
-                "LLM pipeline call without structured output at line 23",
-                "LLM pipeline call without structured output at line 38",
-                "LLM pipeline call without structured output at line 62",
-                "LLM pipeline call without structured output at line 83",
-                "LLM pipeline call without structured output at line 108",
-                "LLM pipeline call without structured output at line 135",
-                "LLM pipeline call without structured output at line 163"
+                "LLM pipeline call without structured output at line 24",
+                "LLM pipeline call without structured output at line 39",
+                "LLM pipeline call without structured output at line 63",
+                "LLM pipeline call without structured output at line 84"
               ]
             },
             "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/instructor/validation/__init__.py": {},
             "567-labs/instructor@130c034c4b7ec9fe6b7d06ad836fa1318f78fd43/examples/logfire-fastapi/server.py": {
               "R25": [
-                "LLM call without explicit temperature parameter at line 34",
-                "LLM call without explicit temperature parameter at line 67",
-                "LLM call without explicit temperature parameter at line 48"
+                "LLM call without explicit temperature parameter at line 35",
+                "LLM call without explicit temperature parameter at line 68"
               ],
               "R26": [
-                "LLM call without model version pinning at line 34",
-                "LLM call without model version pinning at line 67",
-                "LLM call without model version pinning at line 48"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 34",
-                "LLM chat call without a system message at line 67",
-                "LLM chat call without a system message at line 48"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 34",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 67",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 48"
+                "LLM call without model version pinning at line 35",
+                "LLM call without model version pinning at line 68",
+                "LLM call without model version pinning at line 49"
               ],
               "R29": [
                 "LLM pipeline call without structured output at line 34",
@@ -400,18 +493,9 @@
           "alerts": {
             "Shubhamsaboo/awesome-llm-apps@a7f725854904f1655727138a429dd084f754d09f/advanced_ai_agents/single_agent_apps/ai_personal_finance_agent/finance_agent.py": {},
             "Shubhamsaboo/awesome-llm-apps@a7f725854904f1655727138a429dd084f754d09f/advanced_ai_agents/single_agent_apps/ai_customer_support_agent/customer_support_agent.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 36",
-                "LLM call without explicit temperature parameter at line 53",
-                "LLM call without explicit temperature parameter at line 96"
-              ],
               "R26": [
-                "LLM call without model version pinning at line 53",
-                "LLM call without model version pinning at line 96"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 53",
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 96"
+                "LLM call without model version pinning at line 54",
+                "LLM call without model version pinning at line 97"
               ],
               "R29": [
                 "LLM pipeline call without structured output at line 53",
@@ -525,7 +609,7 @@
           "alerts": {
             "fangyinc/DB-GPT@f317740d5557b56899d1a3e786ca7cc583fdd700/dbgpt/util/global_helper.py": {
               "R26": [
-                "LLM call without model version pinning at line 253"
+                "LLM call without model version pinning at line 254"
               ]
             }
           }
@@ -587,7 +671,7 @@
             "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/src/ipex_llm/transformers/npu_models/xlm_mp.py": {},
             "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/example/GPU/Lightweight-Serving/lightweight_serving.py": {
               "R26": [
-                "LLM call without model version pinning at line 46"
+                "LLM call without model version pinning at line 47"
               ]
             },
             "intel/ipex-llm@197f6531bfbe844f53393cb6c8a743251d1ea4b3/python/llm/src/ipex_llm/transformers/npu_pipeline_model/convert_pipeline.py": {}
@@ -609,8 +693,8 @@
             "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/image_processing_base.py": {},
             "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/tests/models/aria/test_modeling_aria.py": {
               "R26": [
-                "LLM call without model version pinning at line 489",
-                "LLM call without model version pinning at line 494"
+                "LLM call without model version pinning at line 490",
+                "LLM call without model version pinning at line 495"
               ]
             },
             "huggingface/transformers@b62e5b3e4060c07b0e595f670135d85bb51673fe/src/transformers/models/hunyuan_v1_dense/modular_hunyuan_v1_dense.py": {},
@@ -777,11 +861,7 @@
           "alerts": {
             "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/v1/entrypoints/conftest.py": {},
             "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/offline_inference/kv_load_failure_recovery/prefill_example.py": {},
-            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/pooling/embed/openai_embedding_client.py": {
-              "R25": [
-                "LLM call without explicit temperature parameter at line 17"
-              ]
-            },
+            "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/examples/pooling/embed/openai_embedding_client.py": {},
             "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/models/language/pooling/test_truncation_control.py": {},
             "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/tests/compile/test_fusion_attn.py": {},
             "vllm-project/vllm@62be3670cb97e7196c30be26fe347d12d183429c/vllm/model_executor/layers/quantization/utils/marlin_utils_test_24.py": {},
@@ -869,13 +949,7 @@
           "alerts": {
             "zilliztech/GPTCache@c59fb3a6152a4458b2a070ca183b61c4b614095f/examples/processor/temperature_example.py": {
               "R26": [
-                "LLM call without model version pinning at line 33"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 33"
-              ],
-              "R28": [
-                "LLM call without bounded metrics (tokens/timeout/response size) at line 33"
+                "LLM call without model version pinning at line 34"
               ],
               "R29": [
                 "LLM pipeline call without structured output at line 33"
@@ -912,7 +986,7 @@
             "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/readers/llama-index-readers-wordpress/llama_index/readers/wordpress/base.py": {},
             "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-integrations/llms/llama-index-llms-ipex-llm/llama_index/llms/ipex_llm/base.py": {
               "R26": [
-                "LLM call without model version pinning at line 231"
+                "LLM call without model version pinning at line 232"
               ]
             },
             "run-llama/llama_index@64782258f4ebdba8bebe53ca66de276ab1139758/llama-index-core/llama_index/core/vector_stores/__init__.py": {},
@@ -1163,8 +1237,7 @@
             "ucsb-mlsec/VulnLLM-R@cf4759373dd83235399cc0aad5e6896e7b07d6ac/vulscan/train/LLaMA-Factory/scripts/stat_utils/cal_ppl.py": {},
             "ucsb-mlsec/VulnLLM-R@cf4759373dd83235399cc0aad5e6896e7b07d6ac/vulscan/train/LLaMA-Factory/src/llamafactory/model/loader.py": {
               "R26": [
-                "LLM call without model version pinning at line 78",
-                "LLM call without model version pinning at line 86"
+                "LLM call without model version pinning at line 79"
               ]
             }
           }
@@ -1618,14 +1691,10 @@
                 "LLM call without explicit temperature parameter at line 854",
                 "LLM call without explicit temperature parameter at line 848"
               ],
-              "R27": [
-                "LLM chat call without a system message at line 525"
-              ],
               "R29": [
                 "LLM pipeline call without structured output at line 525"
               ],
               "R32": [
-                "Overspecified sampling at line 261",
                 "Overspecified sampling at line 285"
               ]
             }
@@ -1923,21 +1992,11 @@
                 "LLM call without model version pinning at line 47",
                 "LLM call without model version pinning at line 70"
               ],
-              "R27": [
-                "LLM chat call without a system message at line 9",
-                "LLM chat call without a system message at line 31",
-                "LLM chat call without a system message at line 47",
-                "LLM chat call without a system message at line 70"
-              ],
               "R29": [
                 "LLM pipeline call without structured output at line 9",
                 "LLM pipeline call without structured output at line 31",
                 "LLM pipeline call without structured output at line 47",
                 "LLM pipeline call without structured output at line 70"
-              ],
-              "R31": [
-                "Unbounded vision payloads at line 9",
-                "Unbounded vision payloads at line 47"
               ]
             }
           }
@@ -2735,9 +2794,6 @@
               ],
               "R26": [
                 "LLM call without model version pinning at line 7"
-              ],
-              "R27": [
-                "LLM chat call without a system message at line 7"
               ],
               "R28": [
                 "LLM call without bounded metrics (tokens/timeout/response size) at line 7"
